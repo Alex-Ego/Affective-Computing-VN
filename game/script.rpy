@@ -24,7 +24,7 @@ label start:
 
     # These display lines of dialogue.
     while 1:
-        e "Testing."
+        e "This is a cycle for testing."
 
     # This ends the game.
 
