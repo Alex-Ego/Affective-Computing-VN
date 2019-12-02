@@ -14,4 +14,93 @@ Importing _renpysteam: ImportError('No module named _renpysteam',)
 ==============================================================================================
 
 ITERATION 0
-58.4902310476% probability of error
+58.4902310476% probability of error
+
+ITERATION 1
+44.0438715134% probability of error
+
+ITERATION 2
+41.5879684489% probability of error
+
+ITERATION 3
+40.8698098077% probability of error
+
+ITERATION 4
+40.6631397098% probability of error
+
+ITERATION 5
+40.5873340754% probability of error
+
+ITERATION 6
+40.5594056838% probability of error
+
+ITERATION 7
+40.5372624591% probability of error
+
+ITERATION 8
+40.5225003092% probability of error
+
+ITERATION 9
+40.5079376479% probability of error
+
+ITERATION 10
+40.4955693602% probability of error
+
+ITERATION 11
+40.4826026069% probability of error
+
+ITERATION 12
+40.4676409686% probability of error
+
+ITERATION 13
+40.4540757498% probability of error
+
+ITERATION 14
+40.4439018357% probability of error
+
+ITERATION 15
+40.4313340595% probability of error
+
+ITERATION 16
+40.4165719096% probability of error
+
+ITERATION 17
+40.4044031104% probability of error
+
+ITERATION 18
+40.3888430065% probability of error
+
+ITERATION 19
+40.3786690924% probability of error
+
+ITERATION 20
+40.3635079656% probability of error
+
+ITERATION 21
+40.3559274021% probability of error
+
+ITERATION 22
+40.3379734361% probability of error
+
+ITERATION 23
+40.3268020795% probability of error
+
+ITERATION 24
+40.3120399296% probability of error
+
+ITERATION 25
+40.2970782913% probability of error
+
+ITERATION 26
+40.2898967048% probability of error
+
+ITERATION 27
+40.2721422273% probability of error
+
+ITERATION 28
+40.2591754741% probability of error
+
+ITERATION 29
+40.2448123013% probability of error
+
+ITERA
