@@ -1,14 +1,5 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 
-#def openfile(txtfile):
-#    lines = renpy.file(txtfile).readlines()
-#    i = 0
-#    for line in lines:
-#        if line[0] == "#":
-#            lines.pop(i)
-#        i = i + 1
-#    return lines
-
 def openfile(txtfile):
     txt = open(txtfile, "r")
     lines = txt.readlines()
@@ -176,3 +167,10 @@ for entrada in entradas:
     else:
         print("Not a sad phrase.")
     print("\n")
+
+# Esto escribira los pesos resultantes en un txt, para quer no se tenga que correr el algoritmo cada vez, y se tengan los pesos a la mano.
+datafile = open("nndata/datafile.txt", "w+")
+for i in range(len(pesos)):
+    datafile.write(str(pesos[i]))
+    datafile.write("\n")
+datafile.close()
