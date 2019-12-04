@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 28, in script
+    python:
+  File "game/script.rpy", line 30, in <module>
+    phraseanalysis(userinput, dictionary, w)
+  File "game/neuralnet.rpy", line 86, in phraseanalysis
+    renpy.say("Not a sad phrase.")
+TypeError: say() takes at least 2 arguments (1 given)
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 28, in script
+    python:
+  File "D:\Windows Libraries\Documents\Ren'py\renpy-7.0.0-sdk\renpy\ast.py", line 914, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Windows Libraries\Documents\Ren'py\renpy-7.0.0-sdk\renpy\python.py", line 2028, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script.rpy", line 30, in <module>
+    phraseanalysis(userinput, dictionary, w)
+  File "game/neuralnet.rpy", line 86, in phraseanalysis
+    renpy.say("Not a sad phrase.")
+TypeError: say() takes at least 2 arguments (1 given)
+
+Windows-8-6.2.9200
+Ren'Py 7.3.5.606
+AffectiveCompVN 1.0
+Wed Dec 04 12:21:17 2019

@@ -168,7 +168,7 @@ for entrada in entradas:
         print("Not a sad phrase.")
     print("\n")
 
-# Esto escribira los pesos resultantes en un txt, para quer no se tenga que correr el algoritmo cada vez, y se tengan los pesos a la mano.
+# Esto escribira los pesos resultantes en un txt, para que no se tenga que correr el algoritmo cada vez, y se tengan los pesos a la mano.
 datafile = open("nndata/datafile.txt", "w+")
 for i in range(len(pesos)):
     datafile.write(str(pesos[i]))
