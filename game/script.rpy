@@ -23,8 +23,12 @@ label start:
     show eileen happy
 
     # These display lines of dialogue.
+    $ print(dictionary)
     while 1:
-        e "This is a cycle for testing."
+        e "Let's try this out."
+        python:
+            userinput = renpy.input("Say something.")
+            phraseanalysis(userinput, dictionary, w)
 
     # This ends the game.
 
