@@ -82,9 +82,11 @@ init python:
 
         y=funcion_activacion(funcion_nucleo(pesos,criteria))
         if y == 0:
-            renpy.say(e, "Sad phrase.")
+            renpy.show("temp sad")
+            renpy.say(t, "Don't be sad!")
         else:
-            renpy.say(e, "Not a sad phrase.")
+            renpy.show("temp happy")
+            renpy.say(t, "Oh, is that so?")
     
     ################################################################################
     ## Ren'py Interaction
