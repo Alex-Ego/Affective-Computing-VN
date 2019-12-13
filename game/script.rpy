@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+define t = Character("Temp")
 
 
 # The game starts here.
@@ -14,18 +14,13 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
+    scene sky2
 
     # These display lines of dialogue.
     $ print(dictionary)
     while 1:
-        e "Let's try this out."
+        show assistant neutral
+        t "Let's try this out."
         python:
             userinput = renpy.input("Say something.")
             phraseanalysis(userinput, dictionary, w)
