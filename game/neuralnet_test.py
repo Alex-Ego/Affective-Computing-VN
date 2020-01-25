@@ -1,5 +1,12 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 
+def filterpunct(text):
+    punctuation = [".", ",", ":", "\"", "!", "?", "*", "-", "+", "(", ")", "$", "%", "", "~"]
+    if(text in punctuation):
+        return False
+    else:
+        return True
+
 def openfile(txtfile):
     txt = open(txtfile, "r")
     lines = txt.readlines()
@@ -15,12 +22,15 @@ def clean_data(data):
     cleanlines = []
     for line in data:
         line = list(line)
+        filterline = filter(filterpunct, line)
+        line = list(filterline)
         if line[len(line)-1] == "\n":
             line.pop(len(line)-1)
         if line != "":
             line = ''.join(line)
             line = str(line)
             cleanlines.append(line)
+        
 
     #Making the info useful
     cleandata = []
@@ -33,6 +43,7 @@ def clean_data(data):
                 lines[0].pop(i)
             i = i + 1
         cleandata.append(lines)
+        #print(cleandata)
     return cleandata
 
 def clean_dict(d):
@@ -109,8 +120,8 @@ for example in traindata:
 #random.shuffle(entradas)
 
 ##================================================================ Placeholder
-max_iter=100
-tasa_aprendizaje=0.000000062
+max_iter=205
+tasa_aprendizaje=0.000000060
 pesos=[1,0,0,0]
 
 iter=0
