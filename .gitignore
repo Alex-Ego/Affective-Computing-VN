@@ -1,0 +1,11 @@
+# Ren'py log files, not worth committing.
+errors.txt
+log.txt
+traceback.txt
+
+# Python bytecode files
+/game/*.rpyc
+/game/*.pyc
+
+# This folder contains the raw datasets, useful but they're too heavy to track.
+/datasets/*
