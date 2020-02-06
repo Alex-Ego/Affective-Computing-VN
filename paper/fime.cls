@@ -8,11 +8,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Cargando paquetes y definiendo opciones %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath,amsfonts,amssymb}
 	\allowdisplaybreaks[4]
 \usepackage{graphicx}
-	\graphicspath{{Figuras/}}
+	\graphicspath{{Figures/}}
 \usepackage[clearempty,pagestyles]{titlesec}
 	\setcounter{secnumdepth}{4}
 

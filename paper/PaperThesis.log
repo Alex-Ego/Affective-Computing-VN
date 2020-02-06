@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.2.5)  5 FEB 2020 23:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.2.5)  6 FEB 2020 12:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -25,6 +25,13 @@ File: bk12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks14
@@ -354,20 +361,26 @@ LaTeX Info: Redefining \nameref on input line 50.
 \openout2 = `Portadas.aux'.
 
  (./Portadas.tex
+Package epstopdf Info: Source file: <Figures/uanl.eps>
+(epstopdf)                    date: 2020-02-05 22:27:13
+(epstopdf)                    size: 828415 bytes
+(epstopdf)             Output file: <Figures/uanl-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-02-05 22:27:13
+(epstopdf)                    size: 51325 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures/uanl-eps-converted
+-to.pdf Figures/uanl.eps>
+(epstopdf)             \includegraphics on input line 19.
+Package epstopdf Info: Output file is already uptodate.
 
-! LaTeX Error: File `uanl' not found.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.19 	\includegraphics[height=55mm]{uanl}
-                                         
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/uanl-eps-converted-to.pdf): P
+DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figures/uanl-eps-converted-to.pdf, id=12, 87.32625pt x 78.2925pt>
+File: Figures/uanl-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures/uanl-eps-converted-to.pdf>
+Package pdftex.def Info: Figures/uanl-eps-converted-to.pdf  used on input line 
+19.
+(pdftex.def)             Requested size: 174.57079pt x 156.49014pt.
 LaTeX Font Info:    Try loading font information for U+msa on input line 21.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -380,23 +393,30 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Figures/uanl-eps-convert
+ed-to.pdf>]
+Package epstopdf Info: Source file: <Figures/fime.eps>
+(epstopdf)                    date: 2020-02-05 22:27:13
+(epstopdf)                    size: 394567 bytes
+(epstopdf)             Output file: <Figures/fime-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-02-05 22:27:13
+(epstopdf)                    size: 226226 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures/fime-eps-converted
+-to.pdf Figures/fime.eps>
+(epstopdf)             \includegraphics on input line 48.
+Package epstopdf Info: Output file is already uptodate.
 
-! LaTeX Error: File `fime' not found.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.48 	\includegraphics[height=50mm]{fime}
-                                         
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[2]
-Overfull \hbox (18.69482pt too wide) in paragraph at lines 103--116
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/fime-eps-converted-to.pdf): P
+DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figures/fime-eps-converted-to.pdf, id=29, 108.405pt x 143.53625pt>
+File: Figures/fime-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures/fime-eps-converted-to.pdf>
+Package pdftex.def Info: Figures/fime-eps-converted-to.pdf  used on input line 
+48.
+(pdftex.def)             Requested size: 107.44698pt x 142.26378pt.
+[2 <./Figures/fime-eps-converted-to.pdf>]
+Overfull \hbox (13.98708pt too wide) in paragraph at lines 103--116
  [][] 
  []
 
@@ -424,9 +444,9 @@ Overfull \hbox (18.69482pt too wide) in paragraph at lines 103--116
 \openout2 = `Agradecimientos.aux'.
 
  (./Agradecimientos.tex)
-Overfull \hbox (7.6956pt too wide) in paragraph at lines 10--64
-[]\OT1/cmr/m/n/12 Agradezco tambi^^Sen al Fondo Sec-to-rial de In-ves-ti-gaci^^
-Son Am-bi-en-tal, SEMARNAT-
+Overfull \hbox (7.60027pt too wide) in paragraph at lines 10--64
+[]\T1/cmr/m/n/12 Agradezco tam-bién al Fondo Sec-to-rial de In-ves-ti-gación Am
+-bi-en-tal, SEMARNAT-
  []
 
 [7
@@ -467,20 +487,25 @@ Package rerunfilecheck Info: File `PaperThesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 91.
  ) 
 Here is how much of TeX's memory you used:
- 6534 strings out of 494553
- 92708 string characters out of 6177378
- 184793 words of memory out of 5000000
- 10061 multiletter control sequences out of 15000+600000
- 10401 words of font info for 39 fonts, out of 8000000 for 9000
+ 6733 strings out of 494553
+ 94556 string characters out of 6177378
+ 184797 words of memory out of 5000000
+ 10249 multiletter control sequences out of 15000+600000
+ 14070 words of font info for 40 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,9n,39p,420b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on PaperThesis.pdf (9 pages, 56348 bytes).
+ 34i,8n,39p,419b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/alex/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc2488.600p
+k> </home/alex/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600p
+k> </home/alex/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600p
+k> </home/alex/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600p
+k> </home/alex/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1200.600p
+k> </home/alex/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1440.600p
+k> </home/alex/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1728.600p
+k>
+Output written on PaperThesis.pdf (9 pages, 355523 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
+ 333 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
  18 named destinations out of 1000 (max. 500000)
- 17 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 27 words of extra memory for PDF output out of 10000 (max. 10000000)
 
