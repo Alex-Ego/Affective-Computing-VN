@@ -1,0 +1,91 @@
+%%%%%%%%%%%%%%%%%%%%%
+% Documento maestro %
+%%%%%%%%%%%%%%%%%%%%%
+\documentclass{fime}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cargando paquetes y definiendo opciones %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aquí puedes cargar los paquetes que vas a usar. La clase
+% fime ya incluye babel, inputenc, graphicx y los de la AMS.
+% Cargar un paquete está a tu libertad (y responsabilidad).
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage{amsmath}
+\usepackage[bottom]{footmisc}
+
+\setlength{\footnotesep}{0.5cm}
+\setlength\footnotemargin{3pt}
+
+    \hypersetup{breaklinks=true,colorlinks=true,
+        linkcolor=black,citecolor=black,urlcolor=black}
+
+%%%%%%%%%%%%%%%%%%%%%
+% Definiendo campos %
+%%%%%%%%%%%%%%%%%%%%%
+\def\titulo{Análisis de sentimientos de un usuario mediante un chatbot}
+\def\autor{Alexander Espronceda Gómez}
+\def\matricula{1742000}
+\def\grado{Ingeniería en Tecnología de Software}
+% En caso de que el grado tenga orientación o especialidad llenar el siguiente
+% campo dejando un ESPACIO INICIAL, en caso contrario, dejar vacío
+\def\orientacion{}
+\def\fecha{Agosto 2020} % Coloca el mes con mayúscula inicial
+
+\def\asesor{Dra. Satu Elisa Schaeffer}
+\def\revisorA{Dra. Sara Elena Garza Villareal}
+\def\revisorB{Dra. Sara Verónica Rodríguez Sánchez}
+% En el caso de que tu tesis sea de doctorado activa la variable cambiándola a \doctoradotrue
+% y define tus otros dos revisores
+\newif\ifdoctorado\doctoradofalse
+\def\revisorC{Nombre del revisor C}
+\def\revisorD{Nombre del revisor D}
+% El visto bueno siempre va
+\def\vobo{Dr. ..}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% Inicia el documento %
+%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\frontmatter
+\pagestyle{main}
+
+%%% Incluye PortillasM si tu tesis es de Maestría
+%%% y PortillasD si es de doctorado.
+\include{Portadas}
+%%%\include{Dedicatoria}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\include{Agradecimientos}
+\include{Resumen}
+
+\mainmatter
+\pagestyle{fime}
+
+%%% Haz un documento para cada capítulo
+\include{Capitulo}
+
+\appendix
+%%% Haz un documento para cada apéndice
+%%%\\include{Apendice}
+
+\backmatter
+\pagestyle{main}
+
+%%% Aquí va la bibliografía, puedes usar el entorno de LaTeX (thebibliography)
+%%% o la herramienta BibTeX. En caso de que optes por BibTeX, puedes usar
+%%% alguno de los archivos de estilo (mighelbib.bst o mighelnat.bst) incluidos
+%%% en el paquete, cuyos diseños armonizan con el diseño de tesis provisto por
+%%% fime.cls. Para muestra, basta un botón:
+\bibliographystyle{mighelbib}
+\bibliography{MiBiblio}
+
+\label{lastpage}
+\include{Autobiografia}
+
+\end{document}

@@ -9,3 +9,6 @@ traceback.txt
 
 # This folder contains the raw datasets, useful but they're too heavy to track.
 /datasets/*
+
+# Not mine, so I can put it on there
+/paper_test/*
