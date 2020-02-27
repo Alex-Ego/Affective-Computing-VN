@@ -29,8 +29,8 @@ import datadict as dd
 
 # Neural Network parameters
 
-vocab_size = 5000 # Size of the vocabulary I'll be using
-embedding_dim = 80
+vocab_size = 8000 # Size of the vocabulary I'll be using
+embedding_dim = 64
 max_length = 30
 trunc_type = 'post'
 padding_type = 'post'
@@ -67,7 +67,6 @@ with open(abs_location + file_location + file_name, 'r') as csvfile:
             message = message.replace(' ', ' ')
         messages.append(message)
 
-
 # Training and testing splitting
 
 train_size = int(len(messages) * training_portion)
@@ -97,35 +96,27 @@ label_tokenizer.fit_on_texts(labels)
 training_label_seq = np.array(label_tokenizer.texts_to_sequences(train_labels))
 validation_label_seq = np.array(label_tokenizer.texts_to_sequences(validation_labels))
 
+# Building the model
 
-#reverse_word_index = dict([(value, key) for (key, value) in word_index.items()])
-
-#def decode_message(text):
-#    return ' '.join([reverse_word_index.get(i, '?') for i in text])
-
-#for i in range(len(train_padded)):
-#    print(decode_message(train_padded[i]))
-#    print('---')
-#    print(train_messages[i])
-#    print()
-
-model = tf.keras.Sequential([
-    # Add an Embedding layer expecting input vocab of size 5000, and output embedding dimension of size 64 we set at the top
-    tf.keras.layers.Embedding(vocab_size, embedding_dim),
-    tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(embedding_dim)),
-#    tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(32)),
-    # use ReLU in place of tanh function since they are very good alternatives of each other.
-    tf.keras.layers.Dense(embedding_dim, activation='relu'),
-    # Add a Dense layer with 6 units and softmax activation.
-    # When we have multiple outputs, softmax convert outputs layers into a probability distribution.
-    tf.keras.layers.Dense(14, activation='softmax')
-])
-model.summary()
+model = tf.keras.Sequential()
+model.add(layers.Embedding(input_dim=vocab_size, 
+                           output_dim=embedding_dim, 
+                           input_length=max_length))
+model.add(layers.Flatten())
+model.add(layers.Dense(64, activation="relu"))
+model.add(layers.Dense(20, activation="sigmoid"))
+model.add(layers.Dense(14, activation="sigmoid"))
 
 model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+model.summary()
 
 num_epochs = 50
 history = model.fit(train_padded, training_label_seq, epochs=num_epochs, validation_data=(validation_padded, validation_label_seq), verbose=2)
+loss, accuracy = model.evaluate(train_padded, training_label_seq, verbose=False)
+print("Training Accuracy: {:.4f}".format(accuracy))
+loss, accuracy = model.evaluate(validation_padded, validation_label_seq, verbose=False)
+print("Testing Accuracy:  {:.4f}".format(accuracy))
+
 
 def plot_graphs(history, string):
   plt.plot(history.history[string])
