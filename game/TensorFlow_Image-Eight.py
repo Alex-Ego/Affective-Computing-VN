@@ -29,14 +29,15 @@ import datadict as dd
 
 # Neural Network parameters
 
-vocab_size = 8000 # Size of the vocabulary I'll be using
-embedding_dim = 64
+vocab_size = 5000 # Size of the vocabulary I'll be using
+embedding_dim = 32
 max_length = 30
 trunc_type = 'post'
 padding_type = 'post'
 oov_tok = '<OOV>'
-training_portion = .7
+training_portion = .9
 
+random.seed(96024)
 
 # File setup
 
@@ -102,15 +103,16 @@ model = tf.keras.Sequential()
 model.add(layers.Embedding(input_dim=vocab_size, 
                            output_dim=embedding_dim, 
                            input_length=max_length))
-model.add(layers.Flatten())
+model.add(layers.Dropout(0.2))
+model.add(layers.Bidirectional(layers.LSTM(200)))
+model.add(layers.Dropout(0.2))
 model.add(layers.Dense(64, activation="relu"))
-model.add(layers.Dense(20, activation="sigmoid"))
 model.add(layers.Dense(14, activation="sigmoid"))
 
 model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 model.summary()
 
-num_epochs = 50
+num_epochs = 150
 history = model.fit(train_padded, training_label_seq, epochs=num_epochs, validation_data=(validation_padded, validation_label_seq), verbose=2)
 loss, accuracy = model.evaluate(train_padded, training_label_seq, verbose=False)
 print("Training Accuracy: {:.4f}".format(accuracy))
