@@ -50,8 +50,6 @@ file_name = "text_emotion.csv" # The data file name
     ### The data in the filename is as follows: id, sentiment, author, message
 
 # Dumping into vectors
-
-raw_data = []
 messages = []
 labels = []
 
@@ -67,6 +65,15 @@ with open(abs_location + file_location + file_name, 'r') as csvfile:
             message = message.replace(token, ' ')
             message = message.replace(' ', ' ')
         messages.append(message)
+
+# Shuffling the data
+print(len(labels))
+print(len(messages))
+shuffling_var = list(zip(labels, messages))
+random.shuffle(shuffling_var)
+labels[:], messages[:] = zip(*shuffling_var)
+print(len(labels))
+print(len(messages))
 
 # Training and testing splitting
 
@@ -99,18 +106,20 @@ validation_label_seq = np.array(label_tokenizer.texts_to_sequences(validation_la
 
 # Building the model
 
-model = tf.keras.Sequential()
-model.add(layers.Embedding(input_dim=vocab_size, 
+model = tf.keras.Sequential([
+    layers.Embedding(input_dim=vocab_size, 
                            output_dim=embedding_dim, 
-                           input_length=max_length))
-model.add(layers.Bidirectional(layers.LSTM(200)))
-model.add(layers.Dense(64, activation="relu"))
-model.add(layers.Dense(14, activation="sigmoid"))
+                           input_length=max_length),
+    layers.Bidirectional(layers.LSTM(64, return_sequences=True)),
+    layers.Bidirectional(layers.LSTM(32)),
+    layers.Dense(32, activation="tanh"),
+    layers.Dense(14, activation="softmax")
+])
 
-model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+model.compile(loss='sparse_categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
 model.summary()
 
-num_epochs = 50
+num_epochs = 15
 history = model.fit(train_padded, training_label_seq, epochs=num_epochs, validation_data=(validation_padded, validation_label_seq), verbose=2)
 loss, accuracy = model.evaluate(train_padded, training_label_seq, verbose=False)
 print("Training Accuracy: {:.4f}".format(accuracy))
@@ -133,8 +142,11 @@ while 1:
     txt = input("Write something: ")
     filtered_txt = filter(dd.filterpunct, txt)
     txt = list(filtered_txt)
+    txt = str("".join(txt))
+    print(txt)
     seq = tokenizer.texts_to_sequences(txt)
     padded = pad_sequences(seq, maxlen=max_length)
+    print(padded)
     pred = model.predict(padded)
     labels = ["anger", "boredom", "empty", "enthusiasm", "fun", "happiness", "hate", "love", "neutral", "relief", "sadness", "surprise", "worry", "N/A"]
     print(pred, labels[np.argmax(pred)])
