@@ -13,6 +13,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
 import random
+import string
 
 from tensorflow.keras import layers
 
@@ -21,7 +22,8 @@ from tensorflow.keras import layers
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from nltk.corpus import stopwords
-STOPWORDS = set(stopwords.words('english'))
+from nltk.tokenize import word_tokenize
+from nltk.stem.porter import PorterStemmer
 
 # My local functions that I've used previously
 
@@ -30,7 +32,7 @@ import datadict as dd
 # Neural Network parameters
 
 vocab_size = 5000 # Size of the vocabulary I'll be using
-embedding_dim = 64
+embedding_dim = 30
 max_length = 30
 trunc_type = 'post'
 padding_type = 'post'
@@ -59,11 +61,25 @@ with open(abs_location + file_location + file_name, 'r') as csvfile:
     for row in reader:
         labels.append(row[1]) # Appending the sentiment associated with the row itself
         message = row[3]
-        # Filtering the stopwords, which are the most commonly used words in the English language, like prepositions and stuff like that.
-        for word in STOPWORDS:
-            token = ' ' + word + ' '
-            message = message.replace(token, ' ')
-            message = message.replace(' ', ' ')
+        #print("Input: " + message)             #   Debugging purposes
+        # Pre-tokenizing
+        tokens = word_tokenize(message)
+        # Making them lowercase
+        tokens = [w.lower() for w in tokens]
+        # Filtering the punctuations
+        table = str.maketrans('', '', string.punctuation)
+        stripped = [w.translate(table) for w in tokens]
+        # Filtering non-alphabetic characters
+        words = [word for word in stripped if word.isalpha()]
+        # Removing stopwords
+        stop_words = set(stopwords.words('english'))
+        words = [w for w in words if not w in stop_words]
+        # Stemming words (test)
+        porter = PorterStemmer()
+        stemmed = [porter.stem(word) for word in words]
+        # Joining the resulting string
+        message = " ".join(stemmed)
+        #print("Output: " + message + "\n")     #   Debugging purposes
         messages.append(message)
 
 # Shuffling the data
@@ -85,9 +101,11 @@ train_labels = labels[0: train_size]
 validation_messages = messages[train_size:]
 validation_labels = labels[train_size:]
 
+
 tokenizer = Tokenizer(num_words = vocab_size, oov_token=oov_tok)
 tokenizer.fit_on_texts(train_messages)
 word_index = tokenizer.word_index
+#print(dict(list(word_index.items())[0:100]))
 
 # Making lists of tokens
 
@@ -110,16 +128,17 @@ model = tf.keras.Sequential([
     layers.Embedding(input_dim=vocab_size, 
                            output_dim=embedding_dim, 
                            input_length=max_length),
-    layers.Bidirectional(layers.LSTM(64, return_sequences=True)),
-    layers.Bidirectional(layers.LSTM(32)),
-    layers.Dense(32, activation="tanh"),
+    layers.SpatialDropout1D(0.15),
+    layers.Bidirectional(layers.LSTM(25, return_sequences=True, dropout=0.15, recurrent_dropout=0.15)),
+    layers.Bidirectional(layers.LSTM(20, dropout=0.2, recurrent_dropout=0.2)),
+    layers.Dense(16, activation="tanh"),
     layers.Dense(14, activation="softmax")
 ])
 
 model.compile(loss='sparse_categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
 model.summary()
 
-num_epochs = 15
+num_epochs = 10
 history = model.fit(train_padded, training_label_seq, epochs=num_epochs, validation_data=(validation_padded, validation_label_seq), verbose=2)
 loss, accuracy = model.evaluate(train_padded, training_label_seq, verbose=False)
 print("Training Accuracy: {:.4f}".format(accuracy))
@@ -138,15 +157,15 @@ def plot_graphs(history, string):
 plot_graphs(history, "accuracy")
 plot_graphs(history, "loss")
 
-while 1:
-    txt = input("Write something: ")
-    filtered_txt = filter(dd.filterpunct, txt)
-    txt = list(filtered_txt)
-    txt = str("".join(txt))
-    print(txt)
-    seq = tokenizer.texts_to_sequences(txt)
-    padded = pad_sequences(seq, maxlen=max_length)
-    print(padded)
-    pred = model.predict(padded)
-    labels = ["anger", "boredom", "empty", "enthusiasm", "fun", "happiness", "hate", "love", "neutral", "relief", "sadness", "surprise", "worry", "N/A"]
-    print(pred, labels[np.argmax(pred)])
+#while 1:
+#    txt = input("Write something: ")
+#    filtered_txt = filter(dd.filterpunct, txt)
+#    txt = list(filtered_txt)
+#    txt = str("".join(txt))
+#    print(txt)
+#    seq = tokenizer.texts_to_sequences(txt)
+#    padded = pad_sequences(seq, maxlen=max_length)
+#    print(padded)
+#    pred = model.predict(padded)
+#    labels = ["anger", "boredom", "empty", "enthusiasm", "fun", "happiness", "hate", "love", "neutral", "relief", "sadness", "surprise", "worry", "N/A"]
+#    print(pred, labels[np.argmax(pred)])
