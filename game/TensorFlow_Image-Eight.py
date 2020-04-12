@@ -32,7 +32,7 @@ import datadict as dd
 # Neural Network parameters
 
 vocab_size = 5000 # Size of the vocabulary I'll be using
-embedding_dim = 30
+embedding_dim = 64
 max_length = 30
 trunc_type = 'post'
 padding_type = 'post'
@@ -55,32 +55,36 @@ file_name = "text_emotion.csv" # The data file name
 messages = []
 labels = []
 
+# TESTING -- List of sentiments to append
+test_check = ["sadness", "neutral", "happiness"]
+
 # Opening the .csv data file
 with open(abs_location + file_location + file_name, 'r') as csvfile:
     reader = csv.reader(csvfile, delimiter=',')
     for row in reader:
-        labels.append(row[1]) # Appending the sentiment associated with the row itself
-        message = row[3]
-        #print("Input: " + message)             #   Debugging purposes
-        # Pre-tokenizing
-        tokens = word_tokenize(message)
-        # Making them lowercase
-        tokens = [w.lower() for w in tokens]
-        # Filtering the punctuations
-        table = str.maketrans('', '', string.punctuation)
-        stripped = [w.translate(table) for w in tokens]
-        # Filtering non-alphabetic characters
-        words = [word for word in stripped if word.isalpha()]
-        # Removing stopwords
-        stop_words = set(stopwords.words('english'))
-        words = [w for w in words if not w in stop_words]
-        # Stemming words (test)
-        porter = PorterStemmer()
-        stemmed = [porter.stem(word) for word in words]
-        # Joining the resulting string
-        message = " ".join(stemmed)
-        #print("Output: " + message + "\n")     #   Debugging purposes
-        messages.append(message)
+        if row[1] in test_check: # TESTING -- Cutting the size of the sentiments used, REMOVE ME
+            labels.append(row[1]) # Appending the sentiment associated with the row itself
+            message = row[3]
+            #print("Input: " + message)             #   Debugging purposes
+            # Pre-tokenizing
+            tokens = word_tokenize(message)
+            # Making them lowercase
+            tokens = [w.lower() for w in tokens]
+            # Filtering the punctuations
+            table = str.maketrans('', '', string.punctuation)
+            stripped = [w.translate(table) for w in tokens]
+            # Filtering non-alphabetic characters
+            words = [word for word in stripped if word.isalpha()]
+            # Removing stopwords
+            stop_words = set(stopwords.words('english'))
+            words = [w for w in words if not w in stop_words]
+            # Stemming words (test)
+            porter = PorterStemmer()
+            stemmed = [porter.stem(word) for word in words]
+            # Joining the resulting string
+            message = " ".join(stemmed)
+            #print("Output: " + message + "\n")     #   Debugging purposes
+            messages.append(message)
 
 # Shuffling the data
 print(len(labels))
@@ -129,10 +133,10 @@ model = tf.keras.Sequential([
                            output_dim=embedding_dim, 
                            input_length=max_length),
     layers.SpatialDropout1D(0.15),
-    layers.Bidirectional(layers.LSTM(25, return_sequences=True, dropout=0.15, recurrent_dropout=0.15)),
-    layers.Bidirectional(layers.LSTM(20, dropout=0.2, recurrent_dropout=0.2)),
-    layers.Dense(16, activation="tanh"),
-    layers.Dense(14, activation="softmax")
+    layers.Bidirectional(layers.LSTM(32, return_sequences=True, dropout=0.15, recurrent_dropout=0.15)),
+    layers.Bidirectional(layers.LSTM(16, dropout=0.2, recurrent_dropout=0.2)),
+    layers.Dense(8, activation="tanh"),
+    layers.Dense(4, activation="softmax")
 ])
 
 model.compile(loss='sparse_categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
