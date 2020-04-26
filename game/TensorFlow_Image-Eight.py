@@ -55,6 +55,27 @@ file_name = "text_emotion.csv" # The data file name
 messages = []
 labels = []
 
+def tokenizing_process(message):
+    # Pre-tokenizing
+    tokens = word_tokenize(message)
+    # Making them lowercase
+    tokens = [w.lower() for w in tokens]
+    # Filtering the punctuations
+    table = str.maketrans('', '', string.punctuation)
+    stripped = [w.translate(table) for w in tokens]
+    # Filtering non-alphabetic characters
+    words = [word for word in stripped if word.isalpha()]
+    # Removing stopwords
+    stop_words = set(stopwords.words('english'))
+    words = [w for w in words if not w in stop_words]
+    # Stemming words (test)
+    porter = PorterStemmer()
+    stemmed = [porter.stem(word) for word in words]
+    # Joining the resulting string
+    message = " ".join(stemmed)
+    #print("Output: " + message + "\n")     #   Debugging purposes
+    return message
+
 # TESTING -- List of sentiments to append
 test_check = ["sadness", "neutral", "happiness"]
 
@@ -66,34 +87,16 @@ with open(abs_location + file_location + file_name, 'r') as csvfile:
             labels.append(row[1]) # Appending the sentiment associated with the row itself
             message = row[3]
             #print("Input: " + message)             #   Debugging purposes
-            # Pre-tokenizing
-            tokens = word_tokenize(message)
-            # Making them lowercase
-            tokens = [w.lower() for w in tokens]
-            # Filtering the punctuations
-            table = str.maketrans('', '', string.punctuation)
-            stripped = [w.translate(table) for w in tokens]
-            # Filtering non-alphabetic characters
-            words = [word for word in stripped if word.isalpha()]
-            # Removing stopwords
-            stop_words = set(stopwords.words('english'))
-            words = [w for w in words if not w in stop_words]
-            # Stemming words (test)
-            porter = PorterStemmer()
-            stemmed = [porter.stem(word) for word in words]
-            # Joining the resulting string
-            message = " ".join(stemmed)
-            #print("Output: " + message + "\n")     #   Debugging purposes
-            messages.append(message)
+            messages.append(tokenizing_process(message))
 
 # Shuffling the data
-print(len(labels))
-print(len(messages))
+#print(len(labels)) # Number of labels
+#print(len(messages)) # Number of messages
 shuffling_var = list(zip(labels, messages))
 random.shuffle(shuffling_var)
 labels[:], messages[:] = zip(*shuffling_var)
-print(len(labels))
-print(len(messages))
+#print(len(labels)) # Number of labels comparison
+#print(len(messages)) # Number of messages comparison
 
 # Training and testing splitting
 
@@ -109,12 +112,11 @@ validation_labels = labels[train_size:]
 tokenizer = Tokenizer(num_words = vocab_size, oov_token=oov_tok)
 tokenizer.fit_on_texts(train_messages)
 word_index = tokenizer.word_index
-#print(dict(list(word_index.items())[0:100]))
+print(dict(list(word_index.items())[0:100]))
 
 # Making lists of tokens
 
 train_sequences = tokenizer.texts_to_sequences(train_messages)
-
 train_padded = pad_sequences(train_sequences, maxlen=max_length, padding=padding_type, truncating=trunc_type)
 
 validation_sequences = tokenizer.texts_to_sequences(validation_messages)
@@ -161,15 +163,12 @@ def plot_graphs(history, string):
 plot_graphs(history, "accuracy")
 plot_graphs(history, "loss")
 
-#while 1:
-#    txt = input("Write something: ")
-#    filtered_txt = filter(dd.filterpunct, txt)
-#    txt = list(filtered_txt)
-#    txt = str("".join(txt))
-#    print(txt)
-#    seq = tokenizer.texts_to_sequences(txt)
-#    padded = pad_sequences(seq, maxlen=max_length)
-#    print(padded)
-#    pred = model.predict(padded)
-#    labels = ["anger", "boredom", "empty", "enthusiasm", "fun", "happiness", "hate", "love", "neutral", "relief", "sadness", "surprise", "worry", "N/A"]
-#    print(pred, labels[np.argmax(pred)])
+while 1:
+    txt = input("Write something: ")
+    token_txt = tokenizing_process(txt)
+    print(token_txt)
+    seq = tokenizer.texts_to_sequences(token_txt)
+    padded = pad_sequences(seq, maxlen=max_length)
+    pred = model.predict(padded)
+    labels = ["sadness", "neutral", "happiness"]
+    print(pred, labels[np.argmax(3)])
