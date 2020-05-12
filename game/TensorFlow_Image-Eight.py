@@ -66,7 +66,7 @@ def tokenizing_process(message):
     # Filtering non-alphabetic characters
     words = [word for word in stripped if word.isalpha()]
     # Removing stopwords
-    stop_words = set(stopwords.words('english'))
+    stop_words = dd.stopwords
     words = [w for w in words if not w in stop_words]
     # Stemming words (test)
     porter = PorterStemmer()
@@ -167,8 +167,10 @@ while 1:
     txt = input("Write something: ")
     token_txt = tokenizing_process(txt)
     print(token_txt)
-    seq = tokenizer.texts_to_sequences(token_txt)
+    separated_token_txt = [token_txt]
+    seq = tokenizer.texts_to_sequences(separated_token_txt)
+    print(seq)
     padded = pad_sequences(seq, maxlen=max_length)
     pred = model.predict(padded)
     labels = ["sadness", "neutral", "happiness"]
-    print(pred, labels[np.argmax(3)])
+    print(pred, labels[np.argmax(pred)])
