@@ -66,7 +66,8 @@ def tokenizing_process(message):
     # Filtering non-alphabetic characters
     words = [word for word in stripped if word.isalpha()]
     # Removing stopwords
-    stop_words = dd.stopwords
+    #stop_words = dd.stopwords                      #Custom stopwords
+    stop_words = set(stopwords.words('english'))    #Premade stopwords
     words = [w for w in words if not w in stop_words]
     # Stemming words (test)
     porter = PorterStemmer()
@@ -77,14 +78,18 @@ def tokenizing_process(message):
     return message
 
 # TESTING -- List of sentiments to append
-test_check = ["sadness", "neutral", "happiness"]
-
+test_check = ["sadness", "neutral", "happiness", "fun", "worry", "boredom"]
 # Opening the .csv data file
 with open(abs_location + file_location + file_name, 'r') as csvfile:
     reader = csv.reader(csvfile, delimiter=',')
     for row in reader:
         if row[1] in test_check: # TESTING -- Cutting the size of the sentiments used, REMOVE ME
-            labels.append(row[1]) # Appending the sentiment associated with the row itself
+            if row[1] in ["sadness", "worry"]:
+                labels.append("sadness") # Appending the sentiment associated with the row itself
+            elif row[1] in ["neutral", "boredom"]:
+                labels.append("neutral") # Appending the sentiment associated with the row itself
+            elif row[1] in ["happiness", "fun"]:
+                labels.append("happiness") # Appending the sentiment associated with the row itself
             message = row[3]
             #print("Input: " + message)             #   Debugging purposes
             messages.append(tokenizing_process(message))
@@ -135,16 +140,15 @@ model = tf.keras.Sequential([
                            output_dim=embedding_dim, 
                            input_length=max_length),
     layers.SpatialDropout1D(0.15),
-    layers.Bidirectional(layers.LSTM(32, return_sequences=True, dropout=0.15, recurrent_dropout=0.15)),
-    layers.Bidirectional(layers.LSTM(16, dropout=0.2, recurrent_dropout=0.2)),
-    layers.Dense(8, activation="tanh"),
+    layers.Bidirectional(layers.LSTM(32, dropout=0.15, recurrent_dropout=0.15)),
+    #layers.Dense(8, activation="tanh"),
     layers.Dense(4, activation="softmax")
 ])
 
 model.compile(loss='sparse_categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
 model.summary()
 
-num_epochs = 10
+num_epochs = 25
 history = model.fit(train_padded, training_label_seq, epochs=num_epochs, validation_data=(validation_padded, validation_label_seq), verbose=2)
 loss, accuracy = model.evaluate(train_padded, training_label_seq, verbose=False)
 print("Training Accuracy: {:.4f}".format(accuracy))
