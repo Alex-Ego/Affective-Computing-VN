@@ -1,14 +1,9 @@
-
-########## Second attempt at actually using TensorFlow, let's go.
-
 #####
 ##  Setup
 #####
 
 # Tensorflow libraries
 from __future__ import absolute_import, division, print_function, unicode_literals
-
-import collections
 import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
@@ -16,6 +11,7 @@ import random
 import string
 
 from tensorflow.keras import layers
+import keras
 
 # Text processing tools
 
@@ -25,9 +21,9 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem.porter import PorterStemmer
 
-# My local functions that I've used previously
+# Functions to save models
 
-import datadict as dd
+import os
 
 # Neural Network parameters
 
@@ -44,7 +40,6 @@ random.seed(96024)
 # File setup
 
 import csv
-import os
 
 abs_location = os.path.dirname(os.path.abspath(__file__)) # Absolute path leading to the script file
 file_location = "/nndata/datasets/" # Path where the data files are
@@ -117,7 +112,7 @@ validation_labels = labels[train_size:]
 tokenizer = Tokenizer(num_words = vocab_size, oov_token=oov_tok)
 tokenizer.fit_on_texts(train_messages)
 word_index = tokenizer.word_index
-print(dict(list(word_index.items())[0:100]))
+# print(dict(list(word_index.items())[0:100]))
 
 # Making lists of tokens
 
@@ -164,17 +159,22 @@ def plot_graphs(history, string):
   plt.legend([string, 'val_'+string])
   plt.show()
   
-plot_graphs(history, "accuracy")
-plot_graphs(history, "loss")
+#plot_graphs(history, "accuracy")
+#plot_graphs(history, "loss")
 
-while 1:
-    txt = input("Write something: ")
-    token_txt = tokenizing_process(txt)
-    print(token_txt)
-    separated_token_txt = [token_txt]
-    seq = tokenizer.texts_to_sequences(separated_token_txt)
-    print(seq)
-    padded = pad_sequences(seq, maxlen=max_length)
-    pred = model.predict(padded)
-    labels = ["sadness", "neutral", "happiness"]
-    print(pred, labels[np.argmax(pred)])
+# Saving the model
+
+keras.models.save_model(model, "sentimental_analysis.hdf5")
+
+
+#while 1:
+#    txt = input("Write something: ")
+#    token_txt = tokenizing_process(txt)
+#    #print(token_txt)
+#    separated_token_txt = [token_txt]
+#    seq = tokenizer.texts_to_sequences(separated_token_txt)
+#    #print(seq)
+#    padded = pad_sequences(seq, maxlen=max_length)
+#    pred = model.predict(padded)
+#    labels = ["sadness", "neutral", "happiness"]
+#    print(pred, labels[np.argmax(pred)])
