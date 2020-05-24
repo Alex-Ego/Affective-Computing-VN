@@ -1,39 +1,30 @@
-import pygame as game
 import time
-import os
-
-# Initializing the pygame library
-game.init()
-
-# Paths to resources
-abs_location = os.path.dirname(os.path.abspath(__file__))
-font_location = "/fonts/"
-
-# Screen initialization
-game.display.init()
-X_size = 1280
-Y_size = 720
-screen_size = (X_size, Y_size)
-screen = game.display.set_mode(screen_size)
-game.display.set_caption("Sentiment Analysis beta ver.") 
+import VNCommands as VN
 
 # Screen color
-screen.fill((0,0,0))
-
-# Text Fonts declaration
-UI_Text = game.font.Font(abs_location + font_location + "Manjari-Regular.otf", 100)
+VN.screen.fill((0,0,0))
 
 # Drawing Text
-loading_text = UI_Text.render("Loading...", True, (255,255,255))
-loading_text_rec = loading_text.get_rect()
-loading_text_rec.center = (X_size//2, Y_size//2)
-screen.blit(loading_text, loading_text_rec)
+#VN.drawtext(VN.screen, VN.UI_Text, "Hope this works")
+Test = VN.Text(VN.screen, VN.UI_Text, "Loading...")
+Test.draw()
 
 # Updating the graphics
-game.display.update()
+VN.game.display.update()
 
-# Wait 10 secs
-time.sleep(10)
+for progress in range(101):
+    loading_progress = VN.Text(VN.screen, VN.UI_Text, str(progress) + "%", offset_y = 200)
+    loading_progress.draw(True)
+    time.sleep(.2)
+    loading_progress.erase()
 
-# Kill process
-game.display.quit()
+loading_progress = VN.Text(VN.screen, VN.UI_Text, "Done!", offset_y = 200)
+loading_progress.draw(True)
+time.sleep(3)
+
+sky_bg = VN.game.image.load(VN.os.path.join(VN.image_location, "sky2.png"))
+
+VN.game.display.update()
+time.sleep(5)
+
+VN.game.display.quit()
