@@ -123,18 +123,39 @@ class Image():
             game.display.update()
 
 class Scene():
-    def __init__(self, bg, actor):
-        self.bg = bg
-        self.actor = actor
+    def __init__(self, bg, actor, screen):
+        self.bg = Image(screen, bg)
+        self.bg_file = bg
+        self.actor = Image(screen, actor)
+        self.actor_file = actor
+        self.screen = screen
     
-    def say(self, dialogue, new_actor = None):
+    def show(self, bg = None, actor = None):
+        if bg is not None:
+            self.bg = Image(screen, bg)
         self.bg.draw()
-        if new_actor is not None:
-            self.actor = new_actor
+        if actor is not None:
+            self.actor = Image(screen, actor)
         self.actor.draw()
-        self.dialogue = dialogue
+    
+    def say(self, dialogue, new_actor = None, update = True):
+        if new_actor is not None:
+            self.actor = Image(self.screen, new_actor)
+            self.actor_file = new_actor
+        self.show(self.bg_file, self.actor_file)
+        self.dialogue = Text(screen, Dialogue_Text, dialogue, offset_y = 250)
+        self.dialogue_text = dialogue
         self.dialogue.draw(bg = True)
-        game.display.update()
+        if update == True:
+            game.display.update()
+    
+    def prompt(self, prompt, delete_dialogue = False):
+        self.prompt = Text(self.screen, UI_Text, prompt)
+        if delete_dialogue == True:
+            self.say("")
+        else:
+            self.say(self.dialogue_text, update = False)
+        self.prompt.draw(bg = True, update = True)
 
 # Types of fonts being used in this whole project
 UI_Text = Text_Type("Manjari-Regular.otf", 100)

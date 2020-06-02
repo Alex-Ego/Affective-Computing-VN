@@ -141,10 +141,10 @@ model = tf.keras.Sequential([
 ])
 
 model.compile(loss='sparse_categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
-model.summary()
+#model.summary()
 
 num_epochs = 25
-history = model.fit(train_padded, training_label_seq, epochs=num_epochs, validation_data=(validation_padded, validation_label_seq), verbose=2)
+history = model.fit(train_padded, training_label_seq, epochs=num_epochs, validation_data=(validation_padded, validation_label_seq), verbose=1)
 loss, accuracy = model.evaluate(train_padded, training_label_seq, verbose=False)
 print("Training Accuracy: {:.4f}".format(accuracy))
 loss, accuracy = model.evaluate(validation_padded, validation_label_seq, verbose=False)
@@ -159,22 +159,24 @@ def plot_graphs(history, string):
   plt.legend([string, 'val_'+string])
   plt.show()
   
-#plot_graphs(history, "accuracy")
-#plot_graphs(history, "loss")
+plot_graphs(history, "accuracy")
+plot_graphs(history, "loss")
 
-# Saving the model
+# Saving the model and the tokenizer
+model_location = os.path.join(abs_location, "nndata/model")
+keras.models.save_model(model, model_location + "/sentimental_analysis.hdf5")
+with open(model_location + "/tokens.txt", "w") as f:
+    f.write(tokenizer.to_json())
+    f.close()
 
-keras.models.save_model(model, "sentimental_analysis.hdf5")
-
-
-#while 1:
-#    txt = input("Write something: ")
-#    token_txt = tokenizing_process(txt)
-#    #print(token_txt)
-#    separated_token_txt = [token_txt]
-#    seq = tokenizer.texts_to_sequences(separated_token_txt)
-#    #print(seq)
-#    padded = pad_sequences(seq, maxlen=max_length)
-#    pred = model.predict(padded)
-#    labels = ["sadness", "neutral", "happiness"]
-#    print(pred, labels[np.argmax(pred)])
+while 1:
+    txt = input("Write something: ")
+    token_txt = tokenizing_process(txt)
+    #print(token_txt)
+    separated_token_txt = [token_txt]
+    seq = tokenizer.texts_to_sequences(separated_token_txt)
+    #print(seq)
+    padded = pad_sequences(seq, maxlen=max_length)
+    pred = model.predict(padded)
+    labels = ["sadness", "neutral", "happiness"]
+    print(pred, labels[np.argmax(pred)])

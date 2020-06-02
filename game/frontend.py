@@ -1,5 +1,6 @@
 import time
 import VNCommands as VN
+import sentiment_analysis as SA
 
 # Screen color
 VN.screen.fill((0,0,0))
@@ -20,17 +21,12 @@ for progress in range(101):
     
 time.sleep(3)
 loading_progress.refresh("Done!", update = True)
-time.sleep(3)
+time.sleep(5)
 
-sky_bg = VN.Image(VN.screen, "sky2.png", pos = VN.position.center)
-assistant = VN.Image(VN.screen, "assistant neutral.png", pos = VN.position.center)
-time.sleep(1)
-sky = VN.Scene(sky_bg, assistant)
-dialogue = VN.Text(VN.screen, VN.Dialogue_Text, "Alright, let's do this one more time.", offset_y = 250)
-sky.say(dialogue)
+conversation = VN.Scene("sky2.png", "assistant neutral.png", VN.screen)
+conversation.say("Alright, let's do this one more time.")
 time.sleep(3)
-dialogue.refresh("Are you ready?")
-sky.say(dialogue)
+conversation.say("Are you ready?", "assistant thumbs up.png")
 time.sleep(3)
 # prompt = VN.Text(VN.screen, VN.UI_Text, "Type in console.", pos = VN.position.center)
 while True:
@@ -38,12 +34,16 @@ while True:
     for event in events:
         if event.type == VN.game.QUIT:
             exit()
-    dialogue.refresh("")
-    sky.say(dialogue)
+    conversation.say("", "assistant neutral.png")
+    conversation.say("Write on console.")
     userinput = input("Say something: ")
     if userinput:
-        dialogue.refresh("Hey, I heard that!")
-        sky.say(dialogue)
-    #dialogue.refresh("What the fuck")
-    #sky.say(dialogue)
+        score = SA.evaluation(userinput)
+        if score == "happiness":
+            conversation.say("Hey, that's pretty good!", "assistant thumbs up.png")
+        if score == "neutral":
+            conversation.say("Ah, is that so?")
+        if score == "sadness":
+            conversation.say("Don't be sad!", "assistant sad.png")
+
     time.sleep(3)

@@ -1,23 +1,19 @@
 
 import os
+from tensorflow.keras.models import load_model
 import numpy as np
-from tensorflow.keras.preprocessing.text import Tokenizer
+import keras
+import tensorflow as tf
+
 from tensorflow.keras.preprocessing.sequence import pad_sequences
-
-import string
-
-# Text processing tools
-
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem.porter import PorterStemmer
 
-from tensorflow.keras.models import load_model
-
+import string
 
 abs_location = os.path.dirname(os.path.abspath(__file__))
 
-model = load_model(abs_location + "/nndata/model/sentimental_analysis.hdf5")
 
 vocab_size = 5000 # Size of the vocabulary I'll be using
 embedding_dim = 64
@@ -25,6 +21,10 @@ max_length = 30
 trunc_type = 'post'
 padding_type = 'post'
 oov_tok = '<OOV>'
+
+#tokenizer = Tokenizer(num_words = vocab_size, oov_token=oov_tok)
+
+tf.autograph.set_verbosity(0)
 
 def tokenizing_process(message):
     # Pre-tokenizing
@@ -48,17 +48,17 @@ def tokenizing_process(message):
     #print("Output: " + message + "\n")     #   Debugging purposes
     return message
 
-tokenizer = Tokenizer(num_words = vocab_size, oov_token=oov_tok)
-
-def evaluation(txt):
+def evaluation(txt, max_length = max_length):
+    model = load_model(abs_location + "/nndata/model/sentimental_analysis.hdf5")
     token_txt = tokenizing_process(txt)
-    #print(token_txt)
     separated_token_txt = [token_txt]
+    with open(abs_location + "/nndata/model/tokens.txt", "r") as f:
+        json_string = f.readline()
+    tokenizer = keras.preprocessing.text.tokenizer_from_json(json_string)
     seq = tokenizer.texts_to_sequences(separated_token_txt)
-    #print(seq)
     padded = pad_sequences(seq, maxlen=max_length)
     pred = model.predict(padded)
     labels = ["sadness", "neutral", "happiness"]
-    print(pred, labels[np.argmax(pred)])
-    
-evaluation("Hello, I'm happy to be here")
+    #print(pred, labels[np.argmax(pred)])
+    print(labels[np.argmax(pred)])
+    return(labels[np.argmax(pred)])
