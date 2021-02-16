@@ -1,0 +1,34 @@
+\begin{thebibliography}{2}
+\ProvideTextCommand{\guillemotleft}{OT1}{%
+  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
+\ProvideTextCommand{\guillemotright}{OT1}{%
+  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\gg$}}
+\newcommand{\enquote}[1]{\guillemotleft#1\guillemotright}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\selectlanguage}[1]{\relax}
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+\providecommand{\bibAnnoteFile}[1]{%
+  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
+\providecommand{\bibAnnote}[2]{%
+  \begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ #2\end{quotation}}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Elliott \textit{et al.}(2011)Elliott, Bohart, Watson y
+  Greenberg}]{rf1}
+\textsc{Elliott, R.}, \textsc{A.~C. Bohart}, \textsc{J.~C. Watson} y
+  \textsc{L.~S. Greenberg} (2011), \enquote{Empathy.}, \textit{Psychotherapy},
+  \textbf{48}, p\'ags. 1--2.
+\bibAnnoteFile{rf1}
+
+\bibitem[{Preston y de~Waal(2002)}]{rf2}
+\textsc{Preston, S.~D.} y \textsc{F.~de~Waal} (2002), \enquote{The
+  communication of emotions and the possibility of empathy in animals.}, ,
+  p\'ags. 2--3.
+\bibAnnoteFile{rf2}
+
+\end{thebibliography}
