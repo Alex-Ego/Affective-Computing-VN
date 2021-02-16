@@ -13,7 +13,13 @@
 \usepackage{graphicx}
 \usepackage{pdflscape}
 \usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
 \usepackage[bottom]{footmisc}
+\usepackage{float}
+\usepackage{footmisc}
+\usepackage{adjustbox}
+\usepackage{tikz}
 
 \setlength{\footnotesep}{0.5cm}
 \setlength\footnotemargin{3pt}
@@ -31,7 +37,7 @@
 % En caso de que el grado tenga orientación o especialidad llenar el siguiente
 % campo dejando un ESPACIO INICIAL, en caso contrario, dejar vacío
 \def\orientacion{}
-\def\fecha{Agosto 2020} % Coloca el mes con mayúscula inicial
+\def\fecha{Agosto 2021} % Coloca el mes con mayúscula inicial
 
 \def\asesor{Dra. Satu Elisa Schaeffer}
 \def\revisorA{Nombre del revisor A}
@@ -82,8 +88,8 @@
 %%% alguno de los archivos de estilo (mighelbib.bst o mighelnat.bst) incluidos
 %%% en el paquete, cuyos diseños armonizan con el diseño de tesis provisto por
 %%% fime.cls. Para muestra, basta un botón:
-\bibliographystyle{mighelbib}
-\bibliography{MiBiblio}
+\bibliographystyle{mighelnat}
+\bibliography{biblio}
 
 \label{lastpage}
 \include{Autobiografia}

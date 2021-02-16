@@ -7,6 +7,9 @@ traceback.txt
 /game/*.rpyc
 /game/*.pyc
 
+# Cache files from python
+/game/__pycache__/*
+
 # This folder contains the raw datasets, useful but they're too heavy to track.
 /datasets/*
 

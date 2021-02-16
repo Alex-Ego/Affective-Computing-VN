@@ -24,6 +24,10 @@ oov_tok = '<OOV>'
 
 #tokenizer = Tokenizer(num_words = vocab_size, oov_token=oov_tok)
 
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+
 tf.autograph.set_verbosity(0)
 
 def tokenizing_process(message):
