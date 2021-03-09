@@ -1,4 +1,4 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{3}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -24,6 +24,12 @@
   \textsc{L.~S. Greenberg} (2011), \enquote{Empathy.}, \textit{Psychotherapy},
   \textbf{48}, p\'ags. 1--2.
 \bibAnnoteFile{rf1}
+
+\bibitem[{Kumar y Teeja(2012)}]{rf3}
+\textsc{Kumar, A.} y \textsc{M.~S. Teeja} (2012), \enquote{Sentiment analysis:
+  A perspective on its past, present and future}, \textit{International Journal
+  of Intelligent Systems and Applications}, \textbf{4}(10), p\'ags. 2--4.
+\bibAnnoteFile{rf3}
 
 \bibitem[{Preston y de~Waal(2002)}]{rf2}
 \textsc{Preston, S.~D.} y \textsc{F.~de~Waal} (2002), \enquote{The
