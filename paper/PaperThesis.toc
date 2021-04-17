@@ -1,7 +1,7 @@
 \contentsline {chapter}{Agradecimientos}{vii}{chapter*.4}%
 \contentsline {chapter}{Resumen}{viii}{chapter*.5}%
 \contentsline {paragraph}{\numberline {0.0.0.0.1}Objetivos y método de estudio:}{viii}{paragraph.0.0.0.0.1}%
-\contentsline {paragraph}{\numberline {0.0.0.0.2}Contribuciones y conlusiones:}{viii}{paragraph.0.0.0.0.2}%
+\contentsline {paragraph}{\numberline {0.0.0.0.2}Contribuciones y conlusiones:}{ix}{paragraph.0.0.0.0.2}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Motivation}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Hypothesis}{2}{section.1.2}%
@@ -11,3 +11,4 @@
 \contentsline {section}{\numberline {1.4}Structure}{3}{section.1.4}%
 \contentsline {chapter}{\numberline {2}Sentiment Analysis}{4}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Concept}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Possible Usages}{5}{section.2.2}%

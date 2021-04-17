@@ -2,9 +2,16 @@
 Sentiment Analysis (or Opinion Mining, as it is also known) as a tool for data analysis is arguably a recent happening. The term was coined in 2003 and has evolved ever since \citep{rf3}.
 This type of data analysis has a lot of potential usages that have yet to be implemented in the daily life.
 
-
 \section{Concept}
-At first, I wanted to create an algorithm that could serve as a makeshift therapy chatbot that people could use when they were confused about their own feelings, but as time has passed, a lot of things have happened in my life regarding people with close-to-none empathy.
-This project could prove especially useful towards people who have trouble discerning when to console someone or having an idea of how other people or even themselves feel, such as the case of people with Asperger's Syndrome or other forms of high-functioning autism.
-To this end, I've decided to work on this project.
+The specific execution of the algorithm varies depending on the intended purpose, but the concept and process that is used is generally the same:
+\begin{itemize}
+	\item The sentence to analyze is broken down to its component parts, this process is called \textit{tokenization}, and the resulting products are called, fittingly, \textit{tokens}.
+	\item Every token is then tagged, making it part of an internal dictionary or \textit{lexicon}
+	\item A score is assigned to every token depending on the used dataset.
+\end{itemize}
+The end score could be left as-is or can be reintroduced to the algorithm for a multi-layered approach depending on its focus. \citep{rf4}
+
+\section{Possible Usages}
+
+
 \clearpage

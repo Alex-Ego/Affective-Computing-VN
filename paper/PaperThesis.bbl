@@ -1,4 +1,4 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{4}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -17,6 +17,13 @@
   \begin{quotation}\noindent\textsc{Key:} #1\\
   \textsc{Annotation:}\ #2\end{quotation}}
 \providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Appel \textit{et al.}(2015)Appel, Chiclana y Carter}]{rf4}
+\textsc{Appel, O.}, \textsc{F.~Chiclana} y \textsc{J.~Carter} (2015),
+  \enquote{Main concepts, state of the art and future research questions in
+  sentiment analysis}, \textit{Acta Polytechnica Hungarica}, \textbf{12}(3),
+  p\'ags. 89--91.
+\bibAnnoteFile{rf4}
 
 \bibitem[{Elliott \textit{et al.}(2011)Elliott, Bohart, Watson y
   Greenberg}]{rf1}
