@@ -1,4 +1,4 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{6}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -37,6 +37,21 @@
   A perspective on its past, present and future}, \textit{International Journal
   of Intelligent Systems and Applications}, \textbf{4}(10), p\'ags. 2--4.
 \bibAnnoteFile{rf3}
+
+\bibitem[{Morris \textit{et al.}(2018)Morris, Kouddous, Kshirsagar y
+  Schueller}]{rf6}
+\textsc{Morris, R.~R.}, \textsc{K.~Kouddous}, \textsc{R.~Kshirsagar} y
+  \textsc{S.~M. Schueller} (2018), \enquote{Towards an Artificially Empathic
+  Conversational Agent for Mental Health Applications: System Design and User
+  Perceptions}, \textit{J Med Internet Res}, \textbf{20}(6), p\'ag. e10\,148,
+  \urlprefix\url{http://www.jmir.org/2018/6/e10148/}.
+\bibAnnoteFile{rf6}
+
+\bibitem[{Pang \textit{et al.}(2002)Pang, Lee y Vaithyanathan}]{rf5}
+\textsc{Pang, B.}, \textsc{L.~Lee} y \textsc{S.~Vaithyanathan} (2002),
+  \enquote{Thumbs up? Sentiment classification using machine learning
+  techniques}, \textit{arXiv preprint cs/0205070}.
+\bibAnnoteFile{rf5}
 
 \bibitem[{Preston y de~Waal(2002)}]{rf2}
 \textsc{Preston, S.~D.} y \textsc{F.~de~Waal} (2002), \enquote{The

@@ -9,48 +9,52 @@ A level-1 auxiliary file: Capitulo2.aux
 The style file: mighelnat.bst
 A level-1 auxiliary file: Autobiografia.aux
 Database file #1: biblio.bib
+Warning--I'm ignoring rf6's extra "url" field
+--line 64 of file biblio.bib
+Warning--I'm ignoring rf6's extra "url" field
+--line 66 of file biblio.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty journal in rf2
-You've used 4 entries,
+You've used 6 entries,
             3461 wiz_defined-function locations,
-            694 strings with 5987 characters,
-and the built_in function-call counts, 3965 in all, are:
-= -- 403
-> -- 107
-< -- 6
-+ -- 49
-- -- 33
-* -- 266
-:= -- 419
-add.period$ -- 4
-call.type$ -- 4
-change.case$ -- 27
-chr.to.int$ -- 4
-cite$ -- 9
-duplicate$ -- 411
-empty$ -- 252
-format.name$ -- 49
-if$ -- 791
+            709 strings with 6485 characters,
+and the built_in function-call counts, 5814 in all, are:
+= -- 573
+> -- 174
+< -- 7
++ -- 77
+- -- 54
+* -- 406
+:= -- 629
+add.period$ -- 6
+call.type$ -- 6
+change.case$ -- 42
+chr.to.int$ -- 6
+cite$ -- 13
+duplicate$ -- 596
+empty$ -- 376
+format.name$ -- 76
+if$ -- 1164
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 46
-newline$ -- 37
-num.names$ -- 16
-pop$ -- 130
+missing$ -- 69
+newline$ -- 45
+num.names$ -- 24
+pop$ -- 191
 preamble$ -- 1
-purify$ -- 27
+purify$ -- 42
 quote$ -- 0
-skip$ -- 239
+skip$ -- 336
 stack$ -- 0
-substring$ -- 172
-swap$ -- 326
-text.length$ -- 4
+substring$ -- 250
+swap$ -- 462
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 36
+type$ -- 54
 warning$ -- 1
-while$ -- 28
+while$ -- 37
 width$ -- 0
-write$ -- 66
-(There was 1 warning)
+write$ -- 90
+(There were 3 warnings)
