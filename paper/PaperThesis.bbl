@@ -1,4 +1,4 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{7}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -24,6 +24,13 @@
   sentiment analysis}, \textit{Acta Polytechnica Hungarica}, \textbf{12}(3),
   p\'ags. 89--91.
 \bibAnnoteFile{rf4}
+
+\bibitem[{Calefato \textit{et al.}(2019)Calefato, Lanubile y Novielli}]{rf7}
+\textsc{Calefato, F.}, \textsc{F.~Lanubile} y \textsc{N.~Novielli} (2019),
+  \enquote{{Experimental datasets for sentiment analysis and emotion mining -
+  Emotion Mining Toolkit (EMTk)}},
+  \urlprefix\url{https://doi.org/10.5281/zenodo.2575509}.
+\bibAnnoteFile{rf7}
 
 \bibitem[{Elliott \textit{et al.}(2011)Elliott, Bohart, Watson y
   Greenberg}]{rf1}

@@ -1,7 +1,7 @@
-\contentsline {chapter}{Agradecimientos}{vii}{chapter*.4}%
-\contentsline {chapter}{Resumen}{viii}{chapter*.5}%
-\contentsline {paragraph}{\numberline {0.0.0.0.1}Objetivos y método de estudio:}{viii}{paragraph.0.0.0.0.1}%
-\contentsline {paragraph}{\numberline {0.0.0.0.2}Contribuciones y conlusiones:}{ix}{paragraph.0.0.0.0.2}%
+\contentsline {chapter}{Agradecimientos}{viii}{chapter*.4}%
+\contentsline {chapter}{Resumen}{ix}{chapter*.5}%
+\contentsline {paragraph}{\numberline {0.0.0.0.1}Objetivos y método de estudio:}{ix}{paragraph.0.0.0.0.1}%
+\contentsline {paragraph}{\numberline {0.0.0.0.2}Contribuciones y conlusiones:}{x}{paragraph.0.0.0.0.2}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Motivation}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Hypothesis}{2}{section.1.2}%
@@ -11,5 +11,8 @@
 \contentsline {section}{\numberline {1.4}Structure}{3}{section.1.4}%
 \contentsline {chapter}{\numberline {2}Sentiment Analysis}{4}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Concept}{4}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Similar Applications}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Datasets}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.2}Tokenizing}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Similar Applications}{5}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Project Development}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Datasets}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Algorithm Used}{7}{section.3.2}%

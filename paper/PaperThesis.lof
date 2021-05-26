@@ -3,3 +3,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Screenshot of the Koko app, obtained from \url {https://www.koko.ai/} on 04/21/2021}}{5}{figure.2.1}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Accuracy Graph of the Algorithm Training}}{8}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Loss Graph of the Algorithm Training}}{8}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Debugging of the Trained Model}}{9}{figure.3.3}%

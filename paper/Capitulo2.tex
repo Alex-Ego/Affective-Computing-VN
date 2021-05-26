@@ -1,6 +1,7 @@
 \chapter{Sentiment Analysis}
 Sentiment Analysis (or Opinion Mining, as it is also known) as a tool for data analysis is arguably a recent happening. The term was coined in 2003 and has evolved ever since \citep{rf3}.
 This type of data analysis has a lot of potential usages that have yet to be implemented in the daily life.
+In this chapter, some concept will be explained for easier comprehension of this paper as a whole.
 
 \section{Concept}
 The specific execution of the algorithm varies depending on the intended purpose, but the concept and process that is used is generally the same:
@@ -11,6 +12,8 @@ The specific execution of the algorithm varies depending on the intended purpose
 \end{itemize}
 The end score could be left as-is or can be reintroduced to the algorithm for a multi-layered approach depending on its focus. \citep{rf4}
 
+\section{Tokenizing}
+
 \section{Similar Applications}
 The algorithm proposed on this paper is, of course, not the only sentiment analysis application by a long stretch. There are many applications that already apply this kind of Machine Learning for several purposes, like Movie Review algorithms detecting sentiment from IMDB \citep{rf5}, or Koko, which uses the OpenAI API which is a counseling app for distressed teenagers \citep{rf6}.
 \begin{figure}[h]
@@ -19,9 +22,6 @@ The algorithm proposed on this paper is, of course, not the only sentiment analy
 	\caption{Screenshot of the Koko app, obtained from \url{https://www.koko.ai/} on 04/21/2021}
 	\label{fig:koko}
 \end{figure}
-
-
-\section{Datasets}
-There are several datasets on the internet, but none of them have the amount of sheer volume and data that is required.
+It's important to mention GPT-3 as a whole as well, which, to date, it's one of the most impressive AI algorithm to be developed, the downsides being that it's still in beta phase, it's super resource-heavy, and its access is reserved to businesses through a fee, very expensive to use for the general public, especially students as myself. That's why in this paper, regular Tensorflow is used, which is free to use, doesn't need a lot of resources to work and it's portable once it's trained.
 
 \clearpage
