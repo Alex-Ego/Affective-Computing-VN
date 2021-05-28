@@ -6,6 +6,9 @@ This dataset, paired with NLTK processing, stopwords and truncating words and ve
 This is not really a good number for such a small amount of labels, but it's an improvement nonetheless. Previous versions with different approaches, combination of layers and datasets had less than 20\% of accuracy.
 \pagebreak
 
+\subsection{Pre-filtering}
+Since the dataset that was chosen was imported straight from Twitter with little to no filtering, some cleanup had to be done to ensure peak performance.
+
 \section{Algorithm Used}
 A standard LSTM algorithm was used with a softmax activation end layer. After much, much testing \textit{rmsprop} was chosen as the optimizer because of its slightly better results.
 \begin{figure}[!h]
@@ -27,6 +30,8 @@ A standard LSTM algorithm was used with a softmax activation end layer. After mu
 
 \section{Interface}
 Originally, \textit{Ren'py}\footnote{An open-source Python framework focused mostly in the development of visual novels and other videogame formats. \url{https://www.renpy.org/}} was the chosen framework for this project's interface to work with, but -- unfortunately for the proposed usage -- it only works with Python 2.7, which makes it incompatible with TensorFlow 2.0. Making a bridge between Python 2 and 3 would inevitably generate more issues that would take more time to solve, so it was scrapped in favor of the \textit{pygame} library.
+\pagebreak
+
 \begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.3]{Ren'py}
@@ -39,6 +44,27 @@ Originally, \textit{Ren'py}\footnote{An open-source Python framework focused mos
 	\caption{Reacting positively to an user's feedback}
 	\label{fig:renpy_test_2}
 \end{figure}
-As for the character that's being used, it's also gone through some changes. Originally the idea was to make a low-poly character render to work with, but since 3D modeling-from-scratch skills exceed the scope of this paper, an alternative software was selected instead. Namely \textit{VRoid}.
+
+\pagebreak
+As for the character that's being used, it's also gone through some changes. Originally the idea was to make a low-poly character render to work with, but since 3D modeling-from-scratch skills exceed the scope of this paper, an alternative software was selected instead. Namely \textit{VRoid}.\\
+The main purpose for this assistant is to make the user feel like it's her that they're talking to and not to some faceless machine, while also making it easier to the eyes. A more realistic, less animated style could have been used, but a friendly, less prone to uncanny valley approach to the design was opted for with this in mind.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=.5]{Assistant_1}
+	\caption{First attempt at 3D modeling an assistant.}
+	\label{fig:assistant1}
+\end{figure}
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=.25]{Assistant_2}
+	\caption{Assistant Ver. 2, now using VRoid.}
+	\label{fig:assistant2}
+\end{figure}
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=.25]{Assistant_3}
+	\caption{Assistant Ver. 3, the current design.}
+	\label{fig:assistant3}
+\end{figure}
 
 

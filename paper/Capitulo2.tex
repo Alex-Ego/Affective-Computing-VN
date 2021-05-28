@@ -18,7 +18,26 @@ Tokenizing is the process that happens while making tokens, the way it works is 
 \fbox{This is an example text}
 \end{center}
 
-We can tell there are 6 words in the example phrase.
+We can tell there are 6 words in the example phrase. So the tokenizing process would make the example look in the following way:
+\begin{center}
+\fbox{1,	2,	3,	4,	5,	6}
+\end{center}
+
+Where 1 corresponds to the word "This", 2 corresponds to "is", 3 to "an" and so on.
+
+The interesting part about this process would happen if we used another example phrase, like the following:
+\begin{center}
+\fbox{This is another example}
+\end{center}
+
+If we did the tokenization process, it would be processed in this way:
+\begin{center}
+\fbox{1,	2,	7,	4}
+\end{center}
+
+Since the internal lexicon already knows some of the words in this second example, it reuses their token, adding new ones (in this example, "another" is 7) if needed.\\
+
+This is fairly useful for a machine learning algorithm, since it won't have to compare such massive amount of characters in a string each time, and it would only need to evaluate integers. Whether it's frequency or comparison.
 
 \section{Similar Applications}
 The algorithm proposed on this paper is, of course, not the only sentiment analysis application by a long stretch. There are many applications that already apply this kind of Machine Learning for several purposes, like Movie Review algorithms detecting sentiment from IMDB \citep{rf5}, or Koko, which uses the OpenAI API which is a counseling app for distressed teenagers \citep{rf6}.

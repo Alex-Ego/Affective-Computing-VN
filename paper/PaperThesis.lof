@@ -4,8 +4,11 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Screenshot of the Koko app, obtained from \url {https://www.koko.ai/} on 04/21/2021}}{6}{figure.2.1}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Accuracy Graph of the Algorithm Training}}{8}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Loss Graph of the Algorithm Training}}{8}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Debugging of the Trained Model}}{9}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces First version of the interface using Ren'py}}{10}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Reacting positively to an user's feedback}}{10}{figure.3.5}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Accuracy Graph of the Algorithm Training}}{10}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Loss Graph of the Algorithm Training}}{10}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Debugging of the Trained Model}}{11}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces First version of the interface using Ren'py}}{12}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Reacting positively to an user's feedback}}{12}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces First attempt at 3D modeling an assistant.}}{13}{figure.3.6}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Assistant Ver. 2, now using VRoid.}}{14}{figure.3.7}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Assistant Ver. 3, the current design.}}{14}{figure.3.8}%
