@@ -8,7 +8,17 @@ This is not really a good number for such a small amount of labels, but it's an 
 
 \subsection{Pre-filtering}
 Since the dataset that was chosen was imported straight from Twitter with little to no filtering, some cleanup had to be done to ensure peak performance.
-The first problem was the punctuation marks, which were easy to filter out. The issues came after this with the so-called stopwords, which are words that don't really contribute to the overall meaning of the text. Luckily, NLTK\footnote{Natural Language Toolkit, tool used specifically for these case scenarios. \url{https://www.nltk.org/}} has its own repository of these words, so it was implemented. There was also an issue where verbs in different tenses were evaluated very differently, so a  stemmer was implemented, which truncated words to its most basic features (aptly named stems) and boosted performance.
+The first problem was the punctuation marks, which were easy to filter out. The issues came after this with the so-called stopwords, which are words that don't really contribute to the overall meaning of the text. Luckily, NLTK\footnote{Natural Language Toolkit, tool used specifically for these case scenarios. \url{https://www.nltk.org/}} has its own repository of these words, so it was implemented. There was also an issue where verbs in different tenses were evaluated very differently, so a  stemmer was implemented, which truncated words to its most basic features (aptly named stems) and prevented the loss to keep rising that much between epochs.
+\pagebreak
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.6]{Accuracy 2020-05_nofilter}
+	\caption{Accuracy Graph of the Algorithm Training on May 2020, with no NLTK stemming}
+	\label{fig:accuracy2020_nofilter}
+	\includegraphics[scale=0.6]{Loss 2021-05}
+	\caption{Loss Graph of the Algorithm Training on May 2020, with no NLTK stemming}
+	\label{fig:loss2020_nofilter}
+\end{figure}
 
 \subsection{Filtering}
 The dataset itself has several different sentiment labels to analyze, the ones being considered in the scope of this paper are:
@@ -36,11 +46,11 @@ The training consists in 25 epochs on 75\% of the dataset on a random arbitrary 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.6]{Accuracy 2021-05}
-	\caption{Accuracy Graph of the Algorithm Training}
-	\label{fig:accuracy}
+	\caption{Accuracy Graph of the Algorithm Training on May 2021}
+	\label{fig:accuracy2021}
 	\includegraphics[scale=0.6]{Loss 2021-05}
-	\caption{Loss Graph of the Algorithm Training}
-	\label{fig:loss}
+	\caption{Loss Graph of the Algorithm Training on May 2021}
+	\label{fig:loss2021}
 \end{figure}
 \begin{figure}[!h]
 	\centering
@@ -68,6 +78,8 @@ Originally, \textit{Ren'py}\footnote{An open-source Python framework focused mos
 \end{figure}
 
 \pagebreak
+
+\subsection{Assistant}
 As for the character that's being used, it's also gone through some changes. Originally the idea was to make a low-poly character render to work with, but since 3D modeling-from-scratch skills exceed the scope of this paper, an alternative software was selected instead. Namely \textit{VRoid}.\\
 The main purpose for this assistant is to make the user feel like it's her that they're talking to and not to some faceless machine, while also making it easier to the eyes. A more realistic, less animated style could have been used, but a friendly, less prone to uncanny valley approach to the design was opted for with this in mind.
 \begin{figure}[!ht]
