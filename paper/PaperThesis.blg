@@ -6,6 +6,7 @@ A level-1 auxiliary file: Agradecimientos.aux
 A level-1 auxiliary file: Resumen.aux
 A level-1 auxiliary file: Capitulo1.aux
 A level-1 auxiliary file: Capitulo2.aux
+A level-1 auxiliary file: Capitulo3.aux
 The style file: mighelnat.bst
 A level-1 auxiliary file: Autobiografia.aux
 Database file #1: biblio.bib
@@ -19,7 +20,7 @@ Warning--empty journal in rf7
 Warning--empty journal in rf2
 You've used 7 entries,
             3461 wiz_defined-function locations,
-            715 strings with 6688 characters,
+            716 strings with 6701 characters,
 and the built_in function-call counts, 6395 in all, are:
 = -- 610
 > -- 203

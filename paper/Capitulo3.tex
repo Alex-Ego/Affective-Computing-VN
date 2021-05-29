@@ -8,9 +8,31 @@ This is not really a good number for such a small amount of labels, but it's an 
 
 \subsection{Pre-filtering}
 Since the dataset that was chosen was imported straight from Twitter with little to no filtering, some cleanup had to be done to ensure peak performance.
+The first problem was the punctuation marks, which were easy to filter out. The issues came after this with the so-called stopwords, which are words that don't really contribute to the overall meaning of the text. Luckily, NLTK\footnote{Natural Language Toolkit, tool used specifically for these case scenarios. \url{https://www.nltk.org/}} has its own repository of these words, so it was implemented. There was also an issue where verbs in different tenses were evaluated very differently, so a  stemmer was implemented, which truncated words to its most basic features (aptly named stems) and boosted performance.
+
+\subsection{Filtering}
+The dataset itself has several different sentiment labels to analyze, the ones being considered in the scope of this paper are:
+\begin{itemize}
+	\item Sadness
+	\item Neutral
+	\item Happiness
+	\item Fun
+	\item Worry
+	\item Boredom
+\end{itemize}
+But since they're not evenly distributed, leaving them as-is led to very inaccurate results, so a generalistic approach was opted for, classifying the end results in "Good", "Neutral" and "Bad" depending on the overall wellness of the user.
+This final filter works only with the training data, and works as follows:
+\begin{itemize}
+	\item Sadness and Worry go in the "Bad" category.
+	\item Neutral and Boredom go in the "Neutral" category.
+	\item Happiness and Fun go in the "Good" category
+\end{itemize}
+Using a more complicated classification process would take an even amount of data in every category. Which, at the time of writing, there isn't a dataset readily available.
 
 \section{Algorithm Used}
-A standard LSTM algorithm was used with a softmax activation end layer. After much, much testing \textit{rmsprop} was chosen as the optimizer because of its slightly better results.
+A bidirectional LSTM algorithm was used with a softmax activation end layer. After much, much testing \textit{rmsprop} was chosen as the optimizer because of its slightly better results overall.
+The internal lexicon is limited to 5000 items, and the maximum length of any given phrase after filtering is 30 characters.
+The training consists in 25 epochs on 75\% of the dataset on a random arbitrary order, using the remaining 25\% for validation instead.
 \begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.6]{Accuracy 2021-05}

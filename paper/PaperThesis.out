@@ -15,5 +15,6 @@
 \BOOKMARK [0][-]{chapter.3}{Project Development}{}% 15
 \BOOKMARK [1][-]{section.3.1}{Datasets}{chapter.3}% 16
 \BOOKMARK [2][-]{subsection.3.1.1}{Pre-filtering}{section.3.1}% 17
-\BOOKMARK [1][-]{section.3.2}{Algorithm Used}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.3}{Interface}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.1.2}{Filtering}{section.3.1}% 18
+\BOOKMARK [1][-]{section.3.2}{Algorithm Used}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.3}{Interface}{chapter.3}% 20
