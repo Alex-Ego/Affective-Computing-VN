@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.1)  31 MAY 2021 12:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.1)  18 AUG 2021 17:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -813,13 +813,7 @@ File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ]
 \openout2 = `Agradecimientos.aux'.
 
- (./Agradecimientos.tex)
-Overfull \hbox (7.60027pt too wide) in paragraph at lines 12--71
-[]\T1/cmr/m/n/12 Agradezco tam-bién al Fondo Sec-to-rial de In-ves-ti-gación Am
--bi-en-tal, SEMARNAT-
- []
-
-[8
+ (./Agradecimientos.tex) [8
 
 
 ]
@@ -829,37 +823,23 @@ Overfull \hbox (7.60027pt too wide) in paragraph at lines 12--71
 
 
 
-]) [10]
+])
+[10]
 \openout2 = `Capitulo1.aux'.
 
  (./Capitulo1.tex
 Chapter 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
-
- []
-
 [1
 
 
 
 
-] [2] [3] [4])
+] [2] [3])
 \openout2 = `Capitulo2.aux'.
 
  (./Capitulo2.tex
 Chapter 2.
-[5
+[4
 
 
 
@@ -869,41 +849,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-<Figures/koko_screenshot.png, id=247, 492.84125pt x 651.43375pt>
+<Figures/koko_screenshot.png, id=242, 492.84125pt x 651.43375pt>
 File: Figures/koko_screenshot.png Graphic file (type png)
 <use Figures/koko_screenshot.png>
 Package pdftex.def Info: Figures/koko_screenshot.png  used on input line 46.
 (pdftex.def)             Requested size: 246.42001pt x 325.71606pt.
-[6] [7pdfTeX warning (ext4): destination with the same identifier (name{figure.
+[5] [6pdfTeX warning (ext4): destination with the same identifier (name{figure.
 2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.51 
-      <./Figures/koko_screenshot.png>] [8])
+l.52 
+      <./Figures/koko_screenshot.png>] [7])
 \openout2 = `Capitulo3.aux'.
 
  (./Capitulo3.tex
 Chapter 3.
-[9
+[8
 
 
 
 
 ]
-<Figures/Accuracy 2020-05_nofilter.png, id=277, 462.528pt x 346.896pt>
-File: Figures/Accuracy 2020-05_nofilter.png Graphic file (type png)
-<use Figures/Accuracy 2020-05_nofilter.png>
-Package pdftex.def Info: Figures/Accuracy 2020-05_nofilter.png  used on input l
-ine 15.
+<Figures/Accuracy 2020-05.png, id=271, 462.528pt x 346.896pt>
+File: Figures/Accuracy 2020-05.png Graphic file (type png)
+<use Figures/Accuracy 2020-05.png>
+Package pdftex.def Info: Figures/Accuracy 2020-05.png  used on input line 15.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
-<Figures/Loss 2021-05.png, id=278, 462.528pt x 346.896pt>
-File: Figures/Loss 2021-05.png Graphic file (type png)
-<use Figures/Loss 2021-05.png>
-Package pdftex.def Info: Figures/Loss 2021-05.png  used on input line 18.
+<Figures/Loss 2020-05.png, id=272, 462.528pt x 346.896pt>
+File: Figures/Loss 2020-05.png Graphic file (type png)
+<use Figures/Loss 2020-05.png>
+Package pdftex.def Info: Figures/Loss 2020-05.png  used on input line 18.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
- [10] [11pdfTeX warning (ext4): destination with the same identifier (name{figu
-re.3.1}) has been already used, duplicate ignored
+ [9] [10pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.3.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -914,27 +893,28 @@ l.26 	\item S
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.26 	\item S
-             adness <./Figures/Accuracy 2020-05_nofilter.png> <./Figures/Loss 2
-021-05.png>]
-<Figures/Accuracy 2021-05.png, id=294, 462.528pt x 346.896pt>
+             adness <./Figures/Accuracy 2020-05.png> <./Figures/Loss 2020-05.pn
+g>]
+<Figures/Accuracy 2021-05.png, id=289, 462.528pt x 346.896pt>
 File: Figures/Accuracy 2021-05.png Graphic file (type png)
 <use Figures/Accuracy 2021-05.png>
 Package pdftex.def Info: Figures/Accuracy 2021-05.png  used on input line 48.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
+<Figures/Loss 2021-05.png, id=290, 462.528pt x 346.896pt>
 File: Figures/Loss 2021-05.png Graphic file (type png)
 <use Figures/Loss 2021-05.png>
 Package pdftex.def Info: Figures/Loss 2021-05.png  used on input line 51.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
-<Figures/Test 2021-05.png, id=295, 825.0825pt x 534.99875pt>
+<Figures/Test 2021-05.png, id=291, 825.0825pt x 534.99875pt>
 File: Figures/Test 2021-05.png Graphic file (type png)
 <use Figures/Test 2021-05.png>
 Package pdftex.def Info: Figures/Test 2021-05.png  used on input line 57.
 (pdftex.def)             Requested size: 330.02715pt x 213.9957pt.
- [12]
+ [11]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3
+[12pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -946,25 +926,25 @@ l.62
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.62 
-      <./Figures/Accuracy 2021-05.png>] [14pdfTeX warning (ext4): destination w
-ith the same identifier (name{figure.3.5}) has been already used, duplicate ign
-ored
+      <./Figures/Accuracy 2021-05.png> <./Figures/Loss 2021-05.png>] [13pdfTeX 
+warning (ext4): destination with the same identifier (name{figure.3.5}) has bee
+n already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.66 
       <./Figures/Test 2021-05.png>]
-<Figures/Ren'py.png, id=314, 1304.875pt x 777.90625pt>
+<Figures/Ren'py.png, id=311, 1304.875pt x 777.90625pt>
 File: Figures/Ren'py.png Graphic file (type png)
 <use Figures/Ren'py.png>
 Package pdftex.def Info: Figures/Ren'py.png  used on input line 69.
 (pdftex.def)             Requested size: 391.46552pt x 233.37367pt.
-<Figures/Ren'py_2.png, id=315, 1304.875pt x 777.90625pt>
+<Figures/Ren'py_2.png, id=312, 1304.875pt x 777.90625pt>
 File: Figures/Ren'py_2.png Graphic file (type png)
 <use Figures/Ren'py_2.png>
 Package pdftex.def Info: Figures/Ren'py_2.png  used on input line 75.
 (pdftex.def)             Requested size: 391.46552pt x 233.37367pt.
- [15pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+ [14pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -977,22 +957,22 @@ l.82
                                                   \fi \fi 
 l.82 
       <./Figures/Ren'py.png> <./Figures/Ren'py_2.png>]
-<Figures/Assistant_1.png, id=323, 517.18219pt x 520.94624pt>
+<Figures/Assistant_1.png, id=319, 517.18219pt x 520.94624pt>
 File: Figures/Assistant_1.png Graphic file (type png)
 <use Figures/Assistant_1.png>
 Package pdftex.def Info: Figures/Assistant_1.png  used on input line 88.
 (pdftex.def)             Requested size: 258.59045pt x 260.47249pt.
-<Figures/Assistant_2.png, id=324, 829.0975pt x 1081.03876pt>
+<Figures/Assistant_2.png, id=320, 829.0975pt x 1081.03876pt>
 File: Figures/Assistant_2.png Graphic file (type png)
 <use Figures/Assistant_2.png>
 Package pdftex.def Info: Figures/Assistant_2.png  used on input line 94.
 (pdftex.def)             Requested size: 207.27386pt x 270.25902pt.
-<Figures/Assistant_3.png, id=325, 720.6925pt x 1084.05pt>
+<Figures/Assistant_3.png, id=321, 720.6925pt x 1084.05pt>
 File: Figures/Assistant_3.png Graphic file (type png)
 <use Figures/Assistant_3.png>
 Package pdftex.def Info: Figures/Assistant_3.png  used on input line 100.
 (pdftex.def)             Requested size: 180.17268pt x 271.01184pt.
-) [16pdfTeX warning (ext4): destination with the same identifier (name{figure.3
+) [15pdfTeX warning (ext4): destination with the same identifier (name{figure.3
 .8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1000,9 +980,9 @@ Package pdftex.def Info: Figures/Assistant_3.png  used on input line 100.
 l.80 \include{Capitulo3}
                          <./Figures/Assistant_1.png>]
 
-LaTeX Warning: Text page 17 contains only floats.
+LaTeX Warning: Text page 16 contains only floats.
 
-[17pdfTeX warning (ext4): destination with the same identifier (name{figure.3.9
+[16pdfTeX warning (ext4): destination with the same identifier (name{figure.3.9
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1015,14 +995,14 @@ fier (name{figure.3.10}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.80 \include{Capitulo3}
                          <./Figures/Assistant_2.png> <./Figures/Assistant_3.png
->] (./PaperThesis.bbl) [18
+>] (./PaperThesis.bbl) [17
 
 
 
 ]
 \openout2 = `Autobiografia.aux'.
 
- (./Autobiografia.tex) [19
+ (./Autobiografia.tex) [18
 
 
 ]
@@ -1038,11 +1018,11 @@ Package rerunfilecheck Info: File `PaperThesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 100.
  ) 
 Here is how much of TeX's memory you used:
- 19036 strings out of 481239
- 346300 string characters out of 5920378
+ 19041 strings out of 481239
+ 346374 string characters out of 5920378
  588151 words of memory out of 5000000
- 33739 multiletter control sequences out of 15000+600000
- 549949 words of font info for 67 fonts, out of 8000000 for 9000
+ 33745 multiletter control sequences out of 15000+600000
+ 549177 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,8n,60p,711b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
@@ -1060,13 +1040,13 @@ super/sfcc1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc2488.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fon
 ts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></
-usr/share/texmf/fonts/type1/public/cm-super/sfrm2488.pfb></usr/share/texmf/font
-s/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-su
-per/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on PaperThesis.pdf (29 pages, 3945710 bytes).
+usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/font
+s/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-su
+per/sftt1200.pfb>
+Output written on PaperThesis.pdf (28 pages, 3948185 bytes).
 PDF statistics:
- 417 PDF objects out of 1000 (max. 8388607)
- 343 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 500000)
- 241 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 411 PDF objects out of 1000 (max. 8388607)
+ 337 compressed objects within 4 object streams
+ 77 named destinations out of 1000 (max. 500000)
+ 246 words of extra memory for PDF output out of 10000 (max. 10000000)
 
