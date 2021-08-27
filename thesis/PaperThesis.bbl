@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{9}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -24,6 +24,10 @@
   sentiment analysis}, \textit{Acta Polytechnica Hungarica}, \textbf{12}(3),
   p\'ags. 89--91.
 \bibAnnoteFile{rf4}
+
+\bibitem[{Ayodele(2010)}]{rf9}
+\textsc{Ayodele, T.~O.} (2010), \enquote{Introduction to Machine Learning}, .
+\bibAnnoteFile{rf9}
 
 \bibitem[{Calefato \textit{et al.}(2019)Calefato, Lanubile y Novielli}]{rf7}
 \textsc{Calefato, F.}, \textsc{F.~Lanubile} y \textsc{N.~Novielli} (2019),
@@ -65,5 +69,10 @@
   communication of emotions and the possibility of empathy in animals.}, ,
   p\'ags. 2--3.
 \bibAnnoteFile{rf2}
+
+\bibitem[{Zhang(2020)}]{rf8}
+\textsc{Zhang, X.-D.} (2020), \enquote{Machine learning}, en \textit{A Matrix
+  Algebra Approach to Artificial Intelligence}, Springer, p\'ags. 223--440.
+\bibAnnoteFile{rf8}
 
 \end{thebibliography}

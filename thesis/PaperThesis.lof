@@ -2,15 +2,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Screenshot of the Koko app, obtained from \url {https://www.koko.ai/} on 04/21/2021}}{6}{figure.2.1}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Screenshot of the Koko app, obtained from \url {https://www.koko.ai/} on 04/21/2021}}{8}{figure.2.1}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Accuracy Graph of the Algorithm Training on May 2020, with no NLTK stemming}}{10}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Loss Graph of the Algorithm Training on May 2020, with no NLTK stemming}}{10}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Accuracy Graph of the Algorithm Training on May 2021}}{12}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Loss Graph of the Algorithm Training on May 2021}}{12}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Debugging of the Trained Model}}{13}{figure.3.5}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces First version of the interface using Ren'py}}{14}{figure.3.6}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Reacting positively to text in the ``Good'' category}}{14}{figure.3.7}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces First attempt at 3D modeling an assistant.}}{15}{figure.3.8}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Assistant Ver. 2, now using VRoid.}}{16}{figure.3.9}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Assistant Ver. 3, the current design.}}{16}{figure.3.10}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Accuracy Graph of the Algorithm Training on May 2020, with no NLTK stemming}}{11}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Loss Graph of the Algorithm Training on May 2020, with no NLTK stemming}}{11}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Accuracy Graph of the Algorithm Training on May 2021}}{13}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Loss Graph of the Algorithm Training on May 2021}}{13}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Debugging of the Trained Model}}{14}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces First version of the interface using Ren'py}}{15}{figure.3.6}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Reacting positively to text in the ``Good'' category}}{15}{figure.3.7}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces First attempt at 3D modeling an assistant.}}{16}{figure.3.8}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Assistant Ver. 2, now using VRoid.}}{17}{figure.3.9}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Assistant Ver. 3, the current design.}}{17}{figure.3.10}%

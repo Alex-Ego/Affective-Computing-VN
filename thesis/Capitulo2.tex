@@ -1,9 +1,27 @@
-\chapter{Sentiment Analysis}
+\chapter{Background}
+Technology in the past decades has been advancing exponentially. So much, in fact, that we can relegate data analysis to them for better accuracy and reliability than what a human can possibly achieve. This is what it's called Machine Learning (sometimes referred only as ML)
+There's a variety of scenarios where it comes in handy, such as pattern recognition, which relates extensively to most of this project's work.\\
+In this chapter, some key concepts will be explained for easier comprehension of this thesis and the project itself as a whole.
+
+\section{Machine Learning}
+Machine learning can be described, broadly and figuratively speaking, as a black box where some data is inserted as an input and numbers come out of it as an output \citep{rf8}.
+Some more advanced models of ML allow some internal parameters inside this figurative black box to be able to be tampered with, so that some characteristics of the input data can have effect on the output, these parameters are called \textit{weights} \citep{rf9}.
+Most ML algorithms have two stages: training and validation:
+\begin{itemize}
+\item Training processes the inputs and makes educated guesses, and in case of guessing incorrectly, depending on the obtained result, the weights are changed accordingly.
+\item Validation is as simple as it sounds, some input is fed to the algorithm and information needs to be compared to the real results to test the accuracy percentage.
+\end{itemize}
+One of these models that is one of the most used nowadays is the one called \textit{Neural Network}.
+
+\subsection{Neural Network}
+A neural network works by using \textit{neurons}, they utilize layers that individually weigh the input given to them from the initial text or, if this has been processed already, from another neuron \citep{rf9}.
+Likewise, similar to how biological brains work, these algorithms can only predict reliably if given enough data to train and validate their outputs with.
+
+\section{Sentiment Analysis}
 Sentiment Analysis (or Opinion Mining, as it is also known) as a tool for data analysis is arguably a recent happening. The term was coined in 2003 and has evolved ever since \citep{rf3}.
 This type of data analysis has a lot of potential usages that have yet to be implemented in the daily life.
-In this chapter, some concept will be explained for easier comprehension of this paper as a whole.
 
-\section{Concept}
+\subsection{Concept}
 The specific execution of the algorithm varies depending on the intended purpose, but the concept and process that is used is generally the same:
 \begin{itemize}
 	\item The sentence to analyze is broken down to its component parts, this process is called \textit{tokenization}, and the resulting products are called, fittingly, \textit{tokens}.
@@ -12,7 +30,7 @@ The specific execution of the algorithm varies depending on the intended purpose
 \end{itemize}
 The end score could be left as-is or can be reintroduced to the algorithm for a multi-layered approach depending on its focus. \citep{rf4}
 
-\section{Tokenizing}
+\subsection{Tokenizing}
 Tokenizing is the process that happens while making tokens, the way it works is very straightforward: every word in the lexicon that a machine can read is assigned a number for easier reading. Let's take the following example:
 \begin{center}
 \fbox{This is an example text}
@@ -43,7 +61,7 @@ This is fairly useful for a machine learning algorithm, since it won't have to c
 The algorithm proposed on this paper is, of course, not the only sentiment analysis application by a long stretch. There are many applications that already apply this kind of Machine Learning for several purposes, like Movie Review algorithms detecting sentiment from IMDB \citep{rf5}, or Koko, which uses the OpenAI API which is a counseling app for distressed teenagers \citep{rf6}.
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.5]{koko_screenshot}
+	\includegraphics[scale=0.4]{koko_screenshot}
 	\caption{Screenshot of the Koko app, obtained from \url{https://www.koko.ai/} on 04/21/2021}
 	\label{fig:koko}
 \end{figure}

@@ -16,47 +16,48 @@ Warning--I'm ignoring rf6's extra "url" field
 --line 66 of file biblio.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty journal in rf9
 Warning--empty journal in rf7
 Warning--empty journal in rf2
-You've used 7 entries,
+You've used 9 entries,
             3461 wiz_defined-function locations,
-            716 strings with 6701 characters,
-and the built_in function-call counts, 6395 in all, are:
-= -- 610
-> -- 203
-< -- 7
-+ -- 87
-- -- 63
-* -- 461
-:= -- 713
-add.period$ -- 7
-call.type$ -- 7
-change.case$ -- 49
-chr.to.int$ -- 7
-cite$ -- 16
-duplicate$ -- 648
-empty$ -- 422
-format.name$ -- 88
-if$ -- 1274
+            727 strings with 6869 characters,
+and the built_in function-call counts, 7969 in all, are:
+= -- 778
+> -- 225
+< -- 10
++ -- 101
+- -- 69
+* -- 538
+:= -- 881
+add.period$ -- 9
+call.type$ -- 9
+change.case$ -- 59
+chr.to.int$ -- 9
+cite$ -- 21
+duplicate$ -- 822
+empty$ -- 542
+format.name$ -- 96
+if$ -- 1601
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 79
-newline$ -- 49
-num.names$ -- 28
-pop$ -- 217
+missing$ -- 96
+newline$ -- 57
+num.names$ -- 36
+pop$ -- 274
 preamble$ -- 1
-purify$ -- 49
+purify$ -- 59
 quote$ -- 0
-skip$ -- 353
+skip$ -- 468
 stack$ -- 0
-substring$ -- 261
-swap$ -- 483
-text.length$ -- 5
+substring$ -- 339
+swap$ -- 603
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 63
-warning$ -- 2
-while$ -- 40
+type$ -- 81
+warning$ -- 3
+while$ -- 50
 width$ -- 0
-write$ -- 101
-(There were 4 warnings)
+write$ -- 124
+(There were 5 warnings)
