@@ -2,7 +2,7 @@
 
 \section{Datasets}
 There are several datasets on the internet, but none of them have the amount of sheer volume and actually useful data that is required for this task. The closest available was used, however, and it brought relatively acceptable levels of accuracy \citep{rf7}.
-This dataset, paired with NLTK processing, stopwords and truncating words and verbs commonly used in the English language, was able to pinpoint if the user had a positive, neutral or a negative feeling in their input about 40\% of the time, approximately.
+This dataset, paired with NLTK processing, stopwords and truncating words and verbs commonly used in the English language, was able to pinpoint if the input had a positive, neutral or a negative feeling about 40\% of the time, approximately.
 This is not really a good number for such a small amount of labels, but it's an improvement nonetheless. Previous versions with different approaches, combination of layers and datasets had less than 20\% of accuracy.
 \pagebreak
 
@@ -30,7 +30,7 @@ The dataset itself has several different sentiment labels to analyze, the ones b
 	\item Worry
 	\item Boredom
 \end{itemize}
-But since they're not evenly distributed, leaving them as-is led to very inaccurate results, so a generalistic approach was opted for, classifying the end results in "Good", "Neutral" and "Bad" depending on the overall wellness of the user.
+But since they're not evenly distributed, leaving them as-is led to very inaccurate results, so a generalistic approach was opted for, classifying the end results in "Good", "Neutral" and "Bad" depending on the overall wellness percieved from the input.
 This final filter works only with the training data, and works as follows:
 \begin{itemize}
 	\item Sadness and Worry are in the "Bad" category.
@@ -73,16 +73,16 @@ Originally, \textit{Ren'py}\footnote{An open-source Python framework focused mos
 \begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.3]{Ren'py_2}
-	\caption{Reacting positively to an user's feedback}
+	\caption{Reacting positively to text in the ``Good'' category}
 	\label{fig:renpy_test_2}
 \end{figure}
 
-The current interface is a hybrid between a Pygame screen, where the assistant appears to react to the user's input, and the console, where the user inputs texts to be analyzed.
+The current interface is a hybrid between a Pygame screen, where the assistant appears to react to the input, and the console, where a person can input text to be analyzed.
 \pagebreak
 
 \subsection{Assistant}
 As for the character that's being used, it's also gone through some changes. Originally the idea was to make a low-poly character render to work with, but since 3D modeling-from-scratch skills exceed the scope of this paper, an alternative software was selected instead. Namely \textit{VRoid}.\\
-The main purpose for this assistant is to make the user feel like it's her that they're talking to and not to some faceless machine, while also making it easier to the eyes. A more realistic, less animated style could have been used, but a friendly, less prone to uncanny valley approach to the design was opted for with this in mind.
+The main purpose for this assistant is to make people feel like it's her that they're talking to and not to some faceless machine, while also making it easier to the eyes. A more realistic, less animated style could have been used, but a friendly, less prone to uncanny valley approach to the design was opted for with this in mind.
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[scale=.5]{Assistant_1}

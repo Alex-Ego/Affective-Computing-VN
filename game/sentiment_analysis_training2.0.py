@@ -151,25 +151,42 @@ validation_label_seq = np.array(label_tokenizer.texts_to_sequences(validation_la
 # Building the model
 
 model = tf.keras.Sequential([
+    tf.keras.layers.Embedding(vocab_size, 4),
+    tf.keras.layers.Conv1D(128, 5, activation="relu"),
+    tf.keras.layers.GlobalAveragePooling1D(),
+    tf.keras.layers.Dense(64, activation="relu"),
+    tf.keras.layers.Dense(4, activation="softmax")
+    ])
+model.summary()
+model.compile(loss="sparse_categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
+NUM_EPOCHS = 200
+#model.fit(train_padded, training_label_seq, epochs=NUM_EPOCHS)
+history = model.fit(train_padded, training_label_seq, epochs=NUM_EPOCHS
+ , validation_data=(train_padded, training_label_seq))
+model.evaluate(train_padded, training_label_seq)
+
+""" model = tf.keras.Sequential([
     layers.Embedding(input_dim=vocab_size, 
                            output_dim=embedding_dim, 
                            input_length=max_length),
-    layers.SpatialDropout1D(0.15),
+    layers.Conv1D(128, 5, activation="relu"),
+    #layers.GlobalAveragePooling1D(),
+    #layers.SpatialDropout1D(0.15),
     layers.Bidirectional(layers.LSTM(32, dropout=0.15, recurrent_dropout=0.15)),
-    #layers.Dense(8, activation="tanh"),
+    layers.Dense(64, activation="tanh"),
     layers.Dense(4, activation="softmax")
 ])
 
-model.compile(loss='sparse_categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
+model.compile(loss='categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
 #model.summary()
 
-num_epochs = 25
+num_epochs = 100
 history = model.fit(train_padded, training_label_seq, epochs=num_epochs, validation_data=(validation_padded, validation_label_seq), verbose=1)
 loss, accuracy = model.evaluate(train_padded, training_label_seq, verbose=False)
 print("Training Accuracy: {:.4f}".format(accuracy))
 loss, accuracy = model.evaluate(validation_padded, validation_label_seq, verbose=False)
 print("Testing Accuracy:  {:.4f}".format(accuracy))
-
+ """
 
 def plot_graphs(history, string):
   plt.plot(history.history[string])
@@ -184,7 +201,7 @@ plot_graphs(history, "loss")
 
 # Saving the model and the tokenizer
 model_location = os.path.join(abs_location, "nndata/model")
-keras.models.save_model(model, model_location + "/sentimental_analysis.hdf5")
+keras.models.save_model(model, model_location + "/sentimental_analysis2.hdf5")
 with open(model_location + "/tokens.txt", "w") as f:
     f.write(tokenizer.to_json())
     f.close()

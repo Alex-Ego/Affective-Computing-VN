@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.1)  18 AUG 2021 17:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.1)  27 AUG 2021 01:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -779,32 +779,27 @@ File: Figures/fime-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figures/fime-eps-converted-to.pdf  used on input line 
 48.
 (pdftex.def)             Requested size: 107.44698pt x 142.26378pt.
-[2 <./Figures/fime-eps-converted-to.pdf>]
-Overfull \hbox (13.98709pt too wide) in paragraph at lines 103--116
- [][] 
- []
-
-) [3] (./PaperThesis.toc [4
+[2 <./Figures/fime-eps-converted-to.pdf>]) [3] (./PaperThesis.toc [4
 
 
 ])
 \tf@toc=\write5
 \openout5 = `PaperThesis.toc'.
 
- [5] (./PaperThesis.lof
+ [5]
+(./PaperThesis.lof
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
 .
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ))
 \tf@lof=\write6
 \openout6 = `PaperThesis.lof'.
 
- [6
 
-]
-(./PaperThesis.lot)
+[6
+
+] (./PaperThesis.lot)
 \tf@lot=\write7
 \openout7 = `PaperThesis.lot'.
 
@@ -871,12 +866,12 @@ Chapter 3.
 
 
 ]
-<Figures/Accuracy 2020-05.png, id=271, 462.528pt x 346.896pt>
+<Figures/Accuracy 2020-05.png, id=270, 462.528pt x 346.896pt>
 File: Figures/Accuracy 2020-05.png Graphic file (type png)
 <use Figures/Accuracy 2020-05.png>
 Package pdftex.def Info: Figures/Accuracy 2020-05.png  used on input line 15.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
-<Figures/Loss 2020-05.png, id=272, 462.528pt x 346.896pt>
+<Figures/Loss 2020-05.png, id=271, 462.528pt x 346.896pt>
 File: Figures/Loss 2020-05.png Graphic file (type png)
 <use Figures/Loss 2020-05.png>
 Package pdftex.def Info: Figures/Loss 2020-05.png  used on input line 18.
@@ -895,17 +890,17 @@ l.26 	\item S
 l.26 	\item S
              adness <./Figures/Accuracy 2020-05.png> <./Figures/Loss 2020-05.pn
 g>]
-<Figures/Accuracy 2021-05.png, id=289, 462.528pt x 346.896pt>
+<Figures/Accuracy 2021-05.png, id=288, 462.528pt x 346.896pt>
 File: Figures/Accuracy 2021-05.png Graphic file (type png)
 <use Figures/Accuracy 2021-05.png>
 Package pdftex.def Info: Figures/Accuracy 2021-05.png  used on input line 48.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
-<Figures/Loss 2021-05.png, id=290, 462.528pt x 346.896pt>
+<Figures/Loss 2021-05.png, id=289, 462.528pt x 346.896pt>
 File: Figures/Loss 2021-05.png Graphic file (type png)
 <use Figures/Loss 2021-05.png>
 Package pdftex.def Info: Figures/Loss 2021-05.png  used on input line 51.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
-<Figures/Test 2021-05.png, id=291, 825.0825pt x 534.99875pt>
+<Figures/Test 2021-05.png, id=290, 825.0825pt x 534.99875pt>
 File: Figures/Test 2021-05.png Graphic file (type png)
 <use Figures/Test 2021-05.png>
 Package pdftex.def Info: Figures/Test 2021-05.png  used on input line 57.
@@ -934,12 +929,12 @@ n already used, duplicate ignored
                                                   \fi \fi 
 l.66 
       <./Figures/Test 2021-05.png>]
-<Figures/Ren'py.png, id=311, 1304.875pt x 777.90625pt>
+<Figures/Ren'py.png, id=310, 1304.875pt x 777.90625pt>
 File: Figures/Ren'py.png Graphic file (type png)
 <use Figures/Ren'py.png>
 Package pdftex.def Info: Figures/Ren'py.png  used on input line 69.
 (pdftex.def)             Requested size: 391.46552pt x 233.37367pt.
-<Figures/Ren'py_2.png, id=312, 1304.875pt x 777.90625pt>
+<Figures/Ren'py_2.png, id=311, 1304.875pt x 777.90625pt>
 File: Figures/Ren'py_2.png Graphic file (type png)
 <use Figures/Ren'py_2.png>
 Package pdftex.def Info: Figures/Ren'py_2.png  used on input line 75.
@@ -957,17 +952,17 @@ l.82
                                                   \fi \fi 
 l.82 
       <./Figures/Ren'py.png> <./Figures/Ren'py_2.png>]
-<Figures/Assistant_1.png, id=319, 517.18219pt x 520.94624pt>
+<Figures/Assistant_1.png, id=318, 517.18219pt x 520.94624pt>
 File: Figures/Assistant_1.png Graphic file (type png)
 <use Figures/Assistant_1.png>
 Package pdftex.def Info: Figures/Assistant_1.png  used on input line 88.
 (pdftex.def)             Requested size: 258.59045pt x 260.47249pt.
-<Figures/Assistant_2.png, id=320, 829.0975pt x 1081.03876pt>
+<Figures/Assistant_2.png, id=319, 829.0975pt x 1081.03876pt>
 File: Figures/Assistant_2.png Graphic file (type png)
 <use Figures/Assistant_2.png>
 Package pdftex.def Info: Figures/Assistant_2.png  used on input line 94.
 (pdftex.def)             Requested size: 207.27386pt x 270.25902pt.
-<Figures/Assistant_3.png, id=321, 720.6925pt x 1084.05pt>
+<Figures/Assistant_3.png, id=320, 720.6925pt x 1084.05pt>
 File: Figures/Assistant_3.png Graphic file (type png)
 <use Figures/Assistant_3.png>
 Package pdftex.def Info: Figures/Assistant_3.png  used on input line 100.
@@ -1015,12 +1010,16 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 100.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 100.
 Package rerunfilecheck Info: File `PaperThesis.out' has not changed.
 (rerunfilecheck)             Checksum: 02266BCC7C29E86212FED1A025B18CAD;1219.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 100.
  ) 
 Here is how much of TeX's memory you used:
  19041 strings out of 481239
  346374 string characters out of 5920378
- 588151 words of memory out of 5000000
+ 588185 words of memory out of 5000000
  33745 multiletter control sequences out of 15000+600000
  549177 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1043,10 +1042,10 @@ uper/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></
 usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/font
 s/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sftt1200.pfb>
-Output written on PaperThesis.pdf (28 pages, 3948185 bytes).
+Output written on PaperThesis.pdf (28 pages, 3948780 bytes).
 PDF statistics:
- 411 PDF objects out of 1000 (max. 8388607)
- 337 compressed objects within 4 object streams
+ 410 PDF objects out of 1000 (max. 8388607)
+ 336 compressed objects within 4 object streams
  77 named destinations out of 1000 (max. 500000)
  246 words of extra memory for PDF output out of 10000 (max. 10000000)
 
