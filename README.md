@@ -23,10 +23,10 @@ This repository has all the files needed to run the algorithm, and the thesis it
 
 ```bash
 # Running the frontend, should be straight-forward.
-$ python3 frontend.py
+$ python3 game/frontend.py
 
 # In case you need to retrain it.
-$ python3 sentiment_analysis_training.py
+$ python3 game/sentiment_analysis_training.py
 ```
  [LiThe]: <https://github.com/Alex-Ego/Affective-Computing-VN/tree/master/thesis>
  [LiGame]: <https://github.com/Alex-Ego/Affective-Computing-VN/tree/master/game>
