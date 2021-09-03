@@ -236,53 +236,53 @@ FUNCTION {space.word}
  % \ProvidesFile{spanish.mbs}[2003/11/06 4.2 (PWD/TB)]
  % The language selected here is SPANISH
 FUNCTION {bbl.and}
-{ "y"}
+{ "and"}
 FUNCTION {bbl.etal}
 { "et al." }
 FUNCTION {bbl.editors}
-{ "editores" }
+{ "editors" }
 FUNCTION {bbl.editor}
 { "editor" }
 FUNCTION {bbl.edby}
-{ "editado por" }
+{ "edited by" }
 FUNCTION {bbl.edition}
-{ "edici\'on" }
+{ "edition" }
 FUNCTION {bbl.volume}
-{ "tomo" }
+{ "volume" }
 FUNCTION {bbl.of}
-{ "de" }
+{ "of" }
 FUNCTION {bbl.number}
-{ "n\'umero" }
+{ "number" }
 FUNCTION {bbl.nr}
-{ "n\raise1ex\hbox{\underbar{\scriptsize o}}" }
+{ "number" }
 FUNCTION {bbl.in}
-{ "en" }
+{ "in" }
 FUNCTION {bbl.pages}
-{ "p\'ags." }
+{ "pages" }
 FUNCTION {bbl.page}
-{ "p\'ag." }
+{ "page" }
 FUNCTION {bbl.eidpp}
-{ "p\'aginas" }
+{ "pages" }
 FUNCTION {bbl.chapter}
-{ "cap\'{\i}tulo" }
+{ "chapter" }
 FUNCTION {bbl.techrep}
-{ "Informe T\'ecnico" }
+{ "Tech Report" }
 FUNCTION {bbl.mthesis}
-{ "Tesis de Maestría" }
+{ "Master Thesis" }
 FUNCTION {bbl.phdthesis}
-{ "Tesis Doctoral" }
+{ "PhD. Thesis" }
 FUNCTION {bbl.first}
-{ "primera" }
+{ "first" }
 FUNCTION {bbl.second}
-{ "segunda" }
+{ "second" }
 FUNCTION {bbl.third}
-{ "tercera" }
+{ "third" }
 FUNCTION {bbl.fourth}
-{ "cuarta" }
+{ "fourth" }
 FUNCTION {bbl.fifth}
-{ "quinta" }
+{ "fifth" }
 FUNCTION {bbl.th}
-{ "\raise1ex\hbox{\underbar{\scriptsize a}}" }
+{ "th" }
 MACRO {jan} {"enero"}
 MACRO {feb} {"febrero"}
 MACRO {mar} {"marzo"}
