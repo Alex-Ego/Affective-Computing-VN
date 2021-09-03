@@ -15,3 +15,6 @@ traceback.txt
 
 # Not mine, so I can put it on there
 /paper_test/*
+
+# Books aren't supposed to go on Github
+/books/*
