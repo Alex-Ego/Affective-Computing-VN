@@ -20,10 +20,12 @@
 \contentsline {section}{\numberline {3.1}Related Projects}{8}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Similar Approaches}{8}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Sentiment Analysis in Other Areas}{9}{subsection.3.1.2}%
-\contentsline {chapter}{\numberline {4}Project Development}{10}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Datasets}{10}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Pre-filtering}{11}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Filtering}{13}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Algorithm Used}{13}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Interface}{15}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Assistant}{17}{subsection.4.3.1}%
+\contentsline {section}{\numberline {3.2}Comparative Analysis}{10}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Opportunities for Improvement}{11}{subsection.3.2.1}%
+\contentsline {chapter}{\numberline {4}Project Development}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Datasets}{12}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Pre-filtering}{13}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Filtering}{15}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Algorithm Used}{15}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Interface}{17}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Assistant}{19}{subsection.4.3.1}%

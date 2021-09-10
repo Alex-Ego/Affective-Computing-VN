@@ -18,10 +18,12 @@
 \BOOKMARK [1][-]{section.3.1}{Related Projects}{chapter.3}% 18
 \BOOKMARK [2][-]{subsection.3.1.1}{Similar Approaches}{section.3.1}% 19
 \BOOKMARK [2][-]{subsection.3.1.2}{Sentiment Analysis in Other Areas}{section.3.1}% 20
-\BOOKMARK [0][-]{chapter.4}{Project Development}{}% 21
-\BOOKMARK [1][-]{section.4.1}{Datasets}{chapter.4}% 22
-\BOOKMARK [2][-]{subsection.4.1.1}{Pre-filtering}{section.4.1}% 23
-\BOOKMARK [2][-]{subsection.4.1.2}{Filtering}{section.4.1}% 24
-\BOOKMARK [1][-]{section.4.2}{Algorithm Used}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.3}{Interface}{chapter.4}% 26
-\BOOKMARK [2][-]{subsection.4.3.1}{Assistant}{section.4.3}% 27
+\BOOKMARK [1][-]{section.3.2}{Comparative Analysis}{chapter.3}% 21
+\BOOKMARK [2][-]{subsection.3.2.1}{Opportunities for Improvement}{section.3.2}% 22
+\BOOKMARK [0][-]{chapter.4}{Project Development}{}% 23
+\BOOKMARK [1][-]{section.4.1}{Datasets}{chapter.4}% 24
+\BOOKMARK [2][-]{subsection.4.1.1}{Pre-filtering}{section.4.1}% 25
+\BOOKMARK [2][-]{subsection.4.1.2}{Filtering}{section.4.1}% 26
+\BOOKMARK [1][-]{section.4.2}{Algorithm Used}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.3}{Interface}{chapter.4}% 28
+\BOOKMARK [2][-]{subsection.4.3.1}{Assistant}{section.4.3}% 29

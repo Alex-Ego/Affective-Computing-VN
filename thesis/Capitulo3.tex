@@ -20,5 +20,56 @@ The problem proposed in this thesis is not something new by a long stretch, sinc
 \citet{rf15} propose an algorithm that can detect hate speech in text using natural language text classification across several topics.
 \citet{rf16} report a Recurrent Neural Network that detect political statements in YouTube comments while also classifying them in \textit{positive}, \textit{negative} or \textit{other} depending on the topic.
 
+\section{Comparative Analysis}
+Since the projects included in this chapter are all focused in the same branch of algorithm, they have some concepts in common with each other and, in turn, with this project. Some of them are:
+\begin{description}
+	\item[Machine Learning]{The type of algorithm needed for automatic processing, making the machine ``learn'' (hence the name) over time given enough data.}
+	\item[Neural Network]{A Machine Learning algorithm that uses weights and filters to output data.}
+	\item[Weights]{In ML, this is the name given to the internal value that a specific input has after being analyzed by the algorithm. With this, data classification can be achieved.}
+	\item[Text Processing]{Any type of algorithm that can understand text and output data based on its contents.}
+	\item[Natural Language Processing]{This is the method used for the algorithm to understand the content of the sentences, this is usually achieved by using tokenization but a preset corpus can also be used.}	
+	\item[Sentiment Analysis]{This involves a ML algorithm, usually a Neural Network, that is able to analyze sentences and classify them according to the words used.}
+	\item[Corpus]{Preset internal dictionary that the algorithm uses.}
+	\item[Chatbot]{An algorithm that is able to reply to a prompt using natural language.}
+\end{description}
+
+\subsection{Opportunities for Improvement}
+As with any project, there is always room for improvement, so in this section the areas that can be improved in them can be visualized in the following table.\\
+One of the main positives of working with TensorFlow is the fact that it is a highly reusable code that can very much be ported to any system that can run Python.
+\begin{table}[b!]
+	\caption{Comparison between the previously discussed works and this thesis'. \checkmark indicates it fulfills that specific criteria, otherwhise $\times$ is used.}
+	\vspace{0.5cm}
+	\centering
+	\begin{tabular}[t]{|l|l|l|l|l|l|}
+	\hline
+		\textbf{Project} & \rotatebox{90}{\textbf{Neural Network}} & \rotatebox{90}{\textbf{Text Processing}} & \rotatebox{90}{\textbf{Sentiment Analysis }} & \rotatebox{90}{\textbf{Chatbot}} & \rotatebox{90}{\textbf{Open Source}}
+	\\ \hline
+	\citet{rf10} Maximum Entropy & \checkmark & \checkmark & \checkmark & $\times$ & $\times$
+	\\ \hline
+	\citet{rf10} Support Vector Machines & \checkmark & \checkmark & \checkmark & $\times$ & $\times$
+	\\ \hline
+	\citet{rf10} Lingpipe & \checkmark & \checkmark & \checkmark & $\times$ & $\times$
+	\\ \hline
+	\citet{rf6} & \checkmark & \checkmark & \checkmark & \checkmark & $\times$
+	\\ \hline
+	\citet{rf14} & \checkmark & \checkmark & $\times$ & \checkmark & \checkmark
+	\\ \hline
+	\citet{rf5} & \checkmark & \checkmark & \checkmark & $\times$ & \checkmark
+	\\ \hline
+	\citet{rf11} & \checkmark & \checkmark & $\times$ & $\times$ & \checkmark
+	\\ \hline
+	\citet{rf12} & \checkmark & \checkmark & \checkmark & $\times$ & \checkmark
+	\\ \hline
+	\citet{rf13} & \checkmark & \checkmark & \checkmark & $\times$ & $\times$
+	\\ \hline
+	\citet{rf15} & \checkmark & \checkmark & $\times$ & $\times$ & \checkmark
+	\\ \hline
+	\citet{rf16} & \checkmark & \checkmark & \checkmark & $\times$ & \checkmark
+	\\ \hline
+	This thesis' project & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark
+	\\ \hline
+	\end{tabular}
+\end{table}
+
 
 \clearpage
