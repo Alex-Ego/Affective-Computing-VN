@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{19}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -38,6 +38,13 @@
   \textit{New Advances in Machine Learning},
   \urlprefix\url{https://www.intechopen.com/chapters/10703}.
 \bibAnnoteFile{rf9}
+
+\bibitem[{Berrar(2018)}]{rf19}
+\textsc{Berrar, D.} (2018), \enquote{Bayes’ theorem and naive Bayes
+  classifier}, \textit{Encyclopedia of Bioinformatics and Computational
+  Biology: ABC of Bioinformatics; Elsevier Science Publisher: Amsterdam, The
+  Netherlands}, pages 403--412.
+\bibAnnoteFile{rf19}
 
 \bibitem[{Bird \textit{et al.}(2021)Bird, Ek{\'a}rt and Faria}]{rf14}
 \textsc{Bird, J.~J.}, \textsc{A.~Ek{\'a}rt} and \textsc{D.~R. Faria} (2021),
@@ -101,6 +108,13 @@
   \urlprefix\url{http://www.jmir.org/2018/6/e10148/}.
 \bibAnnoteFile{rf6}
 
+\bibitem[{Nigam \textit{et al.}(1999)Nigam, Lafferty and McCallum}]{rf17}
+\textsc{Nigam, K.}, \textsc{J.~Lafferty} and \textsc{A.~McCallum} (1999),
+  \enquote{Using maximum entropy for text classification}, in \textit{IJCAI-99
+  workshop on machine learning for information filtering}, volume~1,
+  Stockholom, Sweden, pages 61--67.
+\bibAnnoteFile{rf17}
+
 \bibitem[{Pang \textit{et al.}(2002)Pang, Lee and Vaithyanathan}]{rf5}
 \textsc{Pang, B.}, \textsc{L.~Lee} and \textsc{S.~Vaithyanathan} (2002),
   \enquote{Thumbs up? Sentiment classification using machine learning
@@ -120,6 +134,12 @@
   Regarding the Accuracy of Recurrent Neural Network and Machine Learning
   Models}, , pages 107--121.
 \bibAnnoteFile{rf16}
+
+\bibitem[{Soman \textit{et al.}(2009)Soman, Loganathan and Ajay}]{rf18}
+\textsc{Soman, K.}, \textsc{R.~Loganathan} and \textsc{V.~Ajay} (2009),
+  \textit{Machine learning with SVM and other kernel methods}, PHI Learning
+  Pvt. Ltd.
+\bibAnnoteFile{rf18}
 
 \bibitem[{Wang \textit{et al.}(2021)Wang, Wang and Chen}]{rf12}
 \textsc{Wang, B.}, \textsc{N.~Wang} and \textsc{Z.~Chen} (2021),

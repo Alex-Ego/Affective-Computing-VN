@@ -2,14 +2,15 @@
 The problem proposed in this thesis is not something new by a long stretch, since sentiment analysis was developed for this very purpose. There are many applications that already apply this kind of Machine Learning for several purposes. In this chapter, some related projects are listed and analyzed.
 
 \section{Related Projects}
+In this section, some literature is listed which proposes projects which have similar approaches to the present work, and some others that may not have the same objectives in mind but use algorithms that could be applied as well.
 \subsection{Similar Approaches}
-\citet{rf10} talk about three different text classificators with a focus on sentiment analysis from Twitter: 
+\citet{rf10} talk about three different text classificators with a focus on sentiment analysis from Twitter:\\ 
 \begin{itemize}
-\item Twitter Sentiment, which uses a Maximum Entropy algorithm.
-\item Tweet Sentiments, which uses Support Vector Machines for classifications.
-\item Lingpipe, which uses both previous algorithms and also Naive Bayes.
+\item Twitter Sentiment, which uses a Maximum Entropy algorithm\footnote{This algorithm works by having the bias that certain characteristics repeat more in certain categories in text. If no bias is found, the distribution is uniform. \citep{rf17}}.
+\item Tweet Sentiments, which uses Support Vector Machines\footnote{Binary algorithm that can sort between two classes, or opt for classification in a ``one-versus-everything else'' basis. \citep{rf18}} for classifications.
+\item Lingpipe, which uses both previous algorithms and also Naive Bayes\footnote{This algorithm utilizes weights expressed in \textit{-1}, \textit{0}, or \textit{+1} depending on the sensitivity of specific characteristics \citep{rf19}. Works very similarly to a classic perceptron, which only uses\\ \textit{0} or \textit{1}.}
 \end{itemize}
-\citet{rf6} mention Koko, which uses the OpenAI API which is a counseling app for distressed teenagers. It is important to mention GPT-3 as a whole as well, which, to date, being one of the most impressive AI algorithm to be developed, the downsides being that, still in beta phase, is super resource-heavy, and its access is reserved to businesses through a fee, very expensive to use for the general public, especially students as myself. That is why in this project, TensorFlow is used, which is free to use, does not need a lot of resources to work and has the advantage of being portable once trained.
+\citet{rf6} mention Koko, which uses the OpenAI API which is a counseling app for distressed teenagers in need of immediate psychological support, composed of a chatbot and sentiment analysis capabilities.\\
 \citet{rf14} propose a chatbot developed to comprehend instructions, classifying them internally with a predefined bank of words, and reacting accordingly.
 
 \subsection{Sentiment Analysis in Other Areas}
@@ -18,7 +19,7 @@ The problem proposed in this thesis is not something new by a long stretch, sinc
 \citet{rf12} propose an algorithm that correlated the air pollution levels with the sentiment expressed in people's tweets.\\
 \citet{rf13} mention a hierarchical attention network to detect the polarity of a customer's review, with the added bonus of being capable of learning from new data.
 \citet{rf15} propose an algorithm that can detect hate speech in text using natural language text classification across several topics.
-\citet{rf16} report a Recurrent Neural Network that detect political statements in YouTube comments while also classifying them in \textit{positive}, \textit{negative} or \textit{other} depending on the topic.
+\citet{rf16} report a Recurrent Neural Network that detect political statements in YouTube comments while also classifying them in \textit{positive}, \textit{negative}, or \textit{other} depending on the topic.
 
 \section{Comparative Analysis}
 Since the projects included in this chapter are all focused in the same branch of algorithm, they have some concepts in common with each other and, in turn, with this project. Some of them are:
@@ -34,10 +35,10 @@ Since the projects included in this chapter are all focused in the same branch o
 \end{description}
 
 \subsection{Opportunities for Improvement}
-As with any project, there is always room for improvement, so in this section the areas that can be improved in them can be visualized in the following table.\\
-One of the main positives of working with TensorFlow is the fact that it is a highly reusable code that can very much be ported to any system that can run Python.
-\begin{table}[b!]
-	\caption{Comparison between the previously discussed works and this thesis'. \checkmark indicates it fulfills that specific criteria, otherwhise $\times$ is used.}
+One of the main positives of working with TensorFlow is the fact that it is a highly reusable code that can very much be ported to any system that can run Python.\\
+It is important to mention GPT-3 as a whole, the framework that Koko -- mentioned by \citet{rf6} -- uses is, to date, one of the most impressive AI algorithm to be developed, the downsides being that, being still in beta phase, is very resource-heavy, and its access is reserved to businesses through a fee, very expensive to use for the general public, especially students. That is why in this project, TensorFlow is used, which is free to use, does not need a lot of resources to work and has the advantages of being portable once trained, and also being easily modifiable if needed.
+\begin{table}[h!]
+	\caption{Comparison between existing literature and the present work. \checkmark indicates the fulfillment of a criterion, otherwise $\times$ is used.}
 	\vspace{0.5cm}
 	\centering
 	\begin{tabular}[t]{|l|l|l|l|l|l|}
@@ -66,7 +67,7 @@ One of the main positives of working with TensorFlow is the fact that it is a hi
 	\\ \hline
 	\citet{rf16} & \checkmark & \checkmark & \checkmark & $\times$ & \checkmark
 	\\ \hline
-	This thesis' project & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark
+	The present work & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark
 	\\ \hline
 	\end{tabular}
 \end{table}

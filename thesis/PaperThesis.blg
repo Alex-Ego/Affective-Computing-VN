@@ -20,45 +20,45 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty journal in rf7
 Warning--empty journal in rf2
 Warning--empty journal in rf16
-You've used 16 entries,
+You've used 19 entries,
             3461 wiz_defined-function locations,
-            758 strings with 8505 characters,
-and the built_in function-call counts, 15255 in all, are:
-= -- 1514
-> -- 480
-< -- 15
-+ -- 211
-- -- 149
-* -- 1046
-:= -- 1672
-add.period$ -- 16
-call.type$ -- 16
-change.case$ -- 112
-chr.to.int$ -- 16
-cite$ -- 35
-duplicate$ -- 1577
-empty$ -- 990
-format.name$ -- 198
-if$ -- 3059
+            775 strings with 9020 characters,
+and the built_in function-call counts, 18077 in all, are:
+= -- 1809
+> -- 549
+< -- 19
++ -- 245
+- -- 170
+* -- 1218
+:= -- 1967
+add.period$ -- 19
+call.type$ -- 19
+change.case$ -- 131
+chr.to.int$ -- 19
+cite$ -- 41
+duplicate$ -- 1877
+empty$ -- 1183
+format.name$ -- 226
+if$ -- 3638
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 185
-newline$ -- 85
-num.names$ -- 66
-pop$ -- 527
+missing$ -- 217
+newline$ -- 97
+num.names$ -- 78
+pop$ -- 630
 preamble$ -- 1
-purify$ -- 112
+purify$ -- 131
 quote$ -- 0
-skip$ -- 895
+skip$ -- 1076
 stack$ -- 0
-substring$ -- 636
-swap$ -- 1181
-text.length$ -- 11
+substring$ -- 767
+swap$ -- 1410
+text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 144
+type$ -- 168
 warning$ -- 3
-while$ -- 93
+while$ -- 110
 width$ -- 0
-write$ -- 208
+write$ -- 243
 (There were 5 warnings)
