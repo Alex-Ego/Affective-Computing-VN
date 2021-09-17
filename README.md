@@ -18,6 +18,7 @@ This repository has all the files needed to run the algorithm, and the thesis it
 | Keras | [Link][PkKe] | 2.6.0 |
 | TensorFlow | [Link][PkTF] | 2.6.0 |
 | nltk | [Link][PkNLTK] | 3.5 |
+| chatterbot | [Link][PkCh] | 1.0.5 |
 
 ### How to Use
 
@@ -35,3 +36,4 @@ $ python3 game/sentiment_analysis_training.py
  [PkKe]: <https://keras.io/>
  [PkNLTK]: <https://www.nltk.org/>
  [PkTF]: <https://www.tensorflow.org/>
+ [PkCh]: <https://chatterbot.readthedocs.io>
