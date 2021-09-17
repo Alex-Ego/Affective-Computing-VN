@@ -20,10 +20,15 @@
 \BOOKMARK [2][-]{subsection.3.1.2}{Sentiment Analysis in Other Areas}{section.3.1}% 20
 \BOOKMARK [1][-]{section.3.2}{Comparative Analysis}{chapter.3}% 21
 \BOOKMARK [2][-]{subsection.3.2.1}{Opportunities for Improvement}{section.3.2}% 22
-\BOOKMARK [0][-]{chapter.4}{Project Development}{}% 23
-\BOOKMARK [1][-]{section.4.1}{Datasets}{chapter.4}% 24
-\BOOKMARK [2][-]{subsection.4.1.1}{Pre-filtering}{section.4.1}% 25
-\BOOKMARK [2][-]{subsection.4.1.2}{Filtering}{section.4.1}% 26
-\BOOKMARK [1][-]{section.4.2}{Algorithm Used}{chapter.4}% 27
-\BOOKMARK [1][-]{section.4.3}{Interface}{chapter.4}% 28
-\BOOKMARK [2][-]{subsection.4.3.1}{Assistant}{section.4.3}% 29
+\BOOKMARK [0][-]{chapter.4}{Project Design}{}% 23
+\BOOKMARK [1][-]{section.4.1}{Inner Workings}{chapter.4}% 24
+\BOOKMARK [2][-]{subsection.4.1.1}{Datasets}{section.4.1}% 25
+\BOOKMARK [2][-]{subsection.4.1.2}{Text Filtering}{section.4.1}% 26
+\BOOKMARK [2][-]{subsection.4.1.3}{Neural Network}{section.4.1}% 27
+\BOOKMARK [0][-]{chapter.5}{Project Development}{}% 28
+\BOOKMARK [1][-]{section.5.1}{Datasets}{chapter.5}% 29
+\BOOKMARK [2][-]{subsection.5.1.1}{Pre-filtering}{section.5.1}% 30
+\BOOKMARK [2][-]{subsection.5.1.2}{Filtering}{section.5.1}% 31
+\BOOKMARK [1][-]{section.5.2}{Algorithm Used}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.3}{Interface}{chapter.5}% 33
+\BOOKMARK [2][-]{subsection.5.3.1}{Assistant}{section.5.3}% 34

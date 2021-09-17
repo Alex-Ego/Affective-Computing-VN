@@ -1,7 +1,7 @@
-\contentsline {chapter}{Agradecimientos}{viii}{chapter*.4}%
-\contentsline {chapter}{Resumen}{ix}{chapter*.5}%
-\contentsline {paragraph}{\numberline {0.0.0.0.1}Objetivos y método de estudio:}{ix}{paragraph.0.0.0.0.1}%
-\contentsline {paragraph}{\numberline {0.0.0.0.2}Contribuciones y conlusiones:}{x}{paragraph.0.0.0.0.2}%
+\contentsline {chapter}{Agradecimientos}{ix}{chapter*.4}%
+\contentsline {chapter}{Resumen}{x}{chapter*.5}%
+\contentsline {paragraph}{\numberline {0.0.0.0.1}Objetivos y método de estudio:}{x}{paragraph.0.0.0.0.1}%
+\contentsline {paragraph}{\numberline {0.0.0.0.2}Contribuciones y conlusiones:}{xi}{paragraph.0.0.0.0.2}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Justification}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Hypothesis}{2}{section.1.2}%
@@ -22,10 +22,15 @@
 \contentsline {subsection}{\numberline {3.1.2}Sentiment Analysis in Other Areas}{9}{subsection.3.1.2}%
 \contentsline {section}{\numberline {3.2}Comparative Analysis}{10}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Opportunities for Improvement}{11}{subsection.3.2.1}%
-\contentsline {chapter}{\numberline {4}Project Development}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Datasets}{13}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Pre-filtering}{14}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Filtering}{16}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Algorithm Used}{16}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Interface}{18}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Assistant}{20}{subsection.4.3.1}%
+\contentsline {chapter}{\numberline {4}Project Design}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Inner Workings}{13}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Datasets}{13}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Text Filtering}{14}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Neural Network}{15}{subsection.4.1.3}%
+\contentsline {chapter}{\numberline {5}Project Development}{16}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Datasets}{16}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Pre-filtering}{17}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Filtering}{19}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Algorithm Used}{19}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Interface}{21}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Assistant}{23}{subsection.5.3.1}%

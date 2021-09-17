@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{20}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -84,6 +84,11 @@
   informed hate speech detection: a multi-target perspective},
   \textit{Cognitive Computation}, pages 1--31.
 \bibAnnoteFile{rf15}
+
+\bibitem[{CrowdFlower(2016)}]{rf20}
+\textsc{CrowdFlower} (2016), \enquote{Sentiment Analysis: Emotion in Text},
+  \urlprefix\url{https://data.world/crowdflower/sentiment-analysis-in-text}.
+\bibAnnoteFile{rf20}
 
 \bibitem[{Elliott \textit{et al.}(2011)Elliott, Bohart, Watson and
   Greenberg}]{rf1}

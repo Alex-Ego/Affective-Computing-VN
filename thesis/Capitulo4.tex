@@ -1,5 +1,37 @@
 \chapter{Project Design}
+Having all the concepts in mind, the proposed project has a major component which is the Machine Learning tools surrounded by several small modules such as the GUI and the chatbot components.
+As for the data used in this project, most of it comes from cleaned, classified tweets partitioned in training and testing datasets.
+In this chapter, the design of the project is explained.
 
-\section{Datasets}
+\section{Inner Workings}
+In this section, the data and the relations with the algorithm is explained, with a focus on the design itself.
+\subsection{Datasets}
+The datasets used in this project, as previously mentioned, consist in around 40,000 semi-clean, classified tweets in 13 categories \citep{rf20}, but as the scope for all of those labels exceeds the one proposed in this paper, the ones taken into consideration are as follow:
+\begin{itemize}
+	\item Sadness
+	\item Neutral
+	\item Happiness
+	\item Fun
+	\item Worry
+	\item Boredom
+\end{itemize}
+Even after eliminating non-critical labels, since the remaining  labeled samples are not evenly distributed, leaving them as-is led to very inaccurate results, so a generalistic approach was opted for, classifying the end results in ``Good'', ``Neutral'' and ``Bad'' depending on the overall wellness percieved from the input.
+This final filter works only with the training data, and works as follows:
+\begin{itemize}
+	\item Sadness and Worry are in the ``Bad'' category.
+	\item Neutral and Boredom are in the ``Neutral'' category.
+	\item Happiness and Fun are in the ``Good'' category
+\end{itemize}
 
+\subsection{Text Filtering}
+Since the chosen dataset is imported almost straight from Twitter with poor grammar, misplaced symbols, emojis and similar things, some cleanup was done to ensure peak performance.
+\begin{itemize}
+\item First, all of the punctuation marks had to be discarded.
+\item Then, the stopwords\footnote{Words that are not vital for the sentence's meaning.} had to be omitted as well.
+\item Finally, for easier analysis, a process called stemming\footnote{Reducing a verb to its most basic components.} was applied, so that all of the tenses of every verb were evaluated the same way.
+\end{itemize} 
+These last processes were possible thanks to NLTK\footnote{Natural Language Toolkit, tool used specifically for these case scenarios. \url{https://www.nltk.org/}}, which has its own repository of stopwords and stems.
 
+\subsection{Neural Network}
+For this project, as mentioned in Chapter 3, TensorFlow was opted for because of its characteristics such as being free to use, not needing a lot of resources to work and the advantages of being portable once trained. All of these traits are what makes this project unique and easily scalable.
+A Convolutional Neural Network was opted for because of the increased accuracy that it offers compared to a regular Neural Network.
