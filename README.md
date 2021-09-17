@@ -15,8 +15,8 @@ This repository has all the files needed to run the algorithm, and the thesis it
 | Library | Site | Version |
 | ------ | ------ | ------ |
 | pygame | [Link][PkPG] | 2.0.0 |
-| Keras | [Link][PkKe] | 2.4.3 |
-| TensorFlow | [Link][PkTF] | 2.5.0 |
+| Keras | [Link][PkKe] | 2.6.0 |
+| TensorFlow | [Link][PkTF] | 2.6.0 |
 | nltk | [Link][PkNLTK] | 3.5 |
 
 ### How to Use

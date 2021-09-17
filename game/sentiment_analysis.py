@@ -2,7 +2,7 @@
 import os
 from tensorflow.keras.models import load_model
 import numpy as np
-import keras
+from tensorflow import keras
 import tensorflow as tf
 
 from tensorflow.keras.preprocessing.sequence import pad_sequences
