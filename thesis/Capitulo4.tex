@@ -1,4 +1,5 @@
 \chapter{Project Design}
+The tools that are used in this paper are mostly Python-based, such as TensorFlow, a neural network framework. This, combined with natural language processing tools and several filtering techniques will be used to achieve -- or at least approach as close as possible to -- the expected results.
 Having all the concepts in mind, the proposed project has a major component which is the Machine Learning tools surrounded by several small modules such as the GUI and the chatbot components.
 As for the data used in this project, most of it comes from cleaned, classified tweets partitioned in training and testing datasets.
 In this chapter, the design of the project is explained.
@@ -6,7 +7,7 @@ In this chapter, the design of the project is explained.
 \section{Inner Workings}
 In this section, the data and the relations with the algorithm is explained, with a focus on the design itself.
 \subsection{Datasets}
-The datasets used in this project, as previously mentioned, consist in around 40,000 semi-clean, classified tweets in 13 categories \citep{rf20}, but as the scope for all of those labels exceeds the one proposed in this paper, the ones taken into consideration are as follow:
+The datasets used in this project, as previously mentioned, consist in around 40,000 semi-clean, classified tweets in 13 categories \citep{rf20}, but as the scope for all of those labels exceeds the one proposed in this paper, the ones taken into consideration are as follows:
 \begin{itemize}
 	\item Sadness
 	\item Neutral
@@ -24,14 +25,37 @@ This final filter works only with the training data, and works as follows:
 \end{itemize}
 
 \subsection{Text Filtering}
-Since the chosen dataset is imported almost straight from Twitter with poor grammar, misplaced symbols, emojis and similar things, some cleanup was done to ensure peak performance.
+Since the chosen dataset is imported almost straight from Twitter with poor grammar, misplaced symbols, emojis and similar things, some cleanup has to be done to ensure peak performance.
 \begin{itemize}
-\item First, all of the punctuation marks had to be discarded.
-\item Then, the stopwords\footnote{Words that are not vital for the sentence's meaning.} had to be omitted as well.
-\item Finally, for easier analysis, a process called stemming\footnote{Reducing a verb to its most basic components.} was applied, so that all of the tenses of every verb were evaluated the same way.
+\item First, all text must be converted to lowercase.
+\item Then, all of the punctuation marks had to be discarded.
+\item After that, the stopwords\footnote{Words that are not vital for the sentence's meaning.} have to be omitted as well.
+\item Finally, for easier analysis, a process called stemming\footnote{Reducing a verb to its most basic components.} is applied, so that all of the tenses of every verb are evaluated the same way while also avoiding corpus bloating.
 \end{itemize} 
 These last processes were possible thanks to NLTK\footnote{Natural Language Toolkit, tool used specifically for these case scenarios. \url{https://www.nltk.org/}}, which has its own repository of stopwords and stems.
+An example for this applied to data in the training dataset is as follows.
+\begin{center}
+\fbox{So sleepy again and it's not even that late. I fail once again.}
+\end{center}
+Following the filtering order, first all the characters are converted to lowercase.
+\begin{center}
+\fbox{so sleepy again and it's not even that late. i fail once again.}
+\end{center}
+After that, the text is stripped from all non-alphabetic characters.
+\begin{center}
+\fbox{so sleepy again and it s not even that late i fail once again}
+\end{center}
+Next, all stopwords are culled from the sentence.
+\begin{center}
+\fbox{sleepy even late fail}
+\end{center}
+The last step is to apply stemming to all the able remaining words, in this case, the adjective ``sleepy'' stems from sleep.
+\begin{center}
+\fbox{sleepi even late fail}
+\end{center}
+
 
 \subsection{Neural Network}
 For this project, as mentioned in Chapter 3, TensorFlow was opted for because of its characteristics such as being free to use, not needing a lot of resources to work and the advantages of being portable once trained. All of these traits are what makes this project unique and easily scalable.
 A Convolutional Neural Network was opted for because of the increased accuracy that it offers compared to a regular Neural Network.
+

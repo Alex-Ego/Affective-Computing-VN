@@ -29,7 +29,7 @@ import os
 
 vocab_size = 5000 # Size of the vocabulary I'll be using
 embedding_dim = 64
-max_length = 30
+max_length = 100
 trunc_type = 'post'
 padding_type = 'post'
 oov_tok = '<OOV>'

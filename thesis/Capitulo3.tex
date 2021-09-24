@@ -10,16 +10,15 @@ In this section, some literature is listed which proposes projects which have si
 \item Tweet Sentiments, which uses Support Vector Machines\footnote{Binary algorithm that can sort between two classes, or opt for classification in a ``one-versus-everything else'' basis. \citep{rf18}} for classifications.
 \item Lingpipe, which uses both previous algorithms and also Naive Bayes\footnote{This algorithm utilizes weights expressed in \textit{-1}, \textit{0}, or \textit{+1} depending on the sensitivity of specific characteristics \citep{rf19}. Works very similarly to a classic perceptron, which only uses\\ \textit{0} or \textit{1}.}
 \end{itemize}
-\citet{rf6} mention Koko, which uses the OpenAI API which is a counseling app for distressed teenagers in need of immediate psychological support, composed of a chatbot and sentiment analysis capabilities.\\
+\citet{rf6} mention Koko, which uses the OpenAI API which is a counseling app for distressed teenagers in need of immediate psychological support, composed of a chatbot and sentiment analysis capabilities while
 \citet{rf14} propose a chatbot developed to comprehend instructions, classifying them internally with a predefined bank of words, and reacting accordingly.
 
 \subsection{Sentiment Analysis in Other Areas}
-\citet{rf5} draft out a movie review algorithm that was capable of detecting if the review was either positive or negative depending on the words used.\\
-\citet{rf11} write about a classification system to detect if a tweet was deemed as extremist or non-extremist depending on the vocabulary used and a deep-learning algorithm.\\
-\citet{rf12} propose an algorithm that correlated the air pollution levels with the sentiment expressed in people's tweets.\\
+\citet{rf5} draft out a movie review algorithm that was capable of detecting if the review was either positive or negative depending on the words used, and,
+\citet{rf12} propose an algorithm that correlated the air pollution levels with the sentiment expressed in people's tweets.
 \citet{rf13} mention a hierarchical attention network to detect the polarity of a customer's review, with the added bonus of being capable of learning from new data.
 \citet{rf15} propose an algorithm that can detect hate speech in text using natural language text classification across several topics.
-\citet{rf16} report a Recurrent Neural Network that detect political statements in YouTube comments while also classifying them in \textit{positive}, \textit{negative}, or \textit{other} depending on the topic.
+\citet{rf11} write about a classification system to detect if a tweet was deemed as extremist or non-extremist depending on the vocabulary used and a deep-learning algorithm. Similarly, \citet{rf16} report a Recurrent Neural Network that detect political statements in YouTube comments while also classifying them in \textit{positive}, \textit{negative}, or \textit{other} depending on the topic.
 
 \section{Comparative Analysis}
 Since the projects included in this chapter are all focused in the same branch of algorithm, they have some concepts in common with each other and, in turn, with this project. Some of them are:
@@ -38,7 +37,7 @@ Since the projects included in this chapter are all focused in the same branch o
 One of the main positives of working with TensorFlow is the fact that it is a highly reusable code that can very much be ported to any system that can run Python.\\
 It is important to mention GPT-3 as a whole, the framework that Koko -- mentioned by \citet{rf6} -- uses is, to date, one of the most impressive AI algorithm to be developed, the downsides being that, being still in beta phase, is very resource-heavy, and its access is reserved to businesses through a fee, very expensive to use for the general public, especially students. That is why in this project, TensorFlow is used, which is free to use, does not need a lot of resources to work and has the advantages of being portable once trained, and also being easily modifiable if needed.
 \begin{table}[h!]
-	\caption{Comparison between existing literature and the present work. \checkmark indicates the fulfillment of a criterion, otherwise $\times$ is used.}
+	\caption{Comparison between existing literature and the present work: \checkmark indicates the fulfillment of a criterion, otherwise $\times$ is used.}
 	\vspace{0.5cm}
 	\centering
 	\begin{tabular}[t]{|l|l|l|l|l|l|}
