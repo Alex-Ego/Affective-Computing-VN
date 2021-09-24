@@ -151,15 +151,17 @@ validation_label_seq = np.array(label_tokenizer.texts_to_sequences(validation_la
 # Building the model
 
 model = tf.keras.Sequential([
-    tf.keras.layers.Embedding(vocab_size, 4),
-    tf.keras.layers.Conv1D(128, 5, activation="relu"),
-    tf.keras.layers.GlobalAveragePooling1D(),
-    tf.keras.layers.Dense(64, activation="relu"),
-    tf.keras.layers.Dense(4, activation="softmax")
-    ])
+    layers.Embedding(input_dim=vocab_size, 
+                           output_dim=embedding_dim, 
+                           input_length=max_length),
+    layers.SpatialDropout1D(0.15),
+    layers.Bidirectional(layers.LSTM(32, dropout=0.15, recurrent_dropout=0.15)),
+    #layers.Dense(8, activation="tanh"),
+    layers.Dense(4, activation="softmax")
+])
 model.summary()
-model.compile(loss="sparse_categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
-NUM_EPOCHS = 200
+model.compile(loss="sparse_categorical_crossentropy", optimizer="rmsprop", metrics=["accuracy"])
+NUM_EPOCHS = 30
 #model.fit(train_padded, training_label_seq, epochs=NUM_EPOCHS)
 history = model.fit(train_padded, training_label_seq, epochs=NUM_EPOCHS
  , validation_data=(train_padded, training_label_seq))

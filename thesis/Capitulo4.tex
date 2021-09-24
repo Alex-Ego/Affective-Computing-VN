@@ -4,7 +4,7 @@ Having all the concepts in mind, the proposed project has a major component whic
 As for the data used in this project, most of it comes from cleaned, classified tweets partitioned in training and testing datasets.
 In this chapter, the design of the project is explained.
 
-\section{Inner Workings}
+\section{Inner Workings Design}
 In this section, the data and the relations with the algorithm is explained, with a focus on the design itself.
 \subsection{Datasets}
 The datasets used in this project, as previously mentioned, consist in around 40,000 semi-clean, classified tweets in 13 categories \citep{rf20}, but as the scope for all of those labels exceeds the one proposed in this paper, the ones taken into consideration are as follows:
@@ -57,5 +57,54 @@ The last step is to apply stemming to all the able remaining words, in this case
 
 \subsection{Neural Network}
 For this project, as mentioned in Chapter 3, TensorFlow was opted for because of its characteristics such as being free to use, not needing a lot of resources to work and the advantages of being portable once trained. All of these traits are what makes this project unique and easily scalable.
-A Convolutional Neural Network was opted for because of the increased accuracy that it offers compared to a regular Neural Network.
+An LSTM Neural Network was opted for because of the increased accuracy that it offers compared to a regular Neural Network.
 
+\section{Tools}
+This project is built on Python v3.8.10, The libraries used for this project to come to fruition are TensorFlow\footnote{\url{https://www.tensorflow.org/}} v2.6.0 and Keras\footnote{\url{https://keras.io/}} v2.6.0 for the Neural Network section. Natural Language Toolkit\footnote{\url{https://www.nltk.org/}} v3.5 (also known as NLTK) for the tokenization and stemming process. Chatterbot\footnote{\url{https://chatterbot.readthedocs.io/en/stable/}} for the chatbot's output. And, lastly, pygame\footnote{\url{https://www.pygame.org/news}} v1.9.5 for the GUI.
+Originally, \textit{Ren'py}\footnote{An open-source Python framework focused mostly in the development of visual novels and other videogame formats. \url{https://www.renpy.org/}} was the chosen framework for this project's interface to work with, but -- unfortunately for the proposed usage -- it only works with Python 2.7, which makes it incompatible with TensorFlow 2.0. Making a bridge between Python 2 and 3 would inevitably generate more issues that would take more time to solve, so it was scrapped in favor of the pygame library.
+
+\section{Inner Workings}
+In this section, I will highlight the most important parts of this project's code and their function. In case of needing further insight on the code used, the repository is online at \url{https://github.com/Alex-Ego/Affective-Computing-VN}.
+\subsection{Text Filtering}
+After the dataset has been properly located and ready to be used, the cleanup discussed earlier in this chapter happens in the following code snippet:
+\begin{lstlisting}
+def tokenizing_process(message):
+    # Pre-tokenizing
+    tokens = word_tokenize(message)
+    
+    # Making them lowercase
+    tokens = [w.lower() for w in tokens]
+    
+    # Filtering the punctuations
+    table = str.maketrans('', '', string.punctuation)
+    stripped = [w.translate(table) for w in tokens]
+    
+    # Filtering non-alphabetic characters
+    words = [word for word in stripped if word.isalpha()]
+    
+    # Removing stopwords
+    stop_words = set(stopwords.words('english'))
+    words = [w for w in words if not w in stop_words]
+    
+    # Stemming words
+    porter = PorterStemmer()
+    stemmed = [porter.stem(word) for word in words]
+    
+    # Joining the resulting string
+    message = " ".join(stemmed)
+    return message
+\end{lstlisting}
+This works in the same way and order as specified earlier in this chapter.
+\subsection{Neural Network}
+After the text has been properly classified and ready-to-test, this is the structure of the neural network.
+\begin{lstlisting}
+model = tf.keras.Sequential([
+    layers.Embedding(input_dim=vocab_size, 
+                           output_dim=embedding_dim, 
+                           input_length=max_length),
+    layers.SpatialDropout1D(0.15),
+    layers.Bidirectional(layers.LSTM(32, dropout=0.15, recurrent_dropout=0.15)),
+    layers.Dense(4, activation="softmax")
+])
+\end{lstlisting} 
+As the code shown indicates, this neural network has only 2 layers: LSTM and Dense.

@@ -53,7 +53,7 @@ def tokenizing_process(message):
     return message
 
 def evaluation(txt, max_length = max_length):
-    model = load_model(abs_location + "/nndata/model/sentimental_analysis.hdf5")
+    model = load_model(abs_location + "/nndata/model/sentimental_analysis2.hdf5")
     token_txt = tokenizing_process(txt)
     separated_token_txt = [token_txt]
     with open(abs_location + "/nndata/model/tokens.txt", "r") as f:

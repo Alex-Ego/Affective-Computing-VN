@@ -5,13 +5,13 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Accuracy Graph of the Algorithm Training on May 2020, with no NLTK stemming}}{19}{figure.5.1}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Loss Graph of the Algorithm Training on May 2020, with no NLTK stemming}}{19}{figure.5.2}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Accuracy Graph of the Algorithm Training on May 2021}}{21}{figure.5.3}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Loss Graph of the Algorithm Training on May 2021}}{21}{figure.5.4}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Debugging of the Trained Model}}{22}{figure.5.5}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces First version of the interface using Ren'py}}{23}{figure.5.6}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Reacting positively to text in the ``Good'' category}}{23}{figure.5.7}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces First attempt at 3D modeling an assistant.}}{24}{figure.5.8}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Assistant Ver. 2, now using VRoid.}}{25}{figure.5.9}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Assistant Ver. 3, the current design.}}{25}{figure.5.10}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Accuracy Graph of the Algorithm Training on May 2020, with no NLTK stemming}}{21}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Loss Graph of the Algorithm Training on May 2020, with no NLTK stemming}}{21}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Accuracy Graph of the Algorithm Training on May 2021}}{23}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Loss Graph of the Algorithm Training on May 2021}}{23}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Debugging of the Trained Model}}{24}{figure.5.5}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces First version of the interface using Ren'py}}{25}{figure.5.6}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Reacting positively to text in the ``Good'' category}}{25}{figure.5.7}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces First attempt at 3D modeling an assistant.}}{26}{figure.5.8}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Assistant Ver. 2, now using VRoid.}}{27}{figure.5.9}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Assistant Ver. 3, the current design.}}{27}{figure.5.10}%
