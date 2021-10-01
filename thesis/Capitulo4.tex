@@ -57,8 +57,24 @@ The last step is to apply stemming to all the able remaining words, in this case
 
 \subsection{Neural Network}
 For this project, as mentioned in Chapter 3, TensorFlow was opted for because of its characteristics such as being free to use, not needing a lot of resources to work and the advantages of being portable once trained. All of these traits are what makes this project unique and easily scalable.
-An LSTM Neural Network was opted for because of the increased accuracy that it offers compared to a regular Neural Network.
-
+An LSTM Neural Network was opted for because of the increased accuracy that it offers compared to a regular Recurrent Neural Network.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=1]{Normal_RNN}
+	\caption{Basic Structure of a Recurrent Neural Network, where \textit{A} represents the algorithm used.}
+	\label{fig:neuraldiagram_1}
+	\includegraphics[scale=1]{Transp_RNN}
+	\caption{Structure inside an algorithm in a basic Recurrent Neural Network, where \textit{L} represents the layers used.}
+	\label{fig:neuraldiagram_2}
+\end{figure}
+\\Basically, LSTM is a subtype of a Recurrent Neural Network which has a certain amount of data be stored for longer periods of time so it can be used for future connections.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=1]{Transp_LSTM}
+	\caption{Structure inside an LSTM Neural Network, where the \textit{o} represent the processing the data has when traveling from one layer to another.}
+	\label{fig:neuraldiagram_3}
+\end{figure}
+\pagebreak
 \section{Tools}
 This project is built on Python v3.8.10, The libraries used for this project to come to fruition are TensorFlow\footnote{\url{https://www.tensorflow.org/}} v2.6.0 and Keras\footnote{\url{https://keras.io/}} v2.6.0 for the Neural Network section. Natural Language Toolkit\footnote{\url{https://www.nltk.org/}} v3.5 (also known as NLTK) for the tokenization and stemming process. Chatterbot\footnote{\url{https://chatterbot.readthedocs.io/en/stable/}} for the chatbot's output. And, lastly, pygame\footnote{\url{https://www.pygame.org/news}} v1.9.5 for the GUI.
 Originally, \textit{Ren'py}\footnote{An open-source Python framework focused mostly in the development of visual novels and other videogame formats. \url{https://www.renpy.org/}} was the chosen framework for this project's interface to work with, but -- unfortunately for the proposed usage -- it only works with Python 2.7, which makes it incompatible with TensorFlow 2.0. Making a bridge between Python 2 and 3 would inevitably generate more issues that would take more time to solve, so it was scrapped in favor of the pygame library.
@@ -93,6 +109,7 @@ def tokenizing_process(message):
     # Joining the resulting string
     message = " ".join(stemmed)
     return message
+    
 \end{lstlisting}
 This works in the same way and order as specified earlier in this chapter.
 \subsection{Neural Network}
@@ -103,8 +120,9 @@ model = tf.keras.Sequential([
                            output_dim=embedding_dim, 
                            input_length=max_length),
     layers.SpatialDropout1D(0.15),
-    layers.Bidirectional(layers.LSTM(32, dropout=0.15, recurrent_dropout=0.15)),
+    layers.Bidirectional(layers.LSTM(32, dropout=0.15, 
+    recurrent_dropout=0.15)),
     layers.Dense(4, activation="softmax")
 ])
 \end{lstlisting} 
-As the code shown indicates, this neural network has only 2 layers: LSTM and Dense.
+As the code shown indicates, this neural network has only 2 layers: LSTM for classification, and Dense for declaring that the result can be included in 4 categories, which include the three previously discussed categories, and one reserved for error/unknown purposes.
