@@ -21,7 +21,7 @@ This final filter works only with the training data, and works as follows:
 \begin{itemize}
 	\item Sadness and Worry are in the ``Bad'' category.
 	\item Neutral and Boredom are in the ``Neutral'' category.
-	\item Happiness and Fun are in the ``Good'' category
+	\item Happiness and Fun are in the ``Good'' category.
 \end{itemize}
 
 \subsection{Text Filtering}
@@ -58,20 +58,24 @@ The last step is to apply stemming to all the able remaining words, in this case
 \subsection{Neural Network}
 For this project, as mentioned in Chapter 3, TensorFlow was opted for because of its characteristics such as being free to use, not needing a lot of resources to work and the advantages of being portable once trained. All of these traits are what makes this project unique and easily scalable.
 An LSTM Neural Network was opted for because of the increased accuracy that it offers compared to a regular Recurrent Neural Network.
-\begin{figure}[!ht]
+\begin{figure}[!b]
 	\centering
-	\includegraphics[scale=1]{Normal_RNN}
+	\includegraphics[scale=0.7]{Normal_RNN}
 	\caption{Basic Structure of a Recurrent Neural Network, where \textit{A} represents the algorithm used.}
 	\label{fig:neuraldiagram_1}
-	\includegraphics[scale=1]{Transp_RNN}
+\end{figure}
+\begin{figure}[!bht]
+	\centering
+	\includegraphics[scale=0.7]{Transp_RNN}
 	\caption{Structure inside an algorithm in a basic Recurrent Neural Network, where \textit{L} represents the layers used.}
 	\label{fig:neuraldiagram_2}
 \end{figure}
-\\Basically, LSTM is a subtype of a Recurrent Neural Network which has a certain amount of data be stored for longer periods of time so it can be used for future connections.
-\begin{figure}[!ht]
+\\
+\indent Basically, LSTM is a subtype of a Recurrent Neural Network which has a certain amount of data be stored for longer periods of time so it can be used for future connections.
+\begin{figure}[!bht]
 	\centering
-	\includegraphics[scale=1]{Transp_LSTM}
-	\caption{Structure inside an LSTM Neural Network, where the \textit{o} represent the processing the data has when traveling from one layer to another.}
+	\includegraphics[scale=0.7]{Transp_LSTM}
+	\caption{Structure inside an LSTM Neural Network, where the \textit{o} represent the functions that operate the data the data when traveling from one layer to another \citep{rf21}.}
 	\label{fig:neuraldiagram_3}
 \end{figure}
 \pagebreak
@@ -126,3 +130,13 @@ model = tf.keras.Sequential([
 ])
 \end{lstlisting} 
 As the code shown indicates, this neural network has only 2 layers: LSTM for classification, and Dense for declaring that the result can be included in 4 categories, which include the three previously discussed categories, and one reserved for error/unknown purposes.
+\subsection{Portability}
+Training the Neural Network every time is not needed, since there is a way to save the model in a \textit{.hdf5} file and the corpus in a plain \textit{.txt} file with the following code snippet:
+\begin{lstlisting}
+model_location = os.path.join(abs_location, "nndata/model")
+keras.models.save_model(model, model_location + "/sentimental_analysis.hdf5")
+with open(model_location + "/tokens.txt", "w") as f:
+    f.write(tokenizer.to_json())
+    f.close()
+\end{lstlisting}
+This is fairly useful, because training it every time is very time and resource consuming. Having this as an option opens the path for more applications in less powerful systems.

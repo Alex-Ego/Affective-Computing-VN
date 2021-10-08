@@ -62,7 +62,7 @@ def evaluation(txt, max_length = max_length):
     seq = tokenizer.texts_to_sequences(separated_token_txt)
     padded = pad_sequences(seq, maxlen=max_length)
     pred = model.predict(padded)
-    labels = ["sadness", "neutral", "happiness"]
+    labels = ["sadness", "neutral", "happiness", 0]
     #print(pred, labels[np.argmax(pred)])
     print(labels[np.argmax(pred)])
     return(labels[np.argmax(pred)])

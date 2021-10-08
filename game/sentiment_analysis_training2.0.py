@@ -47,6 +47,8 @@ file_name = "text_emotion.csv" # The data file name
     ### The data in the filename is as follows: id, sentiment, author, message
 file_name2 = "Jan9-2012-tweets-clean.txt"
     ### The data in the filename is as follows: id:[tab]message[space][tab]::[space]sentiment
+file_name3 = ["test.txt", "train.txt", "val.txt"]
+    ### The data in the filename is as follows: message;sentiment
 
 # Dumping into vectors
 messages = []
@@ -75,17 +77,17 @@ def tokenizing_process(message):
     return message
 
 # TESTING -- List of sentiments to append
-test_check = ["sadness", "neutral", "happiness", "fun", "worry", "boredom"]
+test_check = ["sadness", "neutral", "happiness", "fun", "worry", "boredom", "joy", "love", "fear"]
 # Opening the .csv data file
 with open(abs_location + file_location + file_name, 'r') as csvfile:
     reader = csv.reader(csvfile, delimiter=',')
     for row in reader:
         if row[1] in test_check: # TESTING -- Cutting the size of the sentiments used, REMOVE ME
-            if row[1] in ["sadness", "worry"]:
+            if row[1] in ["sadness", "worry", "fear"]:
                 labels.append("sadness") # Appending the sentiment associated with the row itself
             elif row[1] in ["neutral", "boredom"]:
                 labels.append("neutral") # Appending the sentiment associated with the row itself
-            elif row[1] in ["happiness", "fun"]:
+            elif row[1] in ["happiness", "fun", "joy", "love"]:
                 labels.append("happiness") # Appending the sentiment associated with the row itself
             message = row[3]
             #print("Input: " + message)             #   Debugging purposes
@@ -96,15 +98,31 @@ with open(abs_location + file_location + file_name2, 'r') as txtfile:
         row = row.split("\t")
         row[2] = row[2].strip(" \n") #Cleaning out the unneeded characters
         if row[2] in test_check: # TESTING -- Cutting the size of the sentiments used, REMOVE ME
-            if row[2] in ["sadness", "worry"]:
+            if row[2] in ["sadness", "worry", "fear"]:
                 labels.append("sadness") # Appending the sentiment associated with the row itself
             elif row[2] in ["neutral", "boredom"]:
                 labels.append("neutral") # Appending the sentiment associated with the row itself
-            elif row[2] in ["happiness", "fun"]:
+            elif row[2] in ["happiness", "fun", "joy", "love"]:
                 labels.append("happiness") # Appending the sentiment associated with the row itself
             message = row[1]
             #print("Input: " + message)             #   Debugging purposes
             messages.append(tokenizing_process(message))
+""" for f in file_name3:
+    with open(abs_location + file_location + "/praveen_emotion_dataset/" + f, 'r') as txtfile:
+        txtreader = txtfile.readlines()
+        for row in txtreader:
+            row = row.split(";")
+            row[1] = row[1].strip(" \n") #Cleaning out the unneeded characters
+            if row[1] in test_check: # TESTING -- Cutting the size of the sentiments used, REMOVE ME
+                if row[1] in ["sadness", "worry", "fear"]:
+                    labels.append("sadness") # Appending the sentiment associated with the row itself
+                elif row[1] in ["neutral", "boredom"]:
+                    labels.append("neutral") # Appending the sentiment associated with the row itself
+                elif row[1] in ["happiness", "fun", "joy", "love"]:
+                    labels.append("happiness") # Appending the sentiment associated with the row itself
+                message = row[0]
+                #print("Input: " + message)             #   Debugging purposes
+                messages.append(tokenizing_process(message)) """
 
 # Shuffling the data
 #print(len(labels)) # Number of labels
@@ -193,7 +211,7 @@ print("Testing Accuracy:  {:.4f}".format(accuracy))
 def plot_graphs(history, string):
   plt.plot(history.history[string])
   plt.plot(history.history['val_'+string])
-  plt.xlabel("Epochs")
+  plt.xlabel("epochs")
   plt.ylabel(string)
   plt.legend([string, 'val_'+string])
   plt.show()
@@ -217,5 +235,5 @@ while 1:
     #print(seq)
     padded = pad_sequences(seq, maxlen=max_length)
     pred = model.predict(padded)
-    labels = ["sadness", "neutral", "happiness"]
+    labels = ["sadness", "neutral", "happiness", 0]
     print(pred, labels[np.argmax(pred)])
