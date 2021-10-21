@@ -33,7 +33,9 @@ max_length = 100
 trunc_type = 'post'
 padding_type = 'post'
 oov_tok = '<OOV>'
-training_portion = .75
+
+training_portion = .65
+testing_portion = .1
 
 random.seed(96024)
 
@@ -49,6 +51,8 @@ file_name2 = "Jan9-2012-tweets-clean.txt"
     ### The data in the filename is as follows: id:[tab]message[space][tab]::[space]sentiment
 file_name3 = ["test.txt", "train.txt", "val.txt"]
     ### The data in the filename is as follows: message;sentiment
+file_name4 = "sadness.csv"
+    ### The data in the filename is as follows: id,yes/no,"message"
 
 # Dumping into vectors
 messages = []
@@ -77,6 +81,7 @@ def tokenizing_process(message):
     return message
 
 # TESTING -- List of sentiments to append
+#test_check = ["sadness", "neutral", "happiness", "fun", "worry", "boredom", "joy", "love", "fear"]
 test_check = ["sadness", "neutral", "happiness", "fun", "worry", "boredom", "joy", "love", "fear"]
 # Opening the .csv data file
 with open(abs_location + file_location + file_name, 'r') as csvfile:
@@ -107,7 +112,7 @@ with open(abs_location + file_location + file_name2, 'r') as txtfile:
             message = row[1]
             #print("Input: " + message)             #   Debugging purposes
             messages.append(tokenizing_process(message))
-""" for f in file_name3:
+for f in file_name3:
     with open(abs_location + file_location + "/praveen_emotion_dataset/" + f, 'r') as txtfile:
         txtreader = txtfile.readlines()
         for row in txtreader:
@@ -122,7 +127,16 @@ with open(abs_location + file_location + file_name2, 'r') as txtfile:
                     labels.append("happiness") # Appending the sentiment associated with the row itself
                 message = row[0]
                 #print("Input: " + message)             #   Debugging purposes
-                messages.append(tokenizing_process(message)) """
+                messages.append(tokenizing_process(message))
+# Opening the .csv data file
+with open(abs_location + file_location + file_name4, 'r') as csvfile:
+    reader = csv.reader(csvfile, delimiter=',')
+    for row in reader:
+        if row[1] == "YES": # TESTING -- Cutting the size of the sentiments used, REMOVE ME
+                labels.append("sadness") # Appending the sentiment associated with the row itself
+        message = row[2]
+        #print("Input: " + message)             #   Debugging purposes
+        messages.append(tokenizing_process(message))
 
 # Shuffling the data
 #print(len(labels)) # Number of labels
@@ -139,12 +153,16 @@ dataset = tf.data.Dataset.from_tensor_slices(list(zip(messages, labels)))
 # Training and testing splitting
 
 train_size = int(len(messages) * training_portion)
+test_size = int(len(messages) * testing_portion) + train_size
 
 train_messages = messages[0: train_size]
 train_labels = labels[0: train_size]
 
-validation_messages = messages[train_size:]
-validation_labels = labels[train_size:]
+test_messages = messages[train_size: test_size]
+test_labels = labels[train_size: test_size]
+
+validation_messages = messages[test_size:]
+validation_labels = labels[test_size:]
 
 
 tokenizer = Tokenizer(num_words = vocab_size, oov_token=oov_tok)
@@ -160,11 +178,15 @@ train_padded = pad_sequences(train_sequences, maxlen=max_length, padding=padding
 validation_sequences = tokenizer.texts_to_sequences(validation_messages)
 validation_padded = pad_sequences(validation_sequences, maxlen=max_length, padding=padding_type, truncating=trunc_type)
 
+test_sequences = tokenizer.texts_to_sequences(test_messages)
+test_padded = pad_sequences(test_sequences, maxlen=max_length, padding=padding_type, truncating=trunc_type)
+
 label_tokenizer = Tokenizer()
 label_tokenizer.fit_on_texts(labels)
 
 training_label_seq = np.array(label_tokenizer.texts_to_sequences(train_labels))
 validation_label_seq = np.array(label_tokenizer.texts_to_sequences(validation_labels))
+test_label_seq = np.array(label_tokenizer.texts_to_sequences(test_labels))
 
 # Building the model
 
@@ -173,17 +195,17 @@ model = tf.keras.Sequential([
                            output_dim=embedding_dim, 
                            input_length=max_length),
     layers.SpatialDropout1D(0.15),
-    layers.Bidirectional(layers.LSTM(32, dropout=0.15, recurrent_dropout=0.15)),
-    #layers.Dense(8, activation="tanh"),
+    layers.Bidirectional(layers.LSTM(64, dropout=0.15, recurrent_dropout=0.15)),
+    layers.Dense(8, activation="tanh"),
     layers.Dense(4, activation="softmax")
 ])
 model.summary()
 model.compile(loss="sparse_categorical_crossentropy", optimizer="rmsprop", metrics=["accuracy"])
-NUM_EPOCHS = 30
+NUM_EPOCHS = 10
 #model.fit(train_padded, training_label_seq, epochs=NUM_EPOCHS)
 history = model.fit(train_padded, training_label_seq, epochs=NUM_EPOCHS
- , validation_data=(train_padded, training_label_seq))
-model.evaluate(train_padded, training_label_seq)
+ , validation_data=(validation_padded, validation_label_seq))
+model.evaluate(test_padded, test_label_seq)
 
 """ model = tf.keras.Sequential([
     layers.Embedding(input_dim=vocab_size, 
@@ -233,7 +255,7 @@ while 1:
     separated_token_txt = [token_txt]
     seq = tokenizer.texts_to_sequences(separated_token_txt)
     #print(seq)
-    padded = pad_sequences(seq, maxlen=max_length)
-    pred = model.predict(padded)
+    #padded = pad_sequences(seq, maxlen=max_length)
+    pred = model.predict(seq)
     labels = ["sadness", "neutral", "happiness", 0]
     print(pred, labels[np.argmax(pred)])
