@@ -81,7 +81,7 @@ def tokenizing_process(message):
     return message
 
 # TESTING -- List of sentiments to append
-#test_check = ["sadness", "neutral", "happiness", "fun", "worry", "boredom", "joy", "love", "fear"]
+# test_check = ["sadness", "neutral", "happiness", "fun", "worry", "boredom", "joy", "love", "fear"]
 test_check = ["sadness", "neutral", "happiness", "fun", "worry", "boredom", "joy", "love", "fear"]
 # Opening the .csv data file
 with open(abs_location + file_location + file_name, 'r') as csvfile:
@@ -201,7 +201,7 @@ model = tf.keras.Sequential([
 ])
 model.summary()
 model.compile(loss="sparse_categorical_crossentropy", optimizer="rmsprop", metrics=["accuracy"])
-NUM_EPOCHS = 10
+NUM_EPOCHS = 5
 #model.fit(train_padded, training_label_seq, epochs=NUM_EPOCHS)
 history = model.fit(train_padded, training_label_seq, epochs=NUM_EPOCHS
  , validation_data=(validation_padded, validation_label_seq))

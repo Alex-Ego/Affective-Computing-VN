@@ -83,6 +83,61 @@ An LSTM Neural Network was opted for because of the increased accuracy that it o
 This project is built on Python v3.8.10, The libraries used for this project to come to fruition are TensorFlow\footnote{\url{https://www.tensorflow.org/}} v2.6.0 and Keras\footnote{\url{https://keras.io/}} v2.6.0 for the Neural Network section. Natural Language Toolkit\footnote{\url{https://www.nltk.org/}} v3.5 (also known as NLTK) for the tokenization and stemming process. Chatterbot\footnote{\url{https://chatterbot.readthedocs.io/en/stable/}} for the chatbot's output. And, lastly, pygame\footnote{\url{https://www.pygame.org/news}} v1.9.5 for the GUI.
 Originally, \textit{Ren'py}\footnote{An open-source Python framework focused mostly in the development of visual novels and other videogame formats. \url{https://www.renpy.org/}} was the chosen framework for this project's interface to work with, but -- unfortunately for the proposed usage -- it only works with Python 2.7, which makes it incompatible with TensorFlow 2.0. Making a bridge between Python 2 and 3 would inevitably generate more issues that would take more time to solve, so it was scrapped in favor of the pygame library.
 
+\section{Interface}
+Originally, \textit{Ren'py}\footnote{An open-source Python framework focused mostly in the development of visual novels and other videogame formats. \url{https://www.renpy.org/}} was the chosen framework for this project's interface to work with, but -- unfortunately for the proposed usage -- it only works with Python 2.7, which makes it incompatible with TensorFlow 2.0. Making a bridge between Python 2 and 3 would inevitably generate more issues that would take more time to solve, so it was scrapped in favor of the \textit{pygame} library.
+\pagebreak
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.3]{Ren'py}
+	\caption{First version of the interface using Ren'py.}
+	\label{fig:renpy_test_1}
+\end{figure}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.3]{Ren'py_2}
+	\caption{Reacting positively to text in the ``Good'' category in the Ren'py version.}
+	\label{fig:renpy_test_2}
+\end{figure}
+
+The current interface is a hybrid between a Pygame screen, where the assistant appears to react to the input, and the console, where a person can input text to be analyzed.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.3]{PyGame1}
+	\caption{Current version of the interface, using PyGame}
+	\label{fig:PyGame1}
+\end{figure}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.3]{PyGame2}
+	\caption{Reacting positively to text in the ``Good'' category in the PyGame version.}
+	\label{fig:PyGame2}
+\end{figure}
+
+\subsection{Assistant}
+As for the character that is being used, it also has gone through some changes. Originally the idea was to make a low-poly character render to work with, but since 3D modeling-from-scratch skills exceed the scope of this paper, an alternative software was selected instead. Namely \textit{VRoid}.\\
+The main purpose for this assistant is to make people feel like it is her that they are talking to and not to some faceless machine, while also making it easier to the eyes. A more realistic, less animated style could have been used, but a friendly, less prone to uncanny valley approach to the design was opted for with this in mind.
+\begin{figure}[!bht]
+	\centering
+	\includegraphics[scale=.5]{Assistant_1}
+	\caption{First attempt at 3D modeling an assistant.}
+	\label{fig:assistant1}
+\end{figure}
+\begin{figure}[!bht]
+	\centering
+	\includegraphics[scale=.25]{Assistant_2}
+	\caption{Assistant Ver. 2, now using VRoid.}
+	\label{fig:assistant2}
+\end{figure}
+\begin{figure}[!bht]
+	\centering
+	\includegraphics[scale=.25]{Assistant_3}
+	\caption{Assistant Ver. 3, the current design.}
+	\label{fig:assistant3}
+\end{figure}
+\pagebreak
+
 \section{Inner Workings}
 In this section, I will highlight the most important parts of this project's code and their function. In case of needing further insight on the code used, the repository is online at \url{https://github.com/Alex-Ego/Affective-Computing-VN}.
 \subsection{Text Filtering}
@@ -124,17 +179,19 @@ model = tf.keras.Sequential([
                            output_dim=embedding_dim, 
                            input_length=max_length),
     layers.SpatialDropout1D(0.15),
-    layers.Bidirectional(layers.LSTM(32, dropout=0.15, 
-    recurrent_dropout=0.15)),
+    layers.Bidirectional(layers.LSTM(32, dropout=0.15,
+recurrent_dropout=0.15)),
+    layers.Dense(8, activation="tanh"),
     layers.Dense(4, activation="softmax")
 ])
-\end{lstlisting} 
-As the code shown indicates, this neural network has only 2 layers: LSTM for classification, and Dense for declaring that the result can be included in 4 categories, which include the three previously discussed categories, and one reserved for error/unknown purposes.
+\end{lstlisting}
+As the code shown indicates, this neural network has 3 layers: LSTM for classification, and two Dense, the former is to slim down the input data from the previous layer, and the latter is for classification which can be one in 4 categories, which include the three previously discussed categories, and one reserved for error/unknown purposes.
 \subsection{Portability}
 Training the Neural Network every time is not needed, since there is a way to save the model in a \textit{.hdf5} file and the corpus in a plain \textit{.txt} file with the following code snippet:
 \begin{lstlisting}
 model_location = os.path.join(abs_location, "nndata/model")
-keras.models.save_model(model, model_location + "/sentimental_analysis.hdf5")
+keras.models.save_model(model, model_location + 
+"/sentimental_analysis.hdf5")
 with open(model_location + "/tokens.txt", "w") as f:
     f.write(tokenizer.to_json())
     f.close()

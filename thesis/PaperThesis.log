@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.1)  8 OCT 2021 05:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.1)  22 OCT 2021 03:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -669,49 +669,67 @@ File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 File: listings.cfg 2019/09/10 1.8c listings configuration
 ))
 Package: listings 2019/09/10 1.8c (Carsten Heinz)
-Package hyperref Info: Option `breaklinks' set `true' on input line 30.
-Package hyperref Info: Option `colorlinks' set `true' on input line 30.
+
+(/usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen280
+\ar@mcellbox=\box65
+\extrarowheight=\dimen281
+\NC@list=\toks41
+\extratabsurround=\skip57
+\backup@length=\skip58
+\ar@cellbox=\box66
+)
+\rotheadsize=\dimen282
+\c@nlinenum=\count301
+\TeXr@lab=\toks42
+)
+Package hyperref Info: Option `breaklinks' set `true' on input line 33.
+Package hyperref Info: Option `colorlinks' set `true' on input line 33.
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count301
-\l__pdf_internal_box=\box65
+\l__kernel_color_stack_int=\count302
+\l__pdf_internal_box=\box67
 )
 (./PaperThesis.aux (./Portadas.aux) (./Agradecimientos.aux) (./Resumen.aux)
 (./Capitulo1.aux) (./Capitulo2.aux) (./Capitulo3.aux) (./Capitulo4.aux)
 (./Capitulo5.aux) (./Autobiografia.aux))
 \openout1 = `PaperThesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count302
-\scratchdimen=\dimen280
-\scratchbox=\box66
-\nofMPsegments=\count303
-\nofMParguments=\count304
-\everyMPshowfont=\toks41
-\MPscratchCnt=\count305
-\MPscratchDim=\dimen281
-\MPnumerator=\count306
-\makeMPintoPDFobject=\count307
-\everyMPtoPDFconversion=\toks42
+\scratchcounter=\count303
+\scratchdimen=\dimen283
+\scratchbox=\box68
+\nofMPsegments=\count304
+\nofMParguments=\count305
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count306
+\MPscratchDim=\dimen284
+\MPnumerator=\count307
+\makeMPintoPDFobject=\count308
+\everyMPtoPDFconversion=\toks44
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -721,8 +739,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box67
-Package hyperref Info: Link coloring ON on input line 60.
+\AtBeginShipoutBox=\box69
+Package hyperref Info: Link coloring ON on input line 63.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -733,18 +751,18 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count308
+\c@section@level=\count309
 )
-LaTeX Info: Redefining \ref on input line 60.
-LaTeX Info: Redefining \pageref on input line 60.
-LaTeX Info: Redefining \nameref on input line 60.
+LaTeX Info: Redefining \ref on input line 63.
+LaTeX Info: Redefining \pageref on input line 63.
+LaTeX Info: Redefining \nameref on input line 63.
 
 (./PaperThesis.out) (./PaperThesis.out)
 \@outlinefile=\write4
 \openout4 = `PaperThesis.out'.
 
  ABD: EveryShipout initializing macros
-\c@lstlisting=\count309
+\c@lstlisting=\count310
 \openout2 = `Portadas.aux'.
 
 
@@ -763,7 +781,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/uanl-eps-converted-to.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/uanl-eps-converted-to.pdf, id=175, 87.32625pt x 78.2925pt>
+<Figures/uanl-eps-converted-to.pdf, id=191, 87.32625pt x 78.2925pt>
 File: Figures/uanl-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/uanl-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/uanl-eps-converted-to.pdf  used on input line 
@@ -799,7 +817,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/fime-eps-converted-to.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/fime-eps-converted-to.pdf, id=192, 108.405pt x 143.53625pt>
+<Figures/fime-eps-converted-to.pdf, id=209, 108.405pt x 143.53625pt>
 File: Figures/fime-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/fime-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/fime-eps-converted-to.pdf  used on input line 
@@ -825,57 +843,30 @@ Overfull \hbox (14.60258pt too wide) in paragraph at lines 6--6
  present work: []indicates 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 9
-.
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-Overfull \hbox (9.47571pt too wide) in paragraph at lines 9--9
- [][] [][][]\T1/cmr/m/n/12 Experiment 1's defin-ing char-ac-ter-is-tics. Ver-si
-on link: [][]$\T1/cmtt/m/n/12 https : / / github . 
- []
-
-
-Overfull \hbox (136.18605pt too wide) in paragraph at lines 9--9
- \T1/cmtt/m/n/12 com / Alex-[]Ego / Affective-[]Computing-[]VN / tree / d4945b4
-bb506e0a6a0b6b3ad576d48f95cb745c4$[][][][] [][]  
- []
-
-
-Overfull \hbox (9.47571pt too wide) in paragraph at lines 10--10
- [][] [][][]\T1/cmr/m/n/12 Experiment 2's defin-ing char-ac-ter-is-tics. Ver-si
-on link: [][]$\T1/cmtt/m/n/12 https : / / github . 
- []
-
-
-Overfull \hbox (136.18605pt too wide) in paragraph at lines 10--10
- \T1/cmtt/m/n/12 com / Alex-[]Ego / Affective-[]Computing-[]VN / tree / 7225434
-fc88b808e818c8681fc85e82937373db1$[][][][] [][]  
- []
-
 )
 \tf@lot=\write7
 \openout7 = `PaperThesis.lot'.
 
  [9
 
-]
+] [10]
 \openout2 = `Agradecimientos.aux'.
 
- (./Agradecimientos.tex) [10
+ (./Agradecimientos.tex) [11
 
 
 ]
 \openout2 = `Resumen.aux'.
 
- (./Resumen.tex [11
+ (./Resumen.tex [12
 
 
 
-]) [12]
+]) [13]
 \openout2 = `Capitulo1.aux'.
 
- (./Capitulo1.tex
+
+(./Capitulo1.tex
 Chapter 1.
 [1
 
@@ -933,23 +924,29 @@ Chapter 4.
 
 
 ] [14]
-<Figures/Normal_RNN.png, id=473, 145.89507pt x 248.42813pt>
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
+5.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+<Figures/Normal_RNN.png, id=533, 145.89507pt x 248.42813pt>
 File: Figures/Normal_RNN.png Graphic file (type png)
 <use Figures/Normal_RNN.png>
 Package pdftex.def Info: Figures/Normal_RNN.png  used on input line 63.
 (pdftex.def)             Requested size: 102.12584pt x 173.8985pt.
-<Figures/Transp_RNN.png, id=474, 388.45125pt x 248.42813pt>
+<Figures/Transp_RNN.png, id=534, 388.45125pt x 248.42813pt>
 File: Figures/Transp_RNN.png Graphic file (type png)
 <use Figures/Transp_RNN.png>
 Package pdftex.def Info: Figures/Transp_RNN.png  used on input line 69.
 (pdftex.def)             Requested size: 271.914pt x 173.8985pt.
-<Figures/Transp_LSTM.png, id=475, 379.4175pt x 248.42813pt>
+<Figures/Transp_LSTM.png, id=535, 379.4175pt x 248.42813pt>
 File: Figures/Transp_LSTM.png Graphic file (type png)
 <use Figures/Transp_LSTM.png>
 Package pdftex.def Info: Figures/Transp_LSTM.png  used on input line 77.
 (pdftex.def)             Requested size: 265.59042pt x 173.8985pt.
- [15] [16pdfTeX warning (ext4): destination with the same identifier (name{figu
-re.4.1}) has been already used, duplicate ignored
+ [15]
+[16pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -967,265 +964,455 @@ l.85
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.85 
-      <./Figures/Transp_RNN.png> <./Figures/Transp_LSTM.png>] [18] [19]
-Overfull \hbox (8.87354pt too wide) in paragraph at lines 136--137
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (142.22229pt too wide) in paragraph at lines 137--138
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-) [20]
-\openout2 = `Capitulo5.aux'.
-
- (./Capitulo5.tex
-Chapter 5.
-[21
-
-
-
-] [22]
+      <./Figures/Transp_RNN.png> <./Figures/Transp_LSTM.png>] [18]
 <Figures/Ren'py.png, id=583, 1304.875pt x 777.90625pt>
 File: Figures/Ren'py.png Graphic file (type png)
 <use Figures/Ren'py.png>
-Package pdftex.def Info: Figures/Ren'py.png  used on input line 17.
+Package pdftex.def Info: Figures/Ren'py.png  used on input line 92.
 (pdftex.def)             Requested size: 391.46552pt x 233.37367pt.
 <Figures/Ren'py_2.png, id=585, 1304.875pt x 777.90625pt>
 File: Figures/Ren'py_2.png Graphic file (type png)
 <use Figures/Ren'py_2.png>
-Package pdftex.def Info: Figures/Ren'py_2.png  used on input line 23.
+Package pdftex.def Info: Figures/Ren'py_2.png  used on input line 98.
 (pdftex.def)             Requested size: 391.46552pt x 233.37367pt.
-<Figures/Assistant_1.png, id=586, 517.18219pt x 520.94624pt>
+<Figures/PyGame1.png, id=586, 1286.8075pt x 761.84625pt>
+File: Figures/PyGame1.png Graphic file (type png)
+<use Figures/PyGame1.png>
+Package pdftex.def Info: Figures/PyGame1.png  used on input line 107.
+(pdftex.def)             Requested size: 386.04523pt x 228.55563pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/PyGame2.png, id=587, 1286.8075pt x 761.84625pt>
+File: Figures/PyGame2.png Graphic file (type png)
+<use Figures/PyGame2.png>
+Package pdftex.def Info: Figures/PyGame2.png  used on input line 113.
+(pdftex.def)             Requested size: 386.04523pt x 228.55563pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/Assistant_1.png, id=588, 517.18219pt x 520.94624pt>
 File: Figures/Assistant_1.png Graphic file (type png)
 <use Figures/Assistant_1.png>
-Package pdftex.def Info: Figures/Assistant_1.png  used on input line 35.
+Package pdftex.def Info: Figures/Assistant_1.png  used on input line 123.
 (pdftex.def)             Requested size: 258.59045pt x 260.47249pt.
-<Figures/Assistant_2.png, id=587, 829.0975pt x 1081.03876pt>
+<Figures/Assistant_2.png, id=589, 829.0975pt x 1081.03876pt>
 File: Figures/Assistant_2.png Graphic file (type png)
 <use Figures/Assistant_2.png>
-Package pdftex.def Info: Figures/Assistant_2.png  used on input line 41.
+Package pdftex.def Info: Figures/Assistant_2.png  used on input line 129.
 (pdftex.def)             Requested size: 207.27386pt x 270.25902pt.
-<Figures/Assistant_3.png, id=588, 720.6925pt x 1084.05pt>
+<Figures/Assistant_3.png, id=590, 720.6925pt x 1084.05pt>
 File: Figures/Assistant_3.png Graphic file (type png)
 <use Figures/Assistant_3.png>
-Package pdftex.def Info: Figures/Assistant_3.png  used on input line 47.
+Package pdftex.def Info: Figures/Assistant_3.png  used on input line 135.
 (pdftex.def)             Requested size: 180.17268pt x 271.01184pt.
- [23pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+[19pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.140 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.140 
+       <./Figures/Ren'py.png> <./Figures/Ren'py_2.png>] [20pdfTeX warning (ext4
+): destination with the same identifier (name{figure.4.6}) has been already use
+d, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.140 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4.7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.140 
+       <./Figures/PyGame1.png> <./Figures/PyGame2.png>] [21pdfTeX warning (ext4
+): destination with the same identifier (name{figure.4.8}) has been already use
+d, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.140 
+       <./Figures/Assistant_1.png>]
+
+LaTeX Warning: Text page 22 contains only floats.
+
+[22pdfTeX warning (ext4): destination with the same identifier (name{figure.4.9
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.140 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.140 
+       <./Figures/Assistant_2.png> <./Figures/Assistant_3.png>] [23] [24]
+Overfull \hbox (8.87354pt too wide) in paragraph at lines 192--193
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) [25]
+\openout2 = `Capitulo5.aux'.
+
+ (./Capitulo5.tex
+Chapter 5.
+[26
+
+
+
+] [27]
+<Figures/Accuracy_Exp1.png, id=684, 462.528pt x 346.896pt>
+File: Figures/Accuracy_Exp1.png Graphic file (type png)
+<use Figures/Accuracy_Exp1.png>
+Package pdftex.def Info: Figures/Accuracy_Exp1.png  used on input line 64.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
+<Figures/Loss_Exp1.png, id=685, 462.528pt x 346.896pt>
+File: Figures/Loss_Exp1.png Graphic file (type png)
+<use Figures/Loss_Exp1.png>
+Package pdftex.def Info: Figures/Loss_Exp1.png  used on input line 67.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[28pdfTeX warning (ext4): destination with the same identifier (name{table.5.1}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.72 
+     pdfTeX warning (ext4): destination with the same identifier (name{table.5.
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.72 
+     ]
+
+LaTeX Warning: Text page 29 contains only floats.
+
+[29pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.72 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.5
+.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.72 
+      <./Figures/Accuracy_Exp1.png> <./Figures/Loss_Exp1.png>]
+<Figures/Accuracy_Exp2.png, id=701, 462.528pt x 346.896pt>
+File: Figures/Accuracy_Exp2.png Graphic file (type png)
+<use Figures/Accuracy_Exp2.png>
+Package pdftex.def Info: Figures/Accuracy_Exp2.png  used on input line 112.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
+<Figures/Loss_Exp2.png, id=702, 462.528pt x 346.896pt>
+File: Figures/Loss_Exp2.png Graphic file (type png)
+<use Figures/Loss_Exp2.png>
+Package pdftex.def Info: Figures/Loss_Exp2.png  used on input line 115.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[30pdfTeX warning (ext4): destination with the same identifier (name{table.5.3}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.120 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.5
+.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.120 
+      ]
+
+LaTeX Warning: Text page 31 contains only floats.
+
+[31pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.120 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.120 
+       <./Figures/Accuracy_Exp2.png> <./Figures/Loss_Exp2.png>]
+<Figures/Accuracy_Exp3.png, id=718, 462.528pt x 346.896pt>
+File: Figures/Accuracy_Exp3.png Graphic file (type png)
+<use Figures/Accuracy_Exp3.png>
+Package pdftex.def Info: Figures/Accuracy_Exp3.png  used on input line 160.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
+<Figures/Loss_Exp3.png, id=719, 462.528pt x 346.896pt>
+File: Figures/Loss_Exp3.png Graphic file (type png)
+<use Figures/Loss_Exp3.png>
+Package pdftex.def Info: Figures/Loss_Exp3.png  used on input line 163.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[32pdfTeX warning (ext4): destination with the same identifier (name{table.5.5}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.168 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.5
+.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.168 
+      ]
+
+LaTeX Warning: Text page 33 contains only floats.
+
+[33pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.168 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.168 
+       <./Figures/Accuracy_Exp3.png> <./Figures/Loss_Exp3.png>]
+<Figures/Accuracy_Exp4.png, id=734, 462.528pt x 346.896pt>
+File: Figures/Accuracy_Exp4.png Graphic file (type png)
+<use Figures/Accuracy_Exp4.png>
+Package pdftex.def Info: Figures/Accuracy_Exp4.png  used on input line 208.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
+<Figures/Loss_Exp4.png, id=735, 462.528pt x 346.896pt>
+File: Figures/Loss_Exp4.png Graphic file (type png)
+<use Figures/Loss_Exp4.png>
+Package pdftex.def Info: Figures/Loss_Exp4.png  used on input line 211.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[34pdfTeX warning (ext4): destination with the same identifier (name{table.5.7}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.216 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.5
+.8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.216 
+      ]
+
+LaTeX Warning: Text page 35 contains only floats.
+
+[35pdfTeX warning (ext4): destination with the same identifier (name{figure.5.7
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.216 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5.8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.216 
+       <./Figures/Accuracy_Exp4.png> <./Figures/Loss_Exp4.png>]
+<Figures/Accuracy_Exp5.png, id=750, 462.528pt x 346.896pt>
+File: Figures/Accuracy_Exp5.png Graphic file (type png)
+<use Figures/Accuracy_Exp5.png>
+Package pdftex.def Info: Figures/Accuracy_Exp5.png  used on input line 256.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
+<Figures/Loss_Exp5.png, id=751, 462.528pt x 346.896pt>
+File: Figures/Loss_Exp5.png Graphic file (type png)
+<use Figures/Loss_Exp5.png>
+Package pdftex.def Info: Figures/Loss_Exp5.png  used on input line 259.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[36pdfTeX warning (ext4): destination with the same identifier (name{table.5.9}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.264 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.5
+.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.264 
+      ]
+
+LaTeX Warning: Text page 37 contains only floats.
+
+[37pdfTeX warning (ext4): destination with the same identifier (name{figure.5.9
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.264 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.264 
+       <./Figures/Accuracy_Exp5.png> <./Figures/Loss_Exp5.png>]
+<Figures/Accuracy_Exp6.png, id=768, 462.528pt x 346.896pt>
+File: Figures/Accuracy_Exp6.png Graphic file (type png)
+<use Figures/Accuracy_Exp6.png>
+Package pdftex.def Info: Figures/Accuracy_Exp6.png  used on input line 304.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
+<Figures/Loss_Exp6.png, id=769, 462.528pt x 346.896pt>
+File: Figures/Loss_Exp6.png Graphic file (type png)
+<use Figures/Loss_Exp6.png>
+Package pdftex.def Info: Figures/Loss_Exp6.png  used on input line 307.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[38pdfTeX warning (ext4): destination with the same identifier (name{table.5.11
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.312 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.5
+.12}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.312 
+      ]
+
+LaTeX Warning: Text page 39 contains only floats.
+
+[39pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.52 \section{Experiments}
-                          pdfTeX warning (ext4): destination with the same iden
-tifier (name{figure.5.2}) has been already used, duplicate ignored
+l.312 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.52 \section{Experiments}
-                           <./Figures/Ren'py.png> <./Figures/Ren'py_2.png>]
-[24pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.52 \section{Experiments}
-                           <./Figures/Assistant_1.png>]
-
-LaTeX Warning: Text page 25 contains only floats.
-
-[25pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.52 \section{Experiments}
-                          pdfTeX warning (ext4): destination with the same iden
-tifier (name{figure.5.5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.52 \section{Experiments}
-                           <./Figures/Assistant_2.png> <./Figures/Assistant_3.p
-ng>]
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
-[]\T1/cmr/m/n/12 Table 5.1: []Experiment 1's defin-ing char-ac-ter-is-tics. Ver
--sion link:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
-[][]$\T1/cmtt/m/n/12 https : / / github . com / Alex-[]Ego / Affective-[]Comput
-ing-[]VN / tree /
- []
-
-<Figures/Accuracy 2020-05.png, id=610, 462.528pt x 346.896pt>
-File: Figures/Accuracy 2020-05.png Graphic file (type png)
-<use Figures/Accuracy 2020-05.png>
-Package pdftex.def Info: Figures/Accuracy 2020-05.png  used on input line 75.
+l.312 
+       <./Figures/Accuracy_Exp6.png> <./Figures/Loss_Exp6.png>]
+<Figures/Accuracy_Exp7.png, id=784, 462.528pt x 346.896pt>
+File: Figures/Accuracy_Exp7.png Graphic file (type png)
+<use Figures/Accuracy_Exp7.png>
+Package pdftex.def Info: Figures/Accuracy_Exp7.png  used on input line 352.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-<Figures/Loss 2020-05.png, id=611, 462.528pt x 346.896pt>
-File: Figures/Loss 2020-05.png Graphic file (type png)
-<use Figures/Loss 2020-05.png>
-Package pdftex.def Info: Figures/Loss 2020-05.png  used on input line 78.
-(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[26pdfTeX warning (ext4): destination with the same identifier (name{table.5.1}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.83 \subsection{Experiment 2 / July 2021}
-                                          ]
-
-LaTeX Warning: Text page 27 contains only floats.
-
-[27pdfTeX warning (ext4): destination with the same identifier (name{figure.5.6
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.83 \subsection{Experiment 2 / July 2021}
-                                          pdfTeX warning (ext4): destination wi
-th the same identifier (name{figure.5.7}) has been already used, duplicate igno
-red
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.83 \subsection{Experiment 2 / July 2021}
-                                           <./Figures/Accuracy 2020-05.png> <./
-Figures/Loss 2020-05.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-[]\T1/cmr/m/n/12 Table 5.2: []Experiment 2's defin-ing char-ac-ter-is-tics. Ver
--sion link:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-[][]$\T1/cmtt/m/n/12 https : / / github . com / Alex-[]Ego / Affective-[]Comput
-ing-[]VN / tree /
- []
-
-<Figures/Accuracy 2021-07.png, id=628, 462.528pt x 346.896pt>
-File: Figures/Accuracy 2021-07.png Graphic file (type png)
-<use Figures/Accuracy 2021-07.png>
-Package pdftex.def Info: Figures/Accuracy 2021-07.png  used on input line 104.
-(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-<Figures/Loss 2021-07.png, id=629, 462.528pt x 346.896pt>
-File: Figures/Loss 2021-07.png Graphic file (type png)
-<use Figures/Loss 2021-07.png>
-Package pdftex.def Info: Figures/Loss 2021-07.png  used on input line 107.
-(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[28pdfTeX warning (ext4): destination with the same identifier (name{table.5.2}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.112 \subsection{Experiment 3 / October 2021-1}
-                                                ]
-
-LaTeX Warning: Text page 29 contains only floats.
-
-[29pdfTeX warning (ext4): destination with the same identifier (name{figure.5.8
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.112 \subsection{Experiment 3 / October 2021-1}
-                                                pdfTeX warning (ext4): destinat
-ion with the same identifier (name{figure.5.9}) has been already used, duplicat
-e ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.112 \subsection{Experiment 3 / October 2021-1}
-                                                 <./Figures/Accuracy 2021-07.pn
-g> <./Figures/Loss 2021-07.png>]
-<Figures/Accuracy 2021-10.png, id=645, 462.528pt x 346.896pt>
-File: Figures/Accuracy 2021-10.png Graphic file (type png)
-<use Figures/Accuracy 2021-10.png>
-Package pdftex.def Info: Figures/Accuracy 2021-10.png  used on input line 133.
-(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-<Figures/Loss 2021-10.png, id=646, 462.528pt x 346.896pt>
-File: Figures/Loss 2021-10.png Graphic file (type png)
-<use Figures/Loss 2021-10.png>
-Package pdftex.def Info: Figures/Loss 2021-10.png  used on input line 136.
+<Figures/Loss_Exp7.png, id=785, 462.528pt x 346.896pt>
+File: Figures/Loss_Exp7.png Graphic file (type png)
+<use Figures/Loss_Exp7.png>
+Package pdftex.def Info: Figures/Loss_Exp7.png  used on input line 355.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [30pdfTeX warning (ext4): destination with the same identifier (name{table.5.
+) [40pdfTeX warning (ext4): destination with the same identifier (name{table.5.
+13}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.88 \include{Capitulo5}
+                        pdfTeX warning (ext4): destination with the same identi
+fier (name{table.5.14}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.88 \include{Capitulo5}
+                        ]
+
+LaTeX Warning: Text page 41 contains only floats.
+
+[41pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.85 \include{Capitulo5}
-                        ]
-
-LaTeX Warning: Text page 31 contains only floats.
-
-[31pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
-0}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.85 \include{Capitulo5}
+l.88 \include{Capitulo5}
                         pdfTeX warning (ext4): destination with the same identi
-fier (name{figure.5.11}) has been already used, duplicate ignored
+fier (name{figure.5.14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.85 \include{Capitulo5}
-                         <./Figures/Accuracy 2021-10.png> <./Figures/Loss 2021-
-10.png>] (./PaperThesis.bbl [32
+l.88 \include{Capitulo5}
+                         <./Figures/Accuracy_Exp7.png> <./Figures/Loss_Exp7.png
+>] (./PaperThesis.bbl [42
 
 
 
-] [33]
-Underfull \hbox (badness 1231) in paragraph at lines 148--156
+] [43]
+Underfull \hbox (badness 1231) in paragraph at lines 153--161
 \T1/cmr/m/it/12 ics\T1/cmr/m/n/12 , 64, 2021.  ISSN 1574-9541.  doi: $https : /
  / doi . org / 10 . 1016 / j . ecoinf .
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 148--156
+Underfull \hbox (badness 1931) in paragraph at lines 153--161
 \T1/cmr/m/n/12 2021 . 101354$.  URL [][]$\T1/cmtt/m/n/12 https : / / www . scie
 ncedirect . com / science / article /
  []
 
-) [34]
+[44]) [45]
 \openout2 = `Autobiografia.aux'.
 
- (./Autobiografia.tex) [35
+ (./Autobiografia.tex) [46
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 105.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 105.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
  (./PaperThesis.aux (./Portadas.aux)
 (./Agradecimientos.aux) (./Resumen.aux) (./Capitulo1.aux) (./Capitulo2.aux)
 (./Capitulo3.aux) (./Capitulo4.aux) (./Capitulo5.aux) (./Autobiografia.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 Package rerunfilecheck Info: File `PaperThesis.out' has not changed.
-(rerunfilecheck)             Checksum: D74F0CAB890D3E0072A18F120356DCB1;2640.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 105.
+(rerunfilecheck)             Checksum: 942B2C58E5C417D9ED9BEAE88C563D70;2864.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  ) 
 Here is how much of TeX's memory you used:
- 20845 strings out of 481239
- 370157 string characters out of 5920378
- 620106 words of memory out of 5000000
- 35405 multiletter control sequences out of 15000+600000
+ 21168 strings out of 481239
+ 374304 string characters out of 5920378
+ 622497 words of memory out of 5000000
+ 35687 multiletter control sequences out of 15000+600000
  549863 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,11n,60p,697b,1768s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,17n,60p,697b,1768s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not ex
 ist, replaced by a fixed one
 
@@ -1279,10 +1466,10 @@ rm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/sha
 re/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1
 /public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sft
 t1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on PaperThesis.pdf (47 pages, 3922960 bytes).
+Output written on PaperThesis.pdf (59 pages, 5923573 bytes).
 PDF statistics:
- 789 PDF objects out of 1000 (max. 8388607)
- 682 compressed objects within 7 object streams
- 193 named destinations out of 1000 (max. 500000)
- 429 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 943 PDF objects out of 1000 (max. 8388607)
+ 804 compressed objects within 9 object streams
+ 233 named destinations out of 1000 (max. 500000)
+ 511 words of extra memory for PDF output out of 10000 (max. 10000000)
 

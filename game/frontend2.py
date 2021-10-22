@@ -64,7 +64,9 @@ while True:
     conversation.say("Write on console.")
     userinput = input("Say something: ")
     if userinput:
+        print(userinput)
         score = SA.evaluation(userinput)
+        print(score)
         response = bot.get_response(score)
         print(response)
         if score == "happiness":

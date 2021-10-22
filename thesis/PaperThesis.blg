@@ -20,45 +20,45 @@ Warning--empty booktitle in rf21
 Warning--empty journal in rf20
 Warning--empty journal in rf2
 Warning--empty journal in rf16
-You've used 23 entries,
+You've used 24 entries,
             2773 wiz_defined-function locations,
-            750 strings with 9448 characters,
-and the built_in function-call counts, 11021 in all, are:
-= -- 998
-> -- 630
+            756 strings with 9717 characters,
+and the built_in function-call counts, 11483 in all, are:
+= -- 1035
+> -- 669
 < -- 18
-+ -- 214
-- -- 191
-* -- 855
-:= -- 1686
-add.period$ -- 82
-call.type$ -- 23
-change.case$ -- 130
-chr.to.int$ -- 23
-cite$ -- 50
-duplicate$ -- 530
-empty$ -- 883
-format.name$ -- 218
-if$ -- 2338
++ -- 227
+- -- 203
+* -- 895
+:= -- 1758
+add.period$ -- 85
+call.type$ -- 24
+change.case$ -- 137
+chr.to.int$ -- 24
+cite$ -- 52
+duplicate$ -- 546
+empty$ -- 916
+format.name$ -- 231
+if$ -- 2433
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 22
-newline$ -- 133
-num.names$ -- 94
-pop$ -- 276
+newline$ -- 138
+num.names$ -- 98
+pop$ -- 293
 preamble$ -- 1
-purify$ -- 108
+purify$ -- 114
 quote$ -- 0
-skip$ -- 409
+skip$ -- 426
 stack$ -- 0
-substring$ -- 339
-swap$ -- 83
+substring$ -- 341
+swap$ -- 84
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 248
+type$ -- 259
 warning$ -- 4
-while$ -- 104
+while$ -- 107
 width$ -- 0
-write$ -- 320
+write$ -- 332
 (There were 6 warnings)

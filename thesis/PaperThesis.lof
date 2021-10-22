@@ -7,15 +7,25 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Basic Structure of a Recurrent Neural Network, where \textit {A} represents the algorithm used.}}{16}{figure.4.1}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Structure inside an algorithm in a basic Recurrent Neural Network, where \textit {L} represents the layers used.}}{17}{figure.4.2}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Structure inside an LSTM Neural Network, where the \textit {o} represent the functions that operate the data the data when traveling from one layer to another \citep {rf21}.}}{17}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces First version of the interface using Ren'py.}}{19}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Reacting positively to text in the ``Good'' category in the Ren'py version.}}{19}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Current version of the interface, using PyGame}}{20}{figure.4.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Reacting positively to text in the ``Good'' category in the PyGame version.}}{20}{figure.4.7}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces First attempt at 3D modeling an assistant.}}{21}{figure.4.8}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Assistant Ver. 2, now using VRoid.}}{22}{figure.4.9}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Assistant Ver. 3, the current design.}}{22}{figure.4.10}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces First version of the interface using Ren'py.}}{23}{figure.5.1}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Reacting positively to text in the ``Good'' category.}}{23}{figure.5.2}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces First attempt at 3D modeling an assistant.}}{24}{figure.5.3}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Assistant Ver. 2, now using VRoid.}}{25}{figure.5.4}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Assistant Ver. 3, the current design.}}{25}{figure.5.5}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Accuracy Graph of the Algorithm Training on May 2020}}{27}{figure.5.6}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Loss Graph of the Algorithm Training on May 2020}}{27}{figure.5.7}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Accuracy Graph of the Algorithm Training on July 2021}}{29}{figure.5.8}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Loss Graph of the Algorithm Training on July 2021}}{29}{figure.5.9}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Accuracy Graph of the Algorithm Training on October 2021}}{31}{figure.5.10}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Loss Graph of the Algorithm Training on October 2021}}{31}{figure.5.11}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Accuracy Graph of Experiment 1}}{29}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Loss Graph of Experiment 1}}{29}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Accuracy Graph of Experiment 2}}{31}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Loss Graph of Experiment 2}}{31}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Accuracy Graph of Experiment 3}}{33}{figure.5.5}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Loss Graph of Experiment 3}}{33}{figure.5.6}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Accuracy Graph of Experiment 4}}{35}{figure.5.7}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Loss Graph of Experiment 4}}{35}{figure.5.8}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Accuracy Graph of Experiment 5}}{37}{figure.5.9}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Loss Graph of Experiment 5}}{37}{figure.5.10}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Accuracy Graph of Experiment 6}}{39}{figure.5.11}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Loss Graph of Experiment 6}}{39}{figure.5.12}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Accuracy Graph of Experiment 7}}{41}{figure.5.13}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Loss Graph of Experiment 7}}{41}{figure.5.14}%

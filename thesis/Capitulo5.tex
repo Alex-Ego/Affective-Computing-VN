@@ -1,141 +1,359 @@
-\chapter{Project Development}
-In this chapter, the parts that compose this project as well as their context are shown. Also, some experiments are demonstrated for comparison with different parameters that have been used throughout the development of this thesis' project.
+\chapter{Data Experiments}
+In this chapter, the parts that compose this project as well as their context are shown. Also, some experiments are demonstrated for comparison with different parameters that could affect this thesis' project's overall accuracy.
 
 \section{Inputs and Outputs}
 In previous chapters, it has been specified that this algorithm takes an text input and, according to its contents, a message is shown as an output. The breakdown is as follows.
 \subsection{Inputs}
 The input that is given is cleaned up and tokenized -- as shown in the previous chapter --, , this is then added to an internal corpus that has weights set for every word in it, effectively working as scores. Every word has a different score in every label, whether it is positive or negative. This score is added up and the highest final score will be the one that the algorithm will detect as the most probable for the text input. However, this has its caveats, small sentences are more likely to be miscategorized because one word can have different applications in the scope of this project, for a more accurate analysis a longer sentence must be written.
 \subsection{Outputs}
-Depending on the final score, the algorithm will choose a random sentence related to the detected sentiment, this is, as of the time of writing, very rudimentary, but the fact that it's built in Python this can be a building block for a more robust, context-conscious, reply system.
+Depending on the final score, the algorithm will choose a random sentence related to the detected sentiment, this is, as of the time of writing, very rudimentary, but the fact that it is built in Python this can be a building block for a more robust, context-conscious, reply system.
+In the training module, however, four extra values are part of the output as well: \textit{Loss}, \textit{Val\_loss}, \textit{Accuracy} and \textit{Val\_accuracy}.
+These values are standard in every Neural Network algorithm to observe how poorly the evaluation does within the training dataset, and what the accuracy percentage is, respectively.
+The \textit{Val\_} counterparts of these values are the same, but applied to the validation dataset.
 
-\section{Interface}
-Originally, \textit{Ren'py}\footnote{An open-source Python framework focused mostly in the development of visual novels and other videogame formats. \url{https://www.renpy.org/}} was the chosen framework for this project's interface to work with, but -- unfortunately for the proposed usage -- it only works with Python 2.7, which makes it incompatible with TensorFlow 2.0. Making a bridge between Python 2 and 3 would inevitably generate more issues that would take more time to solve, so it was scrapped in favor of the \textit{pygame} library.
-\pagebreak
-
-\begin{figure}[!h]
-	\centering
-	\includegraphics[scale=0.3]{Ren'py}
-	\caption{First version of the interface using Ren'py.}
-	\label{fig:renpy_test_1}
-\end{figure}
-\begin{figure}[!h]
-	\centering
-	\includegraphics[scale=0.3]{Ren'py_2}
-	\caption{Reacting positively to text in the ``Good'' category.}
-	\label{fig:renpy_test_2}
-\end{figure}
-
-The current interface is a hybrid between a Pygame screen, where the assistant appears to react to the input, and the console, where a person can input text to be analyzed.
-
-\subsection{Assistant}
-As for the character that is being used, it also has gone through some changes. Originally the idea was to make a low-poly character render to work with, but since 3D modeling-from-scratch skills exceed the scope of this paper, an alternative software was selected instead. Namely \textit{VRoid}.\\
-The main purpose for this assistant is to make people feel like it is her that they are talking to and not to some faceless machine, while also making it easier to the eyes. A more realistic, less animated style could have been used, but a friendly, less prone to uncanny valley approach to the design was opted for with this in mind.
-\begin{figure}[!bht]
-	\centering
-	\includegraphics[scale=.5]{Assistant_1}
-	\caption{First attempt at 3D modeling an assistant.}
-	\label{fig:assistant1}
-\end{figure}
-\begin{figure}[!bht]
-	\centering
-	\includegraphics[scale=.25]{Assistant_2}
-	\caption{Assistant Ver. 2, now using VRoid.}
-	\label{fig:assistant2}
-\end{figure}
-\begin{figure}[!bht]
-	\centering
-	\includegraphics[scale=.25]{Assistant_3}
-	\caption{Assistant Ver. 3, the current design.}
-	\label{fig:assistant3}
-\end{figure}
-\pagebreak
 \section{Experiments}
-In this section, the evolution of this project is shown as experiments with varying modules and datasets with the respective accuracy and loss graphs.
-\subsection{Experiment 1 / May 2020}
-In the first version of this project, only one dataset was used, and the stemmer was not yet fully implemented.
-\begin{table}[!h]
-	\caption{Experiment 1's defining characteristics. Version link: \url{https://github.com/Alex-Ego/Affective-Computing-VN/tree/d4945b4bb506e0a6a0b6b3ad576d48f95cb745c4}}
-	\vspace{0.5cm}
-	\centering
-	\begin{tabular}[t]{|l|l|}
-	\hline
-		Datasets Used & 1: \citet{d1}
-	\\ \hline
-		NLTK Usage & Only Tokenizer and Stopwords
-	\\ \hline
-		Epochs & 25
-	\\ \hline
-		Type of Neural Network & LSTM, 2 layers
-	\\ \hline
-	\end{tabular}
-\end{table}
-\\
-\begin{figure}[!h]
-	\centering
-	\includegraphics[scale=0.8]{Accuracy 2020-05}
-	\caption{Accuracy Graph of the Algorithm Training on May 2020}
-	\label{fig:accuracy2020}
-	\includegraphics[scale=0.8]{Loss 2020-05}
-	\caption{Loss Graph of the Algorithm Training on May 2020}
-	\label{fig:loss2020}
-\end{figure}
-\pagebreak
-\subsection{Experiment 2 / July 2021}
-This second version, modified much later, does not have a lot of improvement over the last one, but the stemmer was fully deployed, a new dataset was used in tandem with the previous one, and the input is being properly filtered.
-\begin{table}[!h]
-	\caption{Experiment 2's defining characteristics. Version link: \url{https://github.com/Alex-Ego/Affective-Computing-VN/tree/7225434fc88b808e818c8681fc85e82937373db1}}
+In this section, various experiments of this project are shown with varying training data and parameters with the respective accuracy and loss graphs.
+The purpose of these experiments is to determine if the parameters chosen for this project are optimal and, if not, correct them and know the reason behind the improvement.
+The parameters that could potentially have a great impact on the output of the classification -- and therefore are the best to experiment with -- are the following:
+\begin{itemize}
+	\item Used datasets: This could influentiate the amount of words in the corpus and have a big impact on how some words are percieved
+	\item Training epochs: How many loops does the algorithm go through before being considered fully trained, if this number is too high it could result in \textit{overfitting}, which is, in casual terms, the Neural Network equivalent of overthinking.
+	\item Units in the LSTM layer: This unit system, albeit small in the overall scale of things, could make-or-break the algoritm if not tuned correctly.
+	\item Categorized sentiments: Reducing the scope of the project could potentially benefit the overall accuracy of the remaining sentiments.
+\end{itemize}
+The amount of improvement with each experiment is shown with loss and accuracy graphs, which are evaluated every epoch the algorithm is trained. Lower loss and higher accuracy are preferred.
+\subsection{Experiment 1}
+In this experiment, we look at the base version of this thesis' project.
+\begin{table}[!th]
+	\caption{Experiment 1's defining characteristics.}
 	\vspace{0.5cm}
 	\centering
 	\begin{tabular}[t]{|l|l|}
 	\hline
 		Datasets Used & 2: \citet{d1} and \citet{d2}
 	\\ \hline
-		NLTK Usage & Yes
+		Epochs & 10
 	\\ \hline
-		Epochs & 25
+		LSTM Layer & 32 units
 	\\ \hline
-		Type of Neural Network & LSTM, 2 layers
+		Categorized Sentiments as ``Bad'' & ``Sadness'', ``Worry'', and ``Fear''.
+	\\ \hline	
+		 Categorized Sentiments as ``Neutral'' & ``Neutral'' and ``Boredom''.
+	\\ \hline	
+		Categorized Sentiments as ``Good'' & ``Happiness'', ``Fun'', ``Joy'', and ``Love''.
 	\\ \hline
 	\end{tabular}
 \end{table}
-\\
+
+\begin{table}[!bh]
+	\caption{Experiment 1's results.}
+	\vspace{0.5cm}
+	\centering
+	\begin{tabular}[t]{|l|l|l|l|}
+	\hline
+		Loss & 0.6857 & Val\_loss & 0.8499
+	\\ \hline
+		Accuracy & 0.7151 & Val\_accuracy & 0.6308
+	\\ \hline
+	\end{tabular}
+\end{table}
+
+
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.8]{Accuracy 2021-07}
-	\caption{Accuracy Graph of the Algorithm Training on July 2021}
-	\label{fig:accuracy2021-07}
-	\includegraphics[scale=0.8]{Loss 2021-07}
-	\caption{Loss Graph of the Algorithm Training on July 2021}
-	\label{fig:loss2021-07}
+	\includegraphics[scale=0.8]{Accuracy_Exp1}
+	\caption{Accuracy Graph of Experiment 1}
+	\label{fig:accuracy_exp1}
+	\includegraphics[scale=0.8]{Loss_Exp1}
+	\caption{Loss Graph of Experiment 1}
+	\label{fig:loss_exp1}
 \end{figure}
 \pagebreak
-\subsection{Experiment 3 / October 2021-1}
-This version is allegedly the same that is being used today, much better chances of being correct. Also has 
-\begin{table}[!h]
+
+\subsection{Experiment 2}
+This experiment takes sentences from one more dataset and 3 less categorized sentiments: ``Fear'', ``Joy'', and ``Love''.
+\begin{table}[!th]
+	\caption{Experiment 2's defining characteristics.}
+	\vspace{0.5cm}
+	\centering
+	\begin{tabular}[t]{|l|l|}
+	\hline
+		Datasets Used & \makecell{3: \citet{d1}, \citet{d2} and\\ \citet{d3}}
+	\\ \hline
+		Epochs & 10
+	\\ \hline
+		LSTM Layer & 32 units
+	\\ \hline
+		Categorized Sentiments as ``Bad'' & ``Sadness'', and ``Worry''.
+	\\ \hline	
+		 Categorized Sentiments as ``Neutral'' & ``Neutral'' and ``Boredom''.
+	\\ \hline	
+		Categorized Sentiments as ``Good'' & ``Happiness'', and ``Fun''.
+	\\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[!bh]
+	\caption{Experiment 2's results.}
+	\vspace{0.5cm}
+	\centering
+	\begin{tabular}[t]{|l|l|l|l|}
+	\hline
+		Loss & 0.5956 & Val\_loss & 0.7649
+	\\ \hline
+		Accuracy & 0.7576 & Val\_accuracy & 0.6821
+	\\ \hline
+	\end{tabular}
+\end{table}
+
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.8]{Accuracy_Exp2}
+	\caption{Accuracy Graph of Experiment 2}
+	\label{fig:accuracy_exp2}
+	\includegraphics[scale=0.8]{Loss_Exp2}
+	\caption{Loss Graph of Experiment 2}
+	\label{fig:loss_exp2}
+\end{figure}
+\pagebreak
+
+\subsection{Experiment 3}
+Largely the same as Experiment 2, but the LSTM has more units to work with.
+\begin{table}[!th]
 	\caption{Experiment 3's defining characteristics.}
 	\vspace{0.5cm}
 	\centering
 	\begin{tabular}[t]{|l|l|}
 	\hline
-		Datasets Used & 3: \citet{d1}, \citet{d2} and \citet{d3}
+		Datasets Used & \makecell{3: \citet{d1}, \citet{d2} and\\ \citet{d3}}
 	\\ \hline
-		NLTK Usage & Yes
+		Epochs & 10
 	\\ \hline
-		Epochs & 30
+		LSTM Layer & 64 units
 	\\ \hline
-		Type of Neural Network & LSTM, 2 layers
+		Categorized Sentiments as ``Bad'' & ``Sadness'', and ``Worry''.
+	\\ \hline	
+		 Categorized Sentiments as ``Neutral'' & ``Neutral'' and ``Boredom''.
+	\\ \hline	
+		Categorized Sentiments as ``Good'' & ``Happiness'', and ``Fun''.
 	\\ \hline
 	\end{tabular}
 \end{table}
-\\
+
+\begin{table}[!bh]
+	\caption{Experiment 3's results.}
+	\vspace{0.5cm}
+	\centering
+	\begin{tabular}[t]{|l|l|l|l|}
+	\hline
+		Loss & 0.5829 & Val\_loss & 0.7373
+	\\ \hline
+		Accuracy & 0.7564 & Val\_accuracy & 0.6780
+	\\ \hline
+	\end{tabular}
+\end{table}
+
+
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.8]{Accuracy 2021-10}
-	\caption{Accuracy Graph of the Algorithm Training on October 2021}
-	\label{fig:accuracy2021-10}
-	\includegraphics[scale=0.8]{Loss 2021-10}
-	\caption{Loss Graph of the Algorithm Training on October 2021}
-	\label{fig:loss2021-10}
+	\includegraphics[scale=0.8]{Accuracy_Exp3}
+	\caption{Accuracy Graph of Experiment 3}
+	\label{fig:accuracy_exp3}
+	\includegraphics[scale=0.8]{Loss_Exp3}
+	\caption{Loss Graph of Experiment 3}
+	\label{fig:loss_exp3}
 \end{figure}
+\pagebreak
+
+\subsection{Experiment 4}
+A mix between Experiment 1 and 2. Three datasets with the full sentiment categorization and LSTM with 32 units.
+\begin{table}[!h]
+	\caption{Experiment 4's defining characteristics.}
+	\vspace{0.5cm}
+	\centering
+	\begin{tabular}[t]{|l|l|}
+	\hline
+		Datasets Used & \makecell{3: \citet{d1}, \citet{d2} and\\ \citet{d3}}
+	\\ \hline
+		Epochs & 10
+	\\ \hline
+		LSTM Layer & 32 units
+	\\ \hline
+		Categorized Sentiments as ``Bad'' & ``Sadness'', ``Worry'', and ``Fear''.
+	\\ \hline	
+		 Categorized Sentiments as ``Neutral'' & ``Neutral'' and ``Boredom''.
+	\\ \hline	
+		Categorized Sentiments as ``Good'' & ``Happiness'', ``Fun'', ``Joy'', and ``Love''.
+	\\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[!b]
+	\caption{Experiment 4's results.}
+	\vspace{0.5cm}
+	\centering
+	\begin{tabular}[t]{|l|l|l|l|}
+	\hline
+		Loss & 0.5455 & Val\_loss & 0.6704
+	\\ \hline
+		Accuracy & 0.7741 & Val\_accuracy & 0.7210
+	\\ \hline
+	\end{tabular}
+\end{table}
 
 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.8]{Accuracy_Exp4}
+	\caption{Accuracy Graph of Experiment 4}
+	\label{fig:accuracy_exp4}
+	\includegraphics[scale=0.8]{Loss_Exp4}
+	\caption{Loss Graph of Experiment 4}
+	\label{fig:loss_exp4}
+\end{figure}
+\pagebreak
+
+\subsection{Experiment 5}
+Same as Experiment 4, but with an added dataset with only ``Sadness'' sentences.
+\begin{table}[!h]
+	\caption{Experiment 5's defining characteristics.}
+	\vspace{0.5cm}
+	\centering
+	\begin{tabular}[t]{|l|l|}
+	\hline
+		Datasets Used & \makecell{4: \citet{d1}, \citet{d2},\\ \citet{d3}, and \citet{d4}}
+	\\ \hline
+		Epochs & 10
+	\\ \hline
+		LSTM Layer & 32 units
+	\\ \hline
+		Categorized Sentiments as ``Bad'' & ``Sadness'', ``Worry'', and ``Fear''.
+	\\ \hline	
+		 Categorized Sentiments as ``Neutral'' & ``Neutral'' and ``Boredom''.
+	\\ \hline	
+		Categorized Sentiments as ``Good'' & ``Happiness'', ``Fun'', ``Joy'', and ``Love''.
+	\\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[!b]
+	\caption{Experiment 5's results.}
+	\vspace{0.5cm}
+	\centering
+	\begin{tabular}[t]{|l|l|l|l|}
+	\hline
+		Loss & 0.5442 & Val\_loss & 0.6620
+	\\ \hline
+		Accuracy & 0.6620 & Val\_accuracy & 0.7162
+	\\ \hline
+	\end{tabular}
+\end{table}
+
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.8]{Accuracy_Exp5}
+	\caption{Accuracy Graph of Experiment 5}
+	\label{fig:accuracy_exp5}
+	\includegraphics[scale=0.8]{Loss_Exp5}
+	\caption{Loss Graph of Experiment 5}
+	\label{fig:loss_exp5}
+\end{figure}
+\pagebreak
+
+\subsection{Experiment 6}
+This is the largest change on an experiment, the ``Neutral'' category has been completely disabled with the purpose of seeing how the rest of the data would be classified as.
+\begin{table}[!h]
+	\caption{Experiment 6's defining characteristics.}
+	\vspace{0.5cm}
+	\centering
+	\begin{tabular}[t]{|l|l|}
+	\hline
+		Datasets Used & \makecell{4: \citet{d1}, \citet{d2},\\ \citet{d3}, and \citet{d4}}
+	\\ \hline
+		Epochs & 10
+	\\ \hline
+		LSTM Layer & 32 units
+	\\ \hline
+		Categorized Sentiments as ``Bad'' & ``Sadness'', ``Worry'', and ``Fear''.
+	\\ \hline	
+		 Categorized Sentiments as ``Neutral'' & N/A
+	\\ \hline	
+		Categorized Sentiments as ``Good'' & ``Happiness'', ``Fun'', ``Joy'', and ``Love''.
+	\\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[!b]
+	\caption{Experiment 6's results.}
+	\vspace{0.5cm}
+	\centering
+	\begin{tabular}[t]{|l|l|l|l|}
+	\hline
+		Loss & 0.6222 & Val\_loss & 0.7186
+	\\ \hline
+		Accuracy & 0.6550 & Val\_accuracy & 0.5357
+	\\ \hline
+	\end{tabular}
+\end{table}
+
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.8]{Accuracy_Exp6}
+	\caption{Accuracy Graph of Experiment 6}
+	\label{fig:accuracy_exp6}
+	\includegraphics[scale=0.8]{Loss_Exp6}
+	\caption{Loss Graph of Experiment 6}
+	\label{fig:loss_exp6}
+\end{figure}
+\pagebreak
+
+\subsection{Experiment 7}
+Largely the same as Experiment 5 with half the epochs. This with the purpose of seeing if the data has been overfit.
+\begin{table}[!h]
+	\caption{Experiment 7's defining characteristics.}
+	\vspace{0.5cm}
+	\centering
+	\begin{tabular}[t]{|l|l|}
+	\hline
+		Datasets Used & \makecell{4: \citet{d1}, \citet{d2},\\ \citet{d3}, and \citet{d4}}
+	\\ \hline
+		Epochs & 5
+	\\ \hline
+		LSTM Layer & 32 units
+	\\ \hline
+		Categorized Sentiments as ``Bad'' & ``Sadness'', ``Worry'', and ``Fear''.
+	\\ \hline	
+		 Categorized Sentiments as ``Neutral'' & ``Neutral'' and ``Boredom''.
+	\\ \hline	
+		Categorized Sentiments as ``Good'' & ``Happiness'', ``Fun'', ``Joy'', and ``Love''.
+	\\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[!b]
+	\caption{Experiment 7's results.}
+	\vspace{0.5cm}
+	\centering
+	\begin{tabular}[t]{|l|l|l|l|}
+	\hline
+		Loss & 0.6041 & Val\_loss & 0.6555
+	\\ \hline
+		Accuracy & 0.7451 & Val\_accuracy & 0.7197
+	\\ \hline
+	\end{tabular}
+\end{table}
+
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.8]{Accuracy_Exp7}
+	\caption{Accuracy Graph of Experiment 7}
+	\label{fig:accuracy_exp7}
+	\includegraphics[scale=0.8]{Loss_Exp7}
+	\caption{Loss Graph of Experiment 7}
+	\label{fig:loss_exp7}
+\end{figure}
+\pagebreak

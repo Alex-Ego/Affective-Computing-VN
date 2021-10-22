@@ -60,9 +60,9 @@ def evaluation(txt, max_length = max_length):
         json_string = f.readline()
     tokenizer = keras.preprocessing.text.tokenizer_from_json(json_string)
     seq = tokenizer.texts_to_sequences(separated_token_txt)
-    padded = pad_sequences(seq, maxlen=max_length)
-    pred = model.predict(padded)
+    #padded = pad_sequences(seq, maxlen=max_length)
+    pred = model.predict(seq)
     labels = ["sadness", "neutral", "happiness", 0]
     #print(pred, labels[np.argmax(pred)])
-    print(labels[np.argmax(pred)])
+    #print(labels[np.argmax(pred)])
     return(labels[np.argmax(pred)])
