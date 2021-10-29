@@ -1,4 +1,5 @@
 \chapter{Project Design}
+\label{ch4}
 The tools that are used in this paper are mostly Python-based, such as TensorFlow, a neural network framework. This, combined with natural language processing tools and several filtering techniques will be used to achieve -- or at least approach as close as possible to -- the expected results.
 Having all the concepts in mind, the proposed project has a major component which is the Machine Learning tools surrounded by several small modules such as the GUI and the chatbot components.
 As for the data used in this project, most of it comes from cleaned, classified tweets partitioned in training and testing datasets.
@@ -81,10 +82,11 @@ An LSTM Neural Network was opted for because of the increased accuracy that it o
 \pagebreak
 \section{Tools}
 This project is built on Python v3.8.10, The libraries used for this project to come to fruition are TensorFlow\footnote{\url{https://www.tensorflow.org/}} v2.6.0 and Keras\footnote{\url{https://keras.io/}} v2.6.0 for the Neural Network section. Natural Language Toolkit\footnote{\url{https://www.nltk.org/}} v3.5 (also known as NLTK) for the tokenization and stemming process. Chatterbot\footnote{\url{https://chatterbot.readthedocs.io/en/stable/}} for the chatbot's output. And, lastly, pygame\footnote{\url{https://www.pygame.org/news}} v1.9.5 for the GUI.
-Originally, \textit{Ren'py}\footnote{An open-source Python framework focused mostly in the development of visual novels and other videogame formats. \url{https://www.renpy.org/}} was the chosen framework for this project's interface to work with, but -- unfortunately for the proposed usage -- it only works with Python 2.7, which makes it incompatible with TensorFlow 2.0. Making a bridge between Python 2 and 3 would inevitably generate more issues that would take more time to solve, so it was scrapped in favor of the pygame library.
 
 \section{Interface}
-Originally, \textit{Ren'py}\footnote{An open-source Python framework focused mostly in the development of visual novels and other videogame formats. \url{https://www.renpy.org/}} was the chosen framework for this project's interface to work with, but -- unfortunately for the proposed usage -- it only works with Python 2.7, which makes it incompatible with TensorFlow 2.0. Making a bridge between Python 2 and 3 would inevitably generate more issues that would take more time to solve, so it was scrapped in favor of the \textit{pygame} library.
+Originally, \textit{Ren'py}\footnote{An open-source Python framework focused mostly in the development of visual novels and other videogame formats. \url{https://www.renpy.org/}} was the chosen framework for this project's interface to work with, but -- unfortunately for the proposed usage -- it only works with Python 2.7, which makes it incompatible with TensorFlow 2.0. Making a bridge between Python 2 and 3 would inevitably generate more issues that would take more time to solve, so it was scrapped in favor of the pygame library. \\
+
+This, however, did not come without its own limitations, such as not being able to input text into the GUI itself, it would be very resource-heavy to implement a screen wipe every time a key is pressed. Since the console would pop up invariably even if not used, the alternative of using it to receive the input was opted for.
 \pagebreak
 
 \begin{figure}[!h]
@@ -116,7 +118,7 @@ The current interface is a hybrid between a Pygame screen, where the assistant a
 \end{figure}
 
 \subsection{Assistant}
-As for the character that is being used, it also has gone through some changes. Originally the idea was to make a low-poly character render to work with, but since 3D modeling-from-scratch skills exceed the scope of this paper, an alternative software was selected instead. Namely \textit{VRoid}.\\
+As for the character that is being used, it also has gone through some changes. Originally the idea was to make a low-poly character render to work with, but since 3D modeling-from-scratch skills exceed the scope of this paper, an alternative software was selected instead. Namely \textit{VRoid Studio}\footnote{Free 3D Character Creator powered by Pixiv, \url{https://vroid.com/en/studio}}.\\
 The main purpose for this assistant is to make people feel like it is her that they are talking to and not to some faceless machine, while also making it easier to the eyes. A more realistic, less animated style could have been used, but a friendly, less prone to uncanny valley approach to the design was opted for with this in mind.
 \begin{figure}[!bht]
 	\centering

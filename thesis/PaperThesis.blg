@@ -22,16 +22,16 @@ Warning--empty journal in rf2
 Warning--empty journal in rf16
 You've used 24 entries,
             2773 wiz_defined-function locations,
-            756 strings with 9717 characters,
-and the built_in function-call counts, 11483 in all, are:
-= -- 1035
+            755 strings with 9684 characters,
+and the built_in function-call counts, 11469 in all, are:
+= -- 1032
 > -- 669
 < -- 18
 + -- 227
 - -- 203
-* -- 895
-:= -- 1758
-add.period$ -- 85
+* -- 893
+:= -- 1755
+add.period$ -- 84
 call.type$ -- 24
 change.case$ -- 137
 chr.to.int$ -- 24
@@ -39,13 +39,13 @@ cite$ -- 52
 duplicate$ -- 546
 empty$ -- 916
 format.name$ -- 231
-if$ -- 2433
+if$ -- 2430
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 22
-newline$ -- 138
+newline$ -- 137
 num.names$ -- 98
-pop$ -- 293
+pop$ -- 294
 preamble$ -- 1
 purify$ -- 114
 quote$ -- 0
@@ -60,5 +60,5 @@ type$ -- 259
 warning$ -- 4
 while$ -- 107
 width$ -- 0
-write$ -- 332
+write$ -- 330
 (There were 6 warnings)
