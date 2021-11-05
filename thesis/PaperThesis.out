@@ -1,49 +1,52 @@
 \BOOKMARK [0][-]{chapter*.4}{Agradecimientos}{}% 1
 \BOOKMARK [0][-]{chapter*.5}{Resumen}{}% 2
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 3
-\BOOKMARK [1][-]{section.1.1}{Justification}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.2}{Hypothesis}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.3}{Objectives}{chapter.1}% 6
-\BOOKMARK [2][-]{subsection.1.3.1}{General Objectives}{section.1.3}% 7
-\BOOKMARK [2][-]{subsection.1.3.2}{Specific Objectives}{section.1.3}% 8
-\BOOKMARK [1][-]{section.1.4}{Metodology}{chapter.1}% 9
-\BOOKMARK [1][-]{section.1.5}{Structure}{chapter.1}% 10
-\BOOKMARK [0][-]{chapter.2}{Background}{}% 11
-\BOOKMARK [1][-]{section.2.1}{Machine Learning}{chapter.2}% 12
-\BOOKMARK [2][-]{subsection.2.1.1}{Neural Network}{section.2.1}% 13
-\BOOKMARK [1][-]{section.2.2}{Sentiment Analysis}{chapter.2}% 14
-\BOOKMARK [2][-]{subsection.2.2.1}{Concept}{section.2.2}% 15
-\BOOKMARK [2][-]{subsection.2.2.2}{Tokenizing}{section.2.2}% 16
-\BOOKMARK [0][-]{chapter.3}{Related Work}{}% 17
-\BOOKMARK [1][-]{section.3.1}{Related Projects}{chapter.3}% 18
-\BOOKMARK [2][-]{subsection.3.1.1}{Similar Approaches}{section.3.1}% 19
-\BOOKMARK [2][-]{subsection.3.1.2}{Sentiment Analysis in Other Areas}{section.3.1}% 20
-\BOOKMARK [1][-]{section.3.2}{Comparative Analysis}{chapter.3}% 21
-\BOOKMARK [2][-]{subsection.3.2.1}{Opportunities for Improvement}{section.3.2}% 22
-\BOOKMARK [0][-]{chapter.4}{Project Design}{}% 23
-\BOOKMARK [1][-]{section.4.1}{Inner Workings Design}{chapter.4}% 24
-\BOOKMARK [2][-]{subsection.4.1.1}{Datasets}{section.4.1}% 25
-\BOOKMARK [2][-]{subsection.4.1.2}{Text Filtering}{section.4.1}% 26
-\BOOKMARK [2][-]{subsection.4.1.3}{Neural Network}{section.4.1}% 27
-\BOOKMARK [1][-]{section.4.2}{Tools}{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.3}{Interface}{chapter.4}% 29
-\BOOKMARK [2][-]{subsection.4.3.1}{Assistant}{section.4.3}% 30
-\BOOKMARK [1][-]{section.4.4}{Inner Workings}{chapter.4}% 31
-\BOOKMARK [2][-]{subsection.4.4.1}{Text Filtering}{section.4.4}% 32
-\BOOKMARK [2][-]{subsection.4.4.2}{Neural Network}{section.4.4}% 33
-\BOOKMARK [2][-]{subsection.4.4.3}{Portability}{section.4.4}% 34
-\BOOKMARK [0][-]{chapter.5}{Data Experiments}{}% 35
-\BOOKMARK [1][-]{section.5.1}{Inputs and Outputs}{chapter.5}% 36
-\BOOKMARK [2][-]{subsection.5.1.1}{Inputs}{section.5.1}% 37
-\BOOKMARK [2][-]{subsection.5.1.2}{Outputs}{section.5.1}% 38
-\BOOKMARK [1][-]{section.5.2}{Experiments}{chapter.5}% 39
-\BOOKMARK [2][-]{subsection.5.2.1}{Experiment 1 - Base Experiment}{section.5.2}% 40
-\BOOKMARK [2][-]{subsection.5.2.2}{Experiment 2 - More Datasets, Reduced Data Scope}{section.5.2}% 41
-\BOOKMARK [2][-]{subsection.5.2.3}{Experiment 3 - Augmented LSTM Units}{section.5.2}% 42
-\BOOKMARK [2][-]{subsection.5.2.4}{Experiment 4 - More Datasets}{section.5.2}% 43
-\BOOKMARK [2][-]{subsection.5.2.5}{Experiment 5 - Extra Sadness Dataset}{section.5.2}% 44
-\BOOKMARK [2][-]{subsection.5.2.6}{Experiment 6 - Reduced Classification Scope}{section.5.2}% 45
-\BOOKMARK [2][-]{subsection.5.2.7}{Experiment 7 - Reduced Epochs}{section.5.2}% 46
-\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}% 47
-\BOOKMARK [2][-]{subsection.5.3.1}{Interpretation}{section.5.3}% 48
-\BOOKMARK [2][-]{subsection.5.3.2}{Discussion}{section.5.3}% 49
+\BOOKMARK [0][-]{chapter*.6}{Abstract}{}% 3
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 4
+\BOOKMARK [1][-]{section.1.1}{Justification}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.2}{Hypothesis}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.3}{Objectives}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.3.1}{General Objectives}{section.1.3}% 8
+\BOOKMARK [2][-]{subsection.1.3.2}{Specific Objectives}{section.1.3}% 9
+\BOOKMARK [1][-]{section.1.4}{Metodology}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.5}{Structure}{chapter.1}% 11
+\BOOKMARK [0][-]{chapter.2}{Background}{}% 12
+\BOOKMARK [1][-]{section.2.1}{Machine Learning}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.1.1}{Neural Network}{section.2.1}% 14
+\BOOKMARK [1][-]{section.2.2}{Sentiment Analysis}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.1}{Concept}{section.2.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.2}{Tokenizing}{section.2.2}% 17
+\BOOKMARK [0][-]{chapter.3}{Related Work}{}% 18
+\BOOKMARK [1][-]{section.3.1}{Related Projects}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.1.1}{Similar Approaches}{section.3.1}% 20
+\BOOKMARK [2][-]{subsection.3.1.2}{Sentiment Analysis in Other Areas}{section.3.1}% 21
+\BOOKMARK [1][-]{section.3.2}{Comparative Analysis}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.2.1}{Opportunities for Improvement}{section.3.2}% 23
+\BOOKMARK [0][-]{chapter.4}{Project Design}{}% 24
+\BOOKMARK [1][-]{section.4.1}{Inner Workings Design}{chapter.4}% 25
+\BOOKMARK [2][-]{subsection.4.1.1}{Datasets}{section.4.1}% 26
+\BOOKMARK [2][-]{subsection.4.1.2}{Text Filtering}{section.4.1}% 27
+\BOOKMARK [2][-]{subsection.4.1.3}{Neural Network}{section.4.1}% 28
+\BOOKMARK [1][-]{section.4.2}{Tools}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.3}{Interface}{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.3.1}{Assistant}{section.4.3}% 31
+\BOOKMARK [1][-]{section.4.4}{Inner Workings}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.4.1}{Text Filtering}{section.4.4}% 33
+\BOOKMARK [2][-]{subsection.4.4.2}{Neural Network}{section.4.4}% 34
+\BOOKMARK [2][-]{subsection.4.4.3}{Portability}{section.4.4}% 35
+\BOOKMARK [0][-]{chapter.5}{Data Experiments}{}% 36
+\BOOKMARK [1][-]{section.5.1}{Inputs and Outputs}{chapter.5}% 37
+\BOOKMARK [2][-]{subsection.5.1.1}{Inputs}{section.5.1}% 38
+\BOOKMARK [2][-]{subsection.5.1.2}{Outputs}{section.5.1}% 39
+\BOOKMARK [1][-]{section.5.2}{Experiments}{chapter.5}% 40
+\BOOKMARK [2][-]{subsection.5.2.1}{Experiment 1: Base Experiment}{section.5.2}% 41
+\BOOKMARK [2][-]{subsection.5.2.2}{Experiment 2: More Datasets With Reduced Data Scope}{section.5.2}% 42
+\BOOKMARK [2][-]{subsection.5.2.3}{Experiment 3: Augmented LSTM Units}{section.5.2}% 43
+\BOOKMARK [2][-]{subsection.5.2.4}{Experiment 4: Augmented Datasets Without Reduced Data Scope}{section.5.2}% 44
+\BOOKMARK [2][-]{subsection.5.2.5}{Experiment 5: Extra Sadness Dataset}{section.5.2}% 45
+\BOOKMARK [2][-]{subsection.5.2.6}{Experiment 6: Reduced Classification Scope}{section.5.2}% 46
+\BOOKMARK [2][-]{subsection.5.2.7}{Experiment 7: Reduced Epochs}{section.5.2}% 47
+\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}% 48
+\BOOKMARK [2][-]{subsection.5.3.1}{Interpretation}{section.5.3}% 49
+\BOOKMARK [2][-]{subsection.5.3.2}{Discussion}{section.5.3}% 50
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 51
+\BOOKMARK [1][-]{section.6.1}{Future Work}{chapter.6}% 52

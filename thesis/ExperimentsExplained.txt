@@ -24,7 +24,7 @@ Experiment 2 = All datasets, same parameters as last experiment, ["sadness", "ne
 	Accuracy = 0.7576	Val_Acc = 0.6821
 Veredict: Defaults to happiness, sometimes it goes over to the 0 category, doesn't predict well
 
-Experimet 3 = Everything is the same except the LSTM layer is now working with 64 units
+Experiment 3 = Everything is the same except the LSTM layer is now working with 64 units
 	Loss = 0.5829		Val_Loss = 0.7373
 	Accuracy = 0.7564	Val_Acc = 0.6780
 Veredict: Close to no changes from the previous one

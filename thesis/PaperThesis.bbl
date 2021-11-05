@@ -23,7 +23,13 @@ Taiwo~Oladipupo Ayodele.
 \newblock Introduction to machine learning.
 \newblock \emph{New Advances in Machine Learning}, Feb 2010.
 \newblock \doi{10.5772/9394}.
-\newblock URL \url{https://www.intechopen.com/chapters/10703}.
+
+\bibitem[Bermúdez et~al.(2017)Bermúdez, Achanccaray, and Sanches]{rf21}
+José~David Bermúdez, Pedro Achanccaray, and Ieda~Del'Arco Sanches.
+\newblock Evaluation of recurrent neural networks for crop recognition from
+  multitemporal remote sensing images.
+\newblock In \emph{Anais do XXVII Congresso Brasileiro de Cartografia}, pages
+  800--804, 2017.
 
 \bibitem[Berrar(2018)]{rf19}
 Daniel Berrar.
@@ -58,14 +64,6 @@ Nicola Capuano, Luca Greco, Pierluigi Ritrovato, and Mario Vento.
   incremental learning approach.
 \newblock \emph{Applied Intelligence}, 51:\penalty0 3339--3352, 2021.
 
-\bibitem[Castro et~al.(2017)Castro, Achanccaray~Diaz, Sanches, Cue La~Rosa,
-  Nigri~Happ, and Feitosa]{rf21}
-Jose Castro, Pedro Achanccaray~Diaz, Ieda Sanches, Laura Cue La~Rosa, Patrick
-  Nigri~Happ, and Raul Feitosa.
-\newblock Evaluation of recurrent neural networks for crop recognition from
-  multitemporal remote sensing images.
-\newblock Nov 2017.
-
 \bibitem[Chiril et~al.(2021)Chiril, Pamungkas, Benamara, Moriceau, and
   Patti]{rf15}
 Patricia Chiril, Endang~Wahyu Pamungkas, Farah Benamara, V{\'e}ronique
@@ -76,8 +74,7 @@ Patricia Chiril, Endang~Wahyu Pamungkas, Farah Benamara, V{\'e}ronique
 
 \bibitem[CrowdFlower(2016)]{rf20}
 CrowdFlower.
-\newblock Sentiment analysis: Emotion in text.
-\newblock Jul 2016.
+\newblock Sentiment analysis: Emotion in text, Jul 2016.
 \newblock URL \url{https://data.world/crowdflower/sentiment-analysis-in-text}.
 
 \bibitem[Elliott et~al.(2011)Elliott, Bohart, Watson, and Greenberg]{rf1}
@@ -116,7 +113,6 @@ Robert~R Morris, Kareem Kouddous, Rohan Kshirsagar, and Stephen~M Schueller.
 \newblock \emph{J Med Internet Res}, 20, Jun 2018.
 \newblock ISSN 1438-8871.
 \newblock \doi{10.2196/10148}.
-\newblock URL \url{http://www.jmir.org/2018/6/e10148/}.
 
 \bibitem[Nigam et~al.(1999)Nigam, Lafferty, and McCallum]{rf17}
 Kamal Nigam, John Lafferty, and Andrew McCallum.
@@ -134,14 +130,17 @@ Bo~Pang, Lillian Lee, and Shivakumar Vaithyanathan.
 Stephanie~D Preston and Frans de~Waal.
 \newblock The communication of emotions and the possibility of empathy in
   animals.
-\newblock pages 2--3, 2002.
+\newblock In \emph{Altruism and Altruistic Love: Science, Philosophy, and
+  Religion in Dialogue}. Oxford University Press, 2002.
+\newblock \doi{10.1093/acprof:oso/9780195143584.003.0025}.
 
 \bibitem[R{\"o}chert et~al.(2020)R{\"o}chert, Neubaum, and Stieglitz]{rf16}
 Daniel R{\"o}chert, German Neubaum, and Stefan Stieglitz.
 \newblock Identifying political sentiments on youtube: A systematic comparison
   regarding the accuracy of recurrent neural network and machine learning
   models.
-\newblock pages 107--121, 2020.
+\newblock In \emph{Multidisciplinary International Symposium on Disinformation
+  in Open Online Media}, pages 107--121. Springer, 2020.
 
 \bibitem[Soman et~al.(2009)Soman, Loganathan, and Ajay]{rf18}
 KP~Soman, R~Loganathan, and V~Ajay.
@@ -155,8 +154,6 @@ Bingkun Wang, Ning Wang, and Zhongsheng Chen.
 \newblock \emph{Ecological Informatics}, 64, 2021.
 \newblock ISSN 1574-9541.
 \newblock \doi{https://doi.org/10.1016/j.ecoinf.2021.101354}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S157495412100145X}.
 
 \bibitem[Zhang(2020)]{rf8}
 Xian-Da Zhang.

@@ -1,0 +1,27 @@
+\chapter{Conclusion}
+\label{ch6}
+The formulated hypothesis of this thesis was, in short, that if empathy is based in pattern recognition, a Machine Learning algorithm could learn to predict and react according to a presented input.
+
+This project had originally been planned as a therapy-assistant chatbot which had the purpose of soothing people in states of distress. But seeing that there are alternatives with much more powerful technology behind them already, the decision of making this as an open-source alternative to that kind of project was made.
+
+This project works thanks to a Recurrent Neural Network that, being trained with certain datasets with categorized sentences, classifies an input from a person in one of three categories: ``Good'', ``Neutral'' and ``Bad'' depending on the sentiment detected. It was built using Python 3.8.10, making use of the following libraries:
+\begin{description}
+	\item[TensorFlow v2.6.0]{Used for Neural Network model building.}
+	\item[Keras v2.6.0]{Used for Neural Network processes.}
+	\item[NLTK v3.5]{Used for filtering words and ``stemming''.}
+	\item[Chatterbot]{Used for automated responses from the algorithm.}
+	\item[Pygame v1.9.5]{Used for the GUI.}
+\end{description}
+
+Since the algorithm is built using these tools, it can be considered open-source, so anyone can add or remove modules as needed.
+
+As for the performance of this project, it is hard to call this successful, ``Good'' and ``Neutral'' sentences were correctly detected but, even in the best experiment, the algorithm could not detect ``Bad''-related sentences with any kind of accuracy, but on the other hand, if we dig deeper down the datasets, we will find that there's not much that a ML algorithm could have done, since --after filtering the stop words-- there were mostly just words that could possibly be used in other contexts and not be ``Bad''-coded.
+
+In the end, the conclusion reached is that the hypothesis was correct; it is possible for a Machine Learning algorithm to predict how a person is feeling and react accordingly, albeit some faults can be caused by the datasets used in training it. This can be changed using some quality control on them, or using personalized data specifically catered to this project.
+
+\section{Future Work}
+This project would greatly benefit from a dataset that takes into consideration sentences that can be said in any context and still be correctly classified. And, of course, the less ortographical errors there are, the better.
+
+Another thing that could still be improved upon is the GUI, maybe using more modules or a new library altogether that can easily accept text inputs into it can make the project look not only sleek, but professional.
+
+The fact that this algorithm is open-source means that it can easily be expanded upon: layers can be added to the Neural Network, a more robust chatbot-esque module can be added, advanced pre-filtering processes, and the list goes on. But a very critical thing to add would be a fine-tuner can be included for less lopsided classifications in the vocabulary, something that can pre-assign weights to words that appear in the datasets. This will, most likely, get rid of the classification issues that plague the actual version of this project.

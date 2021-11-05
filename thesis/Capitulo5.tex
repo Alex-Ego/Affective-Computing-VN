@@ -23,7 +23,7 @@ The parameters that could potentially have a great impact on the output of the c
 	\item Categorized sentiments: Reducing the scope of the project could potentially benefit the overall accuracy of the remaining sentiments.
 \end{itemize}
 The amount of improvement with each experiment is shown with loss and accuracy graphs, which are evaluated every epoch the algorithm is trained. Lower loss and higher accuracy are preferred.
-\subsection{Experiment 1 - Base Experiment}
+\subsection{Experiment 1: Base Experiment}
 \label{exp1}
 In this experiment, we look at the base version of this thesis' project.
 \begin{table}[!th]
@@ -72,7 +72,7 @@ In this experiment, we look at the base version of this thesis' project.
 \end{figure}
 \pagebreak
 
-\subsection{Experiment 2 - More Datasets, Reduced Data Scope}
+\subsection{Experiment 2: More Datasets With Reduced Data Scope}
 \label{exp2}
 This experiment takes sentences from one more dataset and 3 less categorized sentiments: ``Fear'', ``Joy'', and ``Love''.
 \begin{table}[!th]
@@ -121,7 +121,7 @@ This experiment takes sentences from one more dataset and 3 less categorized sen
 \end{figure}
 \pagebreak
 
-\subsection{Experiment 3 - Augmented LSTM Units}
+\subsection{Experiment 3: Augmented LSTM Units}
 \label{exp3}
 Largely the same as Experiment 2, but the LSTM has more units to work with.
 \begin{table}[!th]
@@ -170,7 +170,7 @@ Largely the same as Experiment 2, but the LSTM has more units to work with.
 \end{figure}
 \pagebreak
 
-\subsection{Experiment 4 - More Datasets}
+\subsection{Experiment 4: Augmented Datasets Without Reduced Data Scope}
 \label{exp4}
 A mix between Experiment 1 and 2. Three datasets with the full sentiment categorization and LSTM with 32 units.
 \begin{table}[!h]
@@ -219,7 +219,7 @@ A mix between Experiment 1 and 2. Three datasets with the full sentiment categor
 \end{figure}
 \pagebreak
 
-\subsection{Experiment 5 - Extra Sadness Dataset}
+\subsection{Experiment 5: Extra Sadness Dataset}
 \label{exp5}
 Same as Experiment 4, but with an added dataset with only ``Sadness'' sentences.
 \begin{table}[!h]
@@ -268,7 +268,7 @@ Same as Experiment 4, but with an added dataset with only ``Sadness'' sentences.
 \end{figure}
 \pagebreak
 
-\subsection{Experiment 6 - Reduced Classification Scope}
+\subsection{Experiment 6: Reduced Classification Scope}
 \label{exp6}
 This is the largest change on an experiment, the ``Neutral'' category has been completely disabled with the purpose of seeing how the rest of the data would be classified as.
 \begin{table}[!h]
@@ -317,7 +317,7 @@ This is the largest change on an experiment, the ``Neutral'' category has been c
 \end{figure}
 \pagebreak
 
-\subsection{Experiment 7 - Reduced Epochs}
+\subsection{Experiment 7: Reduced Epochs}
 \label{exp7}
 Largely the same as Experiment 5 with half the epochs. This with the purpose of seeing if the data has been overfit.
 \begin{table}[!h]
@@ -374,23 +374,23 @@ In this section, the results of the experiments from the previous section will b
 	\item ``Bad''-labeled sentences: ``I am very sad right now'' and ``sad sad sad sad sad sad sad''
 \end{itemize}
 \subsection{Interpretation}
-On \nameref{exp1}, the post-training results were promising, sentences with obvious ``Good'' and ``Neutral'' related words were correctly analyzed. But, as Figures \ref{fig:accuracy_exp1} and \ref{fig:loss_exp1} show, the validation results were considerably worse than the control data scores, this is due to the ``Bad'' score behaving erratically even when using obvious ``Bad''-related words, this could be explained by the disparity between words used on the datasets -- not many words were repeated on these --. Even so, overall this had one of the best accuracies across the experiments. \\
+On \nameref{exp1}, the post-training results were promising, sentences with obvious ``Good'' and ``Neutral'' related words were correctly analyzed. But, as Figures \ref{fig:accuracy_exp1} and \ref{fig:loss_exp1} show, the validation results were considerably worse than the control data scores, this is due to the ``Bad'' score behaving erratically even when using obvious ``Bad''-related words, this could be explained by the disparity between words used on the datasets -- not many words were repeated on these --. Even so, overall this had one of the best accuracies across the experiments.
 
-On \nameref{exp2}, using one more dataset and less classes grouped with each category was opted to mitigate the ``Bad'' score while trying to keep data across the categories balanced. This, however, caused the algorithm to categorize every sentence from the input as happiness regardless of the words used, and sometimes even going over the ``0'' category used exclusively to categorize unclassifiable sentences and catching overflow errors. \\
+On \nameref{exp2}, using one more dataset and less classes grouped with each category was opted to mitigate the ``Bad'' score while trying to keep data across the categories balanced. This, however, caused the algorithm to categorize every sentence from the input as happiness regardless of the words used, and sometimes even going over the ``0'' category used exclusively to categorize unclassifiable sentences and catching overflow errors.
 
-On \nameref{exp3}, seeing that Experiment 2 had failed to predict correctly, more units were given to the LSTM to see if this lowered the chance of error, but as Figures \ref{fig:accuracy_exp3} and \ref{fig:loss_exp3} demonstrate, this got generally the same results. This determined that the defining factor was elsewhere. \\
+On \nameref{exp3}, seeing that Experiment 2 had failed to predict correctly, more units were given to the LSTM to see if this lowered the chance of error, but as Figures \ref{fig:accuracy_exp3} and \ref{fig:loss_exp3} demonstrate, this got generally the same results. This determined that the defining factor was elsewhere.
 
-On \nameref{exp4}, the base algorithm from Experiment 1 was brought back to work with the three datasets used on Experiments 2 and 3 to verify if the extra dataset was too lopsided to work with. It was found that having the full roster of emotions taken into consideration (``Sadness'', ``Worry'', and ``Fear'', ``Neutral'' and ``Boredom'', ``Happiness'', ``Fun'', ``Joy'', and ``Love'') actually helped the prediction scores. Even so, ``Bad'' category sentences were still not being recognized correctly, so more experimentation was needed. \\
+On \nameref{exp4}, the base algorithm from Experiment 1 was brought back to work with the three datasets used on Experiments 2 and 3 to verify if the extra dataset was too lopsided to work with. It was found that having the full roster of emotions taken into consideration (``Sadness'', ``Worry'', and ``Fear'', ``Neutral'' and ``Boredom'', ``Happiness'', ``Fun'', ``Joy'', and ``Love'') actually helped the prediction scores. Even so, ``Bad'' category sentences were still not being recognized correctly, so more experimentation was needed.
 
-On \nameref{exp5}, knowing that it is very likely that there simply is not enough ``Bad''-related data to train with, another dataset solely compromised sentences categorized as ``Sadness'' was added. Overall, this is the experiment that brought the best results in accuracy and loss as shown in Figures \ref{fig:accuracy_exp5} and \ref{fig:loss_exp5}. This, however, had no noticeable effect on the prediction output post-training since the ``Bad'' scores were still very low with paired inputs. \\
+On \nameref{exp5}, knowing that it is very likely that there simply is not enough ``Bad''-related data to train with, another dataset solely compromised sentences categorized as ``Sadness'' was added. Overall, this is the experiment that brought the best results in accuracy and loss as shown in Figures \ref{fig:accuracy_exp5} and \ref{fig:loss_exp5}. This, however, had no noticeable effect on the prediction output post-training since the ``Bad'' scores were still very low with paired inputs.
 
-On \nameref{exp6}, some drastic changes were made to experiment with the datasets used, this consisted in completely eliminating the ``Neutral'' category, only taking into consideration ``Bad'', ``Good'' and ``0'' with the intention of seeing the algorithm's behavior. This, as one would expect, broke everything and did not categorize anything correctly and had the worst scores overall of all experiments. \\
+On \nameref{exp6}, some drastic changes were made to experiment with the datasets used, this consisted in completely eliminating the ``Neutral'' category, only taking into consideration ``Bad'', ``Good'' and ``0'' with the intention of seeing the algorithm's behavior. This, as one would expect, broke everything and did not categorize anything correctly and had the worst scores overall of all experiments. 
 
 On \nameref{exp7}, taking again into consideration the results given from Experiment 5, the problem of overfitting was also a concern, and since the epoch count was a parameter yet-to-be manipulated. Instead of using the usual 10 epochs, 5 were used. This did not have any noticeable effect in the prediction output, however.
 
 \subsection{Discussion}
-While the experiment with the best performance overall is \ref{exp5}, this still could not classify the ``Bad''-labeled sentences correctly, so an exhaustive manual search was conducted inside all of the datasets used. It was found out that most of the words in the datasets pertaining to the ``Bad'' category were mostly ambiguous words that, out of context, could be interpreted as disinterest or overall any other emotion. This, combined with the fact that some of the datasets used were plagued with orthography errors, greatly affected the performance of this algorithm.\\
+While the experiment with the best performance overall is \nameref{exp5}, this still could not classify the ``Bad''-labeled sentences correctly, so an exhaustive manual search was conducted inside all of the datasets used. It was found out that most of the words in the datasets pertaining to the ``Bad'' category were mostly ambiguous words that, out of context, could be interpreted as disinterest or overall any other emotion. This, combined with the fact that some of the datasets used were plagued with orthographical errors, greatly affected the performance of this algorithm.
 
-These results determine that the proposed hypothesis is partially true: given enough data, a Machine Learning algorithm can learn to classify feelings and react accordingly, effectively learning how to identify patterns to an extent. However, high quality and volume data is needed for this to be reliable. Something that was only partially obtained for this project.\\
+These results determine that the proposed hypothesis is partially true: given enough data, a Machine Learning algorithm can learn to classify feelings and react accordingly, effectively learning how to identify patterns to an extent. However, high quality and volume data is needed for this to be reliable. Something that was only partially obtained for this project.
 
 Overall, we can determine that, with the use of more consistent data, a favorable result can be achieved with the model used in this project.

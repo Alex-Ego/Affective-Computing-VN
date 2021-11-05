@@ -4,61 +4,54 @@ The top-level auxiliary file: PaperThesis.aux
 A level-1 auxiliary file: Portadas.aux
 A level-1 auxiliary file: Agradecimientos.aux
 A level-1 auxiliary file: Resumen.aux
+A level-1 auxiliary file: Abstract.aux
 A level-1 auxiliary file: Capitulo1.aux
 A level-1 auxiliary file: Capitulo2.aux
 A level-1 auxiliary file: Capitulo3.aux
 A level-1 auxiliary file: Capitulo4.aux
 A level-1 auxiliary file: Capitulo5.aux
+A level-1 auxiliary file: Capitulo6.aux
 The style file: plainnat.bst
 A level-1 auxiliary file: Autobiografia.aux
 Database file #1: biblio.bib
-Warning--I'm ignoring rf6's extra "url" field
---line 60 of file biblio.bib
-Warning--I'm ignoring rf6's extra "url" field
---line 62 of file biblio.bib
-Warning--empty booktitle in rf21
-Warning--empty journal in rf20
-Warning--empty journal in rf2
-Warning--empty journal in rf16
 You've used 24 entries,
             2773 wiz_defined-function locations,
-            755 strings with 9684 characters,
-and the built_in function-call counts, 11469 in all, are:
-= -- 1032
-> -- 669
+            754 strings with 9611 characters,
+and the built_in function-call counts, 11439 in all, are:
+= -- 1038
+> -- 642
 < -- 18
-+ -- 227
-- -- 203
-* -- 893
-:= -- 1755
-add.period$ -- 84
++ -- 218
+- -- 194
+* -- 876
+:= -- 1731
+add.period$ -- 83
 call.type$ -- 24
-change.case$ -- 137
+change.case$ -- 134
 chr.to.int$ -- 24
-cite$ -- 52
-duplicate$ -- 546
-empty$ -- 916
-format.name$ -- 231
-if$ -- 2430
+cite$ -- 48
+duplicate$ -- 553
+empty$ -- 942
+format.name$ -- 222
+if$ -- 2448
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 22
-newline$ -- 137
+missing$ -- 21
+newline$ -- 134
 num.names$ -- 98
-pop$ -- 294
+pop$ -- 291
 preamble$ -- 1
-purify$ -- 114
+purify$ -- 111
 quote$ -- 0
-skip$ -- 426
+skip$ -- 431
 stack$ -- 0
-substring$ -- 341
-swap$ -- 84
+substring$ -- 357
+swap$ -- 93
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 259
-warning$ -- 4
+warning$ -- 0
 while$ -- 107
 width$ -- 0
 write$ -- 330
-(There were 6 warnings)

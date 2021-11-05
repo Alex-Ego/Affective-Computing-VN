@@ -32,7 +32,9 @@
     \hypersetup{breaklinks=true,colorlinks=true,
         linkcolor=black,citecolor=black,urlcolor=black}
 
-\lstset{basicstyle=\ttfamily}
+\lstset{basicstyle=\ttfamily\footnotesize, language=Python, numbers=left, keywordstyle=\bfseries\color{green!40!black}, commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue!40!black},
+  stringstyle=\color{orange}}
 
 %%%%%%%%%%%%%%%%%%%%%
 % Definiendo campos %
@@ -41,10 +43,12 @@
 \def\autor{Alexander Espronceda Gómez}
 \def\matricula{1742000}
 \def\grado{Ingeniería en Tecnología de Software}
+\def\gradoeng{Software Technology Engineering}
 % En caso de que el grado tenga orientación o especialidad llenar el siguiente
 % campo dejando un ESPACIO INICIAL, en caso contrario, dejar vacío
 \def\orientacion{}
-\def\fecha{Enero 2022} % Coloca el mes con mayúscula inicial
+\def\fecha{Febrero 2022} % Coloca el mes con mayúscula inicial
+\def\fechaeng{February 2022} % Coloca el mes con mayúscula inicial
 
 \def\asesor{Dra. Satu Elisa Schaeffer}
 \def\revisorA{Dra. Sara Elena Garza Villarreal}
@@ -76,6 +80,7 @@
 
 \include{Agradecimientos}
 \include{Resumen}
+\include{Abstract}
 
 \mainmatter
 \pagestyle{fime}
@@ -86,6 +91,7 @@
 \include{Capitulo3}
 \include{Capitulo4}
 \include{Capitulo5}
+\include{Capitulo6}
 
 \appendix
 %%% Haz un documento para cada apéndice
