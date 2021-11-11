@@ -10,6 +10,8 @@ import tensorflow as tf
 import random
 import string
 
+import wordcloud
+
 from tensorflow.keras import layers
 import keras
 
@@ -71,6 +73,8 @@ def tokenizing_process(message):
     # Removing stopwords
     #stop_words = dd.stopwords                      #Custom stopwords
     stop_words = set(stopwords.words('english'))    #Premade stopwords
+    for word in ['work', 'go', 'nt']:
+        stop_words.add(word)
     words = [w for w in words if not w in stop_words]
     # Stemming words (test)
     porter = PorterStemmer()
@@ -137,6 +141,30 @@ with open(abs_location + file_location + file_name4, 'r') as csvfile:
         message = row[2]
         #print("Input: " + message)             #   Debugging purposes
         messages.append(tokenizing_process(message))
+
+
+WordFreq = wordcloud.WordCloud()
+
+all_sad = []
+all_neutral = []
+all_good = []
+
+for i in range(len(labels)):
+    if labels[i] == "sadness":
+        all_sad.append(messages[i])
+    elif labels[i] == "neutral":
+        all_neutral.append(messages[i])
+    else:
+        all_good.append(messages[i])
+all_sad_text = str(" ".join(all_sad))
+all_neutral_text = str(" ".join(all_neutral))
+all_good_text = str(" ".join(all_good))
+WordFreq.generate_from_text(all_sad_text)
+WordFreq.to_file("sadness_words.png")
+WordFreq.generate_from_text(all_neutral_text)
+WordFreq.to_file("neutral_words.png")
+WordFreq.generate_from_text(all_good_text)
+WordFreq.to_file("good_words.png")
 
 # Shuffling the data
 #print(len(labels)) # Number of labels

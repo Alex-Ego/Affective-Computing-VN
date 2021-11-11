@@ -27,26 +27,25 @@
 \BOOKMARK [2][-]{subsection.4.1.2}{Text Filtering}{section.4.1}% 27
 \BOOKMARK [2][-]{subsection.4.1.3}{Neural Network}{section.4.1}% 28
 \BOOKMARK [1][-]{section.4.2}{Tools}{chapter.4}% 29
-\BOOKMARK [1][-]{section.4.3}{Interface}{chapter.4}% 30
-\BOOKMARK [2][-]{subsection.4.3.1}{Assistant}{section.4.3}% 31
-\BOOKMARK [1][-]{section.4.4}{Inner Workings}{chapter.4}% 32
-\BOOKMARK [2][-]{subsection.4.4.1}{Text Filtering}{section.4.4}% 33
-\BOOKMARK [2][-]{subsection.4.4.2}{Neural Network}{section.4.4}% 34
-\BOOKMARK [2][-]{subsection.4.4.3}{Portability}{section.4.4}% 35
-\BOOKMARK [0][-]{chapter.5}{Data Experiments}{}% 36
-\BOOKMARK [1][-]{section.5.1}{Inputs and Outputs}{chapter.5}% 37
-\BOOKMARK [2][-]{subsection.5.1.1}{Inputs}{section.5.1}% 38
-\BOOKMARK [2][-]{subsection.5.1.2}{Outputs}{section.5.1}% 39
-\BOOKMARK [1][-]{section.5.2}{Experiments}{chapter.5}% 40
-\BOOKMARK [2][-]{subsection.5.2.1}{Experiment 1: Base Experiment}{section.5.2}% 41
-\BOOKMARK [2][-]{subsection.5.2.2}{Experiment 2: More Datasets With Reduced Data Scope}{section.5.2}% 42
-\BOOKMARK [2][-]{subsection.5.2.3}{Experiment 3: Augmented LSTM Units}{section.5.2}% 43
-\BOOKMARK [2][-]{subsection.5.2.4}{Experiment 4: Augmented Datasets Without Reduced Data Scope}{section.5.2}% 44
-\BOOKMARK [2][-]{subsection.5.2.5}{Experiment 5: Extra Sadness Dataset}{section.5.2}% 45
-\BOOKMARK [2][-]{subsection.5.2.6}{Experiment 6: Reduced Classification Scope}{section.5.2}% 46
-\BOOKMARK [2][-]{subsection.5.2.7}{Experiment 7: Reduced Epochs}{section.5.2}% 47
-\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}% 48
-\BOOKMARK [2][-]{subsection.5.3.1}{Interpretation}{section.5.3}% 49
-\BOOKMARK [2][-]{subsection.5.3.2}{Discussion}{section.5.3}% 50
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 51
-\BOOKMARK [1][-]{section.6.1}{Future Work}{chapter.6}% 52
+\BOOKMARK [1][-]{section.4.3}{Inner Workings}{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.3.1}{Text Filtering}{section.4.3}% 31
+\BOOKMARK [2][-]{subsection.4.3.2}{Neural Network}{section.4.3}% 32
+\BOOKMARK [2][-]{subsection.4.3.3}{Portability}{section.4.3}% 33
+\BOOKMARK [0][-]{chapter.5}{Data Experiments}{}% 34
+\BOOKMARK [1][-]{section.5.1}{Inputs and Outputs}{chapter.5}% 35
+\BOOKMARK [2][-]{subsection.5.1.1}{Inputs}{section.5.1}% 36
+\BOOKMARK [2][-]{subsection.5.1.2}{Outputs}{section.5.1}% 37
+\BOOKMARK [1][-]{section.5.2}{Experiments}{chapter.5}% 38
+\BOOKMARK [2][-]{subsection.5.2.1}{Experiment 1: Base Experiment}{section.5.2}% 39
+\BOOKMARK [2][-]{subsection.5.2.2}{Experiment 2: More Datasets With Reduced Data Scope}{section.5.2}% 40
+\BOOKMARK [2][-]{subsection.5.2.3}{Experiment 3: Augmented LSTM Units}{section.5.2}% 41
+\BOOKMARK [2][-]{subsection.5.2.4}{Experiment 4: Augmented Datasets Without Reduced Data Scope}{section.5.2}% 42
+\BOOKMARK [2][-]{subsection.5.2.5}{Experiment 5: Extra Sadness Dataset}{section.5.2}% 43
+\BOOKMARK [2][-]{subsection.5.2.6}{Experiment 6: Reduced Classification Scope}{section.5.2}% 44
+\BOOKMARK [2][-]{subsection.5.2.7}{Experiment 7: Reduced Epochs}{section.5.2}% 45
+\BOOKMARK [2][-]{subsection.5.2.8}{Experiment 8: Added Stop Words}{section.5.2}% 46
+\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}% 47
+\BOOKMARK [2][-]{subsection.5.3.1}{Interpretation}{section.5.3}% 48
+\BOOKMARK [2][-]{subsection.5.3.2}{Discussion}{section.5.3}% 49
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 50
+\BOOKMARK [1][-]{section.6.1}{Future Work}{chapter.6}% 51

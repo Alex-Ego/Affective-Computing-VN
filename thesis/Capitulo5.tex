@@ -47,20 +47,6 @@ In this experiment, we look at the base version of this thesis' project.
 	\end{tabular}
 \end{table}
 
-\begin{table}[!bh]
-	\caption{Experiment 1's results.}
-	\vspace{0.5cm}
-	\centering
-	\begin{tabular}[t]{|l|l|l|l|}
-	\hline
-		Loss & 0.6857 & Val\_loss & 0.8499
-	\\ \hline
-		Accuracy & 0.7151 & Val\_accuracy & 0.6308
-	\\ \hline
-	\end{tabular}
-\end{table}
-
-
 \begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.8]{Accuracy_Exp1}
@@ -95,20 +81,6 @@ This experiment takes sentences from one more dataset and 3 less categorized sen
 	\\ \hline
 	\end{tabular}
 \end{table}
-
-\begin{table}[!bh]
-	\caption{Experiment 2's results.}
-	\vspace{0.5cm}
-	\centering
-	\begin{tabular}[t]{|l|l|l|l|}
-	\hline
-		Loss & 0.5956 & Val\_loss & 0.7649
-	\\ \hline
-		Accuracy & 0.7576 & Val\_accuracy & 0.6821
-	\\ \hline
-	\end{tabular}
-\end{table}
-
 
 \begin{figure}[!h]
 	\centering
@@ -145,20 +117,6 @@ Largely the same as Experiment 2, but the LSTM has more units to work with.
 	\end{tabular}
 \end{table}
 
-\begin{table}[!bh]
-	\caption{Experiment 3's results.}
-	\vspace{0.5cm}
-	\centering
-	\begin{tabular}[t]{|l|l|l|l|}
-	\hline
-		Loss & 0.5829 & Val\_loss & 0.7373
-	\\ \hline
-		Accuracy & 0.7564 & Val\_accuracy & 0.6780
-	\\ \hline
-	\end{tabular}
-\end{table}
-
-
 \begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.8]{Accuracy_Exp3}
@@ -193,20 +151,6 @@ A mix between Experiment 1 and 2. Three datasets with the full sentiment categor
 	\\ \hline
 	\end{tabular}
 \end{table}
-
-\begin{table}[!b]
-	\caption{Experiment 4's results.}
-	\vspace{0.5cm}
-	\centering
-	\begin{tabular}[t]{|l|l|l|l|}
-	\hline
-		Loss & 0.5455 & Val\_loss & 0.6704
-	\\ \hline
-		Accuracy & 0.7741 & Val\_accuracy & 0.7210
-	\\ \hline
-	\end{tabular}
-\end{table}
-
 
 \begin{figure}[!h]
 	\centering
@@ -243,20 +187,6 @@ Same as Experiment 4, but with an added dataset with only ``Sadness'' sentences.
 	\end{tabular}
 \end{table}
 
-\begin{table}[!b]
-	\caption{Experiment 5's results.}
-	\vspace{0.5cm}
-	\centering
-	\begin{tabular}[t]{|l|l|l|l|}
-	\hline
-		Loss & 0.5442 & Val\_loss & 0.6620
-	\\ \hline
-		Accuracy & 0.6620 & Val\_accuracy & 0.7162
-	\\ \hline
-	\end{tabular}
-\end{table}
-
-
 \begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.8]{Accuracy_Exp5}
@@ -291,20 +221,6 @@ This is the largest change on an experiment, the ``Neutral'' category has been c
 	\\ \hline
 	\end{tabular}
 \end{table}
-
-\begin{table}[!b]
-	\caption{Experiment 6's results.}
-	\vspace{0.5cm}
-	\centering
-	\begin{tabular}[t]{|l|l|l|l|}
-	\hline
-		Loss & 0.6222 & Val\_loss & 0.7186
-	\\ \hline
-		Accuracy & 0.6550 & Val\_accuracy & 0.5357
-	\\ \hline
-	\end{tabular}
-\end{table}
-
 
 \begin{figure}[!h]
 	\centering
@@ -341,19 +257,6 @@ Largely the same as Experiment 5 with half the epochs. This with the purpose of 
 	\end{tabular}
 \end{table}
 
-\begin{table}[!b]
-	\caption{Experiment 7's results.}
-	\vspace{0.5cm}
-	\centering
-	\begin{tabular}[t]{|l|l|l|l|}
-	\hline
-		Loss & 0.6041 & Val\_loss & 0.6555
-	\\ \hline
-		Accuracy & 0.7451 & Val\_accuracy & 0.7197
-	\\ \hline
-	\end{tabular}
-\end{table}
-
 
 \begin{figure}[!h]
 	\centering
@@ -366,6 +269,42 @@ Largely the same as Experiment 5 with half the epochs. This with the purpose of 
 \end{figure}
 \pagebreak
 
+\subsection{Experiment 8: Added Stop Words}
+\label{exp8}
+Same as the experiment above, the difference being that the top 3 most recurrent words in the datasets are flagged as stop words in an attempt to mitigate the bleed between categories.
+\begin{table}[!h]
+	\caption{Experiment 8's defining characteristics.}
+	\vspace{0.5cm}
+	\centering
+	\begin{tabular}[t]{|l|l|}
+	\hline
+		Datasets Used & \makecell{4: \citet{d1}, \citet{d2},\\ \citet{d3}, and \citet{d4}}
+	\\ \hline
+		Epochs & 5
+	\\ \hline
+		LSTM Layer & 32 units
+	\\ \hline
+		Categorized Sentiments as ``Bad'' & ``Sadness'', ``Worry'', and ``Fear''.
+	\\ \hline	
+		 Categorized Sentiments as ``Neutral'' & ``Neutral'' and ``Boredom''.
+	\\ \hline	
+		Categorized Sentiments as ``Good'' & ``Happiness'', ``Fun'', ``Joy'', and ``Love''.
+	\\ \hline
+	\end{tabular}
+\end{table}
+
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.8]{Accuracy_Exp8}
+	\caption{Accuracy Graph of Experiment 8}
+	\label{fig:accuracy_exp7}
+	\includegraphics[scale=0.8]{Loss_Exp8}
+	\caption{Loss Graph of Experiment 8}
+	\label{fig:loss_exp7}
+\end{figure}
+\pagebreak
+
 \section{Results}
 In this section, the results of the experiments from the previous section will be discussed. Later on, a hypothesis will be formulated based from them. For reference, all these experiments were subjected to the same basic test inputs post-training:
 \begin{itemize}
@@ -373,6 +312,35 @@ In this section, the results of the experiments from the previous section will b
 	\item ``Neutral''-labeled sentences: ``I don't feel anything'' and an empty input
 	\item ``Bad''-labeled sentences: ``I am very sad right now'' and ``sad sad sad sad sad sad sad''
 \end{itemize}
+\begin{table}[!h]
+	\caption{Experiment results}
+	\vspace{0.5cm}
+	\centering
+	\begin{tabular}[t]{|l|l|l|l|l|}
+	\hline
+	\multicolumn{1}{|c|}{} & \multicolumn{2}{c|}{Training} & \multicolumn{2}{c|}{Cross-Validation}
+	\\ \hline
+	\ & Loss & Accuracy & Loss & Accuracy
+	\\ \hline
+	\hyperref[exp1]{Experiment 1} & 0.6857 & 0.7151 & \textbf{0.8499} & 0.6308
+	\\ \hline
+	\hyperref[exp2]{Experiment 2} & 0.5956 & 0.7576 & 0.7649 & 0.6821
+	\\ \hline
+	\hyperref[exp3]{Experiment 3} & 0.5829 & 0.7564 & 0.7373 & 0.6780
+	\\ \hline
+	\hyperref[exp4]{Experiment 4} & 0.5455 & 0.7741 & 0.6704 & 0.7110
+	\\ \hline
+	\hyperref[exp5]{Experiment 5} & 0.5442 & 0.6620 & 0.6620 & \textbf{0.7162}
+	\\ \hline
+	\hyperref[exp6]{Experiment 6} & 0.6222 & 0.6550 & 0.7186 & 0.5357
+	\\ \hline
+	\hyperref[exp7]{Experiment 7} & 0.6041 & 0.7451 & 0.6555 & 0.7097
+	\\ \hline
+	\hyperref[exp8]{Experiment 8} & 0.6030 & 0.7421 & 0.6579 & 0.7156
+	\\ \hline
+	\end{tabular}
+\end{table}
+\pagebreak
 \subsection{Interpretation}
 On \nameref{exp1}, the post-training results were promising, sentences with obvious ``Good'' and ``Neutral'' related words were correctly analyzed. But, as Figures \ref{fig:accuracy_exp1} and \ref{fig:loss_exp1} show, the validation results were considerably worse than the control data scores, this is due to the ``Bad'' score behaving erratically even when using obvious ``Bad''-related words, this could be explained by the disparity between words used on the datasets -- not many words were repeated on these --. Even so, overall this had one of the best accuracies across the experiments.
 
@@ -387,6 +355,8 @@ On \nameref{exp5}, knowing that it is very likely that there simply is not enoug
 On \nameref{exp6}, some drastic changes were made to experiment with the datasets used, this consisted in completely eliminating the ``Neutral'' category, only taking into consideration ``Bad'', ``Good'' and ``0'' with the intention of seeing the algorithm's behavior. This, as one would expect, broke everything and did not categorize anything correctly and had the worst scores overall of all experiments. 
 
 On \nameref{exp7}, taking again into consideration the results given from Experiment 5, the problem of overfitting was also a concern, and since the epoch count was a parameter yet-to-be manipulated. Instead of using the usual 10 epochs, 5 were used. This did not have any noticeable effect in the prediction output, however.
+
+On \nameref{exp8}, manually marking the words that represent the most bleed between categories (``work'', ``go'', ``nt'') still wasn't enough to fix the categorization problem, even though there was a slight benefit in the accuracy and loss values.
 
 \subsection{Discussion}
 While the experiment with the best performance overall is \nameref{exp5}, this still could not classify the ``Bad''-labeled sentences correctly, so an exhaustive manual search was conducted inside all of the datasets used. It was found out that most of the words in the datasets pertaining to the ``Bad'' category were mostly ambiguous words that, out of context, could be interpreted as disinterest or overall any other emotion. This, combined with the fact that some of the datasets used were plagued with orthographical errors, greatly affected the performance of this algorithm.
