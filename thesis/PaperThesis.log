@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.1)  11 NOV 2021 14:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.1)  18 NOV 2021 02:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -707,14 +707,7 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 )
 (./PaperThesis.aux (./Portadas.aux) (./Agradecimientos.aux) (./Resumen.aux)
 (./Abstract.aux) (./Capitulo1.aux) (./Capitulo2.aux) (./Capitulo3.aux)
-(./Capitulo4.aux) (./Capitulo5.aux
-
-LaTeX Warning: Label `fig:accuracy_exp7' multiply defined.
-
-
-LaTeX Warning: Label `fig:loss_exp7' multiply defined.
-
-) (./Capitulo6.aux) (./Autobiografia.aux))
+(./Capitulo4.aux) (./Capitulo5.aux) (./Capitulo6.aux) (./Autobiografia.aux))
 \openout1 = `PaperThesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
@@ -798,7 +791,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/uanl-eps-converted-to.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/uanl-eps-converted-to.pdf, id=212, 87.32625pt x 78.2925pt>
+<Figures/uanl-eps-converted-to.pdf, id=216, 87.32625pt x 78.2925pt>
 File: Figures/uanl-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/uanl-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/uanl-eps-converted-to.pdf  used on input line 
@@ -834,7 +827,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/fime-eps-converted-to.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/fime-eps-converted-to.pdf, id=229, 108.405pt x 143.53625pt>
+<Figures/fime-eps-converted-to.pdf, id=233, 108.405pt x 143.53625pt>
 File: Figures/fime-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/fime-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/fime-eps-converted-to.pdf  used on input line 
@@ -959,17 +952,17 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-<Figures/Normal_RNN.png, id=548, 145.89507pt x 248.42813pt>
+<Figures/Normal_RNN.png, id=573, 145.89507pt x 248.42813pt>
 File: Figures/Normal_RNN.png Graphic file (type png)
 <use Figures/Normal_RNN.png>
 Package pdftex.def Info: Figures/Normal_RNN.png  used on input line 64.
 (pdftex.def)             Requested size: 102.12584pt x 173.8985pt.
-<Figures/Transp_RNN.png, id=549, 388.45125pt x 248.42813pt>
+<Figures/Transp_RNN.png, id=574, 388.45125pt x 248.42813pt>
 File: Figures/Transp_RNN.png Graphic file (type png)
 <use Figures/Transp_RNN.png>
 Package pdftex.def Info: Figures/Transp_RNN.png  used on input line 70.
 (pdftex.def)             Requested size: 271.914pt x 173.8985pt.
-<Figures/Transp_LSTM.png, id=550, 379.4175pt x 248.42813pt>
+<Figures/Transp_LSTM.png, id=575, 379.4175pt x 248.42813pt>
 File: Figures/Transp_LSTM.png Graphic file (type png)
 <use Figures/Transp_LSTM.png>
 Package pdftex.def Info: Figures/Transp_LSTM.png  used on input line 78.
@@ -1008,12 +1001,12 @@ Chapter 5.
 
 
 ] [23]
-<Figures/Accuracy_Exp1.png, id=660, 462.528pt x 346.896pt>
+<Figures/Accuracy_Exp1.png, id=685, 462.528pt x 346.896pt>
 File: Figures/Accuracy_Exp1.png Graphic file (type png)
 <use Figures/Accuracy_Exp1.png>
 Package pdftex.def Info: Figures/Accuracy_Exp1.png  used on input line 52.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-<Figures/Loss_Exp1.png, id=662, 462.528pt x 346.896pt>
+<Figures/Loss_Exp1.png, id=687, 462.528pt x 346.896pt>
 File: Figures/Loss_Exp1.png Graphic file (type png)
 <use Figures/Loss_Exp1.png>
 Package pdftex.def Info: Figures/Loss_Exp1.png  used on input line 55.
@@ -1045,12 +1038,12 @@ l.60
                                                   \fi \fi 
 l.60 
       <./Figures/Accuracy_Exp1.png> <./Figures/Loss_Exp1.png>]
-<Figures/Accuracy_Exp2.png, id=678, 462.528pt x 346.896pt>
+<Figures/Accuracy_Exp2.png, id=703, 462.528pt x 346.896pt>
 File: Figures/Accuracy_Exp2.png Graphic file (type png)
 <use Figures/Accuracy_Exp2.png>
 Package pdftex.def Info: Figures/Accuracy_Exp2.png  used on input line 87.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-<Figures/Loss_Exp2.png, id=679, 462.528pt x 346.896pt>
+<Figures/Loss_Exp2.png, id=704, 462.528pt x 346.896pt>
 File: Figures/Loss_Exp2.png Graphic file (type png)
 <use Figures/Loss_Exp2.png>
 Package pdftex.def Info: Figures/Loss_Exp2.png  used on input line 90.
@@ -1082,12 +1075,12 @@ l.95
                                                   \fi \fi 
 l.95 
       <./Figures/Accuracy_Exp2.png> <./Figures/Loss_Exp2.png>]
-<Figures/Accuracy_Exp3.png, id=694, 462.528pt x 346.896pt>
+<Figures/Accuracy_Exp3.png, id=719, 462.528pt x 346.896pt>
 File: Figures/Accuracy_Exp3.png Graphic file (type png)
 <use Figures/Accuracy_Exp3.png>
 Package pdftex.def Info: Figures/Accuracy_Exp3.png  used on input line 122.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-<Figures/Loss_Exp3.png, id=695, 462.528pt x 346.896pt>
+<Figures/Loss_Exp3.png, id=720, 462.528pt x 346.896pt>
 File: Figures/Loss_Exp3.png Graphic file (type png)
 <use Figures/Loss_Exp3.png>
 Package pdftex.def Info: Figures/Loss_Exp3.png  used on input line 125.
@@ -1119,12 +1112,12 @@ l.130
                                                   \fi \fi 
 l.130 
        <./Figures/Accuracy_Exp3.png> <./Figures/Loss_Exp3.png>]
-<Figures/Accuracy_Exp4.png, id=710, 462.528pt x 346.896pt>
+<Figures/Accuracy_Exp4.png, id=736, 462.528pt x 346.896pt>
 File: Figures/Accuracy_Exp4.png Graphic file (type png)
 <use Figures/Accuracy_Exp4.png>
 Package pdftex.def Info: Figures/Accuracy_Exp4.png  used on input line 157.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-<Figures/Loss_Exp4.png, id=711, 462.528pt x 346.896pt>
+<Figures/Loss_Exp4.png, id=737, 462.528pt x 346.896pt>
 File: Figures/Loss_Exp4.png Graphic file (type png)
 <use Figures/Loss_Exp4.png>
 Package pdftex.def Info: Figures/Loss_Exp4.png  used on input line 160.
@@ -1156,12 +1149,12 @@ l.165
                                                   \fi \fi 
 l.165 
        <./Figures/Accuracy_Exp4.png> <./Figures/Loss_Exp4.png>]
-<Figures/Accuracy_Exp5.png, id=727, 462.528pt x 346.896pt>
+<Figures/Accuracy_Exp5.png, id=752, 462.528pt x 346.896pt>
 File: Figures/Accuracy_Exp5.png Graphic file (type png)
 <use Figures/Accuracy_Exp5.png>
 Package pdftex.def Info: Figures/Accuracy_Exp5.png  used on input line 192.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-<Figures/Loss_Exp5.png, id=728, 462.528pt x 346.896pt>
+<Figures/Loss_Exp5.png, id=753, 462.528pt x 346.896pt>
 File: Figures/Loss_Exp5.png Graphic file (type png)
 <use Figures/Loss_Exp5.png>
 Package pdftex.def Info: Figures/Loss_Exp5.png  used on input line 195.
@@ -1193,12 +1186,12 @@ l.200
                                                   \fi \fi 
 l.200 
        <./Figures/Accuracy_Exp5.png> <./Figures/Loss_Exp5.png>]
-<Figures/Accuracy_Exp6.png, id=744, 462.528pt x 346.896pt>
+<Figures/Accuracy_Exp6.png, id=769, 462.528pt x 346.896pt>
 File: Figures/Accuracy_Exp6.png Graphic file (type png)
 <use Figures/Accuracy_Exp6.png>
 Package pdftex.def Info: Figures/Accuracy_Exp6.png  used on input line 227.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-<Figures/Loss_Exp6.png, id=745, 462.528pt x 346.896pt>
+<Figures/Loss_Exp6.png, id=770, 462.528pt x 346.896pt>
 File: Figures/Loss_Exp6.png Graphic file (type png)
 <use Figures/Loss_Exp6.png>
 Package pdftex.def Info: Figures/Loss_Exp6.png  used on input line 230.
@@ -1230,12 +1223,12 @@ l.235
                                                   \fi \fi 
 l.235 
        <./Figures/Accuracy_Exp6.png> <./Figures/Loss_Exp6.png>]
-<Figures/Accuracy_Exp7.png, id=761, 462.528pt x 346.896pt>
+<Figures/Accuracy_Exp7.png, id=786, 462.528pt x 346.896pt>
 File: Figures/Accuracy_Exp7.png Graphic file (type png)
 <use Figures/Accuracy_Exp7.png>
 Package pdftex.def Info: Figures/Accuracy_Exp7.png  used on input line 263.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-<Figures/Loss_Exp7.png, id=762, 462.528pt x 346.896pt>
+<Figures/Loss_Exp7.png, id=787, 462.528pt x 346.896pt>
 File: Figures/Loss_Exp7.png Graphic file (type png)
 <use Figures/Loss_Exp7.png>
 Package pdftex.def Info: Figures/Loss_Exp7.png  used on input line 266.
@@ -1267,12 +1260,12 @@ l.271
                                                   \fi \fi 
 l.271 
        <./Figures/Accuracy_Exp7.png> <./Figures/Loss_Exp7.png>]
-<Figures/Accuracy_Exp8.png, id=777, 462.528pt x 346.896pt>
+<Figures/Accuracy_Exp8.png, id=802, 462.528pt x 346.896pt>
 File: Figures/Accuracy_Exp8.png Graphic file (type png)
 <use Figures/Accuracy_Exp8.png>
 Package pdftex.def Info: Figures/Accuracy_Exp8.png  used on input line 299.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-<Figures/Loss_Exp8.png, id=778, 462.528pt x 346.896pt>
+<Figures/Loss_Exp8.png, id=803, 462.528pt x 346.896pt>
 File: Figures/Loss_Exp8.png Graphic file (type png)
 <use Figures/Loss_Exp8.png>
 Package pdftex.def Info: Figures/Loss_Exp8.png  used on input line 302.
@@ -1303,31 +1296,120 @@ l.307
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.307 
-       <./Figures/Accuracy_Exp8.png> <./Figures/Loss_Exp8.png>] [40pdfTeX warni
-ng (ext4): destination with the same identifier (name{table.5.9}) has been alre
-ady used, duplicate ignored
+       <./Figures/Accuracy_Exp8.png> <./Figures/Loss_Exp8.png>]
+<Figures/Accuracy_Exp9.png, id=818, 462.528pt x 346.896pt>
+File: Figures/Accuracy_Exp9.png Graphic file (type png)
+<use Figures/Accuracy_Exp9.png>
+Package pdftex.def Info: Figures/Accuracy_Exp9.png  used on input line 333.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
+<Figures/Loss_Exp9.png, id=819, 462.528pt x 346.896pt>
+File: Figures/Loss_Exp9.png Graphic file (type png)
+<use Figures/Loss_Exp9.png>
+Package pdftex.def Info: Figures/Loss_Exp9.png  used on input line 336.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[40pdfTeX warning (ext4): destination with the same identifier (name{table.5.9}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.344 \subsection
-                 {Interpretation}] [41] [42]) [43]
+l.341 
+      ]
+
+LaTeX Warning: Text page 41 contains only floats.
+
+[41pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
+7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.341 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5.18}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.341 
+       <./Figures/Accuracy_Exp9.png> <./Figures/Loss_Exp9.png>] [42pdfTeX warni
+ng (ext4): destination with the same identifier (name{table.5.10}) has been alr
+eady used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.380 \subsection
+                 {Interpretation}] [43]
+<Figures/word clouds old/neutral_words.png, id=865, 401.5pt x 200.75pt>
+File: Figures/word clouds old/neutral_words.png Graphic file (type png)
+<use Figures/word clouds old/neutral_words.png>
+Package pdftex.def Info: Figures/word clouds old/neutral_words.png  used on inp
+ut line 403.
+(pdftex.def)             Requested size: 281.04808pt x 140.52403pt.
+<Figures/word clouds old/sadness_words.png, id=868, 401.5pt x 200.75pt>
+File: Figures/word clouds old/sadness_words.png Graphic file (type png)
+<use Figures/word clouds old/sadness_words.png>
+Package pdftex.def Info: Figures/word clouds old/sadness_words.png  used on inp
+ut line 407.
+(pdftex.def)             Requested size: 281.04808pt x 140.52403pt.
+ [44] [45pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.5.19}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.413 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5.20}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.413 
+       <./Figures/word clouds old/neutral_words.png (PNG copy)> <./Figures/word
+ clouds old/sadness_words.png (PNG copy)>]
+<Figures/word clouds new/neutral_words.png, id=881, 401.5pt x 200.75pt>
+File: Figures/word clouds new/neutral_words.png Graphic file (type png)
+<use Figures/word clouds new/neutral_words.png>
+Package pdftex.def Info: Figures/word clouds new/neutral_words.png  used on inp
+ut line 416.
+(pdftex.def)             Requested size: 281.04808pt x 140.52403pt.
+<Figures/word clouds new/sadness_words.png, id=882, 401.5pt x 200.75pt>
+File: Figures/word clouds new/sadness_words.png Graphic file (type png)
+<use Figures/word clouds new/sadness_words.png>
+Package pdftex.def Info: Figures/word clouds new/sadness_words.png  used on inp
+ut line 420.
+(pdftex.def)             Requested size: 281.04808pt x 140.52403pt.
+) [46pdfTeX warning (ext4): destination with the same identifier (name{figure.5
+.21}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.95 \include{Capitulo5}
+                        pdfTeX warning (ext4): destination with the same identi
+fier (name{figure.5.22}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.95 \include{Capitulo5}
+                         <./Figures/word clouds new/neutral_words.png (PNG copy
+)> <./Figures/word clouds new/sadness_words.png (PNG copy)>]
 \openout2 = `Capitulo6.aux'.
 
  (./Capitulo6.tex
 Chapter 6.
-[44
+[47
 
 
 
-]) [45] [46] (./PaperThesis.bbl [47
+]) [48] [49] (./PaperThesis.bbl [50
 
 
 
-] [48]) [49]
+] [51]) [52]
 \openout2 = `Autobiografia.aux'.
 
  (./Autobiografia.tex)
-[50
+[53
 
 
 ]
@@ -1339,19 +1421,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
 Package rerunfilecheck Info: File `PaperThesis.out' has not changed.
-(rerunfilecheck)             Checksum: 3F85D9C42729291593E5D2B5E4F2E39D;3355.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 8D81D9E1970F0ED91545FB24F6BA0E9D;3472.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
  ) 
 Here is how much of TeX's memory you used:
- 21450 strings out of 481239
- 377452 string characters out of 5920378
- 803554 words of memory out of 5000000
- 35947 multiletter control sequences out of 15000+600000
- 550178 words of font info for 68 fonts, out of 8000000 for 9000
+ 21513 strings out of 481239
+ 379077 string characters out of 5920378
+ 804553 words of memory out of 5000000
+ 35992 multiletter control sequences out of 15000+600000
+ 550950 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,17n,72p,707b,1963s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not ex
@@ -1399,13 +1477,14 @@ are/texmf/fonts/type1/public/cm-super/sfit1000.pfb></usr/share/texmf/fonts/type
 1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
 rm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/sha
 re/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sft
-i1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/shar
-e/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on PaperThesis.pdf (64 pages, 1037436 bytes).
+/public/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sft
+i1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sftt1200.pfb>
+Output written on PaperThesis.pdf (67 pages, 1375314 bytes).
 PDF statistics:
- 980 PDF objects out of 1000 (max. 8388607)
- 845 compressed objects within 9 object streams
- 233 named destinations out of 1000 (max. 500000)
- 526 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1042 PDF objects out of 1200 (max. 8388607)
+ 893 compressed objects within 9 object streams
+ 244 named destinations out of 1000 (max. 500000)
+ 564 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -44,8 +44,9 @@
 \BOOKMARK [2][-]{subsection.5.2.6}{Experiment 6: Reduced Classification Scope}{section.5.2}% 44
 \BOOKMARK [2][-]{subsection.5.2.7}{Experiment 7: Reduced Epochs}{section.5.2}% 45
 \BOOKMARK [2][-]{subsection.5.2.8}{Experiment 8: Added Stop Words}{section.5.2}% 46
-\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}% 47
-\BOOKMARK [2][-]{subsection.5.3.1}{Interpretation}{section.5.3}% 48
-\BOOKMARK [2][-]{subsection.5.3.2}{Discussion}{section.5.3}% 49
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 50
-\BOOKMARK [1][-]{section.6.1}{Future Work}{chapter.6}% 51
+\BOOKMARK [2][-]{subsection.5.2.9}{Experiment 9: Extra Stop Words and Reduced Classification Scope}{section.5.2}% 47
+\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}% 48
+\BOOKMARK [2][-]{subsection.5.3.1}{Interpretation}{section.5.3}% 49
+\BOOKMARK [2][-]{subsection.5.3.2}{Discussion}{section.5.3}% 50
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 51
+\BOOKMARK [1][-]{section.6.1}{Future Work}{chapter.6}% 52

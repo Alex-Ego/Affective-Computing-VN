@@ -19,7 +19,7 @@ The parameters that could potentially have a great impact on the output of the c
 \begin{itemize}
 	\item Used datasets: This could influentiate the amount of words in the corpus and have a big impact on how some words are percieved
 	\item Training epochs: How many loops does the algorithm go through before being considered fully trained, if this number is too high it could result in \textit{overfitting}, which is, in casual terms, the Neural Network equivalent of overthinking.
-	\item Units in the LSTM layer: This unit system, albeit small in the overall scale of things, could make-or-break the algoritm if not tuned correctly.
+	\item Units in the LSTM layer: This unit system, albeit small in the overall scale of things, could make-or-break the algorithm if not tuned correctly.
 	\item Categorized sentiments: Reducing the scope of the project could potentially benefit the overall accuracy of the remaining sentiments.
 \end{itemize}
 The amount of improvement with each experiment is shown with loss and accuracy graphs, which are evaluated every epoch the algorithm is trained. Lower loss and higher accuracy are preferred.
@@ -271,7 +271,7 @@ Largely the same as Experiment 5 with half the epochs. This with the purpose of 
 
 \subsection{Experiment 8: Added Stop Words}
 \label{exp8}
-Same as the experiment above, the difference being that the top 3 most recurrent words in the datasets are flagged as stop words in an attempt to mitigate the bleed between categories.
+Same as the experiment 7, the difference being that the top 3 most recurrent words in the datasets are flagged as stop words in an attempt to mitigate the bleed between categories.
 \begin{table}[!h]
 	\caption{Experiment 8's defining characteristics.}
 	\vspace{0.5cm}
@@ -298,10 +298,44 @@ Same as the experiment above, the difference being that the top 3 most recurrent
 	\centering
 	\includegraphics[scale=0.8]{Accuracy_Exp8}
 	\caption{Accuracy Graph of Experiment 8}
-	\label{fig:accuracy_exp7}
+	\label{fig:accuracy_exp8}
 	\includegraphics[scale=0.8]{Loss_Exp8}
 	\caption{Loss Graph of Experiment 8}
-	\label{fig:loss_exp7}
+	\label{fig:loss_exp8}
+\end{figure}
+\pagebreak
+
+\subsection{Experiment 9: Extra Stop Words and Reduced Classification Scope}
+\label{exp9}
+Keeping in track with experiment 8, with the added extra of also reducing the scope of the classification, reducing the categories to ``Good'' and ``Bad''.
+\begin{table}[!h]
+	\caption{Experiment 9's defining characteristics.}
+	\vspace{0.5cm}
+	\centering
+	\begin{tabular}[t]{|l|l|}
+	\hline
+		Datasets Used & \makecell{4: \citet{d1}, \citet{d2},\\ \citet{d3}, and \citet{d4}}
+	\\ \hline
+		Epochs & 5
+	\\ \hline
+		LSTM Layer & 32 units
+	\\ \hline
+		Categorized Sentiments as ``Bad'' & ``Sadness'', ``Worry'', and ``Fear''.
+	\\ \hline	
+		Categorized Sentiments as ``Good'' & ``Happiness'', ``Fun'', ``Joy'', and ``Love''.
+	\\ \hline
+	\end{tabular}
+\end{table}
+
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.8]{Accuracy_Exp9}
+	\caption{Accuracy Graph of Experiment 9}
+	\label{fig:accuracy_exp9}
+	\includegraphics[scale=0.8]{Loss_Exp9}
+	\caption{Loss Graph of Experiment 9}
+	\label{fig:loss_exp9}
 \end{figure}
 \pagebreak
 
@@ -330,13 +364,15 @@ In this section, the results of the experiments from the previous section will b
 	\\ \hline
 	\hyperref[exp4]{Experiment 4} & 0.5455 & 0.7741 & 0.6704 & 0.7110
 	\\ \hline
-	\hyperref[exp5]{Experiment 5} & 0.5442 & 0.6620 & 0.6620 & \textbf{0.7162}
+	\hyperref[exp5]{Experiment 5} & 0.5442 & 0.6620 & 0.6620 & 0.7162
 	\\ \hline
 	\hyperref[exp6]{Experiment 6} & 0.6222 & 0.6550 & 0.7186 & 0.5357
 	\\ \hline
 	\hyperref[exp7]{Experiment 7} & 0.6041 & 0.7451 & 0.6555 & 0.7097
 	\\ \hline
 	\hyperref[exp8]{Experiment 8} & 0.6030 & 0.7421 & 0.6579 & 0.7156
+	\\ \hline
+	\hyperref[exp9]{Experiment 9} & 0.3624 & 0.8337 & 0.3871 & \textbf{0.8124}
 	\\ \hline
 	\end{tabular}
 \end{table}
@@ -350,7 +386,7 @@ On \nameref{exp3}, seeing that Experiment 2 had failed to predict correctly, mor
 
 On \nameref{exp4}, the base algorithm from Experiment 1 was brought back to work with the three datasets used on Experiments 2 and 3 to verify if the extra dataset was too lopsided to work with. It was found that having the full roster of emotions taken into consideration (``Sadness'', ``Worry'', and ``Fear'', ``Neutral'' and ``Boredom'', ``Happiness'', ``Fun'', ``Joy'', and ``Love'') actually helped the prediction scores. Even so, ``Bad'' category sentences were still not being recognized correctly, so more experimentation was needed.
 
-On \nameref{exp5}, knowing that it is very likely that there simply is not enough ``Bad''-related data to train with, another dataset solely compromised sentences categorized as ``Sadness'' was added. Overall, this is the experiment that brought the best results in accuracy and loss as shown in Figures \ref{fig:accuracy_exp5} and \ref{fig:loss_exp5}. This, however, had no noticeable effect on the prediction output post-training since the ``Bad'' scores were still very low with paired inputs.
+On \nameref{exp5}, knowing that it is very likely that there simply is not enough ``Bad''-related data to train with, another dataset solely compromised sentences categorized as ``Sadness'' was added. Overall, this experiment had very good accuracy and loss as shown in Figures \ref{fig:accuracy_exp5} and \ref{fig:loss_exp5}. This, however, had no noticeable effect on the prediction output post-training since the ``Bad'' scores were still very low with paired inputs.
 
 On \nameref{exp6}, some drastic changes were made to experiment with the datasets used, this consisted in completely eliminating the ``Neutral'' category, only taking into consideration ``Bad'', ``Good'' and ``0'' with the intention of seeing the algorithm's behavior. This, as one would expect, broke everything and did not categorize anything correctly and had the worst scores overall of all experiments. 
 
@@ -358,8 +394,33 @@ On \nameref{exp7}, taking again into consideration the results given from Experi
 
 On \nameref{exp8}, manually marking the words that represent the most bleed between categories (``work'', ``go'', ``nt'') still wasn't enough to fix the categorization problem, even though there was a slight benefit in the accuracy and loss values.
 
+On \nameref{exp9}, reducing the data category scope while also maintaining the stopwords mentioned on experiment 8 filtered, brought overall the best results as of yet. This can be attributed to the fact that the most significant category bleed happened between ``Neutral'' and ``Bad'' since they shared a lot of the word pool.
+
 \subsection{Discussion}
-While the experiment with the best performance overall is \nameref{exp5}, this still could not classify the ``Bad''-labeled sentences correctly, so an exhaustive manual search was conducted inside all of the datasets used. It was found out that most of the words in the datasets pertaining to the ``Bad'' category were mostly ambiguous words that, out of context, could be interpreted as disinterest or overall any other emotion. This, combined with the fact that some of the datasets used were plagued with orthographical errors, greatly affected the performance of this algorithm.
+The experiment with the best performance overall was \nameref{exp9}, with the scope adjustment the goal of predicting, at least partially, the feeling of a person's input was achieved. Thanks to an exhaustive search conducted inside all of the datasets used it was found out that the most-used words in the datasets pertaining to the ``Bad'' and ``Neutral'' category were mostly ambiguous words that, out of context, could be interpreted as disinterest or overall any other emotion.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.7]{word clouds old/neutral_words.png}
+	\caption{Word cloud of the ``Neutral'' category's corpus previous to the filtering in \nameref{exp8}}
+	\label{fig:neutralwords_pre}
+	\vspace{1cm}
+	\includegraphics[scale=0.7]{word clouds old/sadness_words.png}
+	\caption{Word cloud of the ``Bad'' category's corpus previous to the filtering in \nameref{exp8}}
+	\label{fig:sadnesswords_pre}
+\end{figure}
+
+This, combined with the fact that some of the datasets used were plagued with orthographical errors, greatly affected the performance of this algorithm's original scope. Thus, \hyperref[exp9]{Experiment 9} had to reduce the scope.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.7]{word clouds new/neutral_words.png}
+	\caption{Word cloud of the ``Neutral'' category's corpus post-filtering}
+	\label{fig:neutralwords_post}
+	\vspace{1cm}
+	\includegraphics[scale=0.7]{word clouds new/sadness_words.png}
+	\caption{Word cloud of the ``Bad'' category's corpus post-filtering}
+	\label{fig:sadnesswords_post}
+\end{figure}
 
 These results determine that the proposed hypothesis is partially true: given enough data, a Machine Learning algorithm can learn to classify feelings and react accordingly, effectively learning how to identify patterns to an extent. However, high quality and volume data is needed for this to be reliable. Something that was only partially obtained for this project.
 

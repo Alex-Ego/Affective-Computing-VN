@@ -25,4 +25,10 @@
 \contentsline {figure}{\numberline {5.14}{\ignorespaces Loss Graph of Experiment 7}}{37}{figure.5.14}%
 \contentsline {figure}{\numberline {5.15}{\ignorespaces Accuracy Graph of Experiment 8}}{39}{figure.5.15}%
 \contentsline {figure}{\numberline {5.16}{\ignorespaces Loss Graph of Experiment 8}}{39}{figure.5.16}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Accuracy Graph of Experiment 9}}{41}{figure.5.17}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Loss Graph of Experiment 9}}{41}{figure.5.18}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Word cloud of the ``Neutral'' category's corpus previous to the filtering in \nameref {exp8}}}{45}{figure.5.19}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Word cloud of the ``Bad'' category's corpus previous to the filtering in \nameref {exp8}}}{45}{figure.5.20}%
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Word cloud of the ``Neutral'' category's corpus post-filtering}}{46}{figure.5.21}%
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Word cloud of the ``Bad'' category's corpus post-filtering}}{46}{figure.5.22}%
 \addvspace {10\p@ }
