@@ -16,7 +16,7 @@
 \renewcommand{\arraystretch}{1} % altura de renglones de cuadros
 
 \title{Sentiment Analysis through Conversational Data}
-\author{Alexander Espronceda Gómez}
+\author{Alexander Espronceda Gómez, Satu Elisa Schaeffer}
 \institute {Facultad de Ingeniería Mecánica y Eléctrica}
 \email{alexander.esproncedago@uanl.edu.mx}
 
@@ -123,16 +123,17 @@ This project is built on Python v3.8.10, The libraries used for this project to 
 
 
 \section{Experiments}
-Experiment 1: Base Experiment\\
-Experiment 2: More Datasets With Reduced Data Scope\\
-Experiment 3: Augmented LSTM Units\\
-Experiment 4: Augmented Datasets Without Reduced Data
-Scope\\
-Experiment 5: Extra Sadness Dataset\\
-Experiment 6: Reduced Classification Scope\\
-Experiment 7: Reduced Epochs\\
-Experiment 8: Added Stop Words\\
-Experiment 9: Extra Stop Words and Reduced\\ Classification Scope\\ \\
+\begin{itemize}
+\item Experiment 1: Base Experiment
+\item Experiment 2: More Datasets With Reduced Data Scope
+\item Experiment 3: Augmented LSTM Units
+\item Experiment 4: Augmented Datasets Without Reduced Data Scope
+\item Experiment 5: Reduced Classification Scope
+\item Experiment 6: Reduced Epochs
+\item Experiment 7: Added Stop Words
+\item Experiment 8: Extra Stop Words and Reduced Classification Scope
+\end{itemize}
+
 \begin{table}[!h]
 	\captionsetup{type=table}
 	\setcounter{table}{1}
@@ -153,15 +154,13 @@ Experiment 9: Extra Stop Words and Reduced\\ Classification Scope\\ \\
 	\\ \hline
 	\hyperref[exp4]{Experiment 4} & 0.5455 & 0.7741 & 0.6704 & 0.7110
 	\\ \hline
-	\hyperref[exp5]{Experiment 5} & 0.5442 & 0.6620 & 0.6620 & 0.7162
+	\hyperref[exp6]{Experiment 5} & 0.6222 & 0.6550 & 0.7186 & 0.5357
 	\\ \hline
-	\hyperref[exp6]{Experiment 6} & 0.6222 & 0.6550 & 0.7186 & 0.5357
+	\hyperref[exp7]{Experiment 6} & 0.6041 & 0.7451 & 0.6555 & 0.7097
 	\\ \hline
-	\hyperref[exp7]{Experiment 7} & 0.6041 & 0.7451 & 0.6555 & 0.7097
+	\hyperref[exp8]{Experiment 7} & 0.6030 & 0.7421 & 0.6579 & 0.7156
 	\\ \hline
-	\hyperref[exp8]{Experiment 8} & 0.6030 & 0.7421 & 0.6579 & 0.7156
-	\\ \hline
-	\hyperref[exp9]{Experiment 9} & 0.3624 & 0.8337 & 0.3871 & \textbf{0.8124}
+	\hyperref[exp9]{Experiment 8} & 0.3624 & 0.8337 & 0.3871 & \textbf{0.8124}
 	\\ \hline
 	\end{tabular}
 \end{table}

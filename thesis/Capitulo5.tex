@@ -163,46 +163,11 @@ A mix between Experiment 1 and 2. Three datasets with the full sentiment categor
 \end{figure}
 \pagebreak
 
-\subsection{Experiment 5: Extra Sadness Dataset}
-\label{exp5}
-Same as Experiment 4, but with an added dataset with only ``Sadness'' sentences.
-\begin{table}[!h]
-	\caption{Experiment 5's defining characteristics.}
-	\vspace{0.5cm}
-	\centering
-	\begin{tabular}[t]{|l|l|}
-	\hline
-		Datasets Used & \makecell{4: \citet{d1}, \citet{d2},\\ \citet{d3}, and \citet{d4}}
-	\\ \hline
-		Epochs & 10
-	\\ \hline
-		LSTM Layer & 32 units
-	\\ \hline
-		Categorized Sentiments as ``Bad'' & ``Sadness'', ``Worry'', and ``Fear''.
-	\\ \hline	
-		 Categorized Sentiments as ``Neutral'' & ``Neutral'' and ``Boredom''.
-	\\ \hline	
-		Categorized Sentiments as ``Good'' & ``Happiness'', ``Fun'', ``Joy'', and ``Love''.
-	\\ \hline
-	\end{tabular}
-\end{table}
-
-\begin{figure}[!h]
-	\centering
-	\includegraphics[scale=0.8]{Accuracy_Exp5}
-	\caption{Accuracy Graph of Experiment 5}
-	\label{fig:accuracy_exp5}
-	\includegraphics[scale=0.8]{Loss_Exp5}
-	\caption{Loss Graph of Experiment 5}
-	\label{fig:loss_exp5}
-\end{figure}
-\pagebreak
-
-\subsection{Experiment 6: Reduced Classification Scope}
+\subsection{Experiment 5: Reduced Classification Scope}
 \label{exp6}
 This is the largest change on an experiment, the ``Neutral'' category has been completely disabled with the purpose of seeing how the rest of the data would be classified as.
 \begin{table}[!h]
-	\caption{Experiment 6's defining characteristics.}
+	\caption{Experiment 5's defining characteristics.}
 	\vspace{0.5cm}
 	\centering
 	\begin{tabular}[t]{|l|l|}
@@ -225,17 +190,53 @@ This is the largest change on an experiment, the ``Neutral'' category has been c
 \begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.8]{Accuracy_Exp6}
-	\caption{Accuracy Graph of Experiment 6}
+	\caption{Accuracy Graph of Experiment 5}
 	\label{fig:accuracy_exp6}
 	\includegraphics[scale=0.8]{Loss_Exp6}
-	\caption{Loss Graph of Experiment 6}
+	\caption{Loss Graph of Experiment 5}
 	\label{fig:loss_exp6}
 \end{figure}
 \pagebreak
 
-\subsection{Experiment 7: Reduced Epochs}
+\subsection{Experiment 6: Reduced Epochs}
 \label{exp7}
-Largely the same as Experiment 5 with half the epochs. This with the purpose of seeing if the data has been overfit.
+Largely the same as previous experiments with half the epochs. This with the purpose of seeing if the data had been overfit.
+\begin{table}[!h]
+	\caption{Experiment 6's defining characteristics.}
+	\vspace{0.5cm}
+	\centering
+	\begin{tabular}[t]{|l|l|}
+	\hline
+		Datasets Used & \makecell{4: \citet{d1}, \citet{d2},\\ \citet{d3}, and \citet{d4}}
+	\\ \hline
+		Epochs & 5
+	\\ \hline
+		LSTM Layer & 32 units
+	\\ \hline
+		Categorized Sentiments as ``Bad'' & ``Sadness'', ``Worry'', and ``Fear''.
+	\\ \hline	
+		 Categorized Sentiments as ``Neutral'' & ``Neutral'' and ``Boredom''.
+	\\ \hline	
+		Categorized Sentiments as ``Good'' & ``Happiness'', ``Fun'', ``Joy'', and ``Love''.
+	\\ \hline
+	\end{tabular}
+\end{table}
+
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.8]{Accuracy_Exp7}
+	\caption{Accuracy Graph of Experiment 6}
+	\label{fig:accuracy_exp7}
+	\includegraphics[scale=0.8]{Loss_Exp7}
+	\caption{Loss Graph of Experiment 6}
+	\label{fig:loss_exp7}
+\end{figure}
+\pagebreak
+
+\subsection{Experiment 7: Added Stop Words}
+\label{exp8}
+Same as \nameref{exp7}, the difference being that the top 3 most recurrent words in the datasets are flagged as stop words in an attempt to mitigate the bleed between categories.
 \begin{table}[!h]
 	\caption{Experiment 7's defining characteristics.}
 	\vspace{0.5cm}
@@ -260,56 +261,20 @@ Largely the same as Experiment 5 with half the epochs. This with the purpose of 
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.8]{Accuracy_Exp7}
-	\caption{Accuracy Graph of Experiment 7}
-	\label{fig:accuracy_exp7}
-	\includegraphics[scale=0.8]{Loss_Exp7}
-	\caption{Loss Graph of Experiment 7}
-	\label{fig:loss_exp7}
-\end{figure}
-\pagebreak
-
-\subsection{Experiment 8: Added Stop Words}
-\label{exp8}
-Same as the experiment 7, the difference being that the top 3 most recurrent words in the datasets are flagged as stop words in an attempt to mitigate the bleed between categories.
-\begin{table}[!h]
-	\caption{Experiment 8's defining characteristics.}
-	\vspace{0.5cm}
-	\centering
-	\begin{tabular}[t]{|l|l|}
-	\hline
-		Datasets Used & \makecell{4: \citet{d1}, \citet{d2},\\ \citet{d3}, and \citet{d4}}
-	\\ \hline
-		Epochs & 5
-	\\ \hline
-		LSTM Layer & 32 units
-	\\ \hline
-		Categorized Sentiments as ``Bad'' & ``Sadness'', ``Worry'', and ``Fear''.
-	\\ \hline	
-		 Categorized Sentiments as ``Neutral'' & ``Neutral'' and ``Boredom''.
-	\\ \hline	
-		Categorized Sentiments as ``Good'' & ``Happiness'', ``Fun'', ``Joy'', and ``Love''.
-	\\ \hline
-	\end{tabular}
-\end{table}
-
-
-\begin{figure}[!h]
-	\centering
 	\includegraphics[scale=0.8]{Accuracy_Exp8}
-	\caption{Accuracy Graph of Experiment 8}
+	\caption{Accuracy Graph of Experiment 7}
 	\label{fig:accuracy_exp8}
 	\includegraphics[scale=0.8]{Loss_Exp8}
-	\caption{Loss Graph of Experiment 8}
+	\caption{Loss Graph of Experiment 7}
 	\label{fig:loss_exp8}
 \end{figure}
 \pagebreak
 
-\subsection{Experiment 9: Extra Stop Words and Reduced Classification Scope}
+\subsection{Experiment 8: Extra Stop Words and Reduced Classification Scope}
 \label{exp9}
-Keeping in track with experiment 8, with the added extra of also reducing the scope of the classification, reducing the categories to ``Good'' and ``Bad''.
+Keeping in track with \nameref{exp8}, with the added extra of also reducing the scope of the classification, reducing the categories to ``Good'' and ``Bad''.
 \begin{table}[!h]
-	\caption{Experiment 9's defining characteristics.}
+	\caption{Experiment 8's defining characteristics.}
 	\vspace{0.5cm}
 	\centering
 	\begin{tabular}[t]{|l|l|}
@@ -331,10 +296,10 @@ Keeping in track with experiment 8, with the added extra of also reducing the sc
 \begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.8]{Accuracy_Exp9}
-	\caption{Accuracy Graph of Experiment 9}
+	\caption{Accuracy Graph of Experiment 8}
 	\label{fig:accuracy_exp9}
 	\includegraphics[scale=0.8]{Loss_Exp9}
-	\caption{Loss Graph of Experiment 9}
+	\caption{Loss Graph of Experiment 8}
 	\label{fig:loss_exp9}
 \end{figure}
 \pagebreak
@@ -364,15 +329,13 @@ In this section, the results of the experiments from the previous section will b
 	\\ \hline
 	\hyperref[exp4]{Experiment 4} & 0.5455 & 0.7741 & 0.6704 & 0.7110
 	\\ \hline
-	\hyperref[exp5]{Experiment 5} & 0.5442 & 0.6620 & 0.6620 & 0.7162
+	\hyperref[exp6]{Experiment 5} & 0.6222 & 0.6550 & 0.7186 & 0.5357
 	\\ \hline
-	\hyperref[exp6]{Experiment 6} & 0.6222 & 0.6550 & 0.7186 & 0.5357
+	\hyperref[exp7]{Experiment 6} & 0.6041 & 0.7451 & 0.6555 & 0.7097
 	\\ \hline
-	\hyperref[exp7]{Experiment 7} & 0.6041 & 0.7451 & 0.6555 & 0.7097
+	\hyperref[exp8]{Experiment 7} & 0.6030 & 0.7421 & 0.6579 & 0.7156
 	\\ \hline
-	\hyperref[exp8]{Experiment 8} & 0.6030 & 0.7421 & 0.6579 & 0.7156
-	\\ \hline
-	\hyperref[exp9]{Experiment 9} & 0.3624 & 0.8337 & 0.3871 & \textbf{0.8124}
+	\hyperref[exp9]{Experiment 8} & 0.3624 & 0.8337 & 0.3871 & \textbf{0.8124}
 	\\ \hline
 	\end{tabular}
 \end{table}
@@ -382,19 +345,17 @@ On \nameref{exp1}, the post-training results were promising, sentences with obvi
 
 On \nameref{exp2}, using one more dataset and less classes grouped with each category was opted to improve the ``Neutral'' score while trying to keep data across the categories balanced. This had a small impact on the scores but it started to recognize more words as such.
 
-On \nameref{exp3}, seeing that Experiment 2 had failed to predict correctly, more units were given to the LSTM to see if this lowered the chance of error, but as Figures \ref{fig:accuracy_exp3} and \ref{fig:loss_exp3} demonstrate, this got generally the same results. This determined that the defining factor was elsewhere.
+On \nameref{exp3}, seeing that Experiment 2 still struggled to classify ``Neutral'' correctly, more units were given to the LSTM to see if this lowered the chance of error, but as Figures \ref{fig:accuracy_exp3} and \ref{fig:loss_exp3} demonstrate, this got generally the same results. This determined that the defining factor was elsewhere.
 
-On \nameref{exp4}, the base algorithm from Experiment 1 was brought back to work with the three datasets used on Experiments 2 and 3 to verify if the extra dataset was too lopsided to work with. It was found that having the full roster of emotions taken into consideration (``Sadness'', ``Worry'', and ``Fear'', ``Neutral'' and ``Boredom'', ``Happiness'', ``Fun'', ``Joy'', and ``Love'') actually helped the prediction scores. Even so, ``Bad'' category sentences were still not being recognized correctly, so more experimentation was needed.
+On \nameref{exp4}, the base algorithm from Experiment 1 was brought back to work with the three datasets used on Experiments 2 and 3 to verify if the extra dataset was too lopsided to work with. It was found that having the full roster of emotions taken into consideration (``Sadness'', ``Worry'', and ``Fear'', ``Neutral'' and ``Boredom'', ``Happiness'', ``Fun'', ``Joy'', and ``Love'') actually helped the prediction scores. Even so, ``Neutral'' category sentences were still not being recognized correctly sometimes, so more experimentation was needed.
 
-On \nameref{exp5}, knowing that it is very likely that there simply is not enough ``Bad''-related data to train with, another dataset solely compromised sentences categorized as ``Sadness'' was added. Overall, this experiment had very good accuracy and loss as shown in Figures \ref{fig:accuracy_exp5} and \ref{fig:loss_exp5}. This, however, had no noticeable effect on the prediction output post-training since the ``Bad'' scores were still very low with paired inputs.
-
-On \nameref{exp6}, some drastic changes were made to experiment with the datasets used, this consisted in completely eliminating the ``Neutral'' category, only taking into consideration ``Bad'', ``Good'' and ``0'' with the intention of seeing the algorithm's behavior. This, as one would expect, broke everything and did not categorize anything correctly and had the worst scores overall of all experiments. 
+On \nameref{exp6}, some drastic changes were made to experiment with the datasets used, this consisted in completely eliminating the ``Neutral'' category, only taking into consideration ``Bad'', ``Good'' and ``0'' with the intention of seeing the algorithm's behavior. This worked. 
 
 On \nameref{exp7}, taking again into consideration the results given from Experiment 5, the problem of overfitting was also a concern, and since the epoch count was a parameter yet-to-be manipulated. Instead of using the usual 10 epochs, 5 were used. This did not have any noticeable effect in the prediction output, however.
 
 On \nameref{exp8}, manually marking the words that represent the most bleed between categories (``work'', ``go'', ``nt'') still wasn't enough to fix the categorization problem, even though there was a slight benefit in the accuracy and loss values.
 
-On \nameref{exp9}, reducing the data category scope while also maintaining the stopwords mentioned on experiment 8 filtered, brought overall the best results as of yet. This can be attributed to the fact that the most significant category bleed happened between ``Neutral'' and ``Bad'' since they shared a lot of the word pool.
+On \nameref{exp9}, reducing the data category scope while also maintaining the stopwords mentioned on Experiment 7 filtered, brought overall the best results as of yet. This can be attributed to the fact that the most significant category bleed happened between ``Neutral'' and ``Bad'' since they shared a lot of the word pool.
 
 \subsection{Discussion}
 The experiment with the best performance overall was \nameref{exp9}, with the scope adjustment the goal of predicting, at least partially, the feeling of a person's input was achieved. Thanks to an exhaustive search conducted inside all of the datasets used it was found out that the most-used words in the datasets pertaining to the ``Bad'' and ``Neutral'' category were mostly ambiguous words that, out of context, could be interpreted as disinterest or overall any other emotion.
@@ -409,7 +370,7 @@ The experiment with the best performance overall was \nameref{exp9}, with the sc
 	\label{fig:sadnesswords_pre}
 \end{figure}
 
-This, combined with the fact that some of the datasets used were plagued with orthographical errors, greatly affected the performance of this algorithm's original scope. Thus, \hyperref[exp9]{Experiment 9} had to reduce the scope.
+This, combined with the fact that some of the datasets used were plagued with orthographical errors, affected the performance of this algorithm's original scope. Thus, \hyperref[exp9]{Experiment 8} had to reduce the scope.
 
 \begin{figure}[!h]
 	\centering

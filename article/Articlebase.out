@@ -1,0 +1,15 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Background}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Basic Concepts}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Supervised Machine Learning}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Neural Network}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Sentiment Analysis}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.5}{Tokenizing}{section.2}% 7
+\BOOKMARK [1][-]{section.3}{Related work}{}% 8
+\BOOKMARK [2][-]{subsection.3.1}{Similar Approaches}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.2}{Sentiment Analysis in Other Areas}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.3}{Opportunities for Improvement}{section.3}% 11
+\BOOKMARK [1][-]{section.4}{Proposed solution}{}% 12
+\BOOKMARK [1][-]{section.5}{Evaluation}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{Experiment Results}{section.5}% 14
+\BOOKMARK [1][-]{section.6}{Conclusions}{}% 15

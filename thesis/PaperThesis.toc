@@ -44,13 +44,12 @@
 \contentsline {subsection}{\numberline {5.2.2}Experiment 2: More Datasets With Reduced Data Scope}{27}{subsection.5.2.2}%
 \contentsline {subsection}{\numberline {5.2.3}Experiment 3: Augmented LSTM Units}{29}{subsection.5.2.3}%
 \contentsline {subsection}{\numberline {5.2.4}Experiment 4: Augmented Datasets Without Reduced Data Scope}{31}{subsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.2.5}Experiment 5: Extra Sadness Dataset}{33}{subsection.5.2.5}%
-\contentsline {subsection}{\numberline {5.2.6}Experiment 6: Reduced Classification Scope}{35}{subsection.5.2.6}%
-\contentsline {subsection}{\numberline {5.2.7}Experiment 7: Reduced Epochs}{37}{subsection.5.2.7}%
-\contentsline {subsection}{\numberline {5.2.8}Experiment 8: Added Stop Words}{39}{subsection.5.2.8}%
-\contentsline {subsection}{\numberline {5.2.9}Experiment 9: Extra Stop Words and Reduced Classification Scope}{41}{subsection.5.2.9}%
-\contentsline {section}{\numberline {5.3}Results}{43}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Interpretation}{44}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Discussion}{46}{subsection.5.3.2}%
-\contentsline {chapter}{\numberline {6}Conclusion}{48}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Future Work}{49}{section.6.1}%
+\contentsline {subsection}{\numberline {5.2.5}Experiment 5: Reduced Classification Scope}{33}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.6}Experiment 6: Reduced Epochs}{35}{subsection.5.2.6}%
+\contentsline {subsection}{\numberline {5.2.7}Experiment 7: Added Stop Words}{37}{subsection.5.2.7}%
+\contentsline {subsection}{\numberline {5.2.8}Experiment 8: Extra Stop Words and Reduced Classification Scope}{39}{subsection.5.2.8}%
+\contentsline {section}{\numberline {5.3}Results}{41}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Interpretation}{42}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Discussion}{43}{subsection.5.3.2}%
+\contentsline {chapter}{\numberline {6}Conclusion}{46}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Future Work}{47}{section.6.1}%

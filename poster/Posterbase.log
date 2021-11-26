@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.1)  26 NOV 2021 06:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.1)  26 NOV 2021 07:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -853,42 +853,34 @@ File: Accuracy_Exp9.png Graphic file (type png)
 <use Accuracy_Exp9.png>
 Package pdftex.def Info: Accuracy_Exp9.png  used on input line 117.
 (pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
+27.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
+)
 
-LaTeX Warning: Hyper reference `exp1' on page 1 undefined on input line 148.
-
-
-LaTeX Warning: Hyper reference `exp2' on page 1 undefined on input line 150.
-
-
-LaTeX Warning: Hyper reference `exp3' on page 1 undefined on input line 152.
-
-
-LaTeX Warning: Hyper reference `exp4' on page 1 undefined on input line 154.
+LaTeX Warning: Hyper reference `exp1' on page 1 undefined on input line 149.
 
 
-LaTeX Warning: Hyper reference `exp5' on page 1 undefined on input line 156.
+LaTeX Warning: Hyper reference `exp2' on page 1 undefined on input line 151.
 
 
-LaTeX Warning: Hyper reference `exp6' on page 1 undefined on input line 158.
+LaTeX Warning: Hyper reference `exp3' on page 1 undefined on input line 153.
 
 
-LaTeX Warning: Hyper reference `exp7' on page 1 undefined on input line 160.
+LaTeX Warning: Hyper reference `exp4' on page 1 undefined on input line 155.
 
 
-LaTeX Warning: Hyper reference `exp8' on page 1 undefined on input line 162.
+LaTeX Warning: Hyper reference `exp6' on page 1 undefined on input line 157.
 
 
-LaTeX Warning: Hyper reference `exp9' on page 1 undefined on input line 164.
+LaTeX Warning: Hyper reference `exp7' on page 1 undefined on input line 159.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--168
-
- []
+LaTeX Warning: Hyper reference `exp8' on page 1 undefined on input line 161.
 
 
-Overfull \hbox (26.37268pt too wide) in paragraph at lines 126--168
- []    $[]$ 
- []
+LaTeX Warning: Hyper reference `exp9' on page 1 undefined on input line 163.
 
 (./Posterbase.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 53--59
@@ -911,10 +903,10 @@ Underfull \hbox (badness 6125) in paragraph at lines 53--59
 <qrcode.png, id=27, 301.125pt x 301.125pt>
 File: qrcode.png Graphic file (type png)
 <use qrcode.png>
-Package pdftex.def Info: qrcode.png  used on input line 178.
+Package pdftex.def Info: qrcode.png  used on input line 177.
 (pdftex.def)             Requested size: 315.32286pt x 315.35431pt.
 
-Overfull \hbox (9.96445pt too wide) in paragraph at lines 178--179
+Overfull \hbox (9.96445pt too wide) in paragraph at lines 177--178
 []| [] 
  []
 
@@ -922,25 +914,25 @@ Overfull \hbox (9.96445pt too wide) in paragraph at lines 178--179
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./uanl.png> <./fime.png> <
 ./Brainmap.png> <./Accuracy_Exp9.png> <./qrcode.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 182.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 182.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 181.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 181.
  (./Posterbase.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 182.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 182.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 181.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 181.
 Package rerunfilecheck Info: File `Posterbase.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 182.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 181.
  ) 
 Here is how much of TeX's memory you used:
- 18576 strings out of 481239
- 347148 string characters out of 5920378
- 659149 words of memory out of 5000000
- 33427 multiletter control sequences out of 15000+600000
- 555832 words of font info for 66 fonts, out of 8000000 for 9000
+ 18607 strings out of 481239
+ 347590 string characters out of 5920378
+ 659238 words of memory out of 5000000
+ 33454 multiletter control sequences out of 15000+600000
+ 556145 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,10n,60p,473b,517s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -950,7 +942,7 @@ f-dist/fonts/type1/public/niceframe-type1/dingbat.pfb></usr/share/texlive/texmf
 ype1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/hel
 vetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8
 a.pfb>
-Output written on Posterbase.pdf (1 page, 911583 bytes).
+Output written on Posterbase.pdf (1 page, 911698 bytes).
 PDF statistics:
  100 PDF objects out of 1000 (max. 8388607)
  79 compressed objects within 1 object stream

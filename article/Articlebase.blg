@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Articlebase.aux
+The style file: mighelnat.bst
+Database file #1: biblio.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty pages in rf2
+You've used 19 entries,
+            3461 wiz_defined-function locations,
+            761 strings with 8798 characters,
+and the built_in function-call counts, 17880 in all, are:
+= -- 1760
+> -- 558
+< -- 18
++ -- 246
+- -- 173
+* -- 1208
+:= -- 1967
+add.period$ -- 19
+call.type$ -- 19
+change.case$ -- 132
+chr.to.int$ -- 19
+cite$ -- 39
+duplicate$ -- 1852
+empty$ -- 1197
+format.name$ -- 229
+if$ -- 3605
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 219
+newline$ -- 97
+num.names$ -- 78
+pop$ -- 630
+preamble$ -- 1
+purify$ -- 132
+quote$ -- 0
+skip$ -- 1035
+stack$ -- 0
+substring$ -- 739
+swap$ -- 1373
+text.length$ -- 13
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 168
+warning$ -- 1
+while$ -- 106
+width$ -- 0
+write$ -- 245
+(There was 1 warning)

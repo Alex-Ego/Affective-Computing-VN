@@ -10,7 +10,7 @@ import tensorflow as tf
 import random
 import string
 
-import wordcloud
+#import wordcloud
 
 from tensorflow.keras import layers
 import keras
@@ -86,7 +86,7 @@ def tokenizing_process(message):
 
 # TESTING -- List of sentiments to append
 # test_check = ["sadness", "neutral", "happiness", "fun", "worry", "boredom", "joy", "love", "fear"]
-test_check = ["sadness", "neutral", "happiness", "fun", "worry", "boredom"]
+test_check = ["sadness", "happiness", "fun", "worry", "joy", "love", "fear"]
 # Opening the .csv data file
 with open(abs_location + file_location + file_name, 'r') as csvfile:
     reader = csv.reader(csvfile, delimiter=',')
@@ -94,10 +94,11 @@ with open(abs_location + file_location + file_name, 'r') as csvfile:
         if row[1] in test_check: # TESTING -- Cutting the size of the sentiments used, REMOVE ME
             if row[1] in ["sadness", "worry", "fear"]:
                 labels.append(0) # Appending the sentiment associated with the row itself
-            elif row[1] in ["neutral", "boredom"]:
-                labels.append(1) # Appending the sentiment associated with the row itself
+            # elif row[1] in ["neutral", "boredom"]:
+            #     labels.append(1) # Appending the sentiment associated with the row itself
             elif row[1] in ["happiness", "fun", "joy", "love"]:
-                labels.append(2) # Appending the sentiment associated with the row itself
+                #labels.append(2) # Appending the sentiment associated with the row itself
+                labels.append(1)
             message = row[3]
             #print("Input: " + message)             #   Debugging purposes
             messages.append(tokenizing_process(message))
@@ -109,10 +110,11 @@ with open(abs_location + file_location + file_name2, 'r') as txtfile:
         if row[2] in test_check: # TESTING -- Cutting the size of the sentiments used, REMOVE ME
             if row[2] in ["sadness", "worry", "fear"]:
                 labels.append(0) # Appending the sentiment associated with the row itself
-            elif row[2] in ["neutral", "boredom"]:
-                labels.append(1) # Appending the sentiment associated with the row itself
+            # elif row[2] in ["neutral", "boredom"]:
+            #     labels.append(1) # Appending the sentiment associated with the row itself
             elif row[2] in ["happiness", "fun", "joy", "love"]:
-                labels.append(2) # Appending the sentiment associated with the row itself
+                #labels.append(2) # Appending the sentiment associated with the row itself
+                labels.append(1)
             message = row[1]
             #print("Input: " + message)             #   Debugging purposes
             messages.append(tokenizing_process(message))
@@ -125,22 +127,23 @@ for f in file_name3:
             if row[1] in test_check: # TESTING -- Cutting the size of the sentiments used, REMOVE ME
                 if row[1] in ["sadness", "worry", "fear"]:
                     labels.append(0) # Appending the sentiment associated with the row itself
-                elif row[1] in ["neutral", "boredom"]:
-                    labels.append(1) # Appending the sentiment associated with the row itself
+                # elif row[1] in ["neutral", "boredom"]:
+                #     labels.append(1) # Appending the sentiment associated with the row itself
                 elif row[1] in ["happiness", "fun", "joy", "love"]:
-                    labels.append(2) # Appending the sentiment associated with the row itself
+                    #labels.append(2) # Appending the sentiment associated with the row itself
+                    labels.append(1)
                 message = row[0]
                 #print("Input: " + message)             #   Debugging purposes
                 messages.append(tokenizing_process(message))
-# # Opening the .csv data file
-# with open(abs_location + file_location + file_name4, 'r') as csvfile:
-#     reader = csv.reader(csvfile, delimiter=',')
-#     for row in reader:
-#         if row[1] == "YES": # TESTING -- Cutting the size of the sentiments used, REMOVE ME
-#                 labels.append("sadness") # Appending the sentiment associated with the row itself
-#         message = row[2]
-#         #print("Input: " + message)             #   Debugging purposes
-#         messages.append(tokenizing_process(message))
+# Opening the .csv data file
+with open(abs_location + file_location + file_name4, 'r') as csvfile:
+    reader = csv.reader(csvfile, delimiter=',')
+    for row in reader:
+        if row[1] == "YES": # TESTING -- Cutting the size of the sentiments used, REMOVE ME
+                labels.append(0) # Appending the sentiment associated with the row itself
+        message = row[2]
+        #print("Input: " + message)             #   Debugging purposes
+        messages.append(tokenizing_process(message))
 
 
 # WordFreq = wordcloud.WordCloud()
@@ -172,11 +175,6 @@ for f in file_name3:
 shuffling_var = list(zip(labels, messages))
 random.shuffle(shuffling_var)
 labels[:], messages[:] = zip(*shuffling_var)
-#print(len(labels)) # Number of labels comparison
-#print(len(messages)) # Number of messages comparison
-#dataset = tf.data.Dataset.from_tensor_slices(list(zip(messages, labels)))
-##for i in dataset:
-##    print(i)
 
 # Training and testing splitting
 
@@ -225,7 +223,7 @@ model = tf.keras.Sequential([
     layers.SpatialDropout1D(0.15),
     layers.Bidirectional(layers.LSTM(32, dropout=0.15, recurrent_dropout=0.15)),
     layers.Dense(8, activation="tanh"),
-    layers.Dense(4, activation="softmax")
+    layers.Dense(3, activation="softmax")
 ])
 model.summary()
 model.compile(loss="sparse_categorical_crossentropy", optimizer="rmsprop", metrics=["accuracy"])
@@ -234,29 +232,6 @@ NUM_EPOCHS = 10
 history = model.fit(train_padded, training_label_seq, epochs=NUM_EPOCHS
  , validation_data=(validation_padded, validation_label_seq))
 model.evaluate(test_padded, test_label_seq)
-
-""" model = tf.keras.Sequential([
-    layers.Embedding(input_dim=vocab_size, 
-                           output_dim=embedding_dim, 
-                           input_length=max_length),
-    layers.Conv1D(128, 5, activation="relu"),
-    #layers.GlobalAveragePooling1D(),
-    #layers.SpatialDropout1D(0.15),
-    layers.Bidirectional(layers.LSTM(32, dropout=0.15, recurrent_dropout=0.15)),
-    layers.Dense(64, activation="tanh"),
-    layers.Dense(4, activation="softmax")
-])
-
-model.compile(loss='categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
-#model.summary()
-
-num_epochs = 100
-history = model.fit(train_padded, training_label_seq, epochs=num_epochs, validation_data=(validation_padded, validation_label_seq), verbose=1)
-loss, accuracy = model.evaluate(train_padded, training_label_seq, verbose=False)
-print("Training Accuracy: {:.4f}".format(accuracy))
-loss, accuracy = model.evaluate(validation_padded, validation_label_seq, verbose=False)
-print("Testing Accuracy:  {:.4f}".format(accuracy))
- """
 
 def plot_graphs(history, string):
   plt.plot(history.history[string])
@@ -285,5 +260,6 @@ while 1:
     #print(seq)
     #padded = pad_sequences(seq, maxlen=max_length)
     pred = model.predict(seq)
-    labels = ["sadness", "neutral", "happiness", 0]
+    #labels = ["sadness", "neutral", "happiness", 0]
+    labels = ["sadness", "happiness", 0]
     print(pred, labels[np.argmax(pred)])
