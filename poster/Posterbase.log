@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.1)  26 NOV 2021 06:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.1)  26 NOV 2021 06:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -727,11 +727,7 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count312
 \l__pdf_internal_box=\box107
 )
-(./Posterbase.aux
-
-LaTeX Warning: Label `fig:AccExp9' multiply defined.
-
-)
+(./Posterbase.aux)
 \openout1 = `Posterbase.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -911,31 +907,39 @@ Underfull \hbox (badness 6125) in paragraph at lines 53--59
 -9541.
  []
 
-) [1
+)
+<qrcode.png, id=27, 301.125pt x 301.125pt>
+File: qrcode.png Graphic file (type png)
+<use qrcode.png>
+Package pdftex.def Info: qrcode.png  used on input line 178.
+(pdftex.def)             Requested size: 315.32286pt x 315.35431pt.
+
+Overfull \hbox (9.96445pt too wide) in paragraph at lines 178--179
+[]| [] 
+ []
+
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./uanl.png> <./fime.png> <
-./Brainmap.png> <./Accuracy_Exp9.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
+./Brainmap.png> <./Accuracy_Exp9.png> <./qrcode.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 182.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 182.
  (./Posterbase.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 182.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 182.
 Package rerunfilecheck Info: File `Posterbase.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 182.
  ) 
 Here is how much of TeX's memory you used:
- 18570 strings out of 481239
- 347069 string characters out of 5920378
- 658046 words of memory out of 5000000
- 33422 multiletter control sequences out of 15000+600000
+ 18576 strings out of 481239
+ 347148 string characters out of 5920378
+ 659149 words of memory out of 5000000
+ 33427 multiletter control sequences out of 15000+600000
  555832 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,10n,60p,473b,517s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -946,10 +950,10 @@ f-dist/fonts/type1/public/niceframe-type1/dingbat.pfb></usr/share/texlive/texmf
 ype1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/hel
 vetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8
 a.pfb>
-Output written on Posterbase.pdf (1 page, 910510 bytes).
+Output written on Posterbase.pdf (1 page, 911583 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
+ 100 PDF objects out of 1000 (max. 8388607)
  79 compressed objects within 1 object stream
  30 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
