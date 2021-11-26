@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.1)  26 NOV 2021 08:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.1)  26 NOV 2021 12:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -297,122 +297,139 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./Brainmap.png>]
 [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 132--134
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 134.
+(Font)              <8> on input line 137.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 134.
+(Font)              <6> on input line 137.
 [6]
 LaTeX Font Info:    Trying to load font information for U+dingbat on input line
- 152.
+ 155.
  (/usr/share/texlive/texmf-dist/tex/latex/dingbat/udingbat.fd
 File: udingbat.fd 2001/04/27 v1.00 Font definitions for the dingbat font
-)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[7]
-<Accuracy_Exp9.png, id=165, 462.528pt x 346.896pt>
+) [7] [8]
+<Accuracy_Exp9.png, id=179, 462.528pt x 346.896pt>
 File: Accuracy_Exp9.png Graphic file (type png)
 <use Accuracy_Exp9.png>
-Package pdftex.def Info: Accuracy_Exp9.png  used on input line 191.
+Package pdftex.def Info: Accuracy_Exp9.png  used on input line 194.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
-<Loss_Exp9.png, id=166, 462.528pt x 346.896pt>
+<Loss_Exp9.png, id=180, 462.528pt x 346.896pt>
 File: Loss_Exp9.png Graphic file (type png)
 <use Loss_Exp9.png>
-Package pdftex.def Info: Loss_Exp9.png  used on input line 197.
+Package pdftex.def Info: Loss_Exp9.png  used on input line 200.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[9 <./Accuracy_Exp9.png>] [10 <./Loss_Exp9.png>] [11]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[8] [9 <./Accuracy_Exp9.png> <./Loss_Exp9.png>] [10]
-
-LaTeX Warning: Hyper reference `exp1' on page 11 undefined on input line 243.
+LaTeX Warning: Hyper reference `exp1' on page 12 undefined on input line 246.
 
 
-LaTeX Warning: Hyper reference `exp2' on page 11 undefined on input line 245.
+LaTeX Warning: Hyper reference `exp2' on page 12 undefined on input line 248.
 
 
-LaTeX Warning: Hyper reference `exp3' on page 11 undefined on input line 247.
+LaTeX Warning: Hyper reference `exp3' on page 12 undefined on input line 250.
 
 
-LaTeX Warning: Hyper reference `exp4' on page 11 undefined on input line 249.
+LaTeX Warning: Hyper reference `exp4' on page 12 undefined on input line 252.
 
 
-LaTeX Warning: Hyper reference `exp6' on page 11 undefined on input line 251.
+LaTeX Warning: Hyper reference `exp6' on page 12 undefined on input line 254.
 
 
-LaTeX Warning: Hyper reference `exp7' on page 11 undefined on input line 253.
+LaTeX Warning: Hyper reference `exp7' on page 12 undefined on input line 256.
 
 
-LaTeX Warning: Hyper reference `exp8' on page 11 undefined on input line 255.
+LaTeX Warning: Hyper reference `exp8' on page 12 undefined on input line 258.
 
 
-LaTeX Warning: Hyper reference `exp9' on page 11 undefined on input line 257.
+LaTeX Warning: Hyper reference `exp9' on page 12 undefined on input line 260.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[11] [12] [13] (./Articlebase.bbl [14]
+[12] [13] (./Articlebase.bbl [14] [15]
 Underfull \hbox (badness 1259) in paragraph at lines 96--101
 []\OT1/cmr/m/sc/10 Marinescu, R.\OT1/cmr/m/n/10 , \OT1/cmr/m/sc/10 A. Es-haghi\
 OT1/cmr/m/n/10 , \OT1/cmr/m/sc/10 D. Alexan-der \OT1/cmr/m/n/10 and \OT1/cmr/m/
 sc/10 P. Gol-land
  []
 
-[15])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 292.
- [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 292.
+[16])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 295.
+ [17]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 295.
  (./Articlebase.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 292.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 292.
-Package rerunfilecheck Info: File `Articlebase.out' has not changed.
-(rerunfilecheck)             Checksum: 13B5D4E17F5F45355557B8C0807E9A8C;910.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 295.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 295.
 
+
+Package rerunfilecheck Warning: File `Articlebase.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Articlebase.out':
+(rerunfilecheck)             Before: 13B5D4E17F5F45355557B8C0807E9A8C;910
+(rerunfilecheck)             After:  11DC84C7648B92052D74F738B7878AA7;956.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 292.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 295.
  ) 
 Here is how much of TeX's memory you used:
- 6024 strings out of 481239
- 89918 string characters out of 5920378
- 357630 words of memory out of 5000000
+ 6032 strings out of 481239
+ 90018 string characters out of 5920378
+ 358630 words of memory out of 5000000
  21137 multiletter control sequences out of 15000+600000
  536227 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,10n,34p,620b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/niceframe-type1/dingbat.pfb></usr/share/texmf/fon
-ts/type1/public/cm-super/sfrm1000.pfb>
-Output written on Articlebase.pdf (16 pages, 899772 bytes).
+ 38i,10n,34p,620b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{subsection.5.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.5} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.4} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.3} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1} has been referenced but does not ex
+ist, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/niceframe-type1/dingbat.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfrm1000.pfb>
+Output written on Articlebase.pdf (17 pages, 900636 bytes).
 PDF statistics:
- 279 PDF objects out of 1000 (max. 8388607)
- 237 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 500000)
+ 292 PDF objects out of 1000 (max. 8388607)
+ 249 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 500000)
  136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
