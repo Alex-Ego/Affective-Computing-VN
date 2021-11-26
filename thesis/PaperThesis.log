@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.1)  18 NOV 2021 02:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.1)  26 NOV 2021 04:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -847,13 +847,7 @@ Package pdftex.def Info: Figures/fime-eps-converted-to.pdf  used on input line
 \tf@lof=\write6
 \openout6 = `PaperThesis.lof'.
 
- [8] (./PaperThesis.lot
-Overfull \hbox (14.60258pt too wide) in paragraph at lines 7--7
- [][] [][][]\T1/cmr/m/n/12 Comparison be-tween ex-ist-ing lit-er-a-ture and the
- present work: []indicates 
- []
-
-)
+ [8] (./PaperThesis.lot)
 \tf@lot=\write7
 \openout7 = `PaperThesis.lot'.
 
@@ -875,8 +869,7 @@ Overfull \hbox (14.60258pt too wide) in paragraph at lines 7--7
 ]) [12]
 \openout2 = `Abstract.aux'.
 
- (./Abstract.tex
-[13
+ (./Abstract.tex [13
 
 
 
@@ -891,12 +884,26 @@ train-ing al-go-rithm uses a spe-cific dataset
 
  (./Capitulo1.tex
 Chapter 1.
+<Figures/BrainMap.png, id=432, 1204.5pt x 903.375pt>
+File: Figures/BrainMap.png Graphic file (type png)
+<use Figures/BrainMap.png>
+Package pdftex.def Info: Figures/BrainMap.png  used on input line 11.
+(pdftex.def)             Requested size: 361.35278pt x 271.01459pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [1
 
 
 
 
-] [2] [3] [4])
+] [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.25 
+      <./Figures/Brainmap.png>] [3] [4])
 \openout2 = `Capitulo2.aux'.
 
  (./Capitulo2.tex
@@ -906,12 +913,12 @@ Chapter 2.
 
 
 
-] [6]
+] [6] [7]
 Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
-[7] [8])
+[8])
 \openout2 = `Capitulo3.aux'.
 
  (./Capitulo3.tex
@@ -947,66 +954,70 @@ Chapter 4.
 
 
 ] [15]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
-6.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
+0.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-<Figures/Normal_RNN.png, id=573, 145.89507pt x 248.42813pt>
+) [16]
+<Figures/Normal_RNN.png, id=580, 145.89507pt x 248.42813pt>
 File: Figures/Normal_RNN.png Graphic file (type png)
 <use Figures/Normal_RNN.png>
-Package pdftex.def Info: Figures/Normal_RNN.png  used on input line 64.
-(pdftex.def)             Requested size: 102.12584pt x 173.8985pt.
-<Figures/Transp_RNN.png, id=574, 388.45125pt x 248.42813pt>
+Package pdftex.def Info: Figures/Normal_RNN.png  used on input line 69.
+(pdftex.def)             Requested size: 87.5377pt x 149.05801pt.
+<Figures/Transp_RNN.png, id=581, 388.45125pt x 248.42813pt>
 File: Figures/Transp_RNN.png Graphic file (type png)
 <use Figures/Transp_RNN.png>
-Package pdftex.def Info: Figures/Transp_RNN.png  used on input line 70.
-(pdftex.def)             Requested size: 271.914pt x 173.8985pt.
-<Figures/Transp_LSTM.png, id=575, 379.4175pt x 248.42813pt>
+Package pdftex.def Info: Figures/Transp_RNN.png  used on input line 75.
+(pdftex.def)             Requested size: 233.07254pt x 149.05801pt.
+<Figures/Transp_LSTM.png, id=582, 379.4175pt x 248.42813pt>
 File: Figures/Transp_LSTM.png Graphic file (type png)
 <use Figures/Transp_LSTM.png>
-Package pdftex.def Info: Figures/Transp_LSTM.png  used on input line 78.
-(pdftex.def)             Requested size: 265.59042pt x 173.8985pt.
- [16]
-[17pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
+Package pdftex.def Info: Figures/Transp_LSTM.png  used on input line 81.
+(pdftex.def)             Requested size: 227.65225pt x 149.05801pt.
+
+[17]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[18pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.83 \section{Tools}
-                     <./Figures/Normal_RNN.png>] [18pdfTeX warning (ext4): dest
-ination with the same identifier (name{figure.4.2}) has been already used, dupl
-icate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.85 
+l.92 
      pdfTeX warning (ext4): destination with the same identifier (name{figure.4
-.3}) has been already used, duplicate ignored
+.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.85 
-      <./Figures/Transp_RNN.png> <./Figures/Transp_LSTM.png>]
+l.92 
+      <./Figures/Normal_RNN.png> <./Figures/Transp_RNN.png>] [19pdfTeX warning 
+(ext4): destination with the same identifier (name{figure.4.3}) has been alread
+y used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.98 \subsection{Text Filtering}
+                                 <./Figures/Transp_LSTM.png>]
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 91.
- [19] [20])
-[21]
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 101.
+ [20] [21])
+[22]
 \openout2 = `Capitulo5.aux'.
 
  (./Capitulo5.tex
 Chapter 5.
-[22
+[23
 
 
 
-] [23]
-<Figures/Accuracy_Exp1.png, id=685, 462.528pt x 346.896pt>
+] [24]
+<Figures/Accuracy_Exp1.png, id=695, 462.528pt x 346.896pt>
 File: Figures/Accuracy_Exp1.png Graphic file (type png)
 <use Figures/Accuracy_Exp1.png>
 Package pdftex.def Info: Figures/Accuracy_Exp1.png  used on input line 52.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-<Figures/Loss_Exp1.png, id=687, 462.528pt x 346.896pt>
+<Figures/Loss_Exp1.png, id=696, 462.528pt x 346.896pt>
 File: Figures/Loss_Exp1.png Graphic file (type png)
 <use Figures/Loss_Exp1.png>
 Package pdftex.def Info: Figures/Loss_Exp1.png  used on input line 55.
@@ -1015,7 +1026,7 @@ Package pdftex.def Info: Figures/Loss_Exp1.png  used on input line 55.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24pdfTeX warning (ext4): destination with the same identifier (name{table.5.1}
+[25pdfTeX warning (ext4): destination with the same identifier (name{table.5.1}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1023,9 +1034,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 l.60 
      ]
 
-LaTeX Warning: Text page 25 contains only floats.
+LaTeX Warning: Text page 26 contains only floats.
 
-[25pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
+[26pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1038,12 +1049,12 @@ l.60
                                                   \fi \fi 
 l.60 
       <./Figures/Accuracy_Exp1.png> <./Figures/Loss_Exp1.png>]
-<Figures/Accuracy_Exp2.png, id=703, 462.528pt x 346.896pt>
+<Figures/Accuracy_Exp2.png, id=712, 462.528pt x 346.896pt>
 File: Figures/Accuracy_Exp2.png Graphic file (type png)
 <use Figures/Accuracy_Exp2.png>
 Package pdftex.def Info: Figures/Accuracy_Exp2.png  used on input line 87.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-<Figures/Loss_Exp2.png, id=704, 462.528pt x 346.896pt>
+<Figures/Loss_Exp2.png, id=713, 462.528pt x 346.896pt>
 File: Figures/Loss_Exp2.png Graphic file (type png)
 <use Figures/Loss_Exp2.png>
 Package pdftex.def Info: Figures/Loss_Exp2.png  used on input line 90.
@@ -1052,7 +1063,7 @@ Package pdftex.def Info: Figures/Loss_Exp2.png  used on input line 90.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[26pdfTeX warning (ext4): destination with the same identifier (name{table.5.2}
+[27pdfTeX warning (ext4): destination with the same identifier (name{table.5.2}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1060,9 +1071,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 l.95 
      ]
 
-LaTeX Warning: Text page 27 contains only floats.
+LaTeX Warning: Text page 28 contains only floats.
 
-[27pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3
+[28pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1075,12 +1086,12 @@ l.95
                                                   \fi \fi 
 l.95 
       <./Figures/Accuracy_Exp2.png> <./Figures/Loss_Exp2.png>]
-<Figures/Accuracy_Exp3.png, id=719, 462.528pt x 346.896pt>
+<Figures/Accuracy_Exp3.png, id=728, 462.528pt x 346.896pt>
 File: Figures/Accuracy_Exp3.png Graphic file (type png)
 <use Figures/Accuracy_Exp3.png>
 Package pdftex.def Info: Figures/Accuracy_Exp3.png  used on input line 122.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-<Figures/Loss_Exp3.png, id=720, 462.528pt x 346.896pt>
+<Figures/Loss_Exp3.png, id=729, 462.528pt x 346.896pt>
 File: Figures/Loss_Exp3.png Graphic file (type png)
 <use Figures/Loss_Exp3.png>
 Package pdftex.def Info: Figures/Loss_Exp3.png  used on input line 125.
@@ -1089,7 +1100,7 @@ Package pdftex.def Info: Figures/Loss_Exp3.png  used on input line 125.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[28pdfTeX warning (ext4): destination with the same identifier (name{table.5.3}
+[29pdfTeX warning (ext4): destination with the same identifier (name{table.5.3}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1097,9 +1108,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 l.130 
       ]
 
-LaTeX Warning: Text page 29 contains only floats.
+LaTeX Warning: Text page 30 contains only floats.
 
-[29pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5
+[30pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1112,12 +1123,12 @@ l.130
                                                   \fi \fi 
 l.130 
        <./Figures/Accuracy_Exp3.png> <./Figures/Loss_Exp3.png>]
-<Figures/Accuracy_Exp4.png, id=736, 462.528pt x 346.896pt>
+<Figures/Accuracy_Exp4.png, id=745, 462.528pt x 346.896pt>
 File: Figures/Accuracy_Exp4.png Graphic file (type png)
 <use Figures/Accuracy_Exp4.png>
 Package pdftex.def Info: Figures/Accuracy_Exp4.png  used on input line 157.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-<Figures/Loss_Exp4.png, id=737, 462.528pt x 346.896pt>
+<Figures/Loss_Exp4.png, id=746, 462.528pt x 346.896pt>
 File: Figures/Loss_Exp4.png Graphic file (type png)
 <use Figures/Loss_Exp4.png>
 Package pdftex.def Info: Figures/Loss_Exp4.png  used on input line 160.
@@ -1126,7 +1137,7 @@ Package pdftex.def Info: Figures/Loss_Exp4.png  used on input line 160.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[30pdfTeX warning (ext4): destination with the same identifier (name{table.5.4}
+[31pdfTeX warning (ext4): destination with the same identifier (name{table.5.4}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1134,9 +1145,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 l.165 
       ]
 
-LaTeX Warning: Text page 31 contains only floats.
+LaTeX Warning: Text page 32 contains only floats.
 
-[31pdfTeX warning (ext4): destination with the same identifier (name{figure.5.7
+[32pdfTeX warning (ext4): destination with the same identifier (name{figure.5.7
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1149,12 +1160,12 @@ l.165
                                                   \fi \fi 
 l.165 
        <./Figures/Accuracy_Exp4.png> <./Figures/Loss_Exp4.png>]
-<Figures/Accuracy_Exp5.png, id=752, 462.528pt x 346.896pt>
+<Figures/Accuracy_Exp5.png, id=761, 462.528pt x 346.896pt>
 File: Figures/Accuracy_Exp5.png Graphic file (type png)
 <use Figures/Accuracy_Exp5.png>
 Package pdftex.def Info: Figures/Accuracy_Exp5.png  used on input line 192.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-<Figures/Loss_Exp5.png, id=753, 462.528pt x 346.896pt>
+<Figures/Loss_Exp5.png, id=762, 462.528pt x 346.896pt>
 File: Figures/Loss_Exp5.png Graphic file (type png)
 <use Figures/Loss_Exp5.png>
 Package pdftex.def Info: Figures/Loss_Exp5.png  used on input line 195.
@@ -1163,7 +1174,7 @@ Package pdftex.def Info: Figures/Loss_Exp5.png  used on input line 195.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[32pdfTeX warning (ext4): destination with the same identifier (name{table.5.5}
+[33pdfTeX warning (ext4): destination with the same identifier (name{table.5.5}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1171,9 +1182,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 l.200 
       ]
 
-LaTeX Warning: Text page 33 contains only floats.
+LaTeX Warning: Text page 34 contains only floats.
 
-[33pdfTeX warning (ext4): destination with the same identifier (name{figure.5.9
+[34pdfTeX warning (ext4): destination with the same identifier (name{figure.5.9
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1186,12 +1197,12 @@ l.200
                                                   \fi \fi 
 l.200 
        <./Figures/Accuracy_Exp5.png> <./Figures/Loss_Exp5.png>]
-<Figures/Accuracy_Exp6.png, id=769, 462.528pt x 346.896pt>
+<Figures/Accuracy_Exp6.png, id=778, 462.528pt x 346.896pt>
 File: Figures/Accuracy_Exp6.png Graphic file (type png)
 <use Figures/Accuracy_Exp6.png>
 Package pdftex.def Info: Figures/Accuracy_Exp6.png  used on input line 227.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-<Figures/Loss_Exp6.png, id=770, 462.528pt x 346.896pt>
+<Figures/Loss_Exp6.png, id=779, 462.528pt x 346.896pt>
 File: Figures/Loss_Exp6.png Graphic file (type png)
 <use Figures/Loss_Exp6.png>
 Package pdftex.def Info: Figures/Loss_Exp6.png  used on input line 230.
@@ -1200,7 +1211,7 @@ Package pdftex.def Info: Figures/Loss_Exp6.png  used on input line 230.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[34pdfTeX warning (ext4): destination with the same identifier (name{table.5.6}
+[35pdfTeX warning (ext4): destination with the same identifier (name{table.5.6}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1208,9 +1219,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 l.235 
       ]
 
-LaTeX Warning: Text page 35 contains only floats.
+LaTeX Warning: Text page 36 contains only floats.
 
-[35pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
+[36pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1223,12 +1234,12 @@ l.235
                                                   \fi \fi 
 l.235 
        <./Figures/Accuracy_Exp6.png> <./Figures/Loss_Exp6.png>]
-<Figures/Accuracy_Exp7.png, id=786, 462.528pt x 346.896pt>
+<Figures/Accuracy_Exp7.png, id=795, 462.528pt x 346.896pt>
 File: Figures/Accuracy_Exp7.png Graphic file (type png)
 <use Figures/Accuracy_Exp7.png>
 Package pdftex.def Info: Figures/Accuracy_Exp7.png  used on input line 263.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-<Figures/Loss_Exp7.png, id=787, 462.528pt x 346.896pt>
+<Figures/Loss_Exp7.png, id=796, 462.528pt x 346.896pt>
 File: Figures/Loss_Exp7.png Graphic file (type png)
 <use Figures/Loss_Exp7.png>
 Package pdftex.def Info: Figures/Loss_Exp7.png  used on input line 266.
@@ -1237,7 +1248,7 @@ Package pdftex.def Info: Figures/Loss_Exp7.png  used on input line 266.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[36pdfTeX warning (ext4): destination with the same identifier (name{table.5.7}
+[37pdfTeX warning (ext4): destination with the same identifier (name{table.5.7}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1245,9 +1256,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 l.271 
       ]
 
-LaTeX Warning: Text page 37 contains only floats.
+LaTeX Warning: Text page 38 contains only floats.
 
-[37pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
+[38pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1260,12 +1271,12 @@ l.271
                                                   \fi \fi 
 l.271 
        <./Figures/Accuracy_Exp7.png> <./Figures/Loss_Exp7.png>]
-<Figures/Accuracy_Exp8.png, id=802, 462.528pt x 346.896pt>
+<Figures/Accuracy_Exp8.png, id=811, 462.528pt x 346.896pt>
 File: Figures/Accuracy_Exp8.png Graphic file (type png)
 <use Figures/Accuracy_Exp8.png>
 Package pdftex.def Info: Figures/Accuracy_Exp8.png  used on input line 299.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-<Figures/Loss_Exp8.png, id=803, 462.528pt x 346.896pt>
+<Figures/Loss_Exp8.png, id=812, 462.528pt x 346.896pt>
 File: Figures/Loss_Exp8.png Graphic file (type png)
 <use Figures/Loss_Exp8.png>
 Package pdftex.def Info: Figures/Loss_Exp8.png  used on input line 302.
@@ -1274,7 +1285,7 @@ Package pdftex.def Info: Figures/Loss_Exp8.png  used on input line 302.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[38pdfTeX warning (ext4): destination with the same identifier (name{table.5.8}
+[39pdfTeX warning (ext4): destination with the same identifier (name{table.5.8}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1282,9 +1293,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 l.307 
       ]
 
-LaTeX Warning: Text page 39 contains only floats.
+LaTeX Warning: Text page 40 contains only floats.
 
-[39pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
+[40pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1297,12 +1308,12 @@ l.307
                                                   \fi \fi 
 l.307 
        <./Figures/Accuracy_Exp8.png> <./Figures/Loss_Exp8.png>]
-<Figures/Accuracy_Exp9.png, id=818, 462.528pt x 346.896pt>
+<Figures/Accuracy_Exp9.png, id=827, 462.528pt x 346.896pt>
 File: Figures/Accuracy_Exp9.png Graphic file (type png)
 <use Figures/Accuracy_Exp9.png>
 Package pdftex.def Info: Figures/Accuracy_Exp9.png  used on input line 333.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
-<Figures/Loss_Exp9.png, id=819, 462.528pt x 346.896pt>
+<Figures/Loss_Exp9.png, id=828, 462.528pt x 346.896pt>
 File: Figures/Loss_Exp9.png Graphic file (type png)
 <use Figures/Loss_Exp9.png>
 Package pdftex.def Info: Figures/Loss_Exp9.png  used on input line 336.
@@ -1311,7 +1322,7 @@ Package pdftex.def Info: Figures/Loss_Exp9.png  used on input line 336.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[40pdfTeX warning (ext4): destination with the same identifier (name{table.5.9}
+[41pdfTeX warning (ext4): destination with the same identifier (name{table.5.9}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1319,9 +1330,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 l.341 
       ]
 
-LaTeX Warning: Text page 41 contains only floats.
+LaTeX Warning: Text page 42 contains only floats.
 
-[41pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
+[42pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
 7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1333,27 +1344,27 @@ l.341
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.341 
-       <./Figures/Accuracy_Exp9.png> <./Figures/Loss_Exp9.png>] [42pdfTeX warni
+       <./Figures/Accuracy_Exp9.png> <./Figures/Loss_Exp9.png>] [43pdfTeX warni
 ng (ext4): destination with the same identifier (name{table.5.10}) has been alr
 eady used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.380 \subsection
-                 {Interpretation}] [43]
-<Figures/word clouds old/neutral_words.png, id=865, 401.5pt x 200.75pt>
+                 {Interpretation}] [44]
+<Figures/word clouds old/neutral_words.png, id=874, 401.5pt x 200.75pt>
 File: Figures/word clouds old/neutral_words.png Graphic file (type png)
 <use Figures/word clouds old/neutral_words.png>
 Package pdftex.def Info: Figures/word clouds old/neutral_words.png  used on inp
 ut line 403.
 (pdftex.def)             Requested size: 281.04808pt x 140.52403pt.
-<Figures/word clouds old/sadness_words.png, id=868, 401.5pt x 200.75pt>
+<Figures/word clouds old/sadness_words.png, id=877, 401.5pt x 200.75pt>
 File: Figures/word clouds old/sadness_words.png Graphic file (type png)
 <use Figures/word clouds old/sadness_words.png>
 Package pdftex.def Info: Figures/word clouds old/sadness_words.png  used on inp
 ut line 407.
 (pdftex.def)             Requested size: 281.04808pt x 140.52403pt.
- [44] [45pdfTeX warning (ext4): destination with the same identifier (name{figu
+ [45] [46pdfTeX warning (ext4): destination with the same identifier (name{figu
 re.5.19}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1367,19 +1378,19 @@ l.413
 l.413 
        <./Figures/word clouds old/neutral_words.png (PNG copy)> <./Figures/word
  clouds old/sadness_words.png (PNG copy)>]
-<Figures/word clouds new/neutral_words.png, id=881, 401.5pt x 200.75pt>
+<Figures/word clouds new/neutral_words.png, id=890, 401.5pt x 200.75pt>
 File: Figures/word clouds new/neutral_words.png Graphic file (type png)
 <use Figures/word clouds new/neutral_words.png>
 Package pdftex.def Info: Figures/word clouds new/neutral_words.png  used on inp
 ut line 416.
 (pdftex.def)             Requested size: 281.04808pt x 140.52403pt.
-<Figures/word clouds new/sadness_words.png, id=882, 401.5pt x 200.75pt>
+<Figures/word clouds new/sadness_words.png, id=891, 401.5pt x 200.75pt>
 File: Figures/word clouds new/sadness_words.png Graphic file (type png)
 <use Figures/word clouds new/sadness_words.png>
 Package pdftex.def Info: Figures/word clouds new/sadness_words.png  used on inp
 ut line 420.
 (pdftex.def)             Requested size: 281.04808pt x 140.52403pt.
-) [46pdfTeX warning (ext4): destination with the same identifier (name{figure.5
+) [47pdfTeX warning (ext4): destination with the same identifier (name{figure.5
 .21}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1397,19 +1408,19 @@ l.95 \include{Capitulo5}
 
  (./Capitulo6.tex
 Chapter 6.
-[47
+[48
 
 
 
-]) [48] [49] (./PaperThesis.bbl [50
+]) [49] [50] (./PaperThesis.bbl [51
 
 
 
-] [51]) [52]
+] [52] [53]) [54]
 \openout2 = `Autobiografia.aux'.
 
  (./Autobiografia.tex)
-[53
+[55
 
 
 ]
@@ -1421,19 +1432,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
 Package rerunfilecheck Info: File `PaperThesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8D81D9E1970F0ED91545FB24F6BA0E9D;3472.
+(rerunfilecheck)             Checksum: AE74F5A9C91C62FE37B24059A41E30BC;3483.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
  ) 
 Here is how much of TeX's memory you used:
- 21513 strings out of 481239
- 379077 string characters out of 5920378
- 804553 words of memory out of 5000000
- 35992 multiletter control sequences out of 15000+600000
- 550950 words of font info for 69 fonts, out of 8000000 for 9000
+ 21536 strings out of 481239
+ 379384 string characters out of 5920378
+ 805553 words of memory out of 5000000
+ 36009 multiletter control sequences out of 15000+600000
+ 550178 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,17n,72p,707b,1963s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not ex
+pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exis
+t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exis
 t, replaced by a fixed one
@@ -1477,14 +1491,13 @@ are/texmf/fonts/type1/public/cm-super/sfit1000.pfb></usr/share/texmf/fonts/type
 1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
 rm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/sha
 re/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sft
-i1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/shar
-e/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/
-public/cm-super/sftt1200.pfb>
-Output written on PaperThesis.pdf (67 pages, 1375314 bytes).
+/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sft
+i1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on PaperThesis.pdf (69 pages, 2027701 bytes).
 PDF statistics:
- 1042 PDF objects out of 1200 (max. 8388607)
- 893 compressed objects within 9 object streams
- 244 named destinations out of 1000 (max. 500000)
- 564 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1055 PDF objects out of 1200 (max. 8388607)
+ 901 compressed objects within 10 object streams
+ 251 named destinations out of 1000 (max. 500000)
+ 569 words of extra memory for PDF output out of 10000 (max. 10000000)
 

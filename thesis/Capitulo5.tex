@@ -356,7 +356,7 @@ In this section, the results of the experiments from the previous section will b
 	\\ \hline
 	\ & Loss & Accuracy & Loss & Accuracy
 	\\ \hline
-	\hyperref[exp1]{Experiment 1} & 0.6857 & 0.7151 & \textbf{0.8499} & 0.6308
+	\hyperref[exp1]{Experiment 1} & 0.6916 & 0.7130 & \textbf{0.8709} & 0.6234
 	\\ \hline
 	\hyperref[exp2]{Experiment 2} & 0.5956 & 0.7576 & 0.7649 & 0.6821
 	\\ \hline
@@ -378,9 +378,9 @@ In this section, the results of the experiments from the previous section will b
 \end{table}
 \pagebreak
 \subsection{Interpretation}
-On \nameref{exp1}, the post-training results were promising, sentences with obvious ``Good'' and ``Neutral'' related words were correctly analyzed. But, as Figures \ref{fig:accuracy_exp1} and \ref{fig:loss_exp1} show, the validation results were considerably worse than the control data scores, this is due to the ``Bad'' score behaving erratically even when using obvious ``Bad''-related words, this could be explained by the disparity between words used on the datasets -- not many words were repeated on these --. Even so, overall this had one of the best accuracies across the experiments.
+On \nameref{exp1}, the post-training results were promising, sentences with obvious ``Good'' and ``Bad'' related words were correctly analyzed. But, as Figures \ref{fig:accuracy_exp1} and \ref{fig:loss_exp1} show, the validation results were considerably worse than the control data scores, this is due to the ``Neutral'' score behaving erratically even when using obvious ``Neutral''-related words, this could be explained by the disparity between words used on the datasets -- not many words were repeated on these --. Even so, overall this had one of the best accuracies across the experiments.
 
-On \nameref{exp2}, using one more dataset and less classes grouped with each category was opted to mitigate the ``Bad'' score while trying to keep data across the categories balanced. This, however, caused the algorithm to categorize every sentence from the input as happiness regardless of the words used, and sometimes even going over the ``0'' category used exclusively to categorize unclassifiable sentences and catching overflow errors.
+On \nameref{exp2}, using one more dataset and less classes grouped with each category was opted to improve the ``Neutral'' score while trying to keep data across the categories balanced. This had a small impact on the scores but it started to recognize more words as such.
 
 On \nameref{exp3}, seeing that Experiment 2 had failed to predict correctly, more units were given to the LSTM to see if this lowered the chance of error, but as Figures \ref{fig:accuracy_exp3} and \ref{fig:loss_exp3} demonstrate, this got generally the same results. This determined that the defining factor was elsewhere.
 
@@ -401,11 +401,11 @@ The experiment with the best performance overall was \nameref{exp9}, with the sc
 \begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.7]{word clouds old/neutral_words.png}
-	\caption{Word cloud of the ``Neutral'' category's corpus previous to the filtering in \nameref{exp8}}
+	\caption[Word cloud of the ``Neutral'' category's corpus previous to the filtering.]{Word cloud of the ``Neutral'' category's corpus previous to the filtering in \nameref{exp8}}
 	\label{fig:neutralwords_pre}
 	\vspace{1cm}
 	\includegraphics[scale=0.7]{word clouds old/sadness_words.png}
-	\caption{Word cloud of the ``Bad'' category's corpus previous to the filtering in \nameref{exp8}}
+	\caption[Word cloud of the ``Bad'' category's corpus previous to the filtering]{Word cloud of the ``Bad'' category's corpus previous to the filtering in \nameref{exp8}}
 	\label{fig:sadnesswords_pre}
 \end{figure}
 

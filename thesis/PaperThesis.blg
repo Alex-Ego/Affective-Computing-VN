@@ -14,44 +14,44 @@ A level-1 auxiliary file: Capitulo6.aux
 The style file: plainnat.bst
 A level-1 auxiliary file: Autobiografia.aux
 Database file #1: biblio.bib
-You've used 24 entries,
+You've used 27 entries,
             2773 wiz_defined-function locations,
-            754 strings with 9611 characters,
-and the built_in function-call counts, 11439 in all, are:
-= -- 1038
-> -- 642
-< -- 18
-+ -- 218
-- -- 194
-* -- 876
-:= -- 1731
-add.period$ -- 83
-call.type$ -- 24
-change.case$ -- 134
-chr.to.int$ -- 24
-cite$ -- 48
-duplicate$ -- 553
-empty$ -- 942
-format.name$ -- 222
-if$ -- 2448
+            771 strings with 10254 characters,
+and the built_in function-call counts, 12898 in all, are:
+= -- 1164
+> -- 750
+< -- 19
++ -- 254
+- -- 227
+* -- 1000
+:= -- 1965
+add.period$ -- 93
+call.type$ -- 27
+change.case$ -- 154
+chr.to.int$ -- 27
+cite$ -- 54
+duplicate$ -- 613
+empty$ -- 1045
+format.name$ -- 260
+if$ -- 2745
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 21
-newline$ -- 134
-num.names$ -- 98
-pop$ -- 291
+missing$ -- 24
+newline$ -- 150
+num.names$ -- 110
+pop$ -- 328
 preamble$ -- 1
-purify$ -- 111
+purify$ -- 128
 quote$ -- 0
-skip$ -- 431
+skip$ -- 480
 stack$ -- 0
-substring$ -- 357
-swap$ -- 93
+substring$ -- 394
+swap$ -- 96
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 259
+type$ -- 292
 warning$ -- 0
-while$ -- 107
+while$ -- 118
 width$ -- 0
-write$ -- 330
+write$ -- 369

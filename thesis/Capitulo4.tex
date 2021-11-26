@@ -1,7 +1,7 @@
 \chapter{Project Design}
 \label{ch4}
 The tools that are used in this paper are mostly Python-based, such as TensorFlow, a neural network framework. This, combined with natural language processing tools and several filtering techniques will be used to achieve -- or at least approach as close as possible to -- the expected results.
-Having all the concepts in mind, the proposed project has a major component which is the Machine Learning tools surrounded by several small modules such as the GUI and the chatbot components.
+Having all the concepts in mind, the proposed project has a major component which is the Machine Learning tools surrounded by several optional small modules such as the GUI and chatbot components, which are not the focus of this project.
 As for the data used in this project, most of it comes from cleaned, classified tweets partitioned in training and testing datasets.
 In this chapter, the design of the project is explained.
 
@@ -16,22 +16,26 @@ The datasets used in this project, as previously mentioned, consist in around 40
 	\item Fun
 	\item Worry
 	\item Boredom
+	\item Joy
+	\item Love
+	\item Fear
 \end{itemize}
 Even after eliminating non-critical labels, since the remaining  labeled samples are not evenly distributed, leaving them as-is led to very inaccurate results, so a generalistic approach was opted for, classifying the end results in ``Good'', ``Neutral'' and ``Bad'' depending on the overall wellness percieved from the input.
 This final filter works only with the training data, and works as follows:
 \begin{itemize}
-	\item Sadness and Worry are in the ``Bad'' category.
+	\item Sadness, Worry and Fear are in the ``Bad'' category.
 	\item Neutral and Boredom are in the ``Neutral'' category.
-	\item Happiness and Fun are in the ``Good'' category.
+	\item Happiness, Fun, Joy and Love are in the ``Good'' category.
 \end{itemize}
 
 \subsection{Text Filtering}
+\label{txtfilter}
 Since the chosen dataset is imported almost straight from Twitter with poor grammar, misplaced symbols, emojis and similar things, some cleanup has to be done to ensure peak performance.
 \begin{itemize}
 \item First, all text must be converted to lowercase.
 \item Then, all of the punctuation marks had to be discarded.
 \item After that, the stopwords\footnote{Words that are not vital for the sentence's meaning.} have to be omitted as well.
-\item Finally, for easier analysis, a process called stemming\footnote{Reducing a verb to its most basic components.} is applied, so that all of the tenses of every verb are evaluated the same way while also avoiding corpus bloating.
+\item Finally, for easier analysis, a process called stemming\footnote{Trimming words down by removing the affixes like -ed, -ize, -s, and so on.} is applied, so that all tenses of every verb and all related words are evaluated the same way while also avoiding corpus bloating.
 \end{itemize} 
 These last processes were possible thanks to NLTK\footnote{Natural Language Toolkit, tool used specifically for these case scenarios. \url{https://www.nltk.org/}}, which has its own repository of stopwords and stems.
 An example for this applied to data in the training dataset is as follows.
@@ -54,34 +58,40 @@ The last step is to apply stemming to all the able remaining words, in this case
 \begin{center}
 \fbox{sleepi even late fail}
 \end{center}
-
+Lemmatization\footnote{Natural language tool which returns words as they appear on the dictionary. Uses an internal thesaurus \citep{rf23}.} could also work instead of stemming but the latter was chosen instead because of the problems with the poor ortographical quality of the datasets used in this project, the fact that this method uses a thesaurus instead of arbitrarily trimming the affixes of words would lead to more inaccuracies.
 
 \subsection{Neural Network}
-For this project, as mentioned in Chapter 3, TensorFlow was opted for because of its characteristics such as being free to use, not needing a lot of resources to work and the advantages of being portable once trained. All of these traits are what makes this project unique and easily scalable.
+For this project, as mentioned in \hyperref[ch3]{Chapter 3}, TensorFlow was opted for because of its characteristics such as being open-source, not needing a lot of resources to work and the advantages of being portable once trained. All of these traits are what makes this project unique and easily scalable.
 An LSTM Neural Network was opted for because of the increased accuracy that it offers compared to a regular Recurrent Neural Network.
-\begin{figure}[!b]
+\pagebreak
+\begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.7]{Normal_RNN}
-	\caption{Basic Structure of a Recurrent Neural Network, where \textit{A} represents the algorithm used.}
+	\includegraphics[scale=0.6]{Normal_RNN}
+	\caption[Basic Structure of a Recurrent Neural Network.]{Basic Structure of a Recurrent Neural Network, where \textit{A} represents the algorithm used.}
 	\label{fig:neuraldiagram_1}
 \end{figure}
-\begin{figure}[!bht]
+\begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.7]{Transp_RNN}
-	\caption{Structure inside an algorithm in a basic Recurrent Neural Network, where \textit{L} represents the layers used.}
+	\includegraphics[scale=0.6]{Transp_RNN}
+	\caption[Structure inside an algorithm in a basic Recurrent Neural Network.]{Structure inside an algorithm in a basic Recurrent Neural Network, where \textit{L} represents the layers used.}
 	\label{fig:neuraldiagram_2}
 \end{figure}
-\\
-\indent Basically, LSTM is a subtype of a Recurrent Neural Network which has a certain amount of data be stored for longer periods of time so it can be used for future connections.
-\begin{figure}[!bht]
+\begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.7]{Transp_LSTM}
-	\caption{Structure inside an LSTM Neural Network, where the \textit{o} represent the functions that operate the data the data when traveling from one layer to another \citep{rf21}.}
+	\includegraphics[scale=0.6]{Transp_LSTM}
+	\caption[Structure inside an LSTM Neural Network.]{Structure inside an LSTM Neural Network, where the \textit{o} represent the functions that operate the data the data when traveling from one layer to another \citep{rf21}.}
 	\label{fig:neuraldiagram_3}
 \end{figure}
-\pagebreak
+
+Basically, LSTM is a subtype of a Recurrent Neural Network which has a certain amount of data be stored for longer periods of time so it can be used for future connections.
+
+The project proposed in this thesis uses a bidirectional LSTM, this is better suited for ``contextualizing'', which is taking into consideration the whole content of the analyzed data as opposed to the unidirectional LSTM which only looks at past data.
+Both work the same way, the only change that happens is that weights can be influenced by all data in general at once as opposed to one-at-the time.
+
+This project also makes use of the dropout function, which makes established connections between neurons ``thin out'' at random, with the purpose of avoiding overfitting over time which could ultimately cause problems when using big datasets \citep{rf22}.
+
 \section{Tools}
-This project is built on Python v3.8.10, The libraries used for this project to come to fruition are TensorFlow\footnote{\url{https://www.tensorflow.org/}} v2.6.0 and Keras\footnote{\url{https://keras.io/}} v2.6.0 for the Neural Network section. Natural Language Toolkit\footnote{\url{https://www.nltk.org/}} v3.5 (also known as NLTK) for the tokenization and stemming process. Chatterbot\footnote{\url{https://chatterbot.readthedocs.io/en/stable/}} for the chatbot's output. And, lastly, pygame\footnote{\url{https://www.pygame.org/news}} v1.9.5 for the GUI.
+This project is built on Python v3.8.10, The libraries used for this project to come to fruition are TensorFlow\footnote{\url{https://www.tensorflow.org/}} v2.6.0 and Keras\footnote{\url{https://keras.io/}} v2.6.0 for the Neural Network section. Natural Language Toolkit\footnote{\url{https://www.nltk.org/}} v3.5 (also known as NLTK) for the tokenization and stemming process. Chatterbot\footnote{\url{https://chatterbot.readthedocs.io/en/stable/}} for the optional chatbot module's output. And, lastly, pygame\footnote{\url{https://www.pygame.org/news}} v1.9.5 for the optional GUI.
 
 \section{Inner Workings}
 In this section, I will highlight the most important parts of this project's code and their function. In case of needing further insight on the code used, the repository is online at \url{https://github.com/Alex-Ego/Affective-Computing-VN}.
@@ -115,7 +125,7 @@ def tokenizing_process(message):
     return message
     
 \end{lstlisting}
-This works in the same way and order as specified earlier in this chapter.
+This works in the same way and order as specified earlier in \ref{txtfilter} \nameref{txtfilter}.
 \subsection{Neural Network}
 After the text has been properly classified and ready-to-test, this is the structure of the neural network.
 \begin{lstlisting}
@@ -130,7 +140,9 @@ recurrent_dropout=0.15)),
     layers.Dense(4, activation="softmax")
 ])
 \end{lstlisting}
-As the code shown indicates, this neural network has 3 layers: LSTM for classification, and two Dense, the former is to slim down the input data from the previous layer, and the latter is for classification which can be one in 4 categories, which include the three previously discussed categories, and one reserved for error/unknown purposes.
+As the code shown indicates, this neural network has 5 layers: Embedding which processes and either pads or trims the input to be ready to be worked on by the rest of the model, Dropout for avoiding overfitting from previous epochs, Bidirectional LSTM for classification, and two Dense: the former is to slim down the input data from the previous layer, and the latter is for classification which can be one in 4 categories, which include ``Good'', ``Neutral'', ``Bad'', and one reserved for error/unknown purposes.
+
+The dropout layer, specifically using \textit{SpatialDropout1D}, prevents the dropout from being too aggresive and decreasing the learning rate. This works by dropping adjacent connections at the time instead of completely random individual elements.
 \subsection{Portability}
 Training the Neural Network every time is not needed, since there is a way to save the model in a \textit{.hdf5} file and the corpus in a plain \textit{.txt} file with the following code snippet:
 \begin{lstlisting}

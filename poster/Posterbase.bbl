@@ -1,0 +1,82 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Marinescu et~al.(2019)Marinescu, Eshaghi, Alexander, and
+  Golland]{img1}
+Razvan Marinescu, Arman Eshaghi, Daniel Alexander, and Polina Golland.
+\newblock Brainpainter: A software for the visualisation of brain structures,
+  biomarkers and associated pathological processes.
+\newblock \emph{arXiv preprint arXiv:1905.08627}, 2019.
+
+\bibitem[Blenn et~al.(2012)Blenn, Charalampidou, and Doerr]{rf10}
+Norbert Blenn, Kassandra Charalampidou, and Christian Doerr.
+\newblock Context-sensitive sentiment classification of short colloquial text.
+\newblock In Robert Bestak, Lukas Kencl, Li~Erran Li, Joerg Widmer, and Hao
+  Yin, editors, \emph{NETWORKING 2012}, pages 97--108, Berlin, Heidelberg,
+  2012. Springer Berlin Heidelberg.
+\newblock ISBN 978-3-642-30045-5.
+
+\bibitem[Morris et~al.(2018)Morris, Kouddous, Kshirsagar, and Schueller]{rf6}
+Robert~R Morris, Kareem Kouddous, Rohan Kshirsagar, and Stephen~M Schueller.
+\newblock Towards an artificially empathic conversational agent for mental
+  health applications: System design and user perceptions.
+\newblock \emph{J Med Internet Res}, 20, Jun 2018.
+\newblock ISSN 1438-8871.
+\newblock \doi{10.2196/10148}.
+
+\bibitem[Bird et~al.(2021)Bird, Ek{\'a}rt, and Faria]{rf14}
+Jordan~J Bird, Anik{\'o} Ek{\'a}rt, and Diego~R Faria.
+\newblock Chatbot interaction with artificial intelligence: human data
+  augmentation with t5 and language transformer ensemble for text
+  classification.
+\newblock \emph{Journal of Ambient Intelligence and Humanized Computing}, pages
+  1--16, 2021.
+
+\bibitem[Pang et~al.(2002)Pang, Lee, and Vaithyanathan]{rf5}
+Bo~Pang, Lillian Lee, and Shivakumar Vaithyanathan.
+\newblock Thumbs up? sentiment classification using machine learning
+  techniques.
+\newblock \emph{arXiv preprint cs/0205070}, 2002.
+
+\bibitem[Ahmad et~al.(2019)Ahmad, Asghar, Alotaibi, and Awan]{rf11}
+Shakeel Ahmad, Muhammad~Zubair Asghar, Fahad~M Alotaibi, and Irfanullah Awan.
+\newblock Detection and classification of social media-based extremist
+  affiliations using sentiment analysis techniques.
+\newblock \emph{Human-centric Computing and Information Sciences}, 9:\penalty0
+  1--23, 2019.
+
+\bibitem[Wang et~al.(2021)Wang, Wang, and Chen]{rf12}
+Bingkun Wang, Ning Wang, and Zhongsheng Chen.
+\newblock Research on air quality forecast based on web text sentiment
+  analysis.
+\newblock \emph{Ecological Informatics}, 64, 2021.
+\newblock ISSN 1574-9541.
+\newblock \doi{https://doi.org/10.1016/j.ecoinf.2021.101354}.
+
+\bibitem[Capuano et~al.(2021)Capuano, Greco, Ritrovato, and Vento]{rf13}
+Nicola Capuano, Luca Greco, Pierluigi Ritrovato, and Mario Vento.
+\newblock Sentiment analysis for customer relationship management: An
+  incremental learning approach.
+\newblock \emph{Applied Intelligence}, 51:\penalty0 3339--3352, 2021.
+
+\bibitem[Chiril et~al.(2021)Chiril, Pamungkas, Benamara, Moriceau, and
+  Patti]{rf15}
+Patricia Chiril, Endang~Wahyu Pamungkas, Farah Benamara, V{\'e}ronique
+  Moriceau, and Viviana Patti.
+\newblock Emotionally informed hate speech detection: a multi-target
+  perspective.
+\newblock \emph{Cognitive Computation}, pages 1--31, 2021.
+
+\bibitem[R{\"o}chert et~al.(2020)R{\"o}chert, Neubaum, and Stieglitz]{rf16}
+Daniel R{\"o}chert, German Neubaum, and Stefan Stieglitz.
+\newblock Identifying political sentiments on youtube: A systematic comparison
+  regarding the accuracy of recurrent neural network and machine learning
+  models.
+\newblock In \emph{Multidisciplinary International Symposium on Disinformation
+  in Open Online Media}, pages 107--121. Springer, 2020.
+
+\end{thebibliography}

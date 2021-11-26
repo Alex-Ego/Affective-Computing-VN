@@ -1,4 +1,4 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{27}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -23,6 +23,12 @@ Taiwo~Oladipupo Ayodele.
 \newblock Introduction to machine learning.
 \newblock \emph{New Advances in Machine Learning}, Feb 2010.
 \newblock \doi{10.5772/9394}.
+
+\bibitem[Balakrishnan and Lloyd-Yemoh(2014)]{rf23}
+Vimala Balakrishnan and Ethel Lloyd-Yemoh.
+\newblock Stemming and lemmatization: a comparison of retrieval performances.
+\newblock \emph{SCEI Seoul Conferences}, 2014.
+\newblock URL \url{http://eprints.um.edu.my/id/eprint/13423}.
 
 \bibitem[Bermúdez et~al.(2017)Bermúdez, Achanccaray, and Sanches]{rf21}
 José~David Bermúdez, Pedro Achanccaray, and Ieda~Del'Arco Sanches.
@@ -100,6 +106,13 @@ Akshi Kumar and Mary~Sebastian Teeja.
 \newblock \emph{International Journal of Intelligent Systems and Applications},
   4:\penalty0 2--4, 2012.
 
+\bibitem[Marinescu et~al.(2019)Marinescu, Eshaghi, Alexander, and
+  Golland]{img1}
+Razvan Marinescu, Arman Eshaghi, Daniel Alexander, and Polina Golland.
+\newblock Brainpainter: A software for the visualisation of brain structures,
+  biomarkers and associated pathological processes.
+\newblock \emph{arXiv preprint arXiv:1905.08627}, 2019.
+
 \bibitem[Mohammad(2018)]{d2}
 Saif~M. Mohammad.
 \newblock Word affect intensities.
@@ -146,6 +159,14 @@ Daniel R{\"o}chert, German Neubaum, and Stefan Stieglitz.
 KP~Soman, R~Loganathan, and V~Ajay.
 \newblock \emph{Machine learning with SVM and other kernel methods}.
 \newblock PHI Learning Pvt. Ltd., 2009.
+
+\bibitem[Srivastava et~al.(2014)Srivastava, Hinton, Krizhevsky, Sutskever, and
+  Salakhutdinov]{rf22}
+Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan
+  Salakhutdinov.
+\newblock Dropout: a simple way to prevent neural networks from overfitting.
+\newblock \emph{The journal of machine learning research}, 15:\penalty0
+  1929--1958, 2014.
 
 \bibitem[Wang et~al.(2021)Wang, Wang, and Chen]{rf12}
 Bingkun Wang, Ning Wang, and Zhongsheng Chen.

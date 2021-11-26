@@ -4,40 +4,40 @@ Human beings are social beings, this is widely known. To survive, we must band t
 \begin{itemize}
 	\item Emotional simulation centered in the limbic system, which makes us mirror the emotional elements we're watching.
 	\item Processing the perspective in the prefrontal and temporal cortex.
-	\item Assessing the course of action to take, either showing compassion or doing something else. This is assumed to be based in the obitofrontal cortex, as well as several other parts of the brain.
+	\item Assessing the course of action to take, either showing compassion or doing something else. This is assumed to be based in the obitofrontal cortex, as well as several other parts of the brain.	
 \end{itemize}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.3]{BrainMap}
+	\caption[Lateral brain map of the parts in charge of empathy processes.]{Lateral brain map of the parts in charge of the empathy processes. Gray and pink are parts of the limbic system, cyan is part of the prefrontal cortex, green is part of the temporal cortex, blue is part of the orbitofrontal cortex. Drawing generated using BrainPainter \citep{img1}.}
+	\label{fig:brainmap}
+\end{figure}
 This is clearly what is usually considered a human-only behavior, but there are studies that indicate that apes, dogs and rodents have been observed to take action at the presence of distress signals, either from humans or other members of their own species \citep{rf2}.
 If this is true, theoretically, a machine could be taught to process signals of distress and react accordingly using a learning algorithm.
-\pagebreak
-
-
-\begin{center}
-{\Huge Sentiment Analysis through Conversational Data}
-\end{center}
 
 \section{Justification}
 At first, the objective was to create an algorithm that could serve as a makeshift therapy chatbot that people could use when they were confused about their own feelings, but as time has passed, a lot of things have happened in my life regarding people with close-to-none empathy.
-This project could prove especially useful towards people who have trouble discerning when to console someone or having an idea of how other people or even themselves feel, such as the case of people with Asperger's Syndrome or other forms of high-functioning autism.
+This project could prove especially useful towards being used in projects designed for people who have trouble discerning when to console someone or having an idea of how other people or even themselves feel, such as the case of people with Asperger's Syndrome or other forms of high-functioning autism.
 To this end, the decision was made to work on this project.
 
 \section{Hypothesis}
-Empathy consists in a pattern of neurochemical reactions triggered by different situations. Machine learning could learn to identify these patterns. The hypotesis of this thesis is that machine learning could help people with a vague sense of empathy or self-knowledge to discern what they are feeling.
+Empathy consists in a pattern of neurochemical reactions triggered by different situations. Machine learning could learn to identify these patterns. The hypothesis of this thesis is that using supervised machine learning with a neural network could accurately classify the sentiment behind an input text as ``Good'', ``Neutral'' or ``Bad'', with the purpose of being implemented in tandem with another software or algorithms focused on conversational data.
 
 \section{Objectives}
 In this section, the objectives proposed for this thesis are established.
 
 \subsection{General Objectives}
-The objective of this project is to determine how the person that writes the input text is feeling according to the words in it. This could be achieved thanks to the technology present in machine learning algorithms and an extensive amount of datasets.
+The objective of this project is to make software capable of determining how the person that writes the input text is feeling according to the words in it, while keeping the code open-source so it can be used in other projects. This could be achieved thanks to the technology present in machine learning algorithms and an extensive amount of datasets.
 
 \subsection{Specific Objectives}
 \begin{itemize}
 	\item Generating an algorithm capable of detecting key words related to mood in text.
-	\item Predicting successfully the mood according to the input given.
-	\item Giving feedback on the input, reinforcing it if positive or giving empathetic words if negative.
+	\item Successfully classifying the sentiment according to the input given.
+	\item Making the software open-source so it can be used in other projects.
 \end{itemize}
 
 \section{Metodology}
-The tools that are used in this thesis are mostly Python-based, such as TensorFlow, a neural network framework. This, combined with natural language processing tools and several filtering techniques will be used to achieve -- or at least approach as close as possible to -- the expected results.
+The tools that are used in this thesis are mostly Python-based, such as TensorFlow, a neural network framework. This, combined with natural language processing tools and several filtering techniques will be used to achieve -- or at least approach as close as possible to -- the expected results while keeping the code reusable.
 
 \section{Structure}
 The content in this thesis is divided in several chapters, each one of them talking about different information about either the topics that are relevant to the scope of this project or the general process that has happened to reach the goal.\\

@@ -4,8 +4,8 @@ Technology in the past decades has been advancing exponentially. So much, in fac
 There is a variety of scenarios where it is useful, such as pattern recognition, which relates extensively to most of this project's work.\\
 In this chapter, some key concepts will be explained for easier comprehension of this thesis and the project itself as a whole.
 
-\section{Machine Learning}
-Machine learning can be described, broadly and figuratively speaking, as a black box where some data is inserted as an input and numbers come out of it as an output \citep{rf8}.
+\section{Supervised Machine Learning}
+Supervised ML can be described, broadly and figuratively speaking, as a black box where some data is inserted as an input and numbers come out of it as an output \citep{rf8}. This output, as opposed to other types of Machine Learning, is later analyzed and compared to real life data. This means this type of ML is best used as an auxiliary tool more than the main source of information from a process.
 Some more advanced models of ML allow some internal parameters inside this figurative black box to be able to be tampered with, so that some characteristics of the input data can have effect on the output, these parameters are called \textit{weights} \citep{rf9}.
 Most ML algorithms have two stages: training and validation:
 \begin{itemize}
@@ -39,7 +39,7 @@ Tokenizing is the process that happens while making tokens, the way it works is 
 
 We can tell there are 6 words in the example phrase. So the tokenizing process would make the example look in the following way:
 \begin{center}
-\fbox{1,	2,	3,	4,	5,	6}
+\fbox{1,	2,	3,	4,	5}
 \end{center}
 
 \noindent where 1 corresponds to the word ``This'', 2 corresponds to ``is'', 3 to ``an'' and so on.
@@ -51,10 +51,10 @@ The interesting part about this process would happen if we used another example 
 
 If we did the tokenization process, it would be processed in this way:
 \begin{center}
-\fbox{1,	2,	7,	4}
+\fbox{1,	2,	6,	4}
 \end{center}
 
-Since the internal lexicon already knows some of the words in this second example, it reuses their token, adding new ones (in this example, ``another'' is 7) if needed.\\
+Since the internal lexicon already knows some of the words in this second example, it reuses their token, adding new ones (in this example, ``another'' is 6) if needed.\\
 
 This is fairly useful for a machine learning algorithm, since it will not have to compare such massive amount of characters in a string each time, and it would only need to evaluate integers. Whether its focus is either frequency or comparison.
 
