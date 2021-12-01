@@ -1,50 +1,46 @@
 This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Articlebase.aux
-The style file: mighelnat.bst
+The style file: unsrtnat.bst
 Database file #1: biblio.bib
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--empty pages in rf2
 You've used 19 entries,
-            3461 wiz_defined-function locations,
-            761 strings with 8798 characters,
-and the built_in function-call counts, 17880 in all, are:
-= -- 1760
-> -- 558
-< -- 18
-+ -- 246
-- -- 173
-* -- 1208
-:= -- 1967
-add.period$ -- 19
+            2481 wiz_defined-function locations,
+            675 strings with 8315 characters,
+and the built_in function-call counts, 7881 in all, are:
+= -- 691
+> -- 404
+< -- 13
++ -- 155
+- -- 117
+* -- 574
+:= -- 1245
+add.period$ -- 69
 call.type$ -- 19
-change.case$ -- 132
+change.case$ -- 37
 chr.to.int$ -- 19
-cite$ -- 39
-duplicate$ -- 1852
-empty$ -- 1197
-format.name$ -- 229
-if$ -- 3605
+cite$ -- 19
+duplicate$ -- 423
+empty$ -- 700
+format.name$ -- 140
+if$ -- 1713
 int.to.chr$ -- 1
-int.to.str$ -- 1
-missing$ -- 219
-newline$ -- 97
-num.names$ -- 78
-pop$ -- 630
+int.to.str$ -- 20
+missing$ -- 20
+newline$ -- 110
+num.names$ -- 59
+pop$ -- 165
 preamble$ -- 1
-purify$ -- 132
+purify$ -- 19
 quote$ -- 0
-skip$ -- 1035
+skip$ -- 260
 stack$ -- 0
-substring$ -- 739
-swap$ -- 1373
-text.length$ -- 13
+substring$ -- 315
+swap$ -- 95
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 168
-warning$ -- 1
-while$ -- 106
+type$ -- 130
+warning$ -- 0
+while$ -- 70
 width$ -- 0
-write$ -- 245
-(There was 1 warning)
+write$ -- 270

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.1)  26 NOV 2021 13:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.1)  1 DEC 2021 05:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1133,20 +1133,10 @@ Overfull \hbox (3.08246pt too wide) has occurred while \output is active
 [2
 
 ]
-Overfull \vbox (0.63347pt too high) has occurred while \output is active []
-
-
-Overfull \hbox (3.08246pt too wide) has occurred while \output is active
- [][]  
- []
-
-[3
-
-]
-<BrainMap.png, id=218, 1204.5pt x 903.375pt>
+<BrainMap.png, id=187, 1204.5pt x 903.375pt>
 File: BrainMap.png Graphic file (type png)
 <use BrainMap.png>
-Package pdftex.def Info: BrainMap.png  used on input line 51.
+Package pdftex.def Info: BrainMap.png  used on input line 45.
 (pdftex.def)             Requested size: 180.6672pt x 135.5004pt.
 
 Overfull \vbox (0.63347pt too high) has occurred while \output is active []
@@ -1156,9 +1146,19 @@ Overfull \hbox (3.08246pt too wide) has occurred while \output is active
  [][]  
  []
 
-[4
+[3
 
  <./Brainmap.png>]
+Overfull \vbox (0.63347pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (3.08246pt too wide) has occurred while \output is active
+ [][]  
+ []
+
+[4
+
+]
 Overfull \vbox (0.63347pt too high) has occurred while \output is active []
 
 
@@ -1249,29 +1249,19 @@ Overfull \hbox (3.08246pt too wide) has occurred while \output is active
 [13
 
 ]
-Overfull \vbox (0.63347pt too high) has occurred while \output is active []
-
-
-Overfull \hbox (3.08246pt too wide) has occurred while \output is active
- [][]  
- []
-
-[14
-
-]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 179
+LaTeX Font Info:    Trying to load font information for U+msa on input line 173
 .
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 179
+LaTeX Font Info:    Trying to load font information for U+msb on input line 173
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 179.
+ut line 173.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
@@ -1284,9 +1274,40 @@ Overfull \hbox (3.08246pt too wide) has occurred while \output is active
  [][]  
  []
 
+[14
+
+]
+Overfull \vbox (0.63347pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (3.08246pt too wide) has occurred while \output is active
+ [][]  
+ []
+
 [15
 
 ]
+<Accuracy_Exp9.png, id=679, 462.528pt x 346.896pt>
+File: Accuracy_Exp9.png Graphic file (type png)
+<use Accuracy_Exp9.png>
+Package pdftex.def Info: Accuracy_Exp9.png  used on input line 196.
+(pdftex.def)             Requested size: 161.88722pt x 121.4154pt.
+
+Overfull \hbox (13.2423pt too wide) in paragraph at lines 196--196
+ [] 
+ []
+
+<Loss_Exp9.png, id=680, 462.528pt x 346.896pt>
+File: Loss_Exp9.png Graphic file (type png)
+<use Loss_Exp9.png>
+Package pdftex.def Info: Loss_Exp9.png  used on input line 196.
+(pdftex.def)             Requested size: 161.88722pt x 121.4154pt.
+
+Overfull \hbox (13.2423pt too wide) in paragraph at lines 196--196
+ [] 
+ []
+
+
 Overfull \vbox (0.63347pt too high) has occurred while \output is active []
 
 
@@ -1296,28 +1317,7 @@ Overfull \hbox (3.08246pt too wide) has occurred while \output is active
 
 [16
 
-]
-<Accuracy_Exp9.png, id=711, 462.528pt x 346.896pt>
-File: Accuracy_Exp9.png Graphic file (type png)
-<use Accuracy_Exp9.png>
-Package pdftex.def Info: Accuracy_Exp9.png  used on input line 202.
-(pdftex.def)             Requested size: 161.88722pt x 121.4154pt.
-
-Overfull \hbox (13.2423pt too wide) in paragraph at lines 202--202
- [] 
- []
-
-<Loss_Exp9.png, id=712, 462.528pt x 346.896pt>
-File: Loss_Exp9.png Graphic file (type png)
-<use Loss_Exp9.png>
-Package pdftex.def Info: Loss_Exp9.png  used on input line 202.
-(pdftex.def)             Requested size: 161.88722pt x 121.4154pt.
-
-Overfull \hbox (13.2423pt too wide) in paragraph at lines 202--202
- [] 
- []
-
-
+ <./Accuracy_Exp9.png> <./Loss_Exp9.png>]
 Overfull \vbox (0.63347pt too high) has occurred while \output is active []
 
 
@@ -1327,7 +1327,32 @@ Overfull \hbox (3.08246pt too wide) has occurred while \output is active
 
 [17
 
- <./Accuracy_Exp9.png> <./Loss_Exp9.png>]
+]
+
+LaTeX Warning: Hyper reference `exp1' on page 18 undefined on input line 234.
+
+
+LaTeX Warning: Hyper reference `exp2' on page 18 undefined on input line 234.
+
+
+LaTeX Warning: Hyper reference `exp3' on page 18 undefined on input line 234.
+
+
+LaTeX Warning: Hyper reference `exp4' on page 18 undefined on input line 234.
+
+
+LaTeX Warning: Hyper reference `exp6' on page 18 undefined on input line 234.
+
+
+LaTeX Warning: Hyper reference `exp7' on page 18 undefined on input line 234.
+
+
+LaTeX Warning: Hyper reference `exp8' on page 18 undefined on input line 234.
+
+
+LaTeX Warning: Hyper reference `exp9' on page 18 undefined on input line 234.
+
+
 Overfull \vbox (0.63347pt too high) has occurred while \output is active []
 
 
@@ -1338,35 +1363,6 @@ Overfull \hbox (3.08246pt too wide) has occurred while \output is active
 [18
 
 ]
-
-LaTeX Warning: Hyper reference `exp1' on page 19 undefined on input line 238.
-
-
-LaTeX Warning: Hyper reference `exp2' on page 19 undefined on input line 238.
-
-
-LaTeX Warning: Hyper reference `exp3' on page 19 undefined on input line 238.
-
-
-LaTeX Warning: Hyper reference `exp4' on page 19 undefined on input line 238.
-
-
-LaTeX Warning: Hyper reference `exp6' on page 19 undefined on input line 238.
-
-
-LaTeX Warning: Hyper reference `exp7' on page 19 undefined on input line 238.
-
-
-LaTeX Warning: Hyper reference `exp8' on page 19 undefined on input line 238.
-
-
-LaTeX Warning: Hyper reference `exp9' on page 19 undefined on input line 238.
-
-
-Overfull \vbox (4.21437pt too high) detected at line 238
- []
-
-
 Overfull \vbox (0.63347pt too high) has occurred while \output is active []
 
 
@@ -1376,7 +1372,7 @@ Overfull \hbox (3.08246pt too wide) has occurred while \output is active
 
 [19
 
-]
+] (./Slidebase.bbl)
 Overfull \vbox (0.63347pt too high) has occurred while \output is active []
 
 
@@ -1386,16 +1382,7 @@ Overfull \hbox (3.08246pt too wide) has occurred while \output is active
 
 [20
 
-] (./Slidebase.bbl
-Overfull \hbox (42.57207pt too wide) in paragraph at lines 59--65
-\OT1/cmss/m/n/6 doi:[]https://doi.org/10.1016/j.ecoinf.2021.101354[].  
- []
-
-)
-Overfull \vbox (42.85223pt too high) detected at line 260
- []
-
-
+]
 Overfull \vbox (0.63347pt too high) has occurred while \output is active []
 
 
@@ -1404,6 +1391,7 @@ Overfull \hbox (3.08246pt too wide) has occurred while \output is active
  []
 
 [21
+
 
 ]
 \tf@nav=\write6
@@ -1415,23 +1403,23 @@ Overfull \hbox (3.08246pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `Slidebase.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 257.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 257.
  (./Slidebase.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 261.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 261.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 257.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 257.
 Package rerunfilecheck Info: File `Slidebase.out' has not changed.
-(rerunfilecheck)             Checksum: B87CEB933453C469EC35CDB3B2E189FD;796.
+(rerunfilecheck)             Checksum: A3FDD488D01D958346450FA89845DA9D;795.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 23551 strings out of 481239
- 457207 string characters out of 5920378
- 729051 words of memory out of 5000000
- 38161 multiletter control sequences out of 15000+600000
+ 23545 strings out of 481239
+ 457192 string characters out of 5920378
+ 727050 words of memory out of 5000000
+ 38155 multiletter control sequences out of 15000+600000
  544189 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,19n,68p,793b,904s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1444,7 +1432,7 @@ st/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/symbols/msam10.pfb>
-Output written on Slidebase.pdf (21 pages, 866593 bytes).
+Output written on Slidebase.pdf (21 pages, 866456 bytes).
 PDF statistics:
  928 PDF objects out of 1000 (max. 8388607)
  858 compressed objects within 9 object streams

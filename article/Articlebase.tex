@@ -24,8 +24,6 @@
     }
 \makeatother
 
-\bibliographystyle{mighelnat}
-
 \title{Sentiment Analysis through Conversational Data}
 \address{San Nicolás de los Garza, Nuevo León, México}
 
@@ -215,7 +213,7 @@ The parameters that could potentially have a great impact on the output of the c
 \end{itemize}
 
 Lower loss and higher accuracy are preferred.
-\subsection{Experiment Results}
+\subsection{Experimental Results}
 \begin{itemize}
 \item Experiment 1: Base Experiment: Base version of this thesis' project.
 \item Experiment 2: More Datasets With Reduced Data Scope: This experiment takes sentences from one more dataset and 3 less categorized sentiments: ``Fear'', ``Joy'', and ``Love''.
@@ -263,21 +261,21 @@ For reference, all these experiments were subjected to the same basic test input
 \end{table}
 \pagebreak
 
-On Experiment 1, the post-training results were promising, sentences with obvious ``Good'' and ``Bad'' related words were correctly analyzed. But the validation results were considerably worse than the control data scores, this is due to the ``Neutral'' score behaving erratically even when using obvious ``Neutral''-related words, this could be explained by the disparity between words used on the datasets -- not many words were repeated on these --. Even so, overall this had one of the best accuracies across the experiments.
+In Experiment 1, the post-training results were promising, sentences with obvious ``Good'' and ``Bad'' related words were correctly analyzed. But the validation results were considerably worse than the control data scores, this is due to the ``Neutral'' score behaving erratically even when using obvious ``Neutral''-related words, this could be explained by the disparity between words used on the datasets -- not many words were repeated on these --. Even so, overall this had one of the best accuracies across the experiments.
 
-On Experiment 2, using one more dataset and less classes grouped with each category was opted to improve the ``Neutral'' score while trying to keep data across the categories balanced. This had a small impact on the scores but it started to recognize more words as such.
+In Experiment 2, using one more dataset and less classes grouped with each category was opted to improve the ``Neutral'' score while trying to keep data across the categories balanced. This had a small impact on the scores but it started to recognize more words as such.
 
-On Experiment 3, seeing that Experiment 2 still struggled to classify ``Neutral'' correctly, more units were given to the LSTM to see if this lowered the chance of error, but as the values demonstrate, this got generally the same results. This determined that the defining factor was elsewhere.
+In Experiment 3, seeing that Experiment 2 still struggled to classify ``Neutral'' correctly, more units were given to the LSTM to see if this lowered the chance of error, but as the values demonstrate, this got generally the same results. This determined that the defining factor was elsewhere.
 
-On Experiment 4, the base algorithm from Experiment 1 was brought back to work with the three datasets used on Experiments 2 and 3 to verify if the extra dataset was too lopsided to work with. It was found that having the full roster of emotions taken into consideration (``Sadness'', ``Worry'', and ``Fear'', ``Neutral'' and ``Boredom'', ``Happiness'', ``Fun'', ``Joy'', and ``Love'') actually helped the prediction scores. Even so, ``Neutral'' category sentences were still not being recognized correctly sometimes, so more experimentation was needed.
+In Experiment 4, the base algorithm from Experiment 1 was brought back to work with the three datasets used on Experiments 2 and 3 to verify if the extra dataset was too lopsided to work with. It was found that having the full roster of emotions taken into consideration (``Sadness'', ``Worry'', and ``Fear'', ``Neutral'' and ``Boredom'', ``Happiness'', ``Fun'', ``Joy'', and ``Love'') actually helped the prediction scores. Even so, ``Neutral'' category sentences were still not being recognized correctly sometimes, so more experimentation was needed.
 
-On Experiment 5, some drastic changes were made to experiment with the datasets used, this consisted in completely eliminating the ``Neutral'' category, only taking into consideration ``Bad'', ``Good'' and ``0'' with the intention of seeing the algorithm's behavior. This worked. 
+In Experiment 5, some drastic changes were made to experiment with the datasets used, this consisted in completely eliminating the ``Neutral'' category, only taking into consideration ``Bad'', ``Good'' and ``0'' with the intention of seeing the algorithm's behavior. This worked. 
 
-On Experiment 6, taking again into consideration the results given from Experiment 5, the problem of overfitting was also a concern, and since the epoch count was a parameter yet-to-be manipulated. Instead of using the usual 10 epochs, 5 were used. This did not have any noticeable effect in the prediction output, however.
+In Experiment 6, taking again into consideration the results given from Experiment 5, the problem of overfitting was also a concern, and since the epoch count was a parameter yet-to-be manipulated. Instead of using the usual 10 epochs, 5 were used. This did not have any noticeable effect in the prediction output, however.
 
-On Experiment 7, manually marking the words that represent the most bleed between categories (``work'', ``go'', ``nt'') still wasn't enough to fix the categorization problem, even though there was a slight benefit in the accuracy and loss values.
+In Experiment 7, manually marking the words that represent the most bleed between categories (``work'', ``go'', ``nt'') still wasn't enough to fix the categorization problem, even though there was a slight benefit in the accuracy and loss values.
 
-On Experiment 8, reducing the data category scope while also maintaining the stopwords mentioned on Experiment 7 filtered, brought overall the best results as of yet. This can be attributed to the fact that the most significant category bleed happened between ``Neutral'' and ``Bad'' since they shared a lot of the word pool.
+In Experiment 8, reducing the data category scope while also maintaining the stopwords mentioned on Experiment 7 filtered, brought overall the best results as of yet. This can be attributed to the fact that the most significant category bleed happened between ``Neutral'' and ``Bad'' since they shared a lot of the word pool.
 
 \section{Conclusions}
 
@@ -289,7 +287,7 @@ Another thing that could still be improved upon is the GUI, maybe using more mod
 
 The fact that this algorithm is open-source means that it can easily be expanded upon: layers can be added to the Neural Network, a more robust chatbot-esque module can be added, advanced pre-filtering processes, and the list goes on. But a very critical thing to add would be a fine-tuner can be included for less lopsided classifications in the vocabulary, something that can pre-assign weights to words that appear in the datasets. This will, most likely, get rid of the classification issues that plague the actual version of this project.
 
-%\bibliographystyle{plainnat}
+\bibliographystyle{unsrtnat}
 \bibliography{biblio}
 
 \end{document}

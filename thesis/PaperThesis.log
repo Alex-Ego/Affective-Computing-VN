@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.1)  26 NOV 2021 07:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.1)  1 DEC 2021 05:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1343,12 +1343,11 @@ File: Figures/word clouds new/sadness_words.png Graphic file (type png)
 Package pdftex.def Info: Figures/word clouds new/sadness_words.png  used on inp
 ut line 381.
 (pdftex.def)             Requested size: 281.04808pt x 140.52403pt.
-[43]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [44pdfTeX warning (ext4): destination with the same identifier (name{figure.5
-.17}) has been already used, duplicate ignored
+[43]) [44pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.5.17}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1465,7 +1464,7 @@ re/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1
 /public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sft
 i1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on PaperThesis.pdf (67 pages, 1984645 bytes).
+Output written on PaperThesis.pdf (67 pages, 1984658 bytes).
 PDF statistics:
  1024 PDF objects out of 1200 (max. 8388607)
  877 compressed objects within 9 object streams

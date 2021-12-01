@@ -312,7 +312,7 @@ In this section, the results of the experiments from the previous section will b
 	\item ``Bad''-labeled sentences: ``I am very sad right now'' and ``sad sad sad sad sad sad sad''
 \end{itemize}
 \begin{table}[!h]
-	\caption{Experiment results}
+	\caption{Experimental results}
 	\vspace{0.5cm}
 	\centering
 	\begin{tabular}[t]{|l|l|l|l|l|}
@@ -341,21 +341,21 @@ In this section, the results of the experiments from the previous section will b
 \end{table}
 \pagebreak
 \subsection{Interpretation}
-On \nameref{exp1}, the post-training results were promising, sentences with obvious ``Good'' and ``Bad'' related words were correctly analyzed. But, as Figures \ref{fig:accuracy_exp1} and \ref{fig:loss_exp1} show, the validation results were considerably worse than the control data scores, this is due to the ``Neutral'' score behaving erratically even when using obvious ``Neutral''-related words, this could be explained by the disparity between words used on the datasets -- not many words were repeated on these --. Even so, overall this had one of the best accuracies across the experiments.
+In \nameref{exp1}, the post-training results were promising, sentences with obvious ``Good'' and ``Bad'' related words were correctly analyzed. But, as Figures \ref{fig:accuracy_exp1} and \ref{fig:loss_exp1} show, the validation results were considerably worse than the control data scores, this is due to the ``Neutral'' score behaving erratically even when using obvious ``Neutral''-related words, this could be explained by the disparity between words used on the datasets -- not many words were repeated on these --. Even so, overall this had one of the best accuracies across the experiments.
 
-On \nameref{exp2}, using one more dataset and less classes grouped with each category was opted to improve the ``Neutral'' score while trying to keep data across the categories balanced. This had a small impact on the scores but it started to recognize more words as such.
+In \nameref{exp2}, using one more dataset and less classes grouped with each category was opted to improve the ``Neutral'' score while trying to keep data across the categories balanced. This had a small impact on the scores but it started to recognize more words as such.
 
-On \nameref{exp3}, seeing that Experiment 2 still struggled to classify ``Neutral'' correctly, more units were given to the LSTM to see if this lowered the chance of error, but as Figures \ref{fig:accuracy_exp3} and \ref{fig:loss_exp3} demonstrate, this got generally the same results. This determined that the defining factor was elsewhere.
+In \nameref{exp3}, seeing that Experiment 2 still struggled to classify ``Neutral'' correctly, more units were given to the LSTM to see if this lowered the chance of error, but as Figures \ref{fig:accuracy_exp3} and \ref{fig:loss_exp3} demonstrate, this got generally the same results. This determined that the defining factor was elsewhere.
 
-On \nameref{exp4}, the base algorithm from Experiment 1 was brought back to work with the three datasets used on Experiments 2 and 3 to verify if the extra dataset was too lopsided to work with. It was found that having the full roster of emotions taken into consideration (``Sadness'', ``Worry'', and ``Fear'', ``Neutral'' and ``Boredom'', ``Happiness'', ``Fun'', ``Joy'', and ``Love'') actually helped the prediction scores. Even so, ``Neutral'' category sentences were still not being recognized correctly sometimes, so more experimentation was needed.
+In \nameref{exp4}, the base algorithm from Experiment 1 was brought back to work with the three datasets used on Experiments 2 and 3 to verify if the extra dataset was too lopsided to work with. It was found that having the full roster of emotions taken into consideration (``Sadness'', ``Worry'', and ``Fear'', ``Neutral'' and ``Boredom'', ``Happiness'', ``Fun'', ``Joy'', and ``Love'') actually helped the prediction scores. Even so, ``Neutral'' category sentences were still not being recognized correctly sometimes, so more experimentation was needed.
 
-On \nameref{exp6}, some drastic changes were made to experiment with the datasets used, this consisted in completely eliminating the ``Neutral'' category, only taking into consideration ``Bad'', ``Good'' and ``0'' with the intention of seeing the algorithm's behavior. This worked. 
+In \nameref{exp6}, some drastic changes were made to experiment with the datasets used, this consisted in completely eliminating the ``Neutral'' category, only taking into consideration ``Bad'', ``Good'' and ``0'' with the intention of seeing the algorithm's behavior. This worked. 
 
-On \nameref{exp7}, taking again into consideration the results given from Experiment 5, the problem of overfitting was also a concern, and since the epoch count was a parameter yet-to-be manipulated. Instead of using the usual 10 epochs, 5 were used. This did not have any noticeable effect in the prediction output, however.
+In \nameref{exp7}, taking again into consideration the results given from Experiment 5, the problem of overfitting was also a concern, and since the epoch count was a parameter yet-to-be manipulated. Instead of using the usual 10 epochs, 5 were used. This did not have any noticeable effect in the prediction output, however.
 
-On \nameref{exp8}, manually marking the words that represent the most bleed between categories (``work'', ``go'', ``nt'') still wasn't enough to fix the categorization problem, even though there was a slight benefit in the accuracy and loss values.
+In \nameref{exp8}, manually marking the words that represent the most bleed between categories (``work'', ``go'', ``nt'') still wasn't enough to fix the categorization problem, even though there was a slight benefit in the accuracy and loss values.
 
-On \nameref{exp9}, reducing the data category scope while also maintaining the stopwords mentioned on Experiment 7 filtered, brought overall the best results as of yet. This can be attributed to the fact that the most significant category bleed happened between ``Neutral'' and ``Bad'' since they shared a lot of the word pool.
+In \nameref{exp9}, reducing the data category scope while also maintaining the stopwords mentioned on Experiment 7 filtered, brought overall the best results as of yet. This can be attributed to the fact that the most significant category bleed happened between ``Neutral'' and ``Bad'' since they shared a lot of the word pool.
 
 \subsection{Discussion}
 The experiment with the best performance overall was \nameref{exp9}, with the scope adjustment the goal of predicting, at least partially, the feeling of a person's input was achieved. Thanks to an exhaustive search conducted inside all of the datasets used it was found out that the most-used words in the datasets pertaining to the ``Bad'' and ``Neutral'' category were mostly ambiguous words that, out of context, could be interpreted as disinterest or overall any other emotion.

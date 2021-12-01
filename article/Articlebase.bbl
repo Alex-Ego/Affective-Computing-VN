@@ -1,156 +1,137 @@
 \begin{thebibliography}{19}
-\ProvideTextCommand{\guillemotleft}{OT1}{%
-  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
-\ProvideTextCommand{\guillemotright}{OT1}{%
-  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\gg$}}
-\newcommand{\enquote}[1]{\guillemotleft#1\guillemotright}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
-\providecommand{\urlprefix}{URL }
-\providecommand{\selectlanguage}[1]{\relax}
-\newcommand{\Capitalize}[1]{\uppercase{#1}}
-\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
-\providecommand{\bibAnnoteFile}[1]{%
-  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
-  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
-\providecommand{\bibAnnote}[2]{%
-  \begin{quotation}\noindent\textsc{Key:} #1\\
-  \textsc{Annotation:}\ #2\end{quotation}}
-\providecommand{\eprint}[2][]{\url{#2}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[{Ahmad \textit{et al.}(2019)Ahmad, Asghar, Alotaibi and Awan}]{rf11}
-\textsc{Ahmad, S.}, \textsc{M.~Z. Asghar}, \textsc{F.~M. Alotaibi} and
-  \textsc{I.~Awan} (2019), \enquote{Detection and classification of social
-  media-based extremist affiliations using sentiment analysis techniques},
-  \textit{Human-centric Computing and Information Sciences}, \textbf{9}, pages
-  1--23.
-\bibAnnoteFile{rf11}
+\bibitem[Elliott et~al.(2011)Elliott, Bohart, Watson, and Greenberg]{rf1}
+Robert Elliott, Arthur~C Bohart, Jeanne~C Watson, and Leslie~S Greenberg.
+\newblock Empathy.
+\newblock \emph{Psychotherapy}, 48:\penalty0 1--2, 2011.
 
-\bibitem[{Appel \textit{et al.}(2015)Appel, Chiclana and Carter}]{rf4}
-\textsc{Appel, O.}, \textsc{F.~Chiclana} and \textsc{J.~Carter} (2015),
-  \enquote{Main concepts, state of the art and future research questions in
-  sentiment analysis}, \textit{Acta Polytechnica Hungarica}, \textbf{12}, pages
-  89--91.
-\bibAnnoteFile{rf4}
+\bibitem[Marinescu et~al.(2019)Marinescu, Eshaghi, Alexander, and
+  Golland]{img1}
+Razvan Marinescu, Arman Eshaghi, Daniel Alexander, and Polina Golland.
+\newblock Brainpainter: A software for the visualisation of brain structures,
+  biomarkers and associated pathological processes.
+\newblock \emph{arXiv preprint arXiv:1905.08627}, 2019.
 
-\bibitem[{Ayodele(2010)}]{rf9}
-\textsc{Ayodele, T.~O.} (2010), \enquote{Introduction to Machine Learning},
-  \textit{New Advances in Machine Learning}.
-\bibAnnoteFile{rf9}
+\bibitem[Preston and de~Waal(2002)]{rf2}
+Stephanie~D Preston and Frans de~Waal.
+\newblock The communication of emotions and the possibility of empathy in
+  animals.
+\newblock In \emph{Altruism and Altruistic Love: Science, Philosophy, and
+  Religion in Dialogue}. Oxford University Press, 2002.
+\newblock \doi{10.1093/acprof:oso/9780195143584.003.0025}.
 
-\bibitem[{Berrar(2018)}]{rf19}
-\textsc{Berrar, D.} (2018), \enquote{Bayes’ theorem and naive Bayes
-  classifier}, \textit{Encyclopedia of Bioinformatics and Computational
-  Biology: ABC of Bioinformatics; Elsevier Science Publisher: Amsterdam, The
-  Netherlands}, pages 403--412.
-\bibAnnoteFile{rf19}
+\bibitem[Zhang(2020)]{rf8}
+Xian-Da Zhang.
+\newblock Machine learning.
+\newblock In \emph{A Matrix Algebra Approach to Artificial Intelligence}, pages
+  223--440. Springer, 2020.
 
-\bibitem[{Bird \textit{et al.}(2021)Bird, Ek{\'a}rt and Faria}]{rf14}
-\textsc{Bird, J.~J.}, \textsc{A.~Ek{\'a}rt} and \textsc{D.~R. Faria} (2021),
-  \enquote{Chatbot Interaction with Artificial Intelligence: human data
-  augmentation with T5 and language transformer ensemble for text
-  classification}, \textit{Journal of Ambient Intelligence and Humanized
-  Computing}, pages 1--16.
-\bibAnnoteFile{rf14}
+\bibitem[Ayodele(2010)]{rf9}
+Taiwo~Oladipupo Ayodele.
+\newblock Introduction to machine learning.
+\newblock \emph{New Advances in Machine Learning}, Feb 2010.
+\newblock \doi{10.5772/9394}.
 
-\bibitem[{Blenn \textit{et al.}(2012)Blenn, Charalampidou and Doerr}]{rf10}
-\textsc{Blenn, N.}, \textsc{K.~Charalampidou} and \textsc{C.~Doerr} (2012),
-  \enquote{Context-Sensitive Sentiment Classification of Short Colloquial
-  Text}, in R.~Bestak, L.~Kencl, L.~E. Li, J.~Widmer and H.~Yin (editors),
-  \textit{NETWORKING 2012}, Springer Berlin Heidelberg, Berlin, Heidelberg,
-  pages 97--108.
-\bibAnnoteFile{rf10}
+\bibitem[Kumar and Teeja(2012)]{rf3}
+Akshi Kumar and Mary~Sebastian Teeja.
+\newblock Sentiment analysis: A perspective on its past, present and future.
+\newblock \emph{International Journal of Intelligent Systems and Applications},
+  4:\penalty0 2--4, 2012.
 
-\bibitem[{Capuano \textit{et al.}(2021)Capuano, Greco, Ritrovato and
-  Vento}]{rf13}
-\textsc{Capuano, N.}, \textsc{L.~Greco}, \textsc{P.~Ritrovato} and
-  \textsc{M.~Vento} (2021), \enquote{Sentiment analysis for customer
-  relationship management: An incremental learning approach}, \textit{Applied
-  Intelligence}, \textbf{51}, pages 3339--3352.
-\bibAnnoteFile{rf13}
+\bibitem[Appel et~al.(2015)Appel, Chiclana, and Carter]{rf4}
+Orestes Appel, Francisco Chiclana, and Jenny Carter.
+\newblock Main concepts, state of the art and future research questions in
+  sentiment analysis.
+\newblock \emph{Acta Polytechnica Hungarica}, 12:\penalty0 89--91, 2015.
 
-\bibitem[{Chiril \textit{et al.}(2021)Chiril, Pamungkas, Benamara, Moriceau and
-  Patti}]{rf15}
-\textsc{Chiril, P.}, \textsc{E.~W. Pamungkas}, \textsc{F.~Benamara},
-  \textsc{V.~Moriceau} and \textsc{V.~Patti} (2021), \enquote{Emotionally
-  informed hate speech detection: a multi-target perspective},
-  \textit{Cognitive Computation}, pages 1--31.
-\bibAnnoteFile{rf15}
+\bibitem[Blenn et~al.(2012)Blenn, Charalampidou, and Doerr]{rf10}
+Norbert Blenn, Kassandra Charalampidou, and Christian Doerr.
+\newblock Context-sensitive sentiment classification of short colloquial text.
+\newblock In Robert Bestak, Lukas Kencl, Li~Erran Li, Joerg Widmer, and Hao
+  Yin, editors, \emph{NETWORKING 2012}, pages 97--108, Berlin, Heidelberg,
+  2012. Springer Berlin Heidelberg.
+\newblock ISBN 978-3-642-30045-5.
 
-\bibitem[{Elliott \textit{et al.}(2011)Elliott, Bohart, Watson and
-  Greenberg}]{rf1}
-\textsc{Elliott, R.}, \textsc{A.~C. Bohart}, \textsc{J.~C. Watson} and
-  \textsc{L.~S. Greenberg} (2011), \enquote{Empathy.}, \textit{Psychotherapy},
-  \textbf{48}, pages 1--2.
-\bibAnnoteFile{rf1}
+\bibitem[Nigam et~al.(1999)Nigam, Lafferty, and McCallum]{rf17}
+Kamal Nigam, John Lafferty, and Andrew McCallum.
+\newblock Using maximum entropy for text classification.
+\newblock In \emph{IJCAI-99 workshop on machine learning for information
+  filtering}, volume~1, pages 61--67. Stockholom, Sweden, 1999.
 
-\bibitem[{Kumar and Teeja(2012)}]{rf3}
-\textsc{Kumar, A.} and \textsc{M.~S. Teeja} (2012), \enquote{Sentiment
-  analysis: A perspective on its past, present and future},
-  \textit{International Journal of Intelligent Systems and Applications},
-  \textbf{4}, pages 2--4.
-\bibAnnoteFile{rf3}
+\bibitem[Soman et~al.(2009)Soman, Loganathan, and Ajay]{rf18}
+KP~Soman, R~Loganathan, and V~Ajay.
+\newblock \emph{Machine learning with SVM and other kernel methods}.
+\newblock PHI Learning Pvt. Ltd., 2009.
 
-\bibitem[{Marinescu \textit{et al.}(2019)Marinescu, Eshaghi, Alexander and
-  Golland}]{img1}
-\textsc{Marinescu, R.}, \textsc{A.~Eshaghi}, \textsc{D.~Alexander} and
-  \textsc{P.~Golland} (2019), \enquote{BrainPainter: A software for the
-  visualisation of brain structures, biomarkers and associated pathological
-  processes}, \textit{arXiv preprint arXiv:1905.08627}.
-\bibAnnoteFile{img1}
+\bibitem[Berrar(2018)]{rf19}
+Daniel Berrar.
+\newblock Bayes’ theorem and naive bayes classifier.
+\newblock \emph{Encyclopedia of Bioinformatics and Computational Biology: ABC
+  of Bioinformatics; Elsevier Science Publisher: Amsterdam, The Netherlands},
+  pages 403--412, 2018.
 
-\bibitem[{Morris \textit{et al.}(2018)Morris, Kouddous, Kshirsagar and
-  Schueller}]{rf6}
-\textsc{Morris, R.~R.}, \textsc{K.~Kouddous}, \textsc{R.~Kshirsagar} and
-  \textsc{S.~M. Schueller} (2018), \enquote{Towards an Artificially Empathic
-  Conversational Agent for Mental Health Applications: System Design and User
-  Perceptions}, \textit{J Med Internet Res}, \textbf{20}.
-\bibAnnoteFile{rf6}
+\bibitem[Morris et~al.(2018)Morris, Kouddous, Kshirsagar, and Schueller]{rf6}
+Robert~R Morris, Kareem Kouddous, Rohan Kshirsagar, and Stephen~M Schueller.
+\newblock Towards an artificially empathic conversational agent for mental
+  health applications: System design and user perceptions.
+\newblock \emph{J Med Internet Res}, 20, Jun 2018.
+\newblock ISSN 1438-8871.
+\newblock \doi{10.2196/10148}.
 
-\bibitem[{Nigam \textit{et al.}(1999)Nigam, Lafferty and McCallum}]{rf17}
-\textsc{Nigam, K.}, \textsc{J.~Lafferty} and \textsc{A.~McCallum} (1999),
-  \enquote{Using maximum entropy for text classification}, in \textit{IJCAI-99
-  workshop on machine learning for information filtering}, volume~1,
-  Stockholom, Sweden, pages 61--67.
-\bibAnnoteFile{rf17}
+\bibitem[Bird et~al.(2021)Bird, Ek{\'a}rt, and Faria]{rf14}
+Jordan~J Bird, Anik{\'o} Ek{\'a}rt, and Diego~R Faria.
+\newblock Chatbot interaction with artificial intelligence: human data
+  augmentation with t5 and language transformer ensemble for text
+  classification.
+\newblock \emph{Journal of Ambient Intelligence and Humanized Computing}, pages
+  1--16, 2021.
 
-\bibitem[{Pang \textit{et al.}(2002)Pang, Lee and Vaithyanathan}]{rf5}
-\textsc{Pang, B.}, \textsc{L.~Lee} and \textsc{S.~Vaithyanathan} (2002),
-  \enquote{Thumbs up? Sentiment classification using machine learning
-  techniques}, \textit{arXiv preprint cs/0205070}.
-\bibAnnoteFile{rf5}
+\bibitem[Pang et~al.(2002)Pang, Lee, and Vaithyanathan]{rf5}
+Bo~Pang, Lillian Lee, and Shivakumar Vaithyanathan.
+\newblock Thumbs up? sentiment classification using machine learning
+  techniques.
+\newblock \emph{arXiv preprint cs/0205070}, 2002.
 
-\bibitem[{Preston and de~Waal(2002)}]{rf2}
-\textsc{Preston, S.~D.} and \textsc{F.~de~Waal} (2002), \enquote{The
-  communication of emotions and the possibility of empathy in animals.}, in
-  \textit{Altruism and Altruistic Love: Science, Philosophy, and Religion in
-  Dialogue}, Oxford University Press.
-\bibAnnoteFile{rf2}
+\bibitem[Wang et~al.(2021)Wang, Wang, and Chen]{rf12}
+Bingkun Wang, Ning Wang, and Zhongsheng Chen.
+\newblock Research on air quality forecast based on web text sentiment
+  analysis.
+\newblock \emph{Ecological Informatics}, 64, 2021.
+\newblock ISSN 1574-9541.
+\newblock \doi{10.1016/j.ecoinf.2021.101354}.
 
-\bibitem[{R{\"o}chert \textit{et al.}(2020)R{\"o}chert, Neubaum and
-  Stieglitz}]{rf16}
-\textsc{R{\"o}chert, D.}, \textsc{G.~Neubaum} and \textsc{S.~Stieglitz} (2020),
-  \enquote{Identifying Political Sentiments on YouTube: A Systematic Comparison
-  Regarding the Accuracy of Recurrent Neural Network and Machine Learning
-  Models}, in \textit{Multidisciplinary International Symposium on
-  Disinformation in Open Online Media}, Springer, pages 107--121.
-\bibAnnoteFile{rf16}
+\bibitem[Capuano et~al.(2021)Capuano, Greco, Ritrovato, and Vento]{rf13}
+Nicola Capuano, Luca Greco, Pierluigi Ritrovato, and Mario Vento.
+\newblock Sentiment analysis for customer relationship management: An
+  incremental learning approach.
+\newblock \emph{Applied Intelligence}, 51:\penalty0 3339--3352, 2021.
 
-\bibitem[{Soman \textit{et al.}(2009)Soman, Loganathan and Ajay}]{rf18}
-\textsc{Soman, K.}, \textsc{R.~Loganathan} and \textsc{V.~Ajay} (2009),
-  \textit{Machine learning with SVM and other kernel methods}, PHI Learning
-  Pvt. Ltd.
-\bibAnnoteFile{rf18}
+\bibitem[Chiril et~al.(2021)Chiril, Pamungkas, Benamara, Moriceau, and
+  Patti]{rf15}
+Patricia Chiril, Endang~Wahyu Pamungkas, Farah Benamara, V{\'e}ronique
+  Moriceau, and Viviana Patti.
+\newblock Emotionally informed hate speech detection: a multi-target
+  perspective.
+\newblock \emph{Cognitive Computation}, pages 1--31, 2021.
 
-\bibitem[{Wang \textit{et al.}(2021)Wang, Wang and Chen}]{rf12}
-\textsc{Wang, B.}, \textsc{N.~Wang} and \textsc{Z.~Chen} (2021),
-  \enquote{Research on air quality forecast based on web text sentiment
-  analysis}, \textit{Ecological Informatics}, \textbf{64}.
-\bibAnnoteFile{rf12}
+\bibitem[Ahmad et~al.(2019)Ahmad, Asghar, Alotaibi, and Awan]{rf11}
+Shakeel Ahmad, Muhammad~Zubair Asghar, Fahad~M Alotaibi, and Irfanullah Awan.
+\newblock Detection and classification of social media-based extremist
+  affiliations using sentiment analysis techniques.
+\newblock \emph{Human-centric Computing and Information Sciences}, 9:\penalty0
+  1--23, 2019.
 
-\bibitem[{Zhang(2020)}]{rf8}
-\textsc{Zhang, X.-D.} (2020), \enquote{Machine learning}, in \textit{A Matrix
-  Algebra Approach to Artificial Intelligence}, Springer, pages 223--440.
-\bibAnnoteFile{rf8}
+\bibitem[R{\"o}chert et~al.(2020)R{\"o}chert, Neubaum, and Stieglitz]{rf16}
+Daniel R{\"o}chert, German Neubaum, and Stefan Stieglitz.
+\newblock Identifying political sentiments on youtube: A systematic comparison
+  regarding the accuracy of recurrent neural network and machine learning
+  models.
+\newblock In \emph{Multidisciplinary International Symposium on Disinformation
+  in Open Online Media}, pages 107--121. Springer, 2020.
 
 \end{thebibliography}

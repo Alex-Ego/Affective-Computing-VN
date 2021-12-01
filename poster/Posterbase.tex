@@ -30,7 +30,7 @@
 
 \maketitle
 \begin{abstract}
-In this thesis, open-sourced software is proposed, which interprets the text entered by a person and determines how they are feeling at the moment, with the purpose of being used in tandem with another software or algorithms focused on conversational data.
+In this project, open-sourced software is proposed, which interprets the text entered by a person and determines how they are feeling at the moment, with the purpose of being used in tandem with another software or algorithms focused on conversational data.
 The study method used will make a comprehensive analysis of neural networks, as well as pattern recognition and data collection.
 The algorithm is open-source so anyone can add or remove modules as needed.
 \end{abstract}
@@ -68,8 +68,40 @@ The objective of this project is to make software capable of determining how the
 	\item[Natural Language Processing]{This is the method used for the algorithm to understand the content of the sentences, this is usually achieved by using tokenization but a preset corpus can also be used.}	
 	\item[Sentiment Analysis]{This involves a ML algorithm, usually a Neural Network, that is able to analyze sentences and classify them according to the words used.}
 	\item[Corpus]{Preset internal dictionary that the algorithm uses.}
-	\item[Tokenizing]{Process that converts every word in the lexicon to an assigned number for easier processing}
+	\item[Tokenizing]{Process that converts every word in the lexicon to an assigned number (called \textit{token}) for easier processing.}
 \end{description}
+\subsection{Supervised Machine Learning}
+Supervised ML can be described, broadly and figuratively speaking, as a black box where some data is inserted as an input and numbers come out of it as an output \citep{rf8}. 
+
+This output, as opposed to other types of Machine Learning, is later analyzed and compared to real life data. \columnbreak
+
+\subsection{Sentiment Analysis}
+\begin{itemize}
+	\item The sentence to analyze is broken down to its component parts, this process is called \textit{tokenization}, and the resulting products are called \textit{tokens}.
+	\item Every token is then tagged, making it part of an internal dictionary or \textit{lexicon}
+	\item A score is assigned to every token depending on the used dataset.
+\end{itemize}
+
+\subsection{Tokenization}
+Taking the following example:
+\begin{center}
+\fbox{This is an example text}
+\end{center}
+
+We can tell there are 5 words in the example phrase. So the tokenizing process would make the example look in the following way:
+\begin{center}
+\fbox{1,	2,	3,	4,	5}
+\end{center}
+
+The interesting part about this process would happen if we used another example phrase, like the following:
+\begin{center}
+\fbox{This is another example}
+\end{center}
+
+If we did the tokenization process, it would be processed in this way:
+\begin{center}
+\fbox{1,	2,	6,	4}
+\end{center}
 
 \section{Comparison to Related Work}
 There are several papers on similar projects, the following table marks the specifics of each one's relevant features compared to this project's.
@@ -123,6 +155,11 @@ This project is built on Python v3.8.10, The libraries used for this project to 
 
 
 \section{Experiments}
+
+The purpose of these experiments is to determine if the parameters chosen for this project are optimal and, if not, correct them and know the reason behind the improvement.
+	
+Lower loss and higher accuracy are preferred.
+
 \begin{itemize}
 \item Experiment 1: Base Experiment
 \item Experiment 2: More Datasets With Reduced Data Scope
@@ -137,7 +174,7 @@ This project is built on Python v3.8.10, The libraries used for this project to 
 \begin{table}[!h]
 	\captionsetup{type=table}
 	\setcounter{table}{1}
-	\caption{Experiment results}
+	\caption{Experimental results}
 	\vspace{0.5cm}
 	\centering
 	\begin{tabular}[t]{|l|l|l|l|l|}
@@ -165,16 +202,25 @@ This project is built on Python v3.8.10, The libraries used for this project to 
 	\end{tabular}
 \end{table}
 
+
+
 \section{Conclusions}
 
 These results determine that the proposed hypothesis is partially true: given enough data, a Machine Learning algorithm can learn to classify feelings and react accordingly, effectively learning how to identify patterns to an extent. However, high quality and volume data is needed for this to be reliable. Something that was only partially obtained for this project.
 
 Overall, we can determine that, with the use of more consistent data, a favorable result can be achieved with the model used in this project.
 
-\bibliography{biblio}
-\bibliographystyle{unsrtnat}
+In the future, this project would greatly benefit from a dataset that takes into consideration sentences that can be said in any context and still be correctly classified. And, of course, the less ortographical errors there are, the better.
 
-\hspace*{120mm}\includegraphics[width=0.15\textwidth]{qrcode.png}
+{\tiny \bibliography{biblio}}
+\bibliographystyle{unsrtnat}
+\begin{table}
+	\centering
+	\begin{tabular}{c c}
+		\includegraphics[width=0.5\textwidth]{qrcode.png} & \includegraphics[width=0.5\textwidth]{qrcode_repo.png} \\
+		Online Poster & Online Repository
+	\end{tabular}
+\end{table}
 
 \end{multicols}
 

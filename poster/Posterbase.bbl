@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{11}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -11,6 +11,12 @@ Razvan Marinescu, Arman Eshaghi, Daniel Alexander, and Polina Golland.
 \newblock Brainpainter: A software for the visualisation of brain structures,
   biomarkers and associated pathological processes.
 \newblock \emph{arXiv preprint arXiv:1905.08627}, 2019.
+
+\bibitem[Zhang(2020)]{rf8}
+Xian-Da Zhang.
+\newblock Machine learning.
+\newblock In \emph{A Matrix Algebra Approach to Artificial Intelligence}, pages
+  223--440. Springer, 2020.
 
 \bibitem[Blenn et~al.(2012)Blenn, Charalampidou, and Doerr]{rf10}
 Norbert Blenn, Kassandra Charalampidou, and Christian Doerr.

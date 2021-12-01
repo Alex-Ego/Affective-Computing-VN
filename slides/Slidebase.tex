@@ -5,7 +5,7 @@
 \usepackage[english]{babel}
 \usepackage{multicol}
 \usepackage{ragged2e}
-\usepackage{graphicx,url,hyperref,doi}
+\usepackage{graphics,graphicx,url,hyperref,doi}
 \usepackage{tikz}
 \usepackage{adjustbox}
 \usepackage{multicol}
@@ -31,12 +31,6 @@
   \footnotesize{\tableofcontents}	
 \end{multicols}
 \end{center}
-\end{frame}
-
-\begin{frame}
-  \begin{abstract}
-    In this thesis, open-sourced software is proposed, which interprets the text entered by a person and determines how they are feeling at the moment, with the purpose of being used in tandem with another software or algorithms focused on conversational data.
-  \end{abstract}
 \end{frame}
 
 \section{Introduction}
@@ -206,11 +200,12 @@ This output, as opposed to other types of Machine Learning, is later analyzed an
 	
 	Lower loss and higher accuracy are preferred.
 \end{frame}
-\begin{frame}{Experiment Results}
+\begin{frame}{Experimental Results}
 	\begin{table}[!h]
-	\caption{Experiment results}
+	\caption{Experimental results}
 	\vspace{0.2cm}
 	\centering
+	\resizebox{250px}{!}{%
 	\begin{tabular}[t]{|l|l|l|l|l|}
 	\hline
 	\multicolumn{1}{|c|}{} & \multicolumn{2}{c|}{Training} & \multicolumn{2}{c|}{Cross-Validation}
@@ -233,7 +228,8 @@ This output, as opposed to other types of Machine Learning, is later analyzed an
 	\\ \hline
 	\hyperref[exp9]{Experiment 8} & 0.3624 & 0.8337 & 0.3871 & \textbf{0.8124}
 	\\ \hline
-	\end{tabular}
+	\end{tabular}%
+	}
 \end{table}
 \end{frame}
 
@@ -249,13 +245,13 @@ This output, as opposed to other types of Machine Learning, is later analyzed an
 \end{frame}
 
 
-\begin{frame}{References}
+\begin{frame}[allowframebreaks]{References}
 	\centering
-	\vspace*{-0.6cm}
-	\setlength{\columnsep}{-0.2cm}
-	\begin{multicols}{3}
+	%\vspace*{-0.6cm}
+	%\setlength{\columnsep}{-0.2cm}
+	%\begin{multicols}{2}
 		{\tiny \bibliography{biblio}}
-	\end{multicols}
+	%\end{multicols}
 	
 \end{frame}
 \end{document}
